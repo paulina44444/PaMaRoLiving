@@ -108,7 +108,9 @@ function FooterBar() {
 
           {/* Adresse */}
           <div className="leading-8">
-            <div className="font-semibold mb-2">PaMaRo Living</div>
+            <div className="font-semibold mb-2">
+              PaMaRo Living
+            </div>
 
             Paula Raimondo<br />
             Zapadna Ulica 36<br />
@@ -130,15 +132,21 @@ function FooterBar() {
             </div>
 
             <div className="flex items-center justify-center md:justify-start gap-4 pt-2">
-              <Instagram size={20} className="hover:text-[#c6a27b] cursor-pointer transition" />
-              <Facebook size={20} className="hover:text-[#c6a27b] cursor-pointer transition" />
+              <Instagram
+                size={20}
+                className="hover:text-[#c6a27b] cursor-pointer transition"
+              />
+
+              <Facebook
+                size={20}
+                className="hover:text-[#c6a27b] cursor-pointer transition"
+              />
             </div>
 
           </div>
-
         </div>
 
-        {/* untere Linie */}
+        {/* Copyright */}
         <div className="border-t border-white/10 mt-10 pt-6 text-center text-xs text-gray-300">
           © {new Date().getFullYear()} PaMaRo Living. All rights reserved.
         </div>
