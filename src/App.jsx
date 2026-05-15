@@ -1,10 +1,10 @@
-import React, { useState } from "react";
 import {
   Menu,
   X,
   Phone,
   Mail,
-  Instagram
+  Instagram,
+  Facebook
 } from "lucide-react";
 
 /* ================= SIMPLE LANGUAGE STATE ================= */
