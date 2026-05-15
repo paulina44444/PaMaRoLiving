@@ -217,23 +217,39 @@ function Home({ lang }) {
 
   return (
     <div className="bg-[#f7f2ed] text-[#2f3a40]">
-      <section className="py-16 md:py-24 px-6 max-w-4xl mx-auto text-center space-y-6">
-        <h1 className="text-3xl md:text-5xl font-serif tracking-tight leading-tight">
-          {isHR
-            ? "Vaša nekretnina u sigurnim i stručnim rukama u Dalmaciji"
-            : isEN
-            ? "Your property in safe and professional hands in Dalmatia"
-            : "Ihre Immobilie in sicheren und professionellen Händen in Dalmatien"}
-        </h1>
 
-        <p className="text-[#5f6a70] text-base md:text-lg leading-relaxed">
-          {isHR
-            ? "Povjerenje, kvaliteta i strukturiran pristup – od iznajmljivanja do cjelogodišnjeg upravljanja."
-            : isEN
-            ? "Trust, quality and a structured approach – from rentals to year-round property management."
-            : "Vertrauen, Qualität und ein strukturierter Ansatz – von der Vermietung bis zur ganzjährigen Verwaltung."}
-        </p>
-      </section>
+    {/* HERO IMAGE */}
+    <section className="relative h-[75vh] w-full overflow-hidden">
+      <img
+        src="/hero.jpg"
+        alt="Luxury property in Dalmatia"
+        className="absolute inset-0 w-full h-full object-cover"
+      />
+
+      {/* Dark overlay */}
+      <div className="absolute inset-0 bg-black/30" />
+
+      {/* Text */}
+      <div className="relative z-10 flex items-center justify-center h-full px-6 text-center">
+        <div className="max-w-4xl text-white">
+          <h1 className="text-4xl md:text-6xl font-serif leading-tight">
+            {isHR
+              ? "Vaša nekretnina u sigurnim i stručnim rukama u Dalmaciji"
+              : isEN
+              ? "Your property in safe and professional hands in Dalmatia"
+              : "Ihre Immobilie in sicheren und professionellen Händen in Dalmatien"}
+          </h1>
+
+          <p className="mt-6 text-lg md:text-xl text-white/90">
+            {isHR
+              ? "Povjerenje, kvaliteta i strukturiran pristup."
+              : isEN
+              ? "Trust, quality and a structured approach."
+              : "Vertrauen, Qualität und ein strukturierter Ansatz."}
+          </p>
+        </div>
+      </div>
+    </section>
 
       <section className="py-12 md:py-16 px-6">
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 place-items-center">
