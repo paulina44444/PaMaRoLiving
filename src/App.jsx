@@ -148,7 +148,7 @@ function Home({ lang }) {
 
   return (
     <div className="bg-[#f7f2ed] text-[#2f3a40]">
-      <section className="py-24 px-6 max-w-4xl mx-auto text-center space-y-6">
+      <section className="py-16 md:py-24 px-6 max-w-4xl mx-auto text-center space-y-6">
         <h1 className="text-4xl md:text-5xl font-serif tracking-tight leading-tight">
           {isHR
             ? "Vaša nekretnina u sigurnim i stručnim rukama u Dalmaciji"
