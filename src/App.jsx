@@ -35,7 +35,7 @@ function Navigation({ setPage, lang, setLang }) {
   />
 </button>
 
-   <nav className="hidden md:flex gap-8 text-[#5f6a70] items-center">
+   <nav className="hidden md:flex gap-10 text-[#5f6a70] items-center">
           {navLabels[lang].map((label, i) => (
             <button
               key={i}
@@ -231,7 +231,7 @@ function Home({ lang }) {
 
       {/* Text */}
       <div className="relative z-10 flex items-center justify-center h-full px-6 text-center">
-        <div className="max-w-4xl text-white">
+        <div className="max-w-3xl text-white">
 <h1 className="text-3xl md:text-5xl font-serif leading-tight">
             {isHR
               ? "Vaša nekretnina u sigurnim i stručnim rukama u Dalmaciji"
