@@ -171,7 +171,7 @@ function Home({ lang }) {
           {cards.map(([title, text]) => (
             <div
               key={title}
-              className="bg-white p-10 rounded-2xl shadow-sm hover:shadow-lg transition duration-300 w-full max-w-md text-center"
+className="bg-white p-6 md:p-10 rounded-2xl shadow-sm hover:shadow-lg transition duration-300 w-full max-w-md text-center"
             >
               <h3 className="font-serif text-xl mb-4">{title}</h3>
               <p className="text-sm text-[#6b7478] leading-relaxed">{text}</p>
