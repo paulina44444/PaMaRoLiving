@@ -133,7 +133,7 @@ function FooterBar() {
             <div className="flex items-center justify-center md:justify-start gap-5 pt-2">
 
   <a
-    href="https://instagram.com/pamaroliving"
+    href="https://instagram.com/pamaro_living"
     target="_blank"
     rel="noreferrer"
     className="text-[#c6a27b] hover:text-white transition duration-300"
@@ -142,7 +142,7 @@ function FooterBar() {
   </a>
 
   <a
-    href="https://facebook.com/pamaroliving"
+    href="https://facebook.com/DEINNAME"
     target="_blank"
     rel="noreferrer"
     className="text-[#c6a27b] hover:text-white transition duration-300"
