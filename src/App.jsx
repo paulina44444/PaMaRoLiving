@@ -103,7 +103,7 @@ function FooterBar() {
             <img
               src="/logo-footer.png"
               alt="PaMaRo Living"
-              className="h-28 w-auto brightness-0 invert opacity-95"
+              className="h-28 w-auto"
             />
           </div>
 
