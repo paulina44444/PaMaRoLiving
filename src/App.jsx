@@ -1,9 +1,13 @@
+import React, { useState } from "react";
+
 import {
   Menu,
   X,
   Phone,
   Mail
 } from "lucide-react";
+
+import { FaInstagram } from "react-icons/fa";
 
 /* ================= SIMPLE LANGUAGE STATE ================= */
 const navLabels = {
@@ -129,7 +133,7 @@ function FooterBar() {
             </div>
 
             <div className="flex items-center justify-center md:justify-start gap-4 pt-2">
-              <Instagram
+              <FaInstagram
                 size={20}
                 className="hover:text-[#c6a27b] cursor-pointer transition"
               />
