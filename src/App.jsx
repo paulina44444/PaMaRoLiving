@@ -230,7 +230,7 @@ function Home({ lang }) {
       <div className="absolute inset-0 bg-black/45" />
 
       {/* Text */}
-      <div className="relative z-10 flex items-center justify-center h-full px-6 text-center">
+      <div className="relative z-10 flex items-center justify-center h-full px-6 text-center pt-12">
         <div className="max-w-3xl text-white">
 <h1 className="text-3xl md:text-5xl font-serif leading-tight">
             {isHR
