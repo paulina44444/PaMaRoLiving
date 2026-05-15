@@ -265,21 +265,35 @@ className="bg-white p-6 md:p-10 rounded-2xl shadow-sm hover:shadow-lg transition
         </div>
       </section>
 
-      <section className="py-24 px-6 text-center bg-[#efe7df]">
-        <p className="italic text-xl md:text-2xl font-serif text-[#2f3a40] max-w-2xl mx-auto">
-          {isHR
-            ? "„Brinemo o detaljima – kako biste se vi mogli opustiti.“"
-            : isEN
-            ? "“We take care of the details – so you can truly relax.”"
-            : "„Wir kümmern uns um die Details – damit Sie sich entspannt zurücklehnen können.“"}
-        </p>
-      </section>
-      <section className="w-full">
+      <section className="relative w-full h-[550px] md:h-[650px] overflow-hidden">
+
+  {/* Bild */}
   <img
     src="/sea.jpg"
     alt="Dalmatian coast"
-    className="w-full h-[500px] object-cover"
+    className="absolute inset-0 w-full h-full object-cover object-[center_65%]"
   />
+
+  {/* Heller Overlay */}
+  <div className="absolute inset-0 bg-[#efe7df]/65" />
+
+  {/* Text */}
+  <div className="relative z-10 flex items-center justify-center h-full px-6 text-center">
+    <div className="max-w-3xl">
+
+      <p className="italic text-2xl md:text-5xl font-serif text-[#2f3a40] leading-relaxed">
+        {isHR
+          ? "„Brinemo o detaljima – kako biste se vi mogli opustiti.“"
+          : isEN
+          ? "“We take care of the details – so you can truly relax.”"
+          : "„Wir kümmern uns um die Details – damit Sie sich entspannt zurücklehnen können.“"}
+      </p>
+
+      {/* kleine Linie */}
+      <div className="w-28 h-[2px] bg-[#c6a27b] mx-auto mt-10 opacity-70" />
+
+    </div>
+  </div>
 </section>
 
       <section className="py-16 px-6 max-w-3xl mx-auto text-center">
