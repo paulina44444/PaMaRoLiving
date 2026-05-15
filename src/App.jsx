@@ -2,8 +2,7 @@ import {
   Menu,
   X,
   Phone,
-  Mail,
-  Instagram
+  Mail
 } from "lucide-react";
 
 /* ================= SIMPLE LANGUAGE STATE ================= */
