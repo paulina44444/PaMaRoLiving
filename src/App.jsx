@@ -85,26 +85,38 @@ className="md:hidden"
 function FooterBar() {
   return (
     <footer className="bg-[#2f3a40] text-white mt-24">
-      <div className="max-w-6xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-3 gap-8 text-sm text-center md:text-left">
-        <div className="font-serif text-xl">PaMaRo Living</div>
+      
+      <div className="max-w-6xl mx-auto px-6 py-12">
 
-        <div>
-          PaMaRo Living<br />
-          Paula Raimondo<br />
-          Zapadna Ulica 36<br />
-          21318 Pisak<br />
-          Croatia
+        {/* obere 3 Spalten */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-sm text-center md:text-left">
+
+          <div className="font-serif text-3xl">
+            PaMaRo Living
+          </div>
+
+          <div>
+            PaMaRo Living<br />
+            Paula Raimondo<br />
+            Zapadna Ulica 36<br />
+            21318 Pisak<br />
+            Croatia
+          </div>
+
+          <div>
+            Tel. +385 99 837 79 35<br />
+            E-Mail: pamaroliving@hotmail.com
+          </div>
+
         </div>
 
-        <div>
-  Tel. +385 99 837 79 35<br />
-  E-Mail: pamaroliving@hotmail.com
+        {/* Linie */}
+        <div className="border-t border-white/10 mt-10 pt-6 text-center text-xs text-gray-300">
+          © {new Date().getFullYear()} PaMaRo Living. All rights reserved.
+        </div>
 
-  <div className="mt-4 text-xs text-gray-300 leading-relaxed">
-    © {new Date().getFullYear()} PaMaRo Living. All rights reserved.
-  </div>
-</div>
-</div>
+      </div>
+
     </footer>
   );
 }
