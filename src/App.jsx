@@ -58,7 +58,7 @@ className="block"
           setMenuOpen(false);
         }}
       >
-        {label}
+        {label} 
       </button>
     ))}
 
