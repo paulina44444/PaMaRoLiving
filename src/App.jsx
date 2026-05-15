@@ -18,7 +18,7 @@ function Navigation({ setPage, lang, setLang }) {
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
         <button className="font-serif text-2xl" onClick={() => setPage("home")}>PaMaRo Living</button>
 
-        <nav className="hidden md:flex gap-10 text-[#5f6a70] items-center">
+   <nav className="hidden md:flex gap-10 text-[#5f6a70] items-center">
           {navLabels[lang].map((label, i) => (
             <button
               key={i}
