@@ -52,7 +52,7 @@ className="block"
     {navLabels[lang].map((label, i) => (
       <button
         key={i}
-        className="text-left"
+        className="text-left py-2 text-lg"
         onClick={() => {
           setPage(["home", "about", "services", "contact", "legal"][i]);
           setMenuOpen(false);
