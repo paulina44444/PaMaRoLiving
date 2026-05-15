@@ -104,6 +104,7 @@ function FooterBar() {
     © {new Date().getFullYear()} PaMaRo Living. All rights reserved.
   </div>
 </div>
+</div>
     </footer>
   );
 }
