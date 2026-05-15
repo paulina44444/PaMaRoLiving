@@ -17,10 +17,14 @@ function Navigation({ setPage, lang, setLang }) {
     <header className="w-full bg-white border-b border-[#e8e1dc] fixed top-0 left-0 z-50">
       <div className="max-w-6xl mx-auto px-4 md:px-6 py-3 md:py-4 flex items-center justify-between">
         <button
-  className="font-serif text-lg md:text-2xl"
   onClick={() => setPage("home")}
+  className="flex items-center"
 >
-  PaMaRo Living
+  <img
+    src="/logo.png"
+    alt="PaMaRo Living"
+    className="h-12 md:h-16 w-auto"
+  />
 </button>
 
    <nav className="hidden md:flex gap-10 text-[#5f6a70] items-center">
