@@ -1,10 +1,10 @@
+import React, { useState } from "react";
 import {
   Menu,
   X,
   Phone,
   Mail,
-  Instagram,
-  FacebookIcon
+  Instagram
 } from "lucide-react";
 
 /* ================= SIMPLE LANGUAGE STATE ================= */
@@ -136,10 +136,7 @@ function FooterBar() {
                 className="hover:text-[#c6a27b] cursor-pointer transition"
               />
 
-              <FacebookIcon
-                size={20}
-                className="hover:text-[#c6a27b] cursor-pointer transition"
-              />
+              
             </div>
 
           </div>
