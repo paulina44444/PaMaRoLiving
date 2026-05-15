@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Menu, X } from "lucide-react";
 
 /* ================= SIMPLE LANGUAGE STATE ================= */
 const navLabels = {
@@ -8,6 +9,8 @@ const navLabels = {
 };
 
 function Navigation({ setPage, lang, setLang }) {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   const link = "text-sm hover:text-[#c6a27b] transition";
 
   return (
@@ -32,9 +35,41 @@ function Navigation({ setPage, lang, setLang }) {
             <button onClick={() => setLang("de")} className={lang === "de" ? "font-semibold" : "opacity-60"}>DE</button>
             <button onClick={() => setLang("en")} className={lang === "en" ? "font-semibold" : "opacity-60"}>EN</button>
           </div>
-        </nav>
-      </div>
-    </header>
+</nav>
+
+{/* Mobile menu button */}
+<button
+  className="md:hidden"
+  onClick={() => setMenuOpen(!menuOpen)}
+>
+  {menuOpen ? <X size={28} /> : <Menu size={28} />}
+</button>
+
+</div>
+{/* Mobile navigation */}
+{menuOpen && (
+  <div className="md:hidden bg-white border-t border-[#e8e1dc] px-6 py-4 flex flex-col gap-4 text-[#5f6a70]">
+    {navLabels[lang].map((label, i) => (
+      <button
+        key={i}
+        className="text-left"
+        onClick={() => {
+          setPage(["home", "about", "services", "contact", "legal"][i]);
+          setMenuOpen(false);
+        }}
+      >
+        {label}
+      </button>
+    ))}
+
+    <div className="flex gap-4 pt-2">
+      <button onClick={() => setLang("hr")}>HR</button>
+      <button onClick={() => setLang("de")}>DE</button>
+      <button onClick={() => setLang("en")}>EN</button>
+    </div>
+  </div>
+)}
+</header>
   );
 }
 
