@@ -1,5 +1,12 @@
 import React, { useState } from "react";
-import { Menu, X } from "lucide-react";
+import {
+  Menu,
+  X,
+  Phone,
+  Mail,
+  Instagram,
+  Facebook
+} from "lucide-react";
 
 /* ================= SIMPLE LANGUAGE STATE ================= */
 const navLabels = {
@@ -85,38 +92,58 @@ className="md:hidden"
 function FooterBar() {
   return (
     <footer className="bg-[#2f3a40] text-white mt-24">
-      
       <div className="max-w-6xl mx-auto px-6 py-12">
 
         {/* obere 3 Spalten */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-sm text-center md:text-left">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 items-start text-sm text-center md:text-left">
 
-          <div className="font-serif text-3xl">
-            PaMaRo Living
+          {/* Logo */}
+          <div className="flex justify-center md:justify-start">
+            <img
+              src="/logo.png"
+              alt="PaMaRo Living"
+              className="h-28 w-auto brightness-0 invert opacity-95"
+            />
           </div>
 
-          <div>
-            PaMaRo Living<br />
+          {/* Adresse */}
+          <div className="leading-8">
+            <div className="font-semibold mb-2">PaMaRo Living</div>
+
             Paula Raimondo<br />
             Zapadna Ulica 36<br />
             21318 Pisak<br />
             Croatia
           </div>
 
-          <div>
-            Tel. +385 99 837 79 35<br />
-            E-Mail: pamaroliving@hotmail.com
+          {/* Kontakt */}
+          <div className="space-y-4">
+
+            <div className="flex items-center justify-center md:justify-start gap-3">
+              <Phone size={18} />
+              <span>+385 99 837 79 35</span>
+            </div>
+
+            <div className="flex items-center justify-center md:justify-start gap-3">
+              <Mail size={18} />
+              <span>pamaroliving@hotmail.com</span>
+            </div>
+
+            <div className="flex items-center justify-center md:justify-start gap-4 pt-2">
+              <Instagram size={20} className="hover:text-[#c6a27b] cursor-pointer transition" />
+              <Facebook size={20} className="hover:text-[#c6a27b] cursor-pointer transition" />
+            </div>
+
           </div>
 
         </div>
 
-        {/* Linie */}
+        {/* untere Linie */}
         <div className="border-t border-white/10 mt-10 pt-6 text-center text-xs text-gray-300">
           © {new Date().getFullYear()} PaMaRo Living. All rights reserved.
         </div>
 
       </div>
-
     </footer>
   );
 }
