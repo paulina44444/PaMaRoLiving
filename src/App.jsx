@@ -15,7 +15,7 @@ function Navigation({ setPage, lang, setLang }) {
 
   return (
     <header className="w-full bg-white border-b border-[#e8e1dc] fixed top-0 left-0 z-50">
-      <div className="max-w-6xl mx-auto px-4 md:px-6 py-4 md:py-5 flex items-center justify-between">
+      <div className="max-w-6xl mx-auto px-4 md:px-6 py-2 md:py-3 flex items-center justify-between">
         <button
   onClick={() => setPage("home")}
   className="flex items-center"
@@ -23,7 +23,7 @@ function Navigation({ setPage, lang, setLang }) {
   <img
     src="/logo.png"
     alt="PaMaRo Living"
-    className="h-14 md:h-20 w-auto"
+    className="h-16 md:h-24 w-auto"
   />
 </button>
 
@@ -823,7 +823,7 @@ switch (page) {
   return (
     <div className="min-h-screen flex flex-col bg-[#f7f2ed]">
       <Navigation setPage={setPage} lang={lang} setLang={setLang} />
-      <main className="flex-grow pt-32 md:pt-36">{content}</main>
+      <main className="flex-grow pt-36 md:pt-44">{content}</main>
       <FooterBar />
     </div>
   );
