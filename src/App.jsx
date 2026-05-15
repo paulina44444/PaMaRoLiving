@@ -17,7 +17,7 @@ function Navigation({ setPage, lang, setLang }) {
     <header className="w-full bg-white border-b border-[#e8e1dc] fixed top-0 left-0 z-50">
       <div className="max-w-6xl mx-auto px-4 md:px-6 py-3 md:py-4 flex items-center justify-between">
         <button
-  className="font-serif text-xl md:text-2xl"
+  className="font-serif text-lg md:text-2xl"
   onClick={() => setPage("home")}
 >
   PaMaRo Living
@@ -57,7 +57,7 @@ className="block"
     {navLabels[lang].map((label, i) => (
       <button
         key={i}
-        className="text-left py-2 text-lg"
+        className="text-left py-3 text-lg border-b border-[#f1ebe6]"
         onClick={() => {
           setPage(["home", "about", "services", "contact", "legal"][i]);
           setMenuOpen(false);
