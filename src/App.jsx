@@ -3,8 +3,7 @@ import {
   X,
   Phone,
   Mail,
-  Instagram,
-  Facebook
+  Instagram
 } from "lucide-react";
 
 /* ================= SIMPLE LANGUAGE STATE ================= */
