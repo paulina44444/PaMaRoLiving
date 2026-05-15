@@ -31,7 +31,7 @@ function Navigation({ setPage, lang, setLang }) {
   <img
     src="/logo.png"
     alt="PaMaRo Living"
-    className="h-28 w-auto opacity-90 sepia-[0.15]"
+    className="h-28 w-auto opacity-95"
   />
 </button>
 
@@ -101,7 +101,7 @@ function FooterBar() {
           {/* Logo */}
           <div className="flex justify-center md:justify-start">
             <img
-              src="/logo.png"
+              src="/logo-footer.png"
               alt="PaMaRo Living"
               className="h-28 w-auto brightness-0 invert opacity-95"
             />
