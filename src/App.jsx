@@ -97,10 +97,13 @@ function FooterBar() {
         </div>
 
         <div>
-          Tel. +385 99 837 79 35<br />
-          E-Mail: pamaroliving@hotmail.com
-        </div>
-      </div>
+  Tel. +385 99 837 79 35<br />
+  E-Mail: pamaroliving@hotmail.com
+
+  <div className="mt-4 text-xs text-gray-300 leading-relaxed">
+    © {new Date().getFullYear()} PaMaRo Living. All rights reserved.
+  </div>
+</div>
     </footer>
   );
 }
@@ -766,7 +769,13 @@ function Legal({ lang }) {
           : isEN
           ? "PaMaRo Living, represented by Paula Raimondo at the address stated above, is responsible for the content of this website in accordance with applicable legal regulations."
           : "Verantwortlich für den Inhalt dieser Website gemäss den geltenden gesetzlichen Bestimmungen ist PaMaRo Living, vertreten durch Paula Raimondo, Anschrift wie oben angegeben."}
-      </p>
+      </p><p>
+  {isHR
+    ? "Svi sadržaji ove web stranice, posebno tekstovi, slike, logotipi i elementi dizajna, zaštićeni su autorskim pravima te se ne smiju koristiti, umnožavati niti prosljeđivati bez izričitog pisanog odobrenja."
+    : isEN
+    ? "All content on this website, especially texts, images, logos and design elements, is protected by copyright and may not be used, reproduced or distributed without explicit written permission."
+    : "Alle Inhalte dieser Website, insbesondere Texte, Bilder, Logos und Designbestandteile, unterliegen dem Urheberrecht und dürfen ohne ausdrückliche schriftliche Zustimmung nicht verwendet, vervielfältigt oder weitergegeben werden."}
+</p>
 
       <h2 className="font-serif text-xl mt-10">
         {isHR ? "Zaštita privatnosti" : isEN ? "Privacy Policy" : "Datenschutz"}
