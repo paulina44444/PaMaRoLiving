@@ -7,7 +7,7 @@ import {
   Mail
 } from "lucide-react";
 
-import { FaInstagram } from "react-icons/fa";
+import { FaInstagram, FaFacebookF } from "react-icons/fa";
 
 /* ================= SIMPLE LANGUAGE STATE ================= */
 const navLabels = {
@@ -31,7 +31,7 @@ function Navigation({ setPage, lang, setLang }) {
   <img
     src="/logo.png"
     alt="PaMaRo Living"
-    className="h-20 md:h-28 w-auto"
+    className="h-28 w-auto opacity-90 sepia-[0.15]"
   />
 </button>
 
@@ -123,23 +123,34 @@ function FooterBar() {
           <div className="space-y-4">
 
             <div className="flex items-center justify-center md:justify-start gap-3">
-              <Phone size={18} />
+              <Phone size={18} className="text-[#c6a27b]" />
               <span>+385 99 837 79 35</span>
             </div>
+<div className="flex items-center justify-center md:justify-start gap-3">
+  <Mail size={18} className="text-[#c6a27b]" />
+  <span>pamaroliving@hotmail.com</span>
+</div>
+            <div className="flex items-center justify-center md:justify-start gap-5 pt-2">
 
-            <div className="flex items-center justify-center md:justify-start gap-3">
-              <Mail size={18} />
-              <span>pamaroliving@hotmail.com</span>
-            </div>
+  <a
+    href="https://instagram.com/pamaroliving"
+    target="_blank"
+    rel="noreferrer"
+    className="text-[#c6a27b] hover:text-white transition duration-300"
+  >
+    <FaInstagram size={18} />
+  </a>
 
-            <div className="flex items-center justify-center md:justify-start gap-4 pt-2">
-              <FaInstagram
-                size={20}
-                className="hover:text-[#c6a27b] cursor-pointer transition"
-              />
+  <a
+    href="https://facebook.com/pamaroliving"
+    target="_blank"
+    rel="noreferrer"
+    className="text-[#c6a27b] hover:text-white transition duration-300"
+  >
+    <FaFacebookF size={15} />
+  </a>
 
-              
-            </div>
+</div>
 
           </div>
         </div>
