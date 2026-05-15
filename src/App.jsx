@@ -23,7 +23,7 @@ function Navigation({ setPage, lang, setLang }) {
   <img
     src="/logo.png"
     alt="PaMaRo Living"
-    className="h-16 md:h-24 w-auto"
+    className="h-20 md:h-28 w-auto"
   />
 </button>
 
