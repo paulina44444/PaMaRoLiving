@@ -223,7 +223,7 @@ function Home({ lang }) {
       <img
         src="/hero.jpg"
         alt="Luxury property in Dalmatia"
-        className="absolute inset-0 w-full h-full object-cover"
+        className="absolute inset-0 w-full h-full object-cover object-[center_65%]"
       />
 
       {/* Dark overlay */}
