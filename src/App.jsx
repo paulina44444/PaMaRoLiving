@@ -227,12 +227,12 @@ function Home({ lang }) {
       />
 
       {/* Dark overlay */}
-      <div className="absolute inset-0 bg-black/30" />
+      <div className="absolute inset-0 bg-black/45" />
 
       {/* Text */}
       <div className="relative z-10 flex items-center justify-center h-full px-6 text-center">
         <div className="max-w-4xl text-white">
-          <h1 className="text-4xl md:text-6xl font-serif leading-tight">
+<h1 className="text-3xl md:text-5xl font-serif leading-tight">
             {isHR
               ? "Vaša nekretnina u sigurnim i stručnim rukama u Dalmaciji"
               : isEN
@@ -905,7 +905,7 @@ switch (page) {
   return (
     <div className="min-h-screen flex flex-col bg-[#f7f2ed]">
       <Navigation setPage={setPage} lang={lang} setLang={setLang} />
-      <main className="flex-grow pt-36 md:pt-44">{content}</main>
+      <main className="flex-grow pt-20">{content}</main>
       <FooterBar />
     </div>
   );
