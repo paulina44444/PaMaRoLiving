@@ -11,7 +11,7 @@ const navLabels = {
 function Navigation({ setPage, lang, setLang }) {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const link = "text-sm hover:text-[#c6a27b] transition";
+  const link = "text-base tracking-wide hover:text-[#c6a27b] transition";
 
   return (
     <header className="w-full bg-white border-b border-[#e8e1dc] fixed top-0 left-0 z-50">
@@ -27,7 +27,7 @@ function Navigation({ setPage, lang, setLang }) {
   />
 </button>
 
-   <nav className="hidden md:flex gap-10 text-[#5f6a70] items-center">
+   <nav className="hidden md:flex gap-8 text-[#5f6a70] items-center">
           {navLabels[lang].map((label, i) => (
             <button
               key={i}
