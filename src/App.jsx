@@ -22,7 +22,7 @@ function Navigation({ setPage, lang, setLang }) {
   const link = "text-base tracking-wide hover:text-[#c6a27b] transition";
 
   return (
-    <header className="w-full bg-white border-b border-[#e8e1dc] fixed top-0 left-0 z-50">
+    <header className="w-full bg-white border-b border-[#c6a27b] fixed top-0 left-0 z-50">
       <div className="max-w-6xl mx-auto px-4 md:px-6 py-2 md:py-3 flex items-center justify-between">
         <button
   onClick={() => setPage("home")}
