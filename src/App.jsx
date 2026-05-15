@@ -44,7 +44,7 @@ function Navigation({ setPage, lang, setLang }) {
 
 {/* Mobile menu button */}
 <button
-className="block"
+className="md:hidden"
   onClick={() => setMenuOpen(!menuOpen)}
 >
   {menuOpen ? <X size={28} /> : <Menu size={28} />}
