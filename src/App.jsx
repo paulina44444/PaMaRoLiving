@@ -856,7 +856,7 @@ function Legal({ lang }) {
 }
 
 
-export default function Website() {
+export default function App() {
   const [page, setPage] = useState("home");
   const [lang, setLang] = useState("hr");
 
