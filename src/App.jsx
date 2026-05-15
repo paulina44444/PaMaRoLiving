@@ -289,17 +289,17 @@ className="bg-white p-6 md:p-10 rounded-2xl shadow-sm hover:shadow-lg transition
           : "„Wir kümmern uns um die Details – damit Sie sich entspannt zurücklehnen können.“"}
       </p>
 
-      {/* kleine Linie */}
-      <div className="w-28 h-[2px] bg-[#c6a27b] mx-auto mt-10 opacity-70" />
+
 
     </div>
   </div>
 </section>
 
-      <section className="py-16 px-6 max-w-3xl mx-auto text-center">
-        <h3 className="font-serif text-2xl mb-6">
+      <section className="py-24 px-6 max-w-3xl mx-auto text-center">
+        <h3 className="font-serif italic text-2xl mb-6">
           {isHR ? "Za koga smo tu" : isEN ? "Who We Are Here For" : "Für wen wir da sind"}
         </h3>
+        <div className="w-24 h-[1px] bg-[#c6a27b] mx-auto mb-10"></div>
 
         <p className="text-[#5f6a70]">
           {isHR
@@ -772,7 +772,7 @@ function About({ lang }) {
 
           <p>Das Unternehmen wird als Einzelfirma von Paula Raimondo geführt. Sie wurde in Split geboren, stammt ursprünglich aus Pisak und lebte über dreissig Jahre in der Schweiz. Die Rückkehr nach Kroatien war eine bewusste Entscheidung – getragen von einer tiefen Verbundenheit zur Heimat und dem Wunsch, ihre internationale Erfahrung genau dort einzubringen, wo ihre Wurzeln liegen.</p>
 
-          <p>In der Schweiz absolvierte sie eine fundierte kaufmännische Ausbildung und entdeckte früh ihre Leidenschaft für Immobilien. Während ihrer Tätigkeit bei einigen der grössten Immobilienverwaltungsunternehmen der Schweiz absolvierte sie die Weiterbildung zur eidg. Immobilienbewirtschafterin, betreute private sowie institutionelle Kunden – darunter Banken und Versicherungen – und übernahm die ganzheitliche operative und organisatorische Verantwortung für Immobilien.</p>
+          <p>In der Schweiz absolvierte sie eine fundierte kaufmännische Ausbildung und entdeckte früh ihre Leidenschaft für Immobilien. Während ihrer Tätigkeit bei einigen der grössten Immobilienverwaltungsunternehmen der Schweiz absolvierte sie erfolgreich die Weiterbildung zur eidg. Immobilienbewirtschafterin, betreute private sowie institutionelle Kunden – darunter Banken und Versicherungen – und übernahm die ganzheitliche operative und organisatorische Verantwortung für Immobilien.</p>
 
           <p>Anschliessend war sie im Bereich des strategischen Asset- und Immobilienportfoliomanagements einer grossen Pensionskasse tätig. Dort führte sie ein umfangreiches Portfolio, begleitete aktiv An- und Verkaufsprozesse und wirkte an langfristigen Investitionsentscheidungen mit. In ihrer rund fünfzehnjährigen beruflichen Laufbahn begleitete und koordinierte sie zudem zahlreiche Bau-, Renovations- und Sanierungsprojekte – von der ersten Idee bis zur sorgfältigen Qualitätskontrolle und finalen Umsetzung.</p>
 
