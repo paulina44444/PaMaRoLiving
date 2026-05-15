@@ -15,7 +15,7 @@ function Navigation({ setPage, lang, setLang }) {
 
   return (
     <header className="w-full bg-white border-b border-[#e8e1dc] fixed top-0 left-0 z-50">
-      <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div className="max-w-6xl mx-auto px-4 md:px-6 py-3 md:py-4 flex items-center justify-between">
         <button
   className="font-serif text-xl md:text-2xl"
   onClick={() => setPage("home")}
@@ -53,7 +53,7 @@ className="block"
 </div>
 {/* Mobile navigation */}
 {menuOpen && (
-  <div className="md:hidden bg-white border-t border-[#e8e1dc] px-6 py-4 flex flex-col gap-4 text-[#5f6a70]">
+  <div className="md:hidden bg-white border-t border-[#e8e1dc] px-6 py-6 flex flex-col gap-5 text-[#5f6a70] shadow-lg">
     {navLabels[lang].map((label, i) => (
       <button
         key={i}
@@ -81,7 +81,7 @@ className="block"
 function FooterBar() {
   return (
     <footer className="bg-[#2f3a40] text-white mt-24">
-      <div className="max-w-6xl mx-auto px-6 py-14 grid md:grid-cols-3 gap-10 text-sm">
+      <div className="max-w-6xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-3 gap-8 text-sm text-center md:text-left">
         <div className="font-serif text-xl">PaMaRo Living</div>
 
         <div>
@@ -154,7 +154,7 @@ function Home({ lang }) {
   return (
     <div className="bg-[#f7f2ed] text-[#2f3a40]">
       <section className="py-16 md:py-24 px-6 max-w-4xl mx-auto text-center space-y-6">
-        <h1 className="text-4xl md:text-5xl font-serif tracking-tight leading-tight">
+        <h1 className="text-3xl md:text-5xl font-serif tracking-tight leading-tight">
           {isHR
             ? "Vaša nekretnina u sigurnim i stručnim rukama u Dalmaciji"
             : isEN
@@ -162,7 +162,7 @@ function Home({ lang }) {
             : "Ihre Immobilie in sicheren und professionellen Händen in Dalmatien"}
         </h1>
 
-        <p className="text-[#5f6a70]">
+        <p className="text-[#5f6a70] text-base md:text-lg leading-relaxed">
           {isHR
             ? "Povjerenje, kvaliteta i strukturiran pristup – od iznajmljivanja do cjelogodišnjeg upravljanja."
             : isEN
@@ -171,12 +171,12 @@ function Home({ lang }) {
         </p>
       </section>
 
-      <section className="py-16 px-6">
+      <section className="py-12 md:py-16 px-6">
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 place-items-center">
           {cards.map(([title, text]) => (
             <div
               key={title}
-className="bg-white p-6 md:p-10 rounded-2xl shadow-sm hover:shadow-lg transition duration-300 w-full max-w-md text-center"
+className="bg-white p-6 md:p-10 rounded-2xl shadow-sm hover:shadow-lg transition duration-300 w-full max-w-md text-center min-h-[260px] flex flex-col justify-center"
             >
               <h3 className="font-serif text-xl mb-4">{title}</h3>
               <p className="text-sm text-[#6b7478] leading-relaxed">{text}</p>
