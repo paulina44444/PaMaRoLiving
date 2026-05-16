@@ -94,12 +94,10 @@ className="md:hidden"
 function FooterBar() {
   return (
     <footer className="bg-[#2f3a40] text-white mt-24">
-      <div className="max-w-6xl mx-auto px-6 py-8 md:py-10">
+      <div className="max-w-6xl mx-auto px-6 py-10 md:py-12">
 
         {/* obere 3 Spalten */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 items-center text-sm">
-
-
+        <div className="grid grid-cols-1 md:grid-cols-[1.2fr_1fr_0.7fr] gap-16 md:gap-28 items-start text-sm max-w-5xl mx-auto">
 
           {/* Adresse */}
 <div className="flex justify-center md:justify-start">
@@ -132,50 +130,53 @@ function FooterBar() {
 
 </div>
 
-          {/* Kontakt */}
-          <div className="space-y-4 flex flex-col items-center md:items-start">
+{/* Kontakt */}
+<div className="space-y-4 flex flex-col items-center md:items-start">
 
-            <div className="flex items-center justify-center md:justify-start gap-3">
-              <Phone size={18} className="text-[#c6a27b]" />
-              <a
-  href="tel:+385998377935"
-  className="hover:text-[#c6a27b] transition"
->
-  +385 99 837 79 35
-</a>
-            </div>
-<div className="flex items-center justify-center md:justify-start gap-3">
-  <Mail size={18} className="text-[#c6a27b]" />
-  <a
-  href="mailto:pamaroliving@hotmail.com"
-  className="hover:text-[#c6a27b] transition"
->
-  pamaroliving@hotmail.com
-</a>
+  <div className="flex items-center justify-center md:justify-start gap-3">
+    <Phone size={18} className="text-[#c6a27b]" />
+    <a
+      href="tel:+385998377935"
+      className="hover:text-[#c6a27b] transition"
+    >
+      +385 99 837 79 35
+    </a>
+  </div>
+
+  <div className="flex items-center justify-center md:justify-start gap-3">
+    <Mail size={18} className="text-[#c6a27b]" />
+    <a
+      href="mailto:pamaroliving@hotmail.com"
+      className="hover:text-[#c6a27b] transition"
+    >
+      pamaroliving@hotmail.com
+    </a>
+  </div>
+
 </div>
-            <div className="flex items-center justify-center md:justify-start gap-5 pt-2">
+
+{/* Social Media */}
+<div className="flex justify-center md:justify-end gap-6 text-[#c6a27b]">
 
   <a
     href="https://instagram.com/pamaro_living"
     target="_blank"
     rel="noreferrer"
-    className="text-[#c6a27b] hover:text-white transition duration-300"
+    className="hover:text-white transition duration-300"
   >
-    <FaInstagram size={18} />
+    <FaInstagram size={24} />
   </a>
 
   <a
     href="https://facebook.com/DEINNAME"
     target="_blank"
     rel="noreferrer"
-    className="text-[#c6a27b] hover:text-white transition duration-300"
+    className="hover:text-white transition duration-300"
   >
-    <FaFacebookF size={15} />
+    <FaFacebookF size={20} />
   </a>
 
 </div>
-
-          </div>
         </div>
 
         {/* Copyright */}
