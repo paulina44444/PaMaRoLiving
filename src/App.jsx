@@ -265,7 +265,7 @@ className="bg-white p-6 md:p-10 rounded-2xl shadow-sm hover:shadow-lg transition
         </div>
       </section>
 
-      <section className="relative w-full h-[550px] md:h-[650px] overflow-hidden">
+      <section className="relative w-full h-[380px] md:h-[460px] overflow-hidden">
 
   {/* Bild */}
   <img
@@ -278,7 +278,7 @@ className="bg-white p-6 md:p-10 rounded-2xl shadow-sm hover:shadow-lg transition
   <div className="absolute inset-0 bg-[#efe7df]/65" />
 
   {/* Text */}
-  <div className="relative z-10 flex items-center justify-center h-full px-6 text-center">
+  <div className="relative z-10 flex items-center justify-center h-full px-6 py-12 text-center">
     <div className="max-w-3xl">
 
       <p className="italic text-2xl md:text-5xl font-serif text-[#2f3a40] leading-relaxed">
@@ -295,7 +295,7 @@ className="bg-white p-6 md:p-10 rounded-2xl shadow-sm hover:shadow-lg transition
   </div>
 </section>
 
-      <section className="py-24 px-6 max-w-3xl mx-auto text-center">
+      <section className="py-12 px-6 max-w-3xl mx-auto text-center">
         <h3 className="font-serif italic text-2xl mb-6">
           {isHR ? "Za koga smo tu" : isEN ? "Who We Are Here For" : "Für wen wir da sind"}
         </h3>
@@ -309,7 +309,7 @@ className="bg-white p-6 md:p-10 rounded-2xl shadow-sm hover:shadow-lg transition
             : "Für Eigentümer, die Wert auf Sicherheit, Transparenz und professionelle Betreuung legen."}
         </p>
 
-        <p className="mt-4 text-[#5f6a70]">
+        <p className="mt-3 text-[#5f6a70]">
           {isHR
             ? "Bilo da je riječ o kući za odmor, investiciji ili mjestu za opuštanje – osobno i pouzdano pratimo vlasnike i goste u Dalmaciji, uz visoke standarde kvalitete."
             : isEN
@@ -317,7 +317,7 @@ className="bg-white p-6 md:p-10 rounded-2xl shadow-sm hover:shadow-lg transition
             : "Ob Ferienimmobilie, Investition oder erholsamer Aufenthalt – wir begleiten Eigentümer und Gäste in Dalmatien persönlich, zuverlässig und mit einem hohen Anspruch an Qualität."}
         </p>
 
-        <p className="mt-8 text-[#5f6a70]">
+        <p className="mt-6 text-[#5f6a70]">
           {isHR
             ? "Kontaktirajte nas. Savjetujemo vas bez obveze na njemačkom, hrvatskom, engleskom, talijanskom, španjolskom ili francuskom jeziku. Zajedno ćemo pronaći najbolje rješenje za vašu nekretninu."
             : isEN
