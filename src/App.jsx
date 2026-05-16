@@ -251,7 +251,7 @@ function Home({ lang }) {
       </div>
     </section>
 
-      <section className="py-12 md:py-16 px-6">
+      <section className="py-8 md:py-16 px-6">
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 place-items-center">
           {cards.map(([title, text]) => (
             <div
@@ -265,7 +265,7 @@ className="bg-white p-6 md:p-10 rounded-2xl shadow-sm hover:shadow-lg transition
         </div>
       </section>
 
-      <section className="relative w-full h-[380px] md:h-[460px] overflow-hidden">
+      <section className="relative w-full h-[320px] md:h-[460px] overflow-hidden">
 
   {/* Bild */}
   <img
@@ -281,7 +281,7 @@ className="bg-white p-6 md:p-10 rounded-2xl shadow-sm hover:shadow-lg transition
   <div className="relative z-10 flex items-center justify-center h-full px-6 py-12 text-center">
     <div className="max-w-3xl">
 
-      <p className="italic text-2xl md:text-5xl font-serif text-[#2f3a40] leading-relaxed">
+      <p className="italic text-xl md:text-4xl font-serif text-[#2f3a40] leading-relaxed">
         {isHR
           ? "„Brinemo o detaljima – kako biste se vi mogli opustiti.“"
           : isEN
@@ -295,7 +295,7 @@ className="bg-white p-6 md:p-10 rounded-2xl shadow-sm hover:shadow-lg transition
   </div>
 </section>
 
-      <section className="py-12 px-6 max-w-3xl mx-auto text-center">
+      <section className="py-10 px-6 max-w-3xl mx-auto text-center">
         <h3 className="font-serif italic text-2xl mb-6">
           {isHR ? "Za koga smo tu" : isEN ? "Who We Are Here For" : "Für wen wir da sind"}
         </h3>
