@@ -93,7 +93,7 @@ className="md:hidden"
 function FooterBar() {
   return (
     <footer className="bg-[#2f3a40] text-white mt-24">
-      <div className="max-w-6xl mx-auto px-6 py-12">
+      <div className="max-w-6xl mx-auto px-6 py-8 md:py-10">
 
         {/* obere 3 Spalten */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 items-start text-sm text-center md:text-left">
@@ -103,12 +103,12 @@ function FooterBar() {
             <img
               src="/logo-footer.png"
               alt="PaMaRo Living"
-              className="h-40 w-auto"
+              className="h-24 md:h-28 w-auto"
             />
           </div>
 
           {/* Adresse */}
-          <div className="leading-8">
+          <div className="leading-6">
             <div className="font-semibold mb-2">
               PaMaRo Living
             </div>
@@ -120,7 +120,7 @@ function FooterBar() {
           </div>
 
           {/* Kontakt */}
-          <div className="space-y-4">
+          <div className="space-y-3">
 
             <div className="flex items-center justify-center md:justify-start gap-3">
               <Phone size={18} className="text-[#c6a27b]" />
@@ -156,7 +156,7 @@ function FooterBar() {
         </div>
 
         {/* Copyright */}
-        <div className="border-t border-[#c6a27b]/40 mt-10 pt-6 text-center text-xs text-gray-300">
+        <div className="border-t border-[#c6a27b]/40 mt-6 pt-4 text-center text-xs text-gray-300">
           © {new Date().getFullYear()} PaMaRo Living. All rights reserved.
         </div>
 
@@ -252,7 +252,7 @@ function Home({ lang }) {
     </section>
 
       <section className="py-8 md:py-16 px-6">
-        <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 place-items-center">
+        <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 place-items-center">
           {cards.map(([title, text]) => (
             <div
               key={title}
