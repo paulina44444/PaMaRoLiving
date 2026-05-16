@@ -124,11 +124,21 @@ function FooterBar() {
 
             <div className="flex items-center justify-center md:justify-start gap-3">
               <Phone size={18} className="text-[#c6a27b]" />
-              <span>+385 99 837 79 35</span>
+              <a
+  href="tel:+385998377935"
+  className="hover:text-[#c6a27b] transition"
+>
+  +385 99 837 79 35
+</a>
             </div>
 <div className="flex items-center justify-center md:justify-start gap-3">
   <Mail size={18} className="text-[#c6a27b]" />
-  <span>pamaroliving@hotmail.com</span>
+  <a
+  href="mailto:pamaroliving@hotmail.com"
+  className="hover:text-[#c6a27b] transition"
+>
+  pamaroliving@hotmail.com
+</a>
 </div>
             <div className="flex items-center justify-center md:justify-start gap-5 pt-2">
 
