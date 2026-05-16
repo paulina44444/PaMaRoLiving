@@ -97,19 +97,12 @@ function FooterBar() {
       <div className="max-w-6xl mx-auto px-6 py-8 md:py-10">
 
         {/* obere 3 Spalten */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 items-start text-sm text-center md:text-left">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 items-center text-sm">
 
-          {/* Logo */}
-          <div className="flex justify-center md:justify-start">
-            <img
-              src="/logo-footer.png"
-              alt="PaMaRo Living"
-              className="h-24 md:h-28 w-auto"
-            />
-          </div>
+
 
           {/* Adresse */}
-<div>
+<div className="flex justify-center md:justify-start">
 
   <a
     href="https://maps.google.com/?q=Zapadna+Ulica+36+Pisak+Croatia"
@@ -140,7 +133,7 @@ function FooterBar() {
 </div>
 
           {/* Kontakt */}
-          <div className="space-y-3">
+          <div className="space-y-4 flex flex-col items-center md:items-start">
 
             <div className="flex items-center justify-center md:justify-start gap-3">
               <Phone size={18} className="text-[#c6a27b]" />
