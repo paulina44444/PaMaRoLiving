@@ -4,7 +4,8 @@ import {
   Menu,
   X,
   Phone,
-  Mail
+  Mail,
+  MapPin
 } from "lucide-react";
 
 import { FaInstagram, FaFacebookF } from "react-icons/fa";
@@ -108,16 +109,35 @@ function FooterBar() {
           </div>
 
           {/* Adresse */}
-          <div className="leading-6">
-            <div className="font-semibold mb-2">
-              PaMaRo Living
-            </div>
+<div>
 
-            Paula Raimondo<br />
-            Zapadna Ulica 36<br />
-            21318 Pisak<br />
-            Croatia
-          </div>
+  <a
+    href="https://maps.google.com/?q=Zapadna+Ulica+36+Pisak+Croatia"
+    target="_blank"
+    rel="noreferrer"
+    className="flex items-start gap-4 hover:text-[#c6a27b] transition"
+  >
+
+    <MapPin
+      size={20}
+      className="text-[#c6a27b] mt-1 shrink-0"
+    />
+
+    <div className="leading-8">
+
+      <div className="font-semibold mb-1">
+        PaMaRo Living
+      </div>
+
+      Paula Raimondo<br />
+      Zapadna Ulica 36<br />
+      21318 Pisak<br />
+      Croatia
+
+    </div>
+  </a>
+
+</div>
 
           {/* Kontakt */}
           <div className="space-y-3">
