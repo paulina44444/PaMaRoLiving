@@ -916,6 +916,13 @@ export default function App() {
   const [page, setPage] = useState("home");
   const [lang, setLang] = useState("hr");
 
+  React.useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, [page]);
+
   let content;
 
 switch (page) {
