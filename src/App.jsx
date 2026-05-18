@@ -100,7 +100,7 @@ function FooterBar() {
         <div className="grid grid-cols-1 md:grid-cols-[1.1fr_auto_1fr_auto_0.6fr] gap-8 md:gap-10 items-start md:items-center text-sm max-w-5xl mx-auto text-left justify-items-start md:justify-items-stretch">
 
           {/* Adresse */}
-<div className="flex justify-start md:pl-10">
+<div className="flex justify-start pl-0 md:pl-10">
 
   <a
     href="https://maps.google.com/?q=Zapadna+Ulica+36+Pisak+Croatia"
@@ -161,7 +161,7 @@ function FooterBar() {
 <div className="hidden md:block w-px h-24 bg-white/20"></div>
 
 {/* Social Media */}
-<div className="flex flex-col items-start gap-4 pt-2">
+<div className="flex flex-row items-center gap-6 pt-2">
 
   <a
     href="https://instagram.com/pamaro_living"
