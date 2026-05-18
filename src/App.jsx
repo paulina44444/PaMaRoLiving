@@ -161,7 +161,7 @@ function FooterBar() {
 <div className="hidden md:block w-px h-24 bg-white/20"></div>
 
 {/* Social Media */}
-<div className="flex flex-row items-center gap-6 pt-2">
+<div className="flex flex-row md:flex-col items-center md:items-start gap-6 md:gap-4 pt-2">
 
   <a
     href="https://instagram.com/pamaro_living"
