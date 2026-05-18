@@ -406,7 +406,7 @@ function Services({ setPage, lang }) {
           <button
             key={title}
             onClick={() => setPage(page)}
-            className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition duration-300 text-left font-serif"
+            className="bg-white p-6 rounded-2xl shadow-sm hover:-translate-y-1 transition duration-300 text-left font-serif"
           >
             {title}
           </button>
@@ -418,7 +418,7 @@ function Services({ setPage, lang }) {
 
 function ServiceDetail({ title, children }) {
   return (
-    <section className="py-24 px-6 max-w-3xl mx-auto space-y-6 text-sm leading-relaxed text-[#4a545a]">
+    <section className="py-24 px-6 max-w-3xl mx-auto space-y-8 text-sm leading-loose text-[#4a545a]">
       <h1 className="text-3xl font-serif text-center">{title}</h1>
       {children}
     </section>
@@ -440,8 +440,8 @@ const Service1 = ({ lang }) => {
           : "Wir bieten eine langjährige, erfolgreiche Erfahrung in der Vermietung, ein hohes Qualitätsverständnis und ausgeprägte Sprachkenntnisse zeichnen uns aus. Wir wissen, worauf es ankommt – für zufriedene Gäste und entspannte Eigentümer."}
       </p>
 
-      <p><strong>{isHR ? "Naše usluge:" : isEN ? "Our services:" : "Unsere Leistungen:"}</strong></p>
-      <ul className="list-disc pl-6 space-y-1">
+      <p className="font-semibold text-[#2f3a40] pt-2"></p>{isHR ? "Naše usluge:" : isEN ? "Our services:" : "Unsere Leistungen:"}</p>
+      <ul className="list-disc pl-6 space-y-3 text-[#5f6a70]">
         {isHR ? (
           <>
             <li>Objava vaše nekretnine na svim relevantnim kanalima</li>
@@ -472,8 +472,8 @@ const Service1 = ({ lang }) => {
         )}
       </ul>
 
-      <p><strong>{isHR ? "Dodatno dostupne usluge:" : isEN ? "Additional services available:" : "Zusätzlich buchbare Leistungen:"}</strong></p>
-      <ul className="list-disc pl-6 space-y-1">
+      <p className="font-semibold text-[#2f3a40] pt-2"></p>{isHR ? "Dodatno dostupne usluge:" : isEN ? "Additional services available:" : "Zusätzlich buchbare Leistungen:"}</p>
+      <ul className="list-disc pl-6 space-y-3 text-[#5f6a70]">
         {isHR ? (
           <>
             <li>Završno i međučišćenje</li>
@@ -515,8 +515,8 @@ const Service2 = ({ lang }) => {
           : "Eine Immobilie benötigt auch ausserhalb der Saison regelmässige Betreuung. Witterungseinflüsse, insbesondere im Winter, können Schäden verursachen – sei es durch Feuchtigkeit, Kälte oder technische Defekte. Wir sind vor Ort und kümmern uns darum, damit Sie Ihre Immobilie jederzeit in sicheren Händen wissen."}
       </p>
 
-      <p><strong>{isHR ? "Naše usluge:" : isEN ? "Our services:" : "Unsere Leistungen:"}</strong></p>
-      <ul className="list-disc pl-6 space-y-1">
+      <p className="font-semibold text-[#2f3a40] pt-2"></p>{isHR ? "Naše usluge:" : isEN ? "Our services:" : "Unsere Leistungen:"}</p>
+      <ul className="list-disc pl-6 space-y-3 text-[#5f6a70]">
         {isHR ? (
           <>
             <li>Redoviti obilasci nekretnine (uključujući provjetravanje i puštanje vode)</li>
@@ -573,8 +573,8 @@ const Service3 = ({ lang }) => {
           : "Damit Sie Ihren Aufenthalt von der ersten bis zur letzten Minute geniessen können – ohne organisatorischen Stress."}
       </p>
 
-      <p><strong>{isHR ? "Naše usluge:" : isEN ? "Our services:" : "Unsere Leistungen:"}</strong></p>
-      <ul className="list-disc pl-6 space-y-1">
+      <p className="font-semibold text-[#2f3a40] pt-2"></p>{isHR ? "Naše usluge:" : isEN ? "Our services:" : "Unsere Leistungen:"}</p>
+      <ul className="list-disc pl-6 space-y-3 text-[#5f6a70]">
         {isHR ? (
           <>
             <li>Čišćenje prije dolaska i nakon odlaska</li>
@@ -619,8 +619,8 @@ const Service4 = ({ lang }) => {
           : "Wir haben ein Gespür für Räume und lieben es, Immobilien stilvoll, gemütlich und mit einem besonderen Wow-Effekt zu gestalten – sowohl für Eigennutzung als auch für die Vermietung."}
       </p>
 
-      <p><strong>{isHR ? "Naše usluge:" : isEN ? "Our services:" : "Unsere Leistungen:"}</strong></p>
-      <ul className="list-disc pl-6 space-y-1">
+      <p className="font-semibold text-[#2f3a40] pt-2"></p>{isHR ? "Naše usluge:" : isEN ? "Our services:" : "Unsere Leistungen:"}</p>
+      <ul className="list-disc pl-6 space-y-3 text-[#5f6a70]">
         {isHR ? (
           <>
             <li>Kreativni prijedlozi uređenja uključujući okvirnu procjenu troškova</li>
@@ -666,8 +666,8 @@ const Service6 = ({ lang }) => {
           : "Viele Eigentümer können nicht dauerhaft vor Ort sein. Wir übernehmen die Rolle Ihres verlängernden Arms und sorgen für einen reibungslosen Ablauf."}
       </p>
 
-      <p><strong>{isHR ? "Naše usluge:" : isEN ? "Our services:" : "Unsere Leistungen:"}</strong></p>
-      <ul className="list-disc pl-6 space-y-1">
+      <p className="font-semibold text-[#2f3a40] pt-2"></p>{isHR ? "Naše usluge:" : isEN ? "Our services:" : "Unsere Leistungen:"}</p>
+      <ul className="list-disc pl-6 space-y-3 text-[#5f6a70]">
         {isHR ? (
           <>
             <li> koordinacija i dogovor termina s izvođačima radova</li>
@@ -717,9 +717,9 @@ const Service7 = ({ lang }) => {
 
   return (
     <ServiceDetail title={isHR ? "Podrška pri prodaji" : isEN ? "Sales Support" : "Unterstützung beim Verkauf"}>
-      <p><strong>{isHR ? "Naše usluge:" : isEN ? "Our services:" : "Unsere Leistungen:"}</strong></p>
+      <p className="font-semibold text-[#2f3a40] pt-2"></p>{isHR ? "Naše usluge:" : isEN ? "Our services:" : "Unsere Leistungen:"}</p>
 
-      <ul className="list-disc pl-6 space-y-1">
+      <ul className="list-disc pl-6 space-y-3 text-[#5f6a70]">
         {isHR ? (
           <>
             <li>Savjetovanje o strategiji prodaje i pozicioniranju na tržištu</li>
