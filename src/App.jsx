@@ -440,7 +440,7 @@ const Service1 = ({ lang }) => {
           : "Wir bieten eine langjährige, erfolgreiche Erfahrung in der Vermietung, ein hohes Qualitätsverständnis und ausgeprägte Sprachkenntnisse zeichnen uns aus. Wir wissen, worauf es ankommt – für zufriedene Gäste und entspannte Eigentümer."}
       </p>
 
-      <p className="font-semibold text-[#2f3a40] pt-2"></p>{isHR ? "Naše usluge:" : isEN ? "Our services:" : "Unsere Leistungen:"}</p>
+      <p className="font-semibold text-[#2f3a40] pt-2">{isHR ? "Naše usluge:" : isEN ? "Our services:" : "Unsere Leistungen:"}</p>
       <ul className="list-disc pl-6 space-y-3 text-[#5f6a70]">
         {isHR ? (
           <>
@@ -472,7 +472,7 @@ const Service1 = ({ lang }) => {
         )}
       </ul>
 
-      <p className="font-semibold text-[#2f3a40] pt-2"></p>{isHR ? "Dodatno dostupne usluge:" : isEN ? "Additional services available:" : "Zusätzlich buchbare Leistungen:"}</p>
+      <p className="font-semibold text-[#2f3a40] pt-2">{isHR ? "Dodatno dostupne usluge:" : isEN ? "Additional services available:" : "Zusätzlich buchbare Leistungen:"}</p>
       <ul className="list-disc pl-6 space-y-3 text-[#5f6a70]">
         {isHR ? (
           <>
@@ -515,7 +515,7 @@ const Service2 = ({ lang }) => {
           : "Eine Immobilie benötigt auch ausserhalb der Saison regelmässige Betreuung. Witterungseinflüsse, insbesondere im Winter, können Schäden verursachen – sei es durch Feuchtigkeit, Kälte oder technische Defekte. Wir sind vor Ort und kümmern uns darum, damit Sie Ihre Immobilie jederzeit in sicheren Händen wissen."}
       </p>
 
-      <p className="font-semibold text-[#2f3a40] pt-2"></p>{isHR ? "Naše usluge:" : isEN ? "Our services:" : "Unsere Leistungen:"}</p>
+      <p className="font-semibold text-[#2f3a40] pt-2">{isHR ? "Naše usluge:" : isEN ? "Our services:" : "Unsere Leistungen:"}</p>
       <ul className="list-disc pl-6 space-y-3 text-[#5f6a70]">
         {isHR ? (
           <>
@@ -573,7 +573,7 @@ const Service3 = ({ lang }) => {
           : "Damit Sie Ihren Aufenthalt von der ersten bis zur letzten Minute geniessen können – ohne organisatorischen Stress."}
       </p>
 
-      <p className="font-semibold text-[#2f3a40] pt-2"></p>{isHR ? "Naše usluge:" : isEN ? "Our services:" : "Unsere Leistungen:"}</p>
+      <p className="font-semibold text-[#2f3a40] pt-2">{isHR ? "Naše usluge:" : isEN ? "Our services:" : "Unsere Leistungen:"}</p>
       <ul className="list-disc pl-6 space-y-3 text-[#5f6a70]">
         {isHR ? (
           <>
@@ -619,7 +619,7 @@ const Service4 = ({ lang }) => {
           : "Wir haben ein Gespür für Räume und lieben es, Immobilien stilvoll, gemütlich und mit einem besonderen Wow-Effekt zu gestalten – sowohl für Eigennutzung als auch für die Vermietung."}
       </p>
 
-      <p className="font-semibold text-[#2f3a40] pt-2"></p>{isHR ? "Naše usluge:" : isEN ? "Our services:" : "Unsere Leistungen:"}</p>
+      <p className="font-semibold text-[#2f3a40] pt-2">{isHR ? "Naše usluge:" : isEN ? "Our services:" : "Unsere Leistungen:"}</p>
       <ul className="list-disc pl-6 space-y-3 text-[#5f6a70]">
         {isHR ? (
           <>
@@ -666,7 +666,7 @@ const Service6 = ({ lang }) => {
           : "Viele Eigentümer können nicht dauerhaft vor Ort sein. Wir übernehmen die Rolle Ihres verlängernden Arms und sorgen für einen reibungslosen Ablauf."}
       </p>
 
-      <p className="font-semibold text-[#2f3a40] pt-2"></p>{isHR ? "Naše usluge:" : isEN ? "Our services:" : "Unsere Leistungen:"}</p>
+      <p className="font-semibold text-[#2f3a40] pt-2">{isHR ? "Naše usluge:" : isEN ? "Our services:" : "Unsere Leistungen:"}</p>
       <ul className="list-disc pl-6 space-y-3 text-[#5f6a70]">
         {isHR ? (
           <>
@@ -717,7 +717,7 @@ const Service7 = ({ lang }) => {
 
   return (
     <ServiceDetail title={isHR ? "Podrška pri prodaji" : isEN ? "Sales Support" : "Unterstützung beim Verkauf"}>
-      <p className="font-semibold text-[#2f3a40] pt-2"></p>{isHR ? "Naše usluge:" : isEN ? "Our services:" : "Unsere Leistungen:"}</p>
+      <p className="font-semibold text-[#2f3a40] pt-2">{isHR ? "Naše usluge:" : isEN ? "Our services:" : "Unsere Leistungen:"}</p>
 
       <ul className="list-disc pl-6 space-y-3 text-[#5f6a70]">
         {isHR ? (
