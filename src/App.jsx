@@ -109,10 +109,10 @@ function FooterBar() {
   className="flex items-start gap-3 hover:text-[#c6a27b] transition"
 >
 
-    <MapPin
-      size={20}
-      className="text-[#c6a27b] shrink-0 mt-2"
-    />
+<MapPin
+  size={20}
+  className="text-[#c6a27b] shrink-0 self-center"
+/>
 
     <div className="leading-8 text-left">
 
