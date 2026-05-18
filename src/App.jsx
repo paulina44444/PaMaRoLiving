@@ -100,7 +100,7 @@ function FooterBar() {
         <div className="grid grid-cols-1 md:grid-cols-[1.1fr_auto_1fr_auto_0.6fr] gap-8 md:gap-10 items-center text-sm max-w-5xl mx-auto text-left">
 
           {/* Adresse */}
-<div className="flex justify-start">
+<div className="flex justify-start pl-6 md:pl-10">
 
   <a
     href="https://maps.google.com/?q=Zapadna+Ulica+36+Pisak+Croatia"
