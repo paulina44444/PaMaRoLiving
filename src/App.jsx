@@ -97,7 +97,7 @@ function FooterBar() {
       <div className="max-w-6xl mx-auto px-6 py-10 md:py-12">
 
         {/* obere 3 Spalten */}
-        <div className="grid grid-cols-1 md:grid-cols-[1.2fr_1fr_0.7fr] gap-16 md:gap-28 items-start text-sm max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-[1.1fr_1fr_0.6fr] gap-10 md:gap-16 items-start text-sm max-w-4xl mx-auto">
 
           {/* Adresse */}
 <div className="flex justify-center md:justify-start">
@@ -130,6 +130,8 @@ function FooterBar() {
 
 </div>
 
+<div className="hidden md:block w-px h-24 bg-white/20"></div>
+
 {/* Kontakt */}
 <div className="space-y-4 flex flex-col items-center md:items-start">
 
@@ -154,6 +156,8 @@ function FooterBar() {
   </div>
 
 </div>
+
+<div className="hidden md:block w-px h-24 bg-white/20"></div>
 
 {/* Social Media */}
 <div className="flex justify-center md:justify-end gap-6 text-[#c6a27b]">
