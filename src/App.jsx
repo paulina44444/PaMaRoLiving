@@ -97,7 +97,7 @@ function FooterBar() {
       <div className="max-w-6xl mx-auto px-6 py-10 md:py-12">
 
         {/* obere 3 Spalten */}
-        <div className="grid grid-cols-1 md:grid-cols-[1.1fr_auto_1fr_auto_0.6fr] gap-8 md:gap-10 items-center text-sm max-w-5xl mx-auto text-center md:text-left">
+        <div className="grid grid-cols-1 md:grid-cols-[1.1fr_auto_1fr_auto_0.6fr] gap-8 md:gap-10 items-start text-sm max-w-5xl mx-auto text-left">
 
           {/* Adresse */}
 <div className="flex justify-center">
@@ -106,12 +106,12 @@ function FooterBar() {
     href="https://maps.google.com/?q=Zapadna+Ulica+36+Pisak+Croatia"
     target="_blank"
     rel="noreferrer"
-    className="flex items-start gap-4 hover:text-[#c6a27b] transition"
+    className="flex items-center md:items-start gap-4 hover:text-[#c6a27b] transition"
   >
 
     <MapPin
       size={20}
-      className="text-[#c6a27b] mt-1 shrink-0"
+      className="text-[#c6a27b] shrink-0"
     />
 
     <div className="leading-8">
@@ -130,10 +130,10 @@ function FooterBar() {
 
 </div>
 
-<div className="w-16 h-px bg-white/20 mx-auto md:w-px md:h-24"></div>
+<div className="w-16 h-px bg-white/20 md:w-px md:h-24 md:mx-0"></div>
 
 {/* Kontakt */}
-<div className="space-y-4 flex flex-col items-center">
+<div className="space-y-4 flex flex-col items-start">
 
   <div className="flex items-center justify-center md:justify-start gap-3">
     <Phone size={18} className="text-[#c6a27b]" />
@@ -160,7 +160,7 @@ function FooterBar() {
 <div className="w-16 h-px bg-white/20 mx-auto md:w-px md:h-24"></div>
 
 {/* Social Media */}
-<div className="flex justify-center gap-6 text-[#c6a27b] pt-2">
+<div className="flex justify-start gap-6 text-[#c6a27b] pt-2">
 
   <a
     href="https://instagram.com/pamaro_living"
