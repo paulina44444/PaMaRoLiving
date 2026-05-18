@@ -97,7 +97,7 @@ function FooterBar() {
       <div className="max-w-6xl mx-auto px-6 py-10 md:py-12">
 
         {/* obere 3 Spalten */}
-        <div className="grid grid-cols-1 md:grid-cols-[1.1fr_auto_1fr_auto_0.6fr] gap-8 md:gap-10 items-center text-sm max-w-5xl mx-auto text-left">
+        <div className="grid grid-cols-1 md:grid-cols-[1.1fr_auto_1fr_auto_0.6fr] gap-8 md:gap-10 items-start md:items-center text-sm max-w-5xl mx-auto text-left justify-items-start md:justify-items-stretch">
 
           {/* Adresse */}
 <div className="flex justify-start pl-6 md:pl-10">
@@ -114,7 +114,7 @@ function FooterBar() {
       className="text-[#c6a27b] shrink-0 mt-2"
     />
 
-    <div className="leading-8">
+    <div className="leading-8 text-left">
 
       <div className="font-semibold mb-1">
         PaMaRo Living
@@ -130,10 +130,11 @@ function FooterBar() {
 
 </div>
 
-<div className="w-16 h-px bg-white/20 md:w-px md:h-24 md:mx-0"></div>
+<div className="w-16 h-px bg-white/20 self-start md:w-px md:h-24 md:mx-0"></div>
+
 
 {/* Kontakt */}
-<div className="space-y-4 flex flex-col items-start">
+<div className="space-y-4 flex flex-col items-start text-left">
 
   <div className="flex items-center justify-start md:justify-start gap-3">
     <Phone size={18} className="text-[#c6a27b]" />
@@ -157,7 +158,7 @@ function FooterBar() {
 
 </div>
 
-<div className="w-16 h-px bg-white/20 md:w-px md:h-24 md:mx-0"></div>
+<div className="w-16 h-px bg-white/20 self-start md:w-px md:h-24 md:mx-0"></div>
 
 {/* Social Media */}
 <div className="flex justify-start gap-6 text-[#c6a27b] pt-2">
