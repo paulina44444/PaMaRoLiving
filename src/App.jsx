@@ -100,7 +100,7 @@ function FooterBar() {
         <div className="grid grid-cols-1 md:grid-cols-[1.1fr_auto_1fr_auto_0.6fr] gap-8 md:gap-10 items-start md:items-center text-sm max-w-5xl mx-auto text-left justify-items-start md:justify-items-stretch">
 
           {/* Adresse */}
-<div className="flex justify-start pl-6 md:pl-10">
+<div className="flex justify-start md:pl-10">
 
   <a
     href="https://maps.google.com/?q=Zapadna+Ulica+36+Pisak+Croatia"
@@ -130,7 +130,7 @@ function FooterBar() {
 
 </div>
 
-<div className="w-16 h-px bg-white/20 self-start md:w-px md:h-24 md:mx-0"></div>
+<div className="hidden md:block w-px h-24 bg-white/20"></div>
 
 
 {/* Kontakt */}
@@ -158,34 +158,36 @@ function FooterBar() {
 
 </div>
 
-<div className="w-16 h-px bg-white/20 self-start md:w-px md:h-24 md:mx-0"></div>
+<div className="hidden md:block w-px h-24 bg-white/20"></div>
 
 {/* Social Media */}
-<div className="flex justify-start gap-6 text-[#c6a27b] pt-2">
+<div className="flex flex-col items-start gap-4 pt-2">
 
   <a
     href="https://instagram.com/pamaro_living"
     target="_blank"
     rel="noreferrer"
-    className="hover:text-white transition duration-300"
+    className="flex items-center gap-3 text-[#c6a27b] hover:text-white transition duration-300"
   >
-    <FaInstagram size={24} />
+    <FaInstagram size={18} />
+    <span className="text-white">Instagram</span>
   </a>
 
   <a
     href="https://facebook.com/DEINNAME"
     target="_blank"
     rel="noreferrer"
-    className="hover:text-white transition duration-300"
+    className="flex items-center gap-3 text-[#c6a27b] hover:text-white transition duration-300"
   >
-    <FaFacebookF size={20} />
+    <FaFacebookF size={15} />
+    <span className="text-white">Facebook</span>
   </a>
 
 </div>
         </div>
 
         {/* Copyright */}
-        <div className="border-t border-[#c6a27b]/40 mt-6 pt-4 text-left md:text-center text-xs text-gray-300">
+        <div className="border-t border-[#c6a27b]/40 mt-6 pt-4 text-center text-xs text-gray-300">
           © {new Date().getFullYear()} PaMaRo Living. All rights reserved.
         </div>
 
