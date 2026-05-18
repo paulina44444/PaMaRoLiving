@@ -102,12 +102,12 @@ function FooterBar() {
           {/* Adresse */}
 <div className="flex justify-start pl-0 md:pl-10">
 
-  <a
-    href="https://maps.google.com/?q=Zapadna+Ulica+36+Pisak+Croatia"
-    target="_blank"
-    rel="noreferrer"
-    className="flex items-center md:items-center gap-4 hover:text-[#c6a27b] transition"
-  >
+<a
+  href="https://maps.google.com/?q=Zapadna+Ulica+36+Pisak+Croatia"
+  target="_blank"
+  rel="noreferrer"
+  className="flex items-start gap-3 hover:text-[#c6a27b] transition"
+>
 
     <MapPin
       size={20}
