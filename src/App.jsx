@@ -373,20 +373,20 @@ function Services({ setPage, lang }) {
 
   const items = isHR
     ? [
-        ["Cjelogodišnje upravljanje", "service2"],
-        ["Bezbrižan odmor", "service3"],
-        ["Preuređenje / dekoracija", "service4"],
+["Cjelogodišnja briga o nekretnini", "service2"],
+["Bezbrižan boravak", "service3"],
+["Stilsko uređenje", "service4"],
       ]
     : isEN
     ? [
-        ["Year-Round Property Management", "service2"],
-        ["Carefree Owner Stay", "service3"],
-        ["Interior Redesign & Styling", "service4"],
+["Year-Round Property Care", "service2"],
+["Carefree Stay", "service3"],
+["Stylish Redesign", "service4"],
       ]
     : [
-        ["Ganzjährige Verwaltung", "service2"],
-        ["Sorgenfreier Urlaub", "service3"],
-        ["Neugestaltung/Dekoration", "service4"],
+["Ganzjährige Immobilienbetreuung", "service2"],
+["Sorgenfreier Aufenthalt", "service3"],
+["Stilvolle Neugestaltung", "service4"],
       ];
 
   return (
@@ -425,7 +425,7 @@ const Service2 = ({ lang }) => {
   const isEN = lang === "en";
 
   return (
-    <ServiceDetail title={isHR ? "Cjelogodišnje upravljanje" : isEN ? "Year-Round Property Management" : "Ganzjährige Verwaltung"}>
+    <ServiceDetail title={isHR ? "Cjelogodišnja briga o nekretnini" : isEN ? "Year-Round Property Care" : "Ganzjährige Immobilienbetreuung"}>
       <p>
         {isHR
           ? "Nekretnina zahtijeva redovitu brigu i izvan sezone. Vremenski utjecaji, osobito zimi, mogu uzrokovati oštećenja – bilo zbog vlage, hladnoće ili tehničkih kvarova. Mi smo na licu mjesta i brinemo se o svemu kako biste svoju nekretninu u svakom trenutku znali u sigurnim rukama."
@@ -483,7 +483,7 @@ const Service3 = ({ lang }) => {
   const isEN = lang === "en";
 
   return (
-    <ServiceDetail title={isHR ? "Bezbrižan odmor" : isEN ? "Carefree Owner Stay" : "Sorgenfreier Urlaub"}>
+    <ServiceDetail title={isHR ? "Bezbrižan boravak" : isEN ? "Carefree Stay" : "Sorgenfreier Aufenthalt"}>
       <p>
         {isHR
           ? "Kako biste svoj boravak mogli uživati od prve do posljednje minute – bez organizacijskog stresa."
@@ -528,8 +528,9 @@ const Service4 = ({ lang }) => {
   const isHR = lang === "hr";
   const isEN = lang === "en";
 
+  
   return (
-    <ServiceDetail title={isHR ? "Preuređenje / dekoracija" : isEN ? "Redesign & Styling" : "Neugestaltung/Dekoration"}>
+    <ServiceDetail title={isHR ? "Stilsko uređenje" : isEN ? "Stylish Redesign" : "Stilvolle Neugestaltung"}>
       <p>
         {isHR
           ? "Imamo osjećaj za prostor i volimo nekretnine oblikovati sa stilom, udobno i s posebnim wow-efektom – kako za vlastito korištenje tako i za iznajmljivanje."
