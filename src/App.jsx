@@ -1,11 +1,18 @@
 import React, { useState } from "react";
 
 import {
-  Menu,
-  X,
-  Phone,
-  Mail,
-  MapPin
+Menu,
+X,
+Phone,
+Mail,
+MapPin,
+ShieldCheck,
+Search,
+Leaf,
+Wrench,
+CloudLightning,
+Key,
+FileText
 } from "lucide-react";
 
 import { FaInstagram, FaFacebookF } from "react-icons/fa";
@@ -438,7 +445,7 @@ const Service2 = ({ lang }) => {
 return (
   <ServiceDetail>
 
-    <div className="relative w-full h-[520px] overflow-hidden rounded-b-[40px]">
+    <div className="relative w-full h-[520px] overflow-hidden">
 
       <img
         src="/property-care.jpg"
@@ -482,14 +489,25 @@ return (
 
 <section className="max-w-7xl mx-auto px-6 py-20">
 
-  <h2 className="font-serif text-5xl text-center mb-16 text-[#2f3a40]">
+<div className="flex items-center justify-center gap-6 mb-16">
+
+  <div className="w-20 h-[1px] bg-[#c6a27b]"></div>
+
+  <h2 className="font-serif text-5xl text-[#2f3a40]">
     {isHR ? "Naše usluge" : isEN ? "Our Services" : "Unsere Leistungen"}
   </h2>
+
+  <div className="w-20 h-[1px] bg-[#c6a27b]"></div>
+
+</div>
 
   {/* obere Reihe */}
   <div className="grid grid-cols-1 md:grid-cols-5 gap-6">
 
-    <div className="bg-white rounded-3xl p-8 shadow-sm text-center">
+    <div className="bg-[#f7f2ed] rounded-3xl p-8 shadow-[0_4px_20px_rgba(0,0,0,0.04)] text-center">
+      <div className="mb-6 flex justify-center">
+  <ShieldCheck size={42} className="text-[#c6a27b]" />
+</div>
       <h3 className="font-serif text-xl mb-4">
         {isHR ? "Redoviti obilasci nekretnine" : isEN ? "Regular Inspections" : "Regelmässige Rundgänge"}
       </h3>
@@ -503,6 +521,9 @@ return (
     </div>
 
     <div className="bg-white rounded-3xl p-8 shadow-sm text-center">
+      <div className="mb-6 flex justify-center">
+  <Search size={42} className="text-[#c6a27b]" />
+</div>
       <h3 className="font-serif text-xl mb-4">
         {isHR ? "Vizualna kontrola" : isEN ? "Visual Inspection" : "Sichtkontrolle"}
       </h3>
@@ -516,6 +537,7 @@ return (
     </div>
 
     <div className="bg-white rounded-3xl p-8 shadow-sm text-center">
+      <Leaf size={42} className="text-[#c6a27b]" />
       <h3 className="font-serif text-xl mb-4">
         {isHR ? "Kontrola vrta i vanjskih prostora" : isEN ? "Outdoor Area Care" : "Garten & Aussenbereich"}
       </h3>
@@ -529,6 +551,7 @@ return (
     </div>
 
     <div className="bg-white rounded-3xl p-8 shadow-sm text-center">
+      <Wrench size={42} className="text-[#c6a27b]" />
       <h3 className="font-serif text-xl mb-4">
         {isHR ? "Organizacija manjih popravaka" : isEN ? "Repair Coordination" : "Organisation kleinerer Reparaturen"}
       </h3>
@@ -542,6 +565,7 @@ return (
     </div>
 
     <div className="bg-white rounded-3xl p-8 shadow-sm text-center">
+     <CloudLightning size={42} className="text-[#c6a27b]" /> 
       <h3 className="font-serif text-xl mb-4">
         {isHR ? "Izvanredne intervencije" : isEN ? "Emergency Interventions" : "Notfall-Einsätze"}
       </h3>
@@ -560,6 +584,7 @@ return (
   <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mt-6">
 
     <div className="bg-white rounded-3xl p-8 shadow-sm text-center">
+      <Key size={42} className="text-[#c6a27b]" />
       <h3 className="font-serif text-xl mb-4">
         {isHR ? "Pohrana ključeva" : isEN ? "Key Holding" : "Schlüsselaufbewahrung"}
       </h3>
@@ -573,6 +598,7 @@ return (
     </div>
 
     <div className="bg-white rounded-3xl p-8 shadow-sm text-center">
+   <Mail size={42} className="text-[#c6a27b]" />   
       <h3 className="font-serif text-xl mb-4">
         {isHR ? "Dostava pošte" : isEN ? "Mail Handling" : "Postservice"}
       </h3>
@@ -586,6 +612,7 @@ return (
     </div>
 
     <div className="bg-white rounded-3xl p-8 shadow-sm text-center">
+     <FileText size={42} className="text-[#c6a27b]" /> 
       <h3 className="font-serif text-xl mb-4">
         {isHR ? "Kratko izvješće" : isEN ? "Short Reports" : "Kurzes Reporting"}
       </h3>
@@ -599,6 +626,7 @@ return (
     </div>
 
     <div className="bg-white rounded-3xl p-8 shadow-sm text-center">
+      <FileText size={42} className="text-[#c6a27b]" />
       <h3 className="font-serif text-xl mb-4">
         {isHR ? "Godišnje izvješće" : isEN ? "Annual Report" : "Jahresbericht"}
       </h3>
