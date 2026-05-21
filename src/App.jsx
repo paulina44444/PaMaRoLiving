@@ -445,7 +445,7 @@ const Service2 = ({ lang }) => {
 return (
   <ServiceDetail>
 
-<div className="relative w-full h-[520px] overflow-hidden pt-20 -mt-[1px]">
+<div className="relative w-full h-[520px] overflow-hidden -mt-[80px]">
 
       <img
         src="/property-care.jpg"
@@ -955,7 +955,7 @@ default: content = <Home lang={lang} setPage={setPage} />;
   return (
     <div className="min-h-screen flex flex-col bg-[#f7f2ed]">
       <Navigation setPage={setPage} lang={lang} setLang={setLang} />
-      <main className="flex-grow">{content}</main>
+      <main className="flex-grow pt-20">{content}</main>
       <FooterBar />
     </div>
   );
