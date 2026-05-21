@@ -411,7 +411,8 @@ function Services({ setPage, lang }) {
       ];
 
   return (
-<section className="max-w-6xl mx-auto px-6 pt-16 pb-24">
+<section className="bg-[#f7f2ed]">
+  <div className="max-w-6xl mx-auto px-6 pt-16 pb-24">
 
   <div className="text-center mb-14">
     <div className="flex items-center justify-center gap-6 mb-4">
@@ -517,6 +518,7 @@ className="bg-white rounded-3xl p-10 shadow-sm hover:shadow-md transition text-c
     </button>
 
   </div>
+    </div>
 </section>
   );
 }
