@@ -205,17 +205,20 @@ const cards = isHR
   ? [
       [
         "Cjelogodišnja briga o nekretnini",
-        "Redovite kontrole, pouzdana organizacija i osobna briga o nekretnini – kako bi vaša nekretnina uvijek bila u sigurnim rukama.",
+        "Redovite kontrole, pouzdana organizacija i osobna briga – kako bi vaša nekretnina uvijek bila u sigurnim rukama.",
+          "service2"
       ],
 
       [
         "Bezbrižan boravak",
         "Kako biste svoje vrijeme u Dalmaciji mogli opušteno uživati od prve do posljednje minute.",
+        "service3"
       ],
 
       [
         "Stilsko uređenje",
         "S osjećajem za prostor, materijale i atmosferu stvaramo skladne i ugodne prostore s posebnim karakterom.",
+          "service4"
       ],
     ]
   : isEN
@@ -290,16 +293,17 @@ const cards = isHR
 
       <section className="py-8 md:py-16 px-6">
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 place-items-center">
-          {cards.map(([title, text]) => (
-            <div
-              key={title}
+{cards.map(([title, text, page]) => (
+  <button
+    key={title}
+    onClick={() => setPage(page)}
 className="bg-white p-6 md:p-10 rounded-2xl shadow-sm hover:shadow-lg transition duration-300 w-full max-w-md text-center min-h-[260px] flex flex-col justify-center"
             >
               <h3 className="font-serif text-xl mb-4">{title}</h3>
               <p className="text-sm text-[#6b7478] leading-relaxed">{text}</p>
             </div>
           ))}
-        </div>
+        </button>
       </section>
 
       <section className="relative w-full h-[320px] md:h-[460px] overflow-hidden">
@@ -528,7 +532,7 @@ const Service4 = ({ lang }) => {
   const isHR = lang === "hr";
   const isEN = lang === "en";
 
-  
+
   return (
     <ServiceDetail title={isHR ? "Stilsko uređenje" : isEN ? "Stylish Redesign" : "Stilvolle Neugestaltung"}>
       <p>
