@@ -445,12 +445,12 @@ const Service2 = ({ lang }) => {
 return (
   <ServiceDetail>
 
-    <div className="relative w-full h-[520px] overflow-hidden -mt-[1px]">
+<div className="relative w-full h-[520px] overflow-hidden pt-20 -mt-[1px]">
 
       <img
         src="/property-care.jpg"
         alt="Property Care"
-        className="absolute inset-0 w-full h-full object-cover"
+        className="absolute inset-0 top-20 w-full h-full object-cover"
       />
 
 <div className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/45 to-transparent" />
