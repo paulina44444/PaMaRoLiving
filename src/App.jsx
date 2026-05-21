@@ -445,7 +445,7 @@ const Service2 = ({ lang }) => {
 return (
   <ServiceDetail>
 
-<div className="relative w-full h-[520px] overflow-hidden -mt-[10px]">
+<div className="relative w-full h-[520px] overflow-hidden">
 
       <img
         src="/property-care.jpg"
