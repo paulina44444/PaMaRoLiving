@@ -14,7 +14,7 @@ CloudLightning,
 Key,
 FileText,
 House,
-Bell,
+PalmTree,
 Palette,
 } from "lucide-react";
 
@@ -251,29 +251,29 @@ const cards = isHR
                   "service4"
       ],
     ]
-  : [
-      [
-        "Ganzjährige Immobilienbetreuung",
-        "Regelmässige Kontrollen, persönliche Betreuung vor Ort und zuverlässige Organisation – damit Ihre Immobilie jederzeit in sicheren Händen ist.",
-                  "service2"
-      ],
+: [
+    [
+      "Ganzjährige Immobilienbetreuung",
+      "Regelmässige Kontrollen, persönliche Betreuung vor Ort und zuverlässige Organisation.",
+      "service2"
+    ],
 
-      [
-        "Sorgenfreier Aufenthalt",
-        "Damit Sie Ihre Zeit in Dalmatien von der ersten bis zur letzten Minute entspannt geniessen können.",
-                "service3"
-      ],
+    [
+      "Sorgenfreier Aufenthalt",
+      "Damit Sie Ihre Zeit in Dalmatien entspannt geniessen können.",
+      "service3"
+    ],
 
-      [
-        "Stilvolle Neugestaltung",
-        "Mit Gespür für Räume, Materialien und Atmosphäre schaffen wir harmonische und einladende Wohnkonzepte mit besonderem Charakter.",
-                  "service4"
-      ],
-    ];
+    [
+      "Stilvolle Neugestaltung",
+      "Wir schaffen Räume mit Stil und mediterraner Eleganz.",
+      "service4"
+    ],
+  ];
 
-  return (
-    <div className="bg-[#f7f2ed] text-[#2f3a40]">
-
+return (
+  <div className="bg-[#f7f2ed] text-[#2f3a40]">
+  
     {/* HERO IMAGE */}
     <section className="relative h-[85vh] w-full overflow-hidden">
       <img
@@ -421,7 +421,7 @@ function Services({ setPage, lang }) {
       className="bg-white rounded-3xl p-10 shadow-sm hover:shadow-md transition text-center border border-[#efe7df]"
     >
       <div className="w-20 h-20 mx-auto mb-8 rounded-full bg-[#f3ebe3] flex items-center justify-center">
-        <Home size={34} className="text-[#c6a27b]" />
+        <House size={34} className="text-[#c6a27b]" />
       </div>
 
       <h3 className="font-serif text-3xl text-[#2f3a40] mb-5">
@@ -448,7 +448,7 @@ function Services({ setPage, lang }) {
 className="bg-white rounded-3xl p-10 shadow-sm hover:shadow-md transition text-center border border-[#efe7df]"
     >
       <div className="w-20 h-20 mx-auto mb-8 rounded-full bg-[#f3ebe3] flex items-center justify-center">
-        <Bell size={34} className="text-[#c6a27b]" />
+        <PalmTree size={34} className="text-[#c6a27b]" />
       </div>
 
       <h3 className="font-serif text-3xl text-[#2f3a40] mb-5">
