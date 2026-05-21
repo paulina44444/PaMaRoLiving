@@ -697,10 +697,8 @@ return (
     </div>
 
     <div className="bg-[#f7f2ed] w-full md:w-[235px] rounded-3xl p-6 min-h-[240px] shadow-sm text-center">
-<div className="mb-5 flex items-center justify-center">
-  <div className="mb-5 flex items-center justify-center">
+<div className="w-full flex justify-center mb-3">
   <FileText size={34} className="text-[#c6a27b]" />
-</div>
 </div>
       <h3 className="font-serif text-lg mb-4">
         {isHR ? "Kratko izvješće" : isEN ? "Visit reports" : "Kurzbericht"}
@@ -715,7 +713,7 @@ return (
     </div>
 
 <div className="bg-[#f7f2ed] w-full md:w-[235px] rounded-3xl p-6 pt-4 min-h-[240px] shadow-sm text-center">
-<div className="w-full flex justify-center mb-3">
+<div className="w-full flex justify-center mb-6">
   <FileText size={34} className="text-[#c6a27b]" />
 </div>
       <h3 className="font-serif text-lg mb-4">
