@@ -197,7 +197,7 @@ function FooterBar() {
 }
 
 /* ================= HOME ================= */
-function Home({ lang }) {
+function Home({ lang, setPage }) {
   const isHR = lang === "hr";
   const isEN = lang === "en";
 
@@ -226,32 +226,38 @@ const cards = isHR
       [
         "Year-Round Property Care",
         "Regular inspections, reliable local coordination and personal oversight – ensuring your property is always in safe hands.",
+                  "service2"
       ],
 
       [
         "Carefree Stay",
         "So you can enjoy your time in Dalmatia relaxed and carefree from the first to the last minute.",
+                "service3"
       ],
 
       [
         "Stylish Redesign",
         "With a strong sense for space, materials and atmosphere, we create harmonious and inviting living concepts with distinctive character.",
+                  "service4"
       ],
     ]
   : [
       [
         "Ganzjährige Immobilienbetreuung",
         "Regelmässige Kontrollen, persönliche Betreuung vor Ort und zuverlässige Organisation – damit Ihre Immobilie jederzeit in sicheren Händen ist.",
+                  "service2"
       ],
 
       [
         "Sorgenfreier Aufenthalt",
         "Damit Sie Ihre Zeit in Dalmatien von der ersten bis zur letzten Minute entspannt geniessen können.",
+                "service3"
       ],
 
       [
         "Stilvolle Neugestaltung",
         "Mit Gespür für Räume, Materialien und Atmosphäre schaffen wir harmonische und einladende Wohnkonzepte mit besonderem Charakter.",
+                  "service4"
       ],
     ];
 
@@ -773,7 +779,7 @@ switch (page) {
   case "service4": content = <Service4 lang={lang}/>; break;
   case "contact": content = <Contact lang={lang} />; break;
   case "legal": content = <Legal lang={lang} />; break;
-  default: content = <Home lang={lang} />;
+default: content = <Home lang={lang} setPage={setPage} />;
 }
 
   return (
