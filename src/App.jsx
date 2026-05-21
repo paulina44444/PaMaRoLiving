@@ -443,6 +443,11 @@ const Service2 = ({ lang }) => {
           : isEN
           ? "A property requires regular care even outside the main season. Weather conditions, especially in winter, can cause damage – whether due to humidity, cold or technical defects. We are on site and take care of everything so you always know your property is in safe hands."
           : "Eine Immobilie benötigt auch ausserhalb der Saison regelmässige Betreuung. Witterungseinflüsse, insbesondere im Winter, können Schäden verursachen – sei es durch Feuchtigkeit, Kälte oder technische Defekte. Wir sind vor Ort und kümmern uns darum, damit Sie Ihre Immobilie jederzeit in sicheren Händen wissen."}
+          <img
+  src="/property-care.jpg"
+  alt="Property Care"
+  className="w-full h-[320px] object-cover rounded-3xl mb-8 shadow-sm"
+/>
       </p>
 
       <p className="font-semibold text-[#2f3a40] pt-2">{isHR ? "Naše usluge:" : isEN ? "Our services:" : "Unsere Leistungen:"}</p>
