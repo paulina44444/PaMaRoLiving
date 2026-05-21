@@ -201,51 +201,57 @@ function Home({ lang }) {
   const isHR = lang === "hr";
   const isEN = lang === "en";
 
-  const cards = isHR
-    ? [
-        [
-          "Iznajmljivanje i upravljanje gostima",
-          " Profesionalna prezentacija, učinkovito upravljanje rezervacijama i osobna komunikacija s gostima – za zadovoljne goste i opuštene vlasnike.",
-        ],
-        [
-          "Cjelogodišnja briga o nekretnini",
-          "Redovite kontrole, organizacija popravaka i osobno izvještavanje – kako bi vaša nekretnina uvijek bila u sigurnim rukama.",
-        ],
-        [
-          " Podrška kod projekata i prodaje",
-          " Praćenje renovacija i preuređenja te podrška u procesu prodaje – transparentno, promišljeno i s jasnim fokusom na kvalitetu i razvoj vrijednosti.",
-        ],
-      ]
-    : isEN
-    ? [
-        [
-          "Rental & Guest Management",
-          " Professional market presentation, structured reservation management and personal guest communication – for satisfied guests and relaxed property owners.",
-        ],
-        [
-          "Year-Round Property Care",
-          "Regular inspections, coordination of repairs and personal reporting – ensuring your property is always in safe hands.",
-        ],
-        [
-          " Project & Sales Support",
-          " Coordination of renovation and redesign projects as well as guidance throughout the sales process – structured, transparent and focused on quality and value enhancement.",
-        ],
-      ]
-    : [
-        [
-          "Vermietung & Gästemanagement",
-          " Professionelle Vermarktung, strukturierte Prozesse und persönliche Gästebetreuung – für zufriedene Gäste und entspannte Eigentümer.",
-        ],
-        [
-          "Ganzjährige Immobilienbetreuung",
-          "Regelmässige Kontrollen, Organisation von Reparaturen und persönliches Reporting – damit Ihre Immobilie jederzeit in sicheren Händen ist.",
-        ],
-        [
-          " Projekt- & Verkaufsbegleitung",
-          " Begleitung bei Renovationen, Neugestaltung und Verkaufsprozessen – strukturiert, transparent und mit Blick auf Qualität und Wertentwicklung.",
-        ],
-      ];
+const cards = isHR
+  ? [
+      [
+        "Cjelogodišnja briga o nekretnini",
+        "Redovite kontrole, pouzdana organizacija i osobna briga o nekretnini – kako bi vaša nekretnina uvijek bila u sigurnim rukama.",
+      ],
 
+      [
+        "Bezbrižan boravak",
+        "Kako biste svoje vrijeme u Dalmaciji mogli opušteno uživati od prve do posljednje minute.",
+      ],
+
+      [
+        "Stilsko uređenje",
+        "S osjećajem za prostor, materijale i atmosferu stvaramo skladne i ugodne prostore s posebnim karakterom.",
+      ],
+    ]
+  : isEN
+  ? [
+      [
+        "Year-Round Property Care",
+        "Regular inspections, reliable local coordination and personal oversight – ensuring your property is always in safe hands.",
+      ],
+
+      [
+        "Carefree Stay",
+        "So you can enjoy your time in Dalmatia relaxed and carefree from the first to the last minute.",
+      ],
+
+      [
+        "Stylish Redesign",
+        "With a strong sense for space, materials and atmosphere, we create harmonious and inviting living concepts with distinctive character.",
+      ],
+    ]
+  : [
+      [
+        "Ganzjährige Immobilienbetreuung",
+        "Regelmässige Kontrollen, persönliche Betreuung vor Ort und zuverlässige Organisation – damit Ihre Immobilie jederzeit in sicheren Händen ist.",
+      ],
+
+      [
+        "Sorgenfreier Aufenthalt",
+        "Damit Sie Ihre Zeit in Dalmatien von der ersten bis zur letzten Minute entspannt geniessen können.",
+      ],
+
+      [
+        "Stilvolle Neugestaltung",
+        "Mit Gespür für Räume, Materialien und Atmosphäre schaffen wir harmonische und einladende Wohnkonzepte mit besonderem Charakter.",
+      ],
+    ];
+    
   return (
     <div className="bg-[#f7f2ed] text-[#2f3a40]">
 
@@ -370,23 +376,17 @@ function Services({ setPage, lang }) {
         ["Cjelogodišnje upravljanje", "service2"],
         ["Bezbrižan odmor", "service3"],
         ["Preuređenje / dekoracija", "service4"],
-        
-        ["Podrška kod renovacija i sanacija", "service6"],
       ]
     : isEN
     ? [
         ["Year-Round Property Management", "service2"],
         ["Carefree Owner Stay", "service3"],
         ["Interior Redesign & Styling", "service4"],
-        
-        ["Renovation & Refurbishment Support", "service6"],
       ]
     : [
         ["Ganzjährige Verwaltung", "service2"],
         ["Sorgenfreier Urlaub", "service3"],
         ["Neugestaltung/Dekoration", "service4"],
-        
-        ["Unterstützung bei Renovationen und Sanierungen", "service6"],
       ];
 
   return (
@@ -570,65 +570,6 @@ const Service4 = ({ lang }) => {
 };
 
 
-
-const Service6 = ({ lang }) => {
-  const isHR = lang === "hr";
-  const isEN = lang === "en";
-
-  return (
-    <ServiceDetail title={isHR ? "Podrška kod renovacija i sanacija" : isEN ? "Renovation & Refurbishment Support" : "Unterstützung bei Renovationen und Sanierungen"}>
-      <p>
-        {isHR
-          ? "Mnogi vlasnici ne mogu biti trajno prisutni na licu mjesta. Preuzimamo ulogu vaše produžene ruke i osiguravamo nesmetan tijek radova."
-          : isEN
-          ? "Many owners cannot be permanently on site. We act as your extended arm and ensure smooth coordination of all works."
-          : "Viele Eigentümer können nicht dauerhaft vor Ort sein. Wir übernehmen die Rolle Ihres verlängernden Arms und sorgen für einen reibungslosen Ablauf."}
-      </p>
-
-      <p className="font-semibold text-[#2f3a40] pt-2">{isHR ? "Naše usluge:" : isEN ? "Our services:" : "Unsere Leistungen:"}</p>
-      <ul className="list-disc pl-6 space-y-3 text-[#5f6a70]">
-        {isHR ? (
-          <>
-            <li> koordinacija i dogovor termina s izvođačima radova</li>
-            <li> organizacija pristupa nekretnini za izvođače</li>
-            <li> prosljeđivanje ponuda i informacija vlasniku</li>
-            <li> usklađivanje termina i tijeka radova</li>
-            <li> prisutnost na lokaciji prema potrebi radi organizacijske podrške</li>
-            <li> fotodokumentacija napretka radova</li>
-            <li> redovito informiranje vlasnika o stanju radova</li>
-
-          </>
-        ) : isEN ? (
-          <>
-            <li>Coordination and scheduling with contractors</li>
-            <li>Organizing access to the property for contractors</li>
-            <li>Forwarding offers and information to the property owner</li>
-            <li>Coordination of schedules and workflow of the works</li>
-           <li>On-site presence when necessary for organizational support</li>
-           <li>Photo documentation of the progress of the works</li>
-           <li>Regular updates to the owner on the status of the works</li>          </>
-        ) : (
-          <>
-            <li>Koordination und Terminabstimmung mit Handwerkern</li>
-            <li>Organisation des Zugangs zur Immobilie für Handwerker</li>
-            <li>Weiterleitung von Angeboten und Informationen an den Eigentümer</li>
-            <li>Abstimmung der Termine und des Ablaufs der Arbeiten</li>
-            <li>Anwesenheit vor Ort bei Bedarf zur organisatorischen Unterstützung</li>
-            <li>Fotodokumentation des Fortschritts der Arbeiten</li>
-            <li>Regelmäßige Information des Eigentümers über den Stand der Arbeiten</li>          </>
-        )}
-      </ul>
-
-      <p>
-        {isHR
-          ? "Napomena: Ne preuzimamo stručnu izvedbu niti pravnu odgovornost."
-          : isEN
-          ? "Note: We do not assume professional execution or legal responsibility."
-          : "Hinweis: Keine fachliche Ausführung oder rechtliche Verantwortung."}
-      </p>
-    </ServiceDetail>
-  );
-};
 
 /* ================= ABOUT ================= */
 function About({ lang }) {
@@ -824,8 +765,6 @@ switch (page) {
   case "service2": content = <Service2 lang={lang}/>; break;
   case "service3": content = <Service3 lang={lang}/>; break;
   case "service4": content = <Service4 lang={lang}/>; break;
-  
-  case "service6": content = <Service6 lang={lang}/>; break;
   case "contact": content = <Contact lang={lang} />; break;
   case "legal": content = <Legal lang={lang} />; break;
   default: content = <Home lang={lang} />;
