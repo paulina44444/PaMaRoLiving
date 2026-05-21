@@ -393,7 +393,7 @@ function Services({ setPage, lang }) {
   const isEN = lang === "en";
   return (
 <section className="bg-[#f7f2ed]">
-  <div className="max-w-6xl mx-auto px-6 pt-16 pb-24">
+  <div className="max-w-6xl mx-auto px-6 pt-16 pb-8">
 
   <div className="text-center mb-14">
     <div className="flex items-center justify-center gap-6 mb-4">
@@ -429,7 +429,7 @@ function Services({ setPage, lang }) {
           ? "Cjelogodišnja briga o nekretnini"
           : isEN
           ? "Year-round Property Care"
-          : "Ganzjährige Immobilienverwaltung"}
+          : "Ganzjährige Betreuung"}
       </h3>
 
       <div className="w-10 h-[1px] bg-[#c6a27b] mx-auto mb-5"></div>
@@ -438,8 +438,8 @@ function Services({ setPage, lang }) {
         {isHR
           ? "Kompletna briga o vašoj nekretnini tijekom cijele godine."
           : isEN
-          ? "Complete year-round care for your property."
-          : "Komplette Betreuung Ihrer Immobilie das ganze Jahr über."}
+          ? "Personal property care with attention to detail – throughout every season."
+          : "Persönliche Betreuung Ihrer Immobilie – das ganze Jahr."}
       </p>
     </button>
 
@@ -541,7 +541,7 @@ return (
                 ? "Cjelogodišnja briga o nekretnini"
                 : isEN
                 ? "Year-Round Property Care"
-                : "Ganzjährige Immobilienbetreuung"}
+                : "Ganzjährige Betreuung"}
             </h1>
 
             <div className="w-20 h-[2px] bg-[#c6a27b] mb-8"></div>
@@ -550,8 +550,8 @@ return (
               {isHR
                 ? "Nekretnina zahtijeva redovitu brigu i izvan sezone. Vremenski utjecaji, osobito zimi, mogu uzrokovati oštećenja – bilo zbog vlage, hladnoće ili tehničkih kvarova. Mi smo na licu mjesta i brinemo se o svemu kako biste svoju nekretninu u svakom trenutku znali u sigurnim rukama."
                 : isEN
-                ? "A property requires regular care even outside the main season. Weather conditions, especially in winter, can cause damage – whether due to humidity, cold or technical defects."
-                : "Eine Immobilie benötigt auch ausserhalb der Saison regelmässige Betreuung. Witterungseinflüsse können Schäden verursachen."}
+                ? "Your property deserves care and attention even outside the season. We look after inspections, coordination and upkeep discreetly and reliably – with a personal approach and an eye for detail."
+                : "Ihre Immobilie verdient auch ausserhalb der Saison Aufmerksamkeit und Pflege. Wir kümmern uns zuverlässig um Kontrollen, Organisation und den Werterhalt – diskret, persönlich und mit einem wachsamen Blick fürs Detail."}
             </p>
 
           </div>
@@ -600,7 +600,7 @@ return (
   <Search size={34} className="text-[#c6a27b]" />
 </div>
       <h3 className="font-serif text-lg mb-4">
-        {isHR ? "Vizualna kontrola" : isEN ? "Visual Inspection" : "Sichtkontrolle"}
+        {isHR ? "Vizualna kontrola" : isEN ? "Visual checks" : "Sichtkontrolle"}
       </h3>
       <p>
         {isHR
@@ -616,14 +616,14 @@ return (
   <Leaf size={34} className="text-[#c6a27b]" />
 </div>
       <h3 className="font-serif text-lg mb-4">
-        {isHR ? "Kontrola vrta i vanjskih prostora" : isEN ? "Outdoor Area Care" : "Garten & Aussenbereich"}
+        {isHR ? "Kontrola vrta i vanjskih prostora" : isEN ? "Garden & outdoor area" : "Garten & Aussenbereich"}
       </h3>
       <p>
         {isHR
           ? "Uz jednostavne radove održavanja."
           : isEN
-          ? "Including basic maintenance work."
-          : "Inklusive einfacher Pflegearbeiten."}
+          ? "simple maintenance and supervision of outdoor spaces."
+          : "Kontrolle und einfache Pflege der Aussenflächen."}
       </p>
     </div>
 
@@ -632,14 +632,14 @@ return (
   <Wrench size={34} className="text-[#c6a27b]" />
 </div>
       <h3 className="font-serif text-lg mb-4">
-        {isHR ? "Organizacija manjih popravaka" : isEN ? "Repair Coordination" : "Organisation kleinerer Reparaturen"}
+        {isHR ? "Organizacija manjih popravaka" : isEN ? "Small repairs" : "Organisation kleinerer Reparaturen"}
       </h3>
       <p>
         {isHR
           ? "Prema potrebi."
           : isEN
-          ? "Whenever needed."
-          : "Bei Bedarf."}
+          ? "coordination of craftsmen when needed."
+          : "Koordination Handwerker bei Bedarf."}
       </p>
     </div>
 
@@ -669,14 +669,14 @@ return (
   <Key size={34} className="text-[#c6a27b]" />
 </div>
       <h3 className="font-serif text-lg mb-4">
-        {isHR ? "Pohrana ključeva" : isEN ? "Key Holding" : "Schlüsselaufbewahrung"}
+        {isHR ? "Pohrana ključeva" : isEN ? "Key Holding" : "Schlüsselservice"}
       </h3>
       <p>
         {isHR
           ? "Sigurno čuvanje i dostupnost ključeva."
           : isEN
-          ? "Secure key storage and accessibility."
-          : "Sichere Aufbewahrung i Verfügbarkeit."}
+          ? "safe storage and availability of your keys."
+          : "Sichere Aufbewahrung und Verfügbarkeit Ihrer Schlüssel."}
       </p>
     </div>
 
@@ -703,14 +703,14 @@ return (
 </div>
 </div>
       <h3 className="font-serif text-lg mb-4">
-        {isHR ? "Kratko izvješće" : isEN ? "Short Reports" : "Kurzes Reporting"}
+        {isHR ? "Kratko izvješće" : isEN ? "Visit reports" : "Kurzbericht"}
       </h3>
       <p>
         {isHR
           ? "Nakon svakog obilaska."
           : isEN
-          ? "After every inspection."
-          : "Nach jedem Rundgang."}
+          ? "clear updates after each inspection."
+          : "Transparente Information nach jeder Kontrolle"}
       </p>
     </div>
 
