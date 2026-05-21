@@ -275,7 +275,7 @@ return (
   <div className="bg-[#f7f2ed] text-[#2f3a40]">
   
     {/* HERO IMAGE */}
-    <section className="relative h-[85vh] w-full overflow-hidden">
+<section className="relative h-[68vh] w-full overflow-hidden">
       <img
         src="/hero.jpg"
         alt="Luxury property in Dalmatia"
