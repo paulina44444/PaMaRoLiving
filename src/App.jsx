@@ -714,8 +714,10 @@ return (
       </p>
     </div>
 
-    <div className="bg-[#f7f2ed] w-full md:w-[235px] rounded-3xl p-6 min-h-[240px] shadow-sm text-center">
-      <FileText size={34} className="text-[#c6a27b]" />
+<div className="bg-[#f7f2ed] w-full md:w-[235px] rounded-3xl p-6 pt-4 min-h-[240px] shadow-sm text-center">
+<div className="w-full flex justify-center mb-6">
+  <FileText size={34} className="text-[#c6a27b]" />
+</div>
       <h3 className="font-serif text-lg mb-4">
         {isHR ? "Godišnje izvješće" : isEN ? "Annual Report" : "Jahresbericht"}
       </h3>
