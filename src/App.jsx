@@ -502,7 +502,7 @@ return (
 </div>
 
   {/* obere Reihe */}
-  <div className="grid grid-cols-1 md:grid-cols-5 gap-6">
+<div className="grid grid-cols-1 md:grid-cols-5 gap-5">
 
     <div className="bg-[#f7f2ed] rounded-3xl p-6 min-h-[240px] shadow-[0_4px_20px_rgba(0,0,0,0.04)] text-center">
 <div className="mb-5 flex items-center justify-center">
@@ -537,7 +537,9 @@ return (
     </div>
 
     <div className="bg-[#f7f2ed] rounded-3xl p-6 min-h-[240px] shadow-sm text-center">
-      <Leaf size={34} className="text-[#c6a27b]" />
+      <div className="mb-5 flex items-center justify-center">
+  <Leaf size={34} className="text-[#c6a27b]" />
+</div>
       <h3 className="font-serif text-lg mb-4">
         {isHR ? "Kontrola vrta i vanjskih prostora" : isEN ? "Outdoor Area Care" : "Garten & Aussenbereich"}
       </h3>
@@ -551,7 +553,9 @@ return (
     </div>
 
     <div className="bg-[#f7f2ed] rounded-3xl p-6 min-h-[240px] shadow-sm text-center">
-      <Wrench size={34} className="text-[#c6a27b]" />
+      <div className="mb-5 flex items-center justify-center">
+  <Wrench size={34} className="text-[#c6a27b]" />
+</div>
       <h3 className="font-serif text-lg mb-4">
         {isHR ? "Organizacija manjih popravaka" : isEN ? "Repair Coordination" : "Organisation kleinerer Reparaturen"}
       </h3>
@@ -565,7 +569,9 @@ return (
     </div>
 
     <div className="bg-[#f7f2ed] rounded-3xl p-6 min-h-[240px] shadow-sm text-center">
-     <CloudLightning size={34} className="text-[#c6a27b]" /> 
+     <div className="mb-5 flex items-center justify-center">
+  <CloudLightning size={34} className="text-[#c6a27b]" />
+</div> 
       <h3 className="font-serif text-lg mb-4">
         {isHR ? "Izvanredne intervencije" : isEN ? "Emergency Interventions" : "Notfall-Einsätze"}
       </h3>
@@ -581,7 +587,7 @@ return (
   </div>
 
   {/* untere Reihe */}
-  <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mt-6">
+<div className="grid grid-cols-1 md:grid-cols-4 gap-5 mt-5 max-w-6xl mx-auto">
 
     <div className="bg-[#f7f2ed] rounded-3xl p-6 min-h-[240px] shadow-sm text-center">
       <div className="mb-5 flex items-center justify-center">
