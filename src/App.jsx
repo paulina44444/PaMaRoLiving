@@ -14,7 +14,7 @@ CloudLightning,
 Key,
 FileText,
 House,
-PalmTree,
+Sun,
 Palette,
 } from "lucide-react";
 
@@ -448,7 +448,7 @@ function Services({ setPage, lang }) {
 className="bg-white rounded-3xl p-10 shadow-sm hover:shadow-md transition text-center border border-[#efe7df]"
     >
       <div className="w-20 h-20 mx-auto mb-8 rounded-full bg-[#f3ebe3] flex items-center justify-center">
-        <PalmTree size={34} className="text-[#c6a27b]" />
+        <Sun size={34} className="text-[#c6a27b]" />
       </div>
 
       <h3 className="font-serif text-3xl text-[#2f3a40] mb-5">
