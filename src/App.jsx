@@ -423,7 +423,7 @@ function Services({ setPage, lang }) {
 
 function ServiceDetail({ title, children }) {
   return (
-    <section className="py-24 px-6 max-w-3xl mx-auto space-y-8 text-sm leading-loose text-[#4a545a]">
+    <section className="pb-24 bg-[#f7f2ed] text-[#4a545a]">
       <h1 className="text-3xl font-serif text-center">{title}</h1>
       {children}
     </section>
@@ -435,62 +435,187 @@ const Service2 = ({ lang }) => {
   const isHR = lang === "hr";
   const isEN = lang === "en";
 
-  return (
-    <ServiceDetail title={isHR ? "Cjelogodišnja briga o nekretnini" : isEN ? "Year-Round Property Care" : "Ganzjährige Immobilienbetreuung"}>
+return (
+  <ServiceDetail>
+
+    <div className="relative w-full h-[620px] overflow-hidden">
+
+      <img
+        src="/property-care.jpg"
+        alt="Property Care"
+        className="absolute inset-0 w-full h-full object-cover"
+      />
+
+      <div className="absolute inset-0 bg-black/55" />
+
+      <div className="relative z-10 h-full flex items-center">
+
+        <div className="max-w-6xl mx-auto px-6 w-full">
+
+          <div className="max-w-xl text-white">
+
+            <h1 className="font-serif text-6xl leading-tight mb-8">
+              {isHR
+                ? "Cjelogodišnja briga o nekretnini"
+                : isEN
+                ? "Year-Round Property Care"
+                : "Ganzjährige Immobilienbetreuung"}
+            </h1>
+
+            <div className="w-20 h-[2px] bg-[#c6a27b] mb-8"></div>
+
+            <p className="text-xl leading-relaxed text-white/90">
+              {isHR
+                ? "Nekretnina zahtijeva redovitu brigu i izvan sezone. Vremenski utjecaji, osobito zimi, mogu uzrokovati oštećenja – bilo zbog vlage, hladnoće ili tehničkih kvarova. Mi smo na licu mjesta i brinemo se o svemu kako biste svoju nekretninu u svakom trenutku znali u sigurnim rukama."
+                : isEN
+                ? "A property requires regular care even outside the main season. Weather conditions, especially in winter, can cause damage – whether due to humidity, cold or technical defects."
+                : "Eine Immobilie benötigt auch ausserhalb der Saison regelmässige Betreuung. Witterungseinflüsse können Schäden verursachen."}
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+<section className="max-w-7xl mx-auto px-6 py-20">
+
+  <h2 className="font-serif text-5xl text-center mb-16 text-[#2f3a40]">
+    {isHR ? "Naše usluge" : isEN ? "Our Services" : "Unsere Leistungen"}
+  </h2>
+
+  {/* obere Reihe */}
+  <div className="grid grid-cols-1 md:grid-cols-5 gap-6">
+
+    <div className="bg-white rounded-3xl p-8 shadow-sm text-center">
+      <h3 className="font-serif text-xl mb-4">
+        {isHR ? "Redoviti obilasci nekretnine" : isEN ? "Regular Inspections" : "Regelmässige Rundgänge"}
+      </h3>
       <p>
         {isHR
-          ? "Nekretnina zahtijeva redovitu brigu i izvan sezone. Vremenski utjecaji, osobito zimi, mogu uzrokovati oštećenja – bilo zbog vlage, hladnoće ili tehničkih kvarova. Mi smo na licu mjesta i brinemo se o svemu kako biste svoju nekretninu u svakom trenutku znali u sigurnim rukama."
+          ? "Uključujući provjetravanje i puštanje vode."
           : isEN
-          ? "A property requires regular care even outside the main season. Weather conditions, especially in winter, can cause damage – whether due to humidity, cold or technical defects. We are on site and take care of everything so you always know your property is in safe hands."
-          : "Eine Immobilie benötigt auch ausserhalb der Saison regelmässige Betreuung. Witterungseinflüsse, insbesondere im Winter, können Schäden verursachen – sei es durch Feuchtigkeit, Kälte oder technische Defekte. Wir sind vor Ort und kümmern uns darum, damit Sie Ihre Immobilie jederzeit in sicheren Händen wissen."}
-          <img
-  src="/property-care.jpg"
-  alt="Property Care"
-  className="w-full h-[320px] object-cover rounded-3xl mb-8 shadow-sm"
-/>
+          ? "Including ventilation and water checks."
+          : "Inklusive Lüften und Wasser laufen lassen."}
       </p>
+    </div>
 
-      <p className="font-semibold text-[#2f3a40] pt-2">{isHR ? "Naše usluge:" : isEN ? "Our services:" : "Unsere Leistungen:"}</p>
-      <ul className="list-disc pl-6 space-y-3 text-[#5f6a70]">
-        {isHR ? (
-          <>
-            <li>Redoviti obilasci nekretnine (uključujući provjetravanje i puštanje vode)</li>
-            <li>Vizualna kontrola vlage, oštećenja ili tehničkih nepravilnosti</li>
-            <li>Kontrola vrta i vanjskih prostora uz jednostavne radove održavanja</li>
-            <li>Organizacija manjih popravaka prema potrebi</li>
-            <li>Izvanredne intervencije nakon nevremena ili hitnih situacija</li>
-            <li>Pohrana ključeva</li>
-            <li>Elektronička ili fizička dostava pošte</li>
-            <li>Kratko izvješće nakon svakog obilaska</li>
-            <li>Detaljno godišnje izvješće o stanju nekretnine</li>
-          </>
-        ) : isEN ? (
-          <>
-            <li>Regular property inspections (including ventilation and water checks)</li>
-            <li>Visual control for humidity, damage or technical irregularities</li>
-            <li>Garden and outdoor area inspection with basic maintenance</li>
-            <li>Coordination of minor repairs when needed</li>
-            <li>Emergency interventions after storms or urgent situations</li>
-            <li>Key holding service</li>
-            <li>Electronic or physical mail handling</li>
-            <li>Short report after each inspection</li>
-            <li>Detailed annual property condition report</li>
-          </>
-        ) : (
-          <>
-            <li>Regelmässige Rundgänge der Immobilie (inkl. Lüften und Wasser laufen lassen)</li>
-            <li>Sichtkontrolle auf Feuchtigkeit, Schäden oder technische Auffälligkeiten</li>
-            <li>Garten- und Aussenbereichskontrolle inkl. einfacher Pflegearbeiten</li>
-            <li>Organisation kleinerer Reparaturarbeiten bei Bedarf</li>
-            <li>Ausserordentliche Einsätze nach Unwettern oder Notfällen</li>
-            <li>Schlüsselaufbewahrung</li>
-            <li>Elektronische oder physische Zustellung der Post</li>
-            <li>Kurzes Reporting nach jedem Rundgang</li>
-            <li>Ausführlicher Zustandsbericht einmal pro Jahr</li>
-          </>
-        )}
-      </ul>
-    </ServiceDetail>
+    <div className="bg-white rounded-3xl p-8 shadow-sm text-center">
+      <h3 className="font-serif text-xl mb-4">
+        {isHR ? "Vizualna kontrola" : isEN ? "Visual Inspection" : "Sichtkontrolle"}
+      </h3>
+      <p>
+        {isHR
+          ? "Vlaga, oštećenja ili tehničke nepravilnosti."
+          : isEN
+          ? "Humidity, damage or technical irregularities."
+          : "Feuchtigkeit, Schäden oder technische Auffälligkeiten."}
+      </p>
+    </div>
+
+    <div className="bg-white rounded-3xl p-8 shadow-sm text-center">
+      <h3 className="font-serif text-xl mb-4">
+        {isHR ? "Kontrola vrta i vanjskih prostora" : isEN ? "Outdoor Area Care" : "Garten & Aussenbereich"}
+      </h3>
+      <p>
+        {isHR
+          ? "Uz jednostavne radove održavanja."
+          : isEN
+          ? "Including basic maintenance work."
+          : "Inklusive einfacher Pflegearbeiten."}
+      </p>
+    </div>
+
+    <div className="bg-white rounded-3xl p-8 shadow-sm text-center">
+      <h3 className="font-serif text-xl mb-4">
+        {isHR ? "Organizacija manjih popravaka" : isEN ? "Repair Coordination" : "Organisation kleinerer Reparaturen"}
+      </h3>
+      <p>
+        {isHR
+          ? "Prema potrebi."
+          : isEN
+          ? "Whenever needed."
+          : "Bei Bedarf."}
+      </p>
+    </div>
+
+    <div className="bg-white rounded-3xl p-8 shadow-sm text-center">
+      <h3 className="font-serif text-xl mb-4">
+        {isHR ? "Izvanredne intervencije" : isEN ? "Emergency Interventions" : "Notfall-Einsätze"}
+      </h3>
+      <p>
+        {isHR
+          ? "Nakon nevremena ili hitnih situacija."
+          : isEN
+          ? "After storms or urgent situations."
+          : "Nach Unwettern oder Notfällen."}
+      </p>
+    </div>
+
+  </div>
+
+  {/* untere Reihe */}
+  <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mt-6">
+
+    <div className="bg-white rounded-3xl p-8 shadow-sm text-center">
+      <h3 className="font-serif text-xl mb-4">
+        {isHR ? "Pohrana ključeva" : isEN ? "Key Holding" : "Schlüsselaufbewahrung"}
+      </h3>
+      <p>
+        {isHR
+          ? "Sigurno čuvanje i dostupnost ključeva."
+          : isEN
+          ? "Secure key storage and accessibility."
+          : "Sichere Aufbewahrung i Verfügbarkeit."}
+      </p>
+    </div>
+
+    <div className="bg-white rounded-3xl p-8 shadow-sm text-center">
+      <h3 className="font-serif text-xl mb-4">
+        {isHR ? "Dostava pošte" : isEN ? "Mail Handling" : "Postservice"}
+      </h3>
+      <p>
+        {isHR
+          ? "Elektronička ili fizička dostava pošte."
+          : isEN
+          ? "Electronic or physical mail handling."
+          : "Elektronische oder physische Zustellung."}
+      </p>
+    </div>
+
+    <div className="bg-white rounded-3xl p-8 shadow-sm text-center">
+      <h3 className="font-serif text-xl mb-4">
+        {isHR ? "Kratko izvješće" : isEN ? "Short Reports" : "Kurzes Reporting"}
+      </h3>
+      <p>
+        {isHR
+          ? "Nakon svakog obilaska."
+          : isEN
+          ? "After every inspection."
+          : "Nach jedem Rundgang."}
+      </p>
+    </div>
+
+    <div className="bg-white rounded-3xl p-8 shadow-sm text-center">
+      <h3 className="font-serif text-xl mb-4">
+        {isHR ? "Godišnje izvješće" : isEN ? "Annual Report" : "Jahresbericht"}
+      </h3>
+      <p>
+        {isHR
+          ? "Detaljno izvješće o stanju nekretnine."
+          : isEN
+          ? "Detailed annual property condition report."
+          : "Ausführlicher Zustandsbericht."}
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+</ServiceDetail>
   );
 };
 
@@ -508,34 +633,37 @@ const Service3 = ({ lang }) => {
           : "Damit Sie Ihren Aufenthalt von der ersten bis zur letzten Minute geniessen können – ohne organisatorischen Stress."}
       </p>
 
-      <p className="font-semibold text-[#2f3a40] pt-2">{isHR ? "Naše usluge:" : isEN ? "Our services:" : "Unsere Leistungen:"}</p>
-      <ul className="list-disc pl-6 space-y-3 text-[#5f6a70]">
-        {isHR ? (
-          <>
-            <li>Čišćenje prije dolaska i nakon odlaska</li>
-            <li>Postavljanje i pranje posteljine</li>
-            <li>Na zahtjev: napunjen hladnjak pri dolasku</li>
-            <li>Zatvaranje nekretnine nakon odlaska</li>
-            <li>Kratko izvješće o stanju prije i nakon boravka</li>
-          </>
-        ) : isEN ? (
-          <>
-            <li>Cleaning before arrival and after departure</li>
-            <li>Bed linen preparation and laundry service</li>
-            <li>On request: pre-filled refrigerator upon arrival</li>
-            <li>Securing the property after departure</li>
-            <li>Short condition report before and after your stay</li>
-          </>
-        ) : (
-          <>
-            <li>Reinigung vor Ankunft und nach Abreise</li>
-            <li>Betten beziehen und Wäsche waschen</li>
-            <li>Auf Wunsch: gefüllter Kühlschrank bei Ankunft</li>
-            <li>Schliessen der Immobilie nach Abreise</li>
-            <li>Kurzes Zustandsreporting vor und nach Ihrem Aufenthalt</li>
-          </>
-        )}
-      </ul>
+<p className="font-semibold text-[#2f3a40] pt-2">
+  {isHR ? "Naše usluge:" : isEN ? "Our services:" : "Unsere Leistungen:"}
+</p>
+
+<ul className="list-disc pl-6 space-y-3 text-[#5f6a70]">
+  {isHR ? (
+    <>
+      <li>Organizacija čišćenja prije dolaska i nakon odlaska</li>
+      <li>Priprema nekretnine prije dolaska vlasnika ili gostiju</li>
+      <li>Osobna dobrodošlica i predaja ključeva</li>
+      <li>Preporuke i rezervacije restorana, izleta ili aktivnosti</li>
+      <li>Podrška tijekom boravka u slučaju pitanja ili problema</li>
+    </>
+  ) : isEN ? (
+    <>
+      <li>Organization of cleaning before arrival and after departure</li>
+      <li>Preparation of the property before owner or guest arrival</li>
+      <li>Personal welcome and key handover</li>
+      <li>Recommendations and reservations for restaurants, excursions or activities</li>
+      <li>Support during the stay in case of questions or issues</li>
+    </>
+  ) : (
+    <>
+      <li>Organisation der Reinigung vor Anreise und nach Abreise</li>
+      <li>Vorbereitung der Immobilie vor Ankunft der Eigentümer oder Gäste</li>
+      <li>Persönlicher Empfang und Schlüsselübergabe</li>
+      <li>Empfehlungen und Reservationen von Restaurants, Ausflügen oder Aktivitäten</li>
+      <li>Unterstützung während des Aufenthalts bei Fragen oder Problemen</li>
+    </>
+  )}
+</ul>
     </ServiceDetail>
   );
 };
