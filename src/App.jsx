@@ -430,7 +430,7 @@ function Services({ setPage, lang }) {
 
 function ServiceDetail({ title, children }) {
   return (
-    <section className="pb-24 bg-[#f7f2ed] text-[#4a545a]">
+<section className="pt-20 pb-24 bg-[#f7f2ed] text-[#4a545a]">
       <h1 className="text-3xl font-serif text-center">{title}</h1>
       {children}
     </section>
