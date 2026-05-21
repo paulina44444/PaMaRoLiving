@@ -700,7 +700,7 @@ return (
 <div className="w-full flex justify-center mb-3">
   <FileText size={34} className="text-[#c6a27b]" />
 </div>
-      <h3 className="font-serif text-lg mb-4">
+      <h3 className="font-serif text-lg mb-4 mt-[2px]">
         {isHR ? "Kratko izvješće" : isEN ? "Visit reports" : "Kurzbericht"}
       </h3>
       <p>
