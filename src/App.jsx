@@ -587,9 +587,9 @@ return (
   </div>
 
   {/* untere Reihe */}
-<div className="grid grid-cols-1 md:grid-cols-4 gap-5 mt-5 max-w-6xl mx-auto">
+<div className="flex flex-wrap justify-center gap-5 mt-5">
 
-    <div className="bg-[#f7f2ed] rounded-3xl p-6 min-h-[240px] shadow-sm text-center">
+    <div className="bg-[#f7f2ed] w-full md:w-[235px] rounded-3xl p-6 min-h-[240px] shadow-sm text-center">
       <div className="mb-5 flex items-center justify-center">
   <Key size={34} className="text-[#c6a27b]" />
 </div>
@@ -605,7 +605,7 @@ return (
       </p>
     </div>
 
-    <div className="bg-[#f7f2ed] rounded-3xl p-6 min-h-[240px] shadow-sm text-center">
+    <div className="bg-[#f7f2ed] w-full md:w-[235px] rounded-3xl p-6 min-h-[240px] shadow-sm text-center">
    <div className="mb-5 flex items-center justify-center">
   <Mail size={34} className="text-[#c6a27b]" />
 </div> 
@@ -621,7 +621,7 @@ return (
       </p>
     </div>
 
-    <div className="bg-[#f7f2ed] rounded-3xl p-6 min-h-[240px] shadow-sm text-center">
+    <div className="bg-[#f7f2ed] w-full md:w-[235px] rounded-3xl p-6 min-h-[240px] shadow-sm text-center">
 <div className="mb-5 flex items-center justify-center">
   <FileText size={34} className="text-[#c6a27b]" />
 </div>
@@ -637,7 +637,7 @@ return (
       </p>
     </div>
 
-    <div className="bg-[#f7f2ed] rounded-3xl p-6 min-h-[240px] shadow-sm text-center">
+    <div className="bg-[#f7f2ed] w-full md:w-[235px] rounded-3xl p-6 min-h-[240px] shadow-sm text-center">
       <FileText size={34} className="text-[#c6a27b]" />
       <h3 className="font-serif text-lg mb-4">
         {isHR ? "Godišnje izvješće" : isEN ? "Annual Report" : "Jahresbericht"}
