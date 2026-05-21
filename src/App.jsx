@@ -298,10 +298,10 @@ return (
 
           <p className="mt-6 text-xl md:text-xl text-white/90">
             {isHR
-              ? "Diskretna i pouzdana podrška tijekom cijele godine.."
+              ? "Za miran osjećaj, čak i kada niste ovdje."
               : isEN
-              ? "Reliable and discreet support throughout the year."
-              : "Diskrete Betreuung und zuverlässige Organisation das ganze Jahr über."}
+              ? "For peace of mind, even when you are away."
+              : "Für ein gutes Gefühl – auch wenn Sie nicht vor Ort sind."}
           </p>
         </div>
       </div>
