@@ -367,32 +367,26 @@ function Services({ setPage, lang }) {
 
   const items = isHR
     ? [
-        ["Iznajmljivanje i upravljanje gostima", "service1"],
         ["Cjelogodišnje upravljanje", "service2"],
         ["Bezbrižan odmor", "service3"],
         ["Preuređenje / dekoracija", "service4"],
         
         ["Podrška kod renovacija i sanacija", "service6"],
-        ["Podrška pri prodaji", "service7"],
       ]
     : isEN
     ? [
-        ["Rental & Guest Management", "service1"],
         ["Year-Round Property Management", "service2"],
         ["Carefree Owner Stay", "service3"],
         ["Interior Redesign & Styling", "service4"],
         
         ["Renovation & Refurbishment Support", "service6"],
-        ["Sales Support", "service7"],
       ]
     : [
-        ["Vermietung und Gästemanagement", "service1"],
         ["Ganzjährige Verwaltung", "service2"],
         ["Sorgenfreier Urlaub", "service3"],
         ["Neugestaltung/Dekoration", "service4"],
         
         ["Unterstützung bei Renovationen und Sanierungen", "service6"],
-        ["Unterstützung beim Verkauf", "service7"],
       ];
 
   return (
@@ -426,81 +420,6 @@ function ServiceDetail({ title, children }) {
 }
 
 /* ================= DETAIL TEXTS FULL ================= */
-const Service1 = ({ lang }) => {
-  const isHR = lang === "hr";
-  const isEN = lang === "en";
-
-  return (
-    <ServiceDetail title={isHR ? "Iznajmljivanje i upravljanje gostima" : isEN ? "Rental & Guest Management" : "Vermietung und Gästemanagement"}>
-      <p>
-        {isHR
-          ? "Nudimo dugogodišnje, uspješno iskustvo u iznajmljivanju, visoko razumijevanje kvalitete i izražene jezične kompetencije. Znamo što je važno – za zadovoljne goste i opuštene vlasnike."
-          : isEN
-          ? "We offer many years of successful rental experience, a strong understanding of quality standards and excellent language skills. We know what truly matters – for satisfied guests and relaxed property owners."
-          : "Wir bieten eine langjährige, erfolgreiche Erfahrung in der Vermietung, ein hohes Qualitätsverständnis und ausgeprägte Sprachkenntnisse zeichnen uns aus. Wir wissen, worauf es ankommt – für zufriedene Gäste und entspannte Eigentümer."}
-      </p>
-
-      <p className="font-semibold text-[#2f3a40] pt-2">{isHR ? "Naše usluge:" : isEN ? "Our services:" : "Unsere Leistungen:"}</p>
-      <ul className="list-disc pl-6 space-y-3 text-[#5f6a70]">
-        {isHR ? (
-          <>
-            <li>Objava vaše nekretnine na svim relevantnim kanalima</li>
-            <li>Izrada promotivnih fotografija u svrhu najma</li>
-            <li>Predlaganje i određivanje cijena</li>
-            <li>Upravljanje rezervacijama</li>
-            <li>Komunikacija s gostima prije, tijekom i nakon boravka</li>
-            <li>Prijava u mVisitor te obračun turističke pristojbe</li>
-          </>
-        ) : isEN ? (
-          <>
-            <li>Listing your property on all relevant channels</li>
-            <li>Creation of appealing property images within the scope of rental marketing</li>
-            <li>Strategic pricing recommendations and rate management</li>
-            <li>Reservation and calendar management</li>
-            <li>Guest communication before, during and after the stay</li>
-            <li>Registration in mVisitor and tourist tax handling</li>
-          </>
-        ) : (
-          <>
-            <li>Inserierung Ihrer Unterkunft auf allen relevanten Kanälen</li>
-            <li>Erstellung ansprechender Objektbilder im Rahmen der Vermietung</li>
-            <li>Preise vorschlagen und festlegen</li>
-            <li>Buchungen verwalten</li>
-            <li>Kommunikation mit Gästen vor, während und nach dem Aufenthalt</li>
-            <li>Anmeldung im mVisitor sowie Abrechnung der Touristenabgabe</li>
-          </>
-        )}
-      </ul>
-
-      <p className="font-semibold text-[#2f3a40] pt-2">{isHR ? "Dodatno dostupne usluge:" : isEN ? "Additional services available:" : "Zusätzlich buchbare Leistungen:"}</p>
-      <ul className="list-disc pl-6 space-y-3 text-[#5f6a70]">
-        {isHR ? (
-          <>
-            <li>Završno i međučišćenje</li>
-            <li>Osobni doček gostiju</li>
-            <li>Kontrola apartmana nakon odlaska</li>
-            <li>Organizacija manjih popravaka</li>
-          </>
-        ) : isEN ? (
-          <>
-            <li>Final and interim cleaning services</li>
-            <li>Personal guest welcome and on-site support</li>
-            <li>Property inspection after departure</li>
-            <li>Coordination of minor repairs and maintenance</li>
-          </>
-        ) : (
-          <>
-            <li>End- und Zwischenreinigungen</li>
-            <li>Persönlicher Gästeempfang</li>
-            <li>Kontrolle der Wohnung nach Abreise</li>
-            <li>Organisation kleinerer Reparaturen</li>
-          </>
-        )}
-      </ul>
-    </ServiceDetail>
-  );
-};
-
 const Service2 = ({ lang }) => {
   const isHR = lang === "hr";
   const isEN = lang === "en";
@@ -711,53 +630,6 @@ const Service6 = ({ lang }) => {
   );
 };
 
-const Service7 = ({ lang }) => {
-  const isHR = lang === "hr";
-  const isEN = lang === "en";
-
-  return (
-    <ServiceDetail title={isHR ? "Podrška pri prodaji" : isEN ? "Sales Support" : "Unterstützung beim Verkauf"}>
-      <p className="font-semibold text-[#2f3a40] pt-2">{isHR ? "Naše usluge:" : isEN ? "Our services:" : "Unsere Leistungen:"}</p>
-
-      <ul className="list-disc pl-6 space-y-3 text-[#5f6a70]">
-        {isHR ? (
-          <>
-            <li>Savjetovanje o strategiji prodaje i pozicioniranju na tržištu</li>
-            <li>Izrada oglasa, prezentacijskih materijala i marketinške dokumentacije</li>
-            <li>Organizacija i pratnja razgledavanja</li>
-            <li>Komunikacija s potencijalnim kupcima</li>
-            <li>Praćenje cjelokupnog procesa prodaje</li>
-          </>
-        ) : isEN ? (
-          <>
-            <li>Consulting on sales strategy and market positioning</li>
-            <li>Preparation of listings, exposés and marketing materials</li>
-            <li>Organization and accompaniment of property viewings</li>
-            <li>Communication with prospective buyers</li>
-            <li>Support throughout the entire sales process</li>
-          </>
-        ) : (
-          <>
-            <li>Beratung zur Verkaufsstrategie und Positionierung am Markt</li>
-            <li>Erstellung von Inseraten, Exposés und Marketingunterlagen</li>
-            <li>Organisation und Begleitung von Besichtigungen</li>
-            <li>Kommunikation mit Kaufinteressenten</li>
-            <li>Begleitung des Verkaufsprozesses</li>
-          </>
-        )}
-      </ul>
-
-      <p>
-        {isHR
-          ? "Pravni zaključak ugovora kao i porezno i pravno savjetovanje provode se isključivo putem ovlaštenog odvjetnika. Rado ćemo vam preporučiti odgovarajućeg stručnjaka."
-          : isEN
-          ? "The legal conclusion of contracts as well as tax and legal advice are carried out exclusively by an authorized attorney. We are happy to recommend a suitable professional."
-          : "Der rechtliche Vertragsabschluss sowie die steuerliche und rechtliche Beratung erfolgen ausschliesslich durch einen beauftragten Anwalt. Wir stellen Ihnen gerne einen zur Seite."}
-      </p>
-    </ServiceDetail>
-  );
-};
-
 /* ================= ABOUT ================= */
 function About({ lang }) {
   const isHR = lang === "hr";
@@ -949,13 +821,11 @@ export default function App() {
 switch (page) {
   case "about": content = <About lang={lang} />; break;
   case "services": content = <Services setPage={setPage} lang={lang} />; break;
-  case "service1": content = <Service1 lang={lang} />; break;
   case "service2": content = <Service2 lang={lang}/>; break;
   case "service3": content = <Service3 lang={lang}/>; break;
   case "service4": content = <Service4 lang={lang}/>; break;
   
   case "service6": content = <Service6 lang={lang}/>; break;
-  case "service7": content = <Service7 lang={lang}/>; break;
   case "contact": content = <Contact lang={lang} />; break;
   case "legal": content = <Legal lang={lang} />; break;
   default: content = <Home lang={lang} />;
