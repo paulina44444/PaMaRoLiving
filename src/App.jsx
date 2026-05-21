@@ -13,7 +13,7 @@ Wrench,
 CloudLightning,
 Key,
 FileText,
-Home,
+House,
 Bell,
 Palette,
 } from "lucide-react";
