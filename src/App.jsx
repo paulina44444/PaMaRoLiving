@@ -27,7 +27,7 @@ const navLabels = {
 function Navigation({ setPage, lang, setLang }) {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const link = "text-lg tracking-wide hover:text-[#c6a27b] transition";
+  const link = "text-xl tracking-wide hover:text-[#c6a27b] transition";
 
   return (
     <header className="w-full bg-[#f7f2ed] border-b border-[#c6a27b] fixed top-0 left-0 z-50">
@@ -77,7 +77,7 @@ className="md:hidden"
     {navLabels[lang].map((label, i) => (
       <button
         key={i}
-        className="text-left py-3 text-lg border-b border-[#f1ebe6]"
+        className="text-left py-3 text-xl border-b border-[#f1ebe6]"
         onClick={() => {
           setPage(["home", "about", "services", "contact", "legal"][i]);
           setMenuOpen(false);
@@ -293,7 +293,7 @@ const cards = isHR
               : "Ihre Immobilie in sicheren und professionellen Händen in Dalmatien"}
           </h1>
 
-          <p className="mt-6 text-lg md:text-xl text-white/90">
+          <p className="mt-6 text-xl md:text-xl text-white/90">
             {isHR
               ? "Povjerenje, kvaliteta i strukturiran pristup."
               : isEN
@@ -470,7 +470,7 @@ return (
             </h1>
 
             <div className="w-20 h-[2px] bg-[#c6a27b] mb-8"></div>
-<p className="text-lg leading-relaxed text-white/90 max-w-lg">
+<p className="text-xl leading-relaxed text-white/90 max-w-lg">
             
               {isHR
                 ? "Nekretnina zahtijeva redovitu brigu i izvan sezone. Vremenski utjecaji, osobito zimi, mogu uzrokovati oštećenja – bilo zbog vlage, hladnoće ili tehničkih kvarova. Mi smo na licu mjesta i brinemo se o svemu kako biste svoju nekretninu u svakom trenutku znali u sigurnim rukama."
@@ -506,9 +506,9 @@ return (
 
     <div className="bg-[#f7f2ed] rounded-3xl p-6 min-h-[240px] shadow-[0_4px_20px_rgba(0,0,0,0.04)] text-center">
 <div className="mb-5 flex items-center justify-center">
-  <ShieldCheck size={42} className="text-[#c6a27b]" />
+  <ShieldCheck size={34} className="text-[#c6a27b]" />
 </div>
-      <h3 className="font-serif text-xl mb-4">
+      <h3 className="font-serif text-lg mb-4">
         {isHR ? "Redoviti obilasci nekretnine" : isEN ? "Regular Inspections" : "Regelmässige Rundgänge"}
       </h3>
       <p>
@@ -537,8 +537,8 @@ return (
     </div>
 
     <div className="bg-[#f7f2ed] rounded-3xl p-6 min-h-[240px] shadow-sm text-center">
-      <Leaf size={42} className="text-[#c6a27b]" />
-      <h3 className="font-serif text-xl mb-4">
+      <Leaf size={34} className="text-[#c6a27b]" />
+      <h3 className="font-serif text-lg mb-4">
         {isHR ? "Kontrola vrta i vanjskih prostora" : isEN ? "Outdoor Area Care" : "Garten & Aussenbereich"}
       </h3>
       <p>
@@ -551,8 +551,8 @@ return (
     </div>
 
     <div className="bg-[#f7f2ed] rounded-3xl p-6 min-h-[240px] shadow-sm text-center">
-      <Wrench size={42} className="text-[#c6a27b]" />
-      <h3 className="font-serif text-xl mb-4">
+      <Wrench size={34} className="text-[#c6a27b]" />
+      <h3 className="font-serif text-lg mb-4">
         {isHR ? "Organizacija manjih popravaka" : isEN ? "Repair Coordination" : "Organisation kleinerer Reparaturen"}
       </h3>
       <p>
@@ -565,8 +565,8 @@ return (
     </div>
 
     <div className="bg-[#f7f2ed] rounded-3xl p-6 min-h-[240px] shadow-sm text-center">
-     <CloudLightning size={42} className="text-[#c6a27b]" /> 
-      <h3 className="font-serif text-xl mb-4">
+     <CloudLightning size={34} className="text-[#c6a27b]" /> 
+      <h3 className="font-serif text-lg mb-4">
         {isHR ? "Izvanredne intervencije" : isEN ? "Emergency Interventions" : "Notfall-Einsätze"}
       </h3>
       <p>
@@ -584,8 +584,10 @@ return (
   <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mt-6">
 
     <div className="bg-[#f7f2ed] rounded-3xl p-6 min-h-[240px] shadow-sm text-center">
-      <Key size={42} className="text-[#c6a27b]" />
-      <h3 className="font-serif text-xl mb-4">
+      <div className="mb-5 flex items-center justify-center">
+  <Key size={34} className="text-[#c6a27b]" />
+</div>
+      <h3 className="font-serif text-lg mb-4">
         {isHR ? "Pohrana ključeva" : isEN ? "Key Holding" : "Schlüsselaufbewahrung"}
       </h3>
       <p>
@@ -598,8 +600,10 @@ return (
     </div>
 
     <div className="bg-[#f7f2ed] rounded-3xl p-6 min-h-[240px] shadow-sm text-center">
-   <Mail size={42} className="text-[#c6a27b]" />   
-      <h3 className="font-serif text-xl mb-4">
+   <div className="mb-5 flex items-center justify-center">
+  <Mail size={34} className="text-[#c6a27b]" />
+</div> 
+      <h3 className="font-serif text-lg mb-4">
         {isHR ? "Dostava pošte" : isEN ? "Mail Handling" : "Postservice"}
       </h3>
       <p>
@@ -612,8 +616,10 @@ return (
     </div>
 
     <div className="bg-[#f7f2ed] rounded-3xl p-6 min-h-[240px] shadow-sm text-center">
-     <FileText size={42} className="text-[#c6a27b]" /> 
-      <h3 className="font-serif text-xl mb-4">
+<div className="mb-5 flex items-center justify-center">
+  <FileText size={34} className="text-[#c6a27b]" />
+</div>
+      <h3 className="font-serif text-lg mb-4">
         {isHR ? "Kratko izvješće" : isEN ? "Short Reports" : "Kurzes Reporting"}
       </h3>
       <p>
@@ -626,8 +632,8 @@ return (
     </div>
 
     <div className="bg-[#f7f2ed] rounded-3xl p-6 min-h-[240px] shadow-sm text-center">
-      <FileText size={42} className="text-[#c6a27b]" />
-      <h3 className="font-serif text-xl mb-4">
+      <FileText size={34} className="text-[#c6a27b]" />
+      <h3 className="font-serif text-lg mb-4">
         {isHR ? "Godišnje izvješće" : isEN ? "Annual Report" : "Jahresbericht"}
       </h3>
       <p>
