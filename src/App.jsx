@@ -301,9 +301,8 @@ className="bg-white p-6 md:p-10 rounded-2xl shadow-sm hover:shadow-lg transition
             >
               <h3 className="font-serif text-xl mb-4">{title}</h3>
               <p className="text-sm text-[#6b7478] leading-relaxed">{text}</p>
-            </div>
-          ))}
         </button>
+          ))}
       </section>
 
       <section className="relative w-full h-[320px] md:h-[460px] overflow-hidden">
