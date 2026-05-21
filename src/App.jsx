@@ -583,7 +583,7 @@ return (
 <div className="mb-5 flex items-center justify-center">
   <ShieldCheck size={34} className="text-[#c6a27b]" />
 </div>
-      <h3 className="font-serif text-lg mb-4">
+<h3 className="font-serif text-lg mb-4 min-h-[72px] flex items-center justify-center">
         {isHR ? "Redoviti obilasci nekretnine" : isEN ? "Regular Inspections" : "Regelmässige Rundgänge"}
       </h3>
       <p>
@@ -599,7 +599,7 @@ return (
 <div className="mb-5 flex items-center justify-center">
   <Search size={34} className="text-[#c6a27b]" />
 </div>
-      <h3 className="font-serif text-lg mb-4">
+<h3 className="font-serif text-lg mb-4 min-h-[72px] flex items-center justify-center">
         {isHR ? "Vizualna kontrola" : isEN ? "Visual checks" : "Sichtkontrolle"}
       </h3>
       <p>
@@ -615,7 +615,7 @@ return (
       <div className="mb-5 flex items-center justify-center">
   <Leaf size={34} className="text-[#c6a27b]" />
 </div>
-      <h3 className="font-serif text-lg mb-4">
+<h3 className="font-serif text-lg mb-4 min-h-[72px] flex items-center justify-center">
         {isHR ? "Kontrola vrta i vanjskih prostora" : isEN ? "Garden & outdoor area" : "Garten & Aussenbereich"}
       </h3>
       <p>
@@ -631,7 +631,7 @@ return (
       <div className="mb-5 flex items-center justify-center">
   <Wrench size={34} className="text-[#c6a27b]" />
 </div>
-      <h3 className="font-serif text-lg mb-4">
+<h3 className="font-serif text-lg mb-4 min-h-[72px] flex items-center justify-center">
         {isHR ? "Organizacija manjih popravaka" : isEN ? "Small repairs" : "Organisation kleinerer Reparaturen"}
       </h3>
       <p>
@@ -647,7 +647,7 @@ return (
      <div className="mb-5 flex items-center justify-center">
   <CloudLightning size={34} className="text-[#c6a27b]" />
 </div> 
-      <h3 className="font-serif text-lg mb-4">
+<h3 className="font-serif text-lg mb-4 min-h-[72px] flex items-center justify-center">
         {isHR ? "Izvanredne intervencije" : isEN ? "Emergency Interventions" : "Notfall-Einsätze"}
       </h3>
       <p>
@@ -668,7 +668,7 @@ return (
       <div className="mb-5 flex items-center justify-center">
   <Key size={34} className="text-[#c6a27b]" />
 </div>
-      <h3 className="font-serif text-lg mb-4">
+<h3 className="font-serif text-lg mb-4 min-h-[72px] flex items-center justify-center">
         {isHR ? "Pohrana ključeva" : isEN ? "Key Holding" : "Schlüsselservice"}
       </h3>
       <p>
@@ -684,7 +684,7 @@ return (
    <div className="mb-5 flex items-center justify-center">
   <Mail size={34} className="text-[#c6a27b]" />
 </div> 
-      <h3 className="font-serif text-lg mb-4">
+<h3 className="font-serif text-lg mb-4 min-h-[72px] flex items-center justify-center">
         {isHR ? "Dostava pošte" : isEN ? "Mail Handling" : "Postservice"}
       </h3>
       <p>
@@ -700,7 +700,7 @@ return (
 <div className="mb-5 flex items-center justify-center">
   <FileText size={34} className="text-[#c6a27b]" />
 </div>
-      <h3 className="font-serif text-lg mb-4">
+<h3 className="font-serif text-lg mb-4 min-h-[72px] flex items-center justify-center">
         {isHR ? "Kratko izvješće" : isEN ? "Visit reports" : "Kurzbericht"}
       </h3>
       <p>
@@ -717,7 +717,7 @@ return (
 <div className="w-full flex justify-center mb-6">
   <FileText size={34} className="text-[#c6a27b]" />
 </div>
-      <h3 className="font-serif text-lg mb-4">
+<h3 className="font-serif text-lg mb-4 min-h-[72px] flex items-center justify-center">
         {isHR ? "Godišnje izvješće" : isEN ? "Annual Report" : "Jahresbericht"}
       </h3>
       <p>
