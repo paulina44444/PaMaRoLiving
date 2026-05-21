@@ -438,7 +438,7 @@ const Service2 = ({ lang }) => {
 return (
   <ServiceDetail>
 
-    <div className="relative w-full h-[620px] overflow-hidden">
+    <div className="relative w-full h-[520px] overflow-hidden rounded-b-[40px]">
 
       <img
         src="/property-care.jpg"
@@ -446,7 +446,7 @@ return (
         className="absolute inset-0 w-full h-full object-cover"
       />
 
-      <div className="absolute inset-0 bg-black/55" />
+<div className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/45 to-transparent" />
 
       <div className="relative z-10 h-full flex items-center">
 
@@ -454,7 +454,7 @@ return (
 
           <div className="max-w-xl text-white">
 
-            <h1 className="font-serif text-6xl leading-tight mb-8">
+            <h1 className="font-serif text-5xl md:text-6xl leading-tight mb-8">
               {isHR
                 ? "Cjelogodišnja briga o nekretnini"
                 : isEN
@@ -463,8 +463,8 @@ return (
             </h1>
 
             <div className="w-20 h-[2px] bg-[#c6a27b] mb-8"></div>
-
-            <p className="text-xl leading-relaxed text-white/90">
+<p className="text-lg leading-relaxed text-white/90 max-w-lg">
+            
               {isHR
                 ? "Nekretnina zahtijeva redovitu brigu i izvan sezone. Vremenski utjecaji, osobito zimi, mogu uzrokovati oštećenja – bilo zbog vlage, hladnoće ili tehničkih kvarova. Mi smo na licu mjesta i brinemo se o svemu kako biste svoju nekretninu u svakom trenutku znali u sigurnim rukama."
                 : isEN
