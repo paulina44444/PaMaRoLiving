@@ -12,7 +12,10 @@ Leaf,
 Wrench,
 CloudLightning,
 Key,
-FileText
+FileText,
+Home,
+Bell,
+Palette,
 } from "lucide-react";
 
 import { FaInstagram, FaFacebookF } from "react-icons/fa";
@@ -408,23 +411,113 @@ function Services({ setPage, lang }) {
       ];
 
   return (
-    <section className="py-24 px-6 max-w-5xl mx-auto">
-      <h1 className="text-3xl font-serif text-center mb-12">
-        {isHR ? "Usluge" : isEN ? "Services" : "Dienstleistungen"}
-      </h1>
+<section className="max-w-6xl mx-auto px-6 pt-16 pb-24">
 
-      <div className="grid md:grid-cols-2 gap-6">
-        {items.map(([title, page]) => (
-          <button
-            key={title}
-            onClick={() => setPage(page)}
-            className="bg-white p-6 rounded-2xl shadow-sm hover:-translate-y-1 transition duration-300 text-left font-serif"
-          >
-            {title}
-          </button>
-        ))}
+  <div className="text-center mb-14">
+    <div className="flex items-center justify-center gap-6 mb-4">
+      <div className="w-16 h-[1px] bg-[#c6a27b]"></div>
+
+      <h2 className="font-serif text-5xl text-[#2f3a40]">
+        {isHR ? "Naše usluge" : isEN ? "Our Services" : "Unsere Dienstleistungen"}
+      </h2>
+
+      <div className="w-16 h-[1px] bg-[#c6a27b]"></div>
+    </div>
+
+    <p className="text-[#6b7478] text-lg">
+      {isHR
+        ? "Sve što je vašoj nekretnini potrebno – pouzdano, diskretno i profesionalno."
+        : isEN
+        ? "Everything your property needs – reliable, discreet and professional."
+        : "Alles, was Ihre Immobilie braucht – zuverlässig, diskret und professionell."}
+    </p>
+  </div>
+
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+    <button
+      onClick={() => setPage("service2")}
+      className="bg-[#f7f2ed] rounded-3xl p-10 shadow-sm hover:shadow-md transition text-center border border-[#efe7df]"
+    >
+      <div className="w-20 h-20 mx-auto mb-8 rounded-full bg-[#f3ebe3] flex items-center justify-center">
+        <Home size={34} className="text-[#c6a27b]" />
       </div>
-    </section>
+
+      <h3 className="font-serif text-3xl text-[#2f3a40] mb-5">
+        {isHR
+          ? "Cjelogodišnja briga o nekretnini"
+          : isEN
+          ? "Year-round Property Care"
+          : "Ganzjährige Immobilienverwaltung"}
+      </h3>
+
+      <div className="w-10 h-[1px] bg-[#c6a27b] mx-auto mb-5"></div>
+
+      <p className="text-[#6b7478] leading-relaxed">
+        {isHR
+          ? "Kompletna briga o vašoj nekretnini tijekom cijele godine."
+          : isEN
+          ? "Complete year-round care for your property."
+          : "Komplette Betreuung Ihrer Immobilie das ganze Jahr über."}
+      </p>
+    </button>
+
+    <button
+      onClick={() => setPage("service3")}
+      className="bg-[#f7f2ed] rounded-3xl p-10 shadow-sm hover:shadow-md transition text-center border border-[#efe7df]"
+    >
+      <div className="w-20 h-20 mx-auto mb-8 rounded-full bg-[#f3ebe3] flex items-center justify-center">
+        <Bell size={34} className="text-[#c6a27b]" />
+      </div>
+
+      <h3 className="font-serif text-3xl text-[#2f3a40] mb-5">
+        {isHR
+          ? "Bezbrižan boravak"
+          : isEN
+          ? "Carefree Stay"
+          : "Sorgenfreier Aufenthalt"}
+      </h3>
+
+      <div className="w-10 h-[1px] bg-[#c6a27b] mx-auto mb-5"></div>
+
+      <p className="text-[#6b7478] leading-relaxed">
+        {isHR
+          ? "Uživajte u boravku bez briga – mi se brinemo za detalje."
+          : isEN
+          ? "Enjoy your stay while we take care of every detail."
+          : "Geniessen Sie Ihren Aufenthalt – wir kümmern uns um die Details."}
+      </p>
+    </button>
+
+    <button
+      onClick={() => setPage("service4")}
+      className="bg-[#f7f2ed] rounded-3xl p-10 shadow-sm hover:shadow-md transition text-center border border-[#efe7df]"
+    >
+      <div className="w-20 h-20 mx-auto mb-8 rounded-full bg-[#f3ebe3] flex items-center justify-center">
+        <Palette size={34} className="text-[#c6a27b]" />
+      </div>
+
+      <h3 className="font-serif text-3xl text-[#2f3a40] mb-5">
+        {isHR
+          ? "Stilsko uređenje"
+          : isEN
+          ? "Interior Styling"
+          : "Stilvolle Einrichtung"}
+      </h3>
+
+      <div className="w-10 h-[1px] bg-[#c6a27b] mx-auto mb-5"></div>
+
+      <p className="text-[#6b7478] leading-relaxed">
+        {isHR
+          ? "Stvaramo prostore koji odišu stilom i mediteranskom elegancijom."
+          : isEN
+          ? "We create spaces with style and Mediterranean elegance."
+          : "Wir schaffen Räume mit Stil und mediterraner Eleganz."}
+      </p>
+    </button>
+
+  </div>
+</section>
   );
 }
 
