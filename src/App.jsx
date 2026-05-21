@@ -251,7 +251,7 @@ const cards = isHR
         "Mit Gespür für Räume, Materialien und Atmosphäre schaffen wir harmonische und einladende Wohnkonzepte mit besonderem Charakter.",
       ],
     ];
-    
+
   return (
     <div className="bg-[#f7f2ed] text-[#2f3a40]">
 
@@ -338,29 +338,29 @@ className="bg-white p-6 md:p-10 rounded-2xl shadow-sm hover:shadow-lg transition
         </h3>
         <div className="w-24 h-[1px] bg-[#c6a27b] mx-auto mb-10"></div>
 
-        <p className="text-[#5f6a70]">
-          {isHR
-            ? "Za vlasnike koji žele sigurnost, transparentnost i profesionalno upravljanje svojom nekretninom."
-            : isEN
-            ? " For property owners who value security, transparency and professional management of their property."
-            : "Für Eigentümer, die Wert auf Sicherheit, Transparenz und professionelle Betreuung legen."}
-        </p>
+<p className="text-[#5f6a70]">
+  {isHR
+    ? "Za vlasnike koji cijene povjerenje, pouzdanost i osobnu brigu o svojoj nekretnini."
+    : isEN
+    ? "For owners who value trust, reliability and personal care for their property."
+    : "Für Eigentümer, die Wert auf Vertrauen, Verlässlichkeit und eine persönliche Betreuung ihrer Immobilie legen."}
+</p>
 
-        <p className="mt-3 text-[#5f6a70]">
-          {isHR
-            ? "Bilo da je riječ o kući za odmor, investiciji ili mjestu za opuštanje – osobno i pouzdano pratimo vlasnike i goste u Dalmaciji, uz visoke standarde kvalitete."
-            : isEN
-            ? "Whether it is a holiday home, an investment property or a personal retreat – we support owners and guests in Dalmatia personally, reliably and with the highest quality standards."
-            : "Ob Ferienimmobilie, Investition oder erholsamer Aufenthalt – wir begleiten Eigentümer und Gäste in Dalmatien persönlich, zuverlässig und mit einem hohen Anspruch an Qualität."}
-        </p>
+<p className="mt-3 text-[#5f6a70]">
+  {isHR
+    ? "Bilo da se radi o kući za odmor, drugom domu ili osobnom mjestu za opuštanje – o vašoj nekretnini u Dalmaciji brinemo s pažnjom, diskrecijom i visokim standardom kvalitete."
+    : isEN
+    ? "Whether it is a holiday home, second residence or personal retreat – we care for your property in Dalmatia with attention, discretion and high quality standards."
+    : "Ob Ferienimmobilie, Zweitwohnsitz oder persönlicher Rückzugsort – wir kümmern uns mit Sorgfalt, Diskretion und einem hohen Qualitätsanspruch um Ihre Immobilie in Dalmatien."}
+</p>
 
-        <p className="mt-6 text-[#5f6a70]">
-          {isHR
-            ? "Kontaktirajte nas. Savjetujemo vas bez obveze na njemačkom, hrvatskom, engleskom, talijanskom, španjolskom ili francuskom jeziku. Zajedno ćemo pronaći najbolje rješenje za vašu nekretninu."
-            : isEN
-            ? "Contact us. We will gladly advise you without obligation in German, Croatian, English, Italian, Spanish or French. Together we will find the best solution for your property."
-            : "Kontaktieren Sie uns. Wir beraten Sie unverbindlich auf Deutsch, Kroatisch, Englisch, Italienisch, Spanisch oder Französisch. Gemeinsam finden wir die passende Lösung für Ihre Immobilie."}
-        </p>
+<p className="mt-6 text-[#5f6a70]">
+  {isHR
+    ? "Kontaktirajte nas. Savjetujemo vas bez obveze na njemačkom, hrvatskom, engleskom, talijanskom, španjolskom ili francuskom jeziku te zajedno pronalazimo najbolje rješenje za vašu nekretninu."
+    : isEN
+    ? "Contact us. We will gladly advise you without obligation in German, Croatian, English, Italian, Spanish or French and together find the right solution for your property."
+    : "Kontaktieren Sie uns. Wir beraten Sie unverbindlich auf Deutsch, Kroatisch, Englisch, Italienisch, Spanisch oder Französisch und finden gemeinsam die passende Lösung für Ihre Immobilie."}
+</p>
       </section>
     </div>
   );
