@@ -30,7 +30,7 @@ function Navigation({ setPage, lang, setLang }) {
   const link = "text-lg tracking-wide hover:text-[#c6a27b] transition";
 
   return (
-    <header className="w-full bg-white border-b border-[#c6a27b] fixed top-0 left-0 z-50">
+    <header className="w-full bg-[#f7f2ed] border-b border-[#c6a27b] fixed top-0 left-0 z-50">
       <div className="max-w-6xl mx-auto px-4 md:px-6 py-2 md:py-3 flex items-center justify-between">
         <button
   onClick={() => setPage("home")}
@@ -504,8 +504,8 @@ return (
   {/* obere Reihe */}
   <div className="grid grid-cols-1 md:grid-cols-5 gap-6">
 
-    <div className="bg-[#f7f2ed] rounded-3xl p-8 shadow-[0_4px_20px_rgba(0,0,0,0.04)] text-center">
-      <div className="mb-6 flex justify-center">
+    <div className="bg-[#f7f2ed] rounded-3xl p-6 min-h-[240px] shadow-[0_4px_20px_rgba(0,0,0,0.04)] text-center">
+<div className="mb-5 flex items-center justify-center">
   <ShieldCheck size={42} className="text-[#c6a27b]" />
 </div>
       <h3 className="font-serif text-xl mb-4">
@@ -520,11 +520,11 @@ return (
       </p>
     </div>
 
-    <div className="bg-white rounded-3xl p-8 shadow-sm text-center">
-      <div className="mb-6 flex justify-center">
-  <Search size={42} className="text-[#c6a27b]" />
+    <div className="bg-[#f7f2ed] rounded-3xl p-6 min-h-[240px] shadow-sm text-center">
+<div className="mb-5 flex items-center justify-center">
+  <Search size={34} className="text-[#c6a27b]" />
 </div>
-      <h3 className="font-serif text-xl mb-4">
+      <h3 className="font-serif text-lg mb-4">
         {isHR ? "Vizualna kontrola" : isEN ? "Visual Inspection" : "Sichtkontrolle"}
       </h3>
       <p>
@@ -536,7 +536,7 @@ return (
       </p>
     </div>
 
-    <div className="bg-white rounded-3xl p-8 shadow-sm text-center">
+    <div className="bg-[#f7f2ed] rounded-3xl p-6 min-h-[240px] shadow-sm text-center">
       <Leaf size={42} className="text-[#c6a27b]" />
       <h3 className="font-serif text-xl mb-4">
         {isHR ? "Kontrola vrta i vanjskih prostora" : isEN ? "Outdoor Area Care" : "Garten & Aussenbereich"}
@@ -550,7 +550,7 @@ return (
       </p>
     </div>
 
-    <div className="bg-white rounded-3xl p-8 shadow-sm text-center">
+    <div className="bg-[#f7f2ed] rounded-3xl p-6 min-h-[240px] shadow-sm text-center">
       <Wrench size={42} className="text-[#c6a27b]" />
       <h3 className="font-serif text-xl mb-4">
         {isHR ? "Organizacija manjih popravaka" : isEN ? "Repair Coordination" : "Organisation kleinerer Reparaturen"}
@@ -564,7 +564,7 @@ return (
       </p>
     </div>
 
-    <div className="bg-white rounded-3xl p-8 shadow-sm text-center">
+    <div className="bg-[#f7f2ed] rounded-3xl p-6 min-h-[240px] shadow-sm text-center">
      <CloudLightning size={42} className="text-[#c6a27b]" /> 
       <h3 className="font-serif text-xl mb-4">
         {isHR ? "Izvanredne intervencije" : isEN ? "Emergency Interventions" : "Notfall-Einsätze"}
@@ -583,7 +583,7 @@ return (
   {/* untere Reihe */}
   <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mt-6">
 
-    <div className="bg-white rounded-3xl p-8 shadow-sm text-center">
+    <div className="bg-[#f7f2ed] rounded-3xl p-6 min-h-[240px] shadow-sm text-center">
       <Key size={42} className="text-[#c6a27b]" />
       <h3 className="font-serif text-xl mb-4">
         {isHR ? "Pohrana ključeva" : isEN ? "Key Holding" : "Schlüsselaufbewahrung"}
@@ -597,7 +597,7 @@ return (
       </p>
     </div>
 
-    <div className="bg-white rounded-3xl p-8 shadow-sm text-center">
+    <div className="bg-[#f7f2ed] rounded-3xl p-6 min-h-[240px] shadow-sm text-center">
    <Mail size={42} className="text-[#c6a27b]" />   
       <h3 className="font-serif text-xl mb-4">
         {isHR ? "Dostava pošte" : isEN ? "Mail Handling" : "Postservice"}
@@ -611,7 +611,7 @@ return (
       </p>
     </div>
 
-    <div className="bg-white rounded-3xl p-8 shadow-sm text-center">
+    <div className="bg-[#f7f2ed] rounded-3xl p-6 min-h-[240px] shadow-sm text-center">
      <FileText size={42} className="text-[#c6a27b]" /> 
       <h3 className="font-serif text-xl mb-4">
         {isHR ? "Kratko izvješće" : isEN ? "Short Reports" : "Kurzes Reporting"}
@@ -625,7 +625,7 @@ return (
       </p>
     </div>
 
-    <div className="bg-white rounded-3xl p-8 shadow-sm text-center">
+    <div className="bg-[#f7f2ed] rounded-3xl p-6 min-h-[240px] shadow-sm text-center">
       <FileText size={42} className="text-[#c6a27b]" />
       <h3 className="font-serif text-xl mb-4">
         {isHR ? "Godišnje izvješće" : isEN ? "Annual Report" : "Jahresbericht"}
