@@ -430,7 +430,7 @@ function Services({ setPage, lang }) {
 
 function ServiceDetail({ title, children }) {
   return (
-<section className="pt-20 pb-24 bg-[#f7f2ed] text-[#4a545a]">
+<section className="pb-24 bg-[#f7f2ed] text-[#4a545a]">
       <h1 className="text-3xl font-serif text-center">{title}</h1>
       {children}
     </section>
@@ -445,7 +445,7 @@ const Service2 = ({ lang }) => {
 return (
   <ServiceDetail>
 
-    <div className="relative w-full h-[520px] overflow-hidden">
+    <div className="relative w-full h-[520px] overflow-hidden -mt-[1px]">
 
       <img
         src="/property-care.jpg"
