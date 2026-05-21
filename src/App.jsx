@@ -487,7 +487,7 @@ return (
 
     </div>
 
-<section className="max-w-7xl mx-auto px-6 py-20">
+<section className="max-w-7xl mx-auto px-6 pt-20 pb-8">
 
 <div className="flex items-center justify-center gap-6 mb-16">
 
