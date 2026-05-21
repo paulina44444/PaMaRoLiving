@@ -391,25 +391,6 @@ className="bg-white p-6 md:p-10 rounded-2xl shadow-sm hover:shadow-lg transition
 function Services({ setPage, lang }) {
   const isHR = lang === "hr";
   const isEN = lang === "en";
-
-  const items = isHR
-    ? [
-["Cjelogodišnja briga o nekretnini", "service2"],
-["Bezbrižan boravak", "service3"],
-["Stilsko uređenje", "service4"],
-      ]
-    : isEN
-    ? [
-["Year-Round Property Care", "service2"],
-["Carefree Stay", "service3"],
-["Stylish Redesign", "service4"],
-      ]
-    : [
-["Ganzjährige Immobilienbetreuung", "service2"],
-["Sorgenfreier Aufenthalt", "service3"],
-["Stilvolle Neugestaltung", "service4"],
-      ];
-
   return (
 <section className="bg-[#f7f2ed]">
   <div className="max-w-6xl mx-auto px-6 pt-16 pb-24">
@@ -433,7 +414,6 @@ function Services({ setPage, lang }) {
         : "Alles, was Ihre Immobilie braucht – zuverlässig, diskret und professionell."}
     </p>
   </div>
-
   <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
 
     <button
