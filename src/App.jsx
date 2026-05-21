@@ -303,6 +303,8 @@ className="bg-white p-6 md:p-10 rounded-2xl shadow-sm hover:shadow-lg transition
               <p className="text-sm text-[#6b7478] leading-relaxed">{text}</p>
         </button>
           ))}
+
+            </div>
       </section>
 
       <section className="relative w-full h-[320px] md:h-[460px] overflow-hidden">
