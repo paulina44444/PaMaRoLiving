@@ -27,7 +27,7 @@ const navLabels = {
 function Navigation({ setPage, lang, setLang }) {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const link = "text-xl tracking-wide hover:text-[#c6a27b] transition";
+  const link = "text-lg tracking-wide hover:text-[#c6a27b] transition";
 
   return (
     <header className="w-full bg-[#f7f2ed] border-b border-[#c6a27b] fixed top-0 left-0 z-50">
@@ -39,7 +39,7 @@ function Navigation({ setPage, lang, setLang }) {
   <img
     src="/logo.png"
     alt="PaMaRo Living"
-    className="h-24 w-auto opacity-95"
+    className="h-20 w-auto opacity-95"
   />
 </button>
 
