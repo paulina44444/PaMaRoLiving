@@ -290,18 +290,18 @@ return (
         <div className="max-w-3xl text-white">
 <h1 className="text-3xl md:text-5xl font-serif leading-tight">
             {isHR
-              ? "Vaša nekretnina u sigurnim i stručnim rukama u Dalmaciji"
+              ? "Vaša nekretnina, naša briga."
               : isEN
-              ? "Your property in safe and professional hands in Dalmatia"
-              : "Ihre Immobilie in sicheren und professionellen Händen in Dalmatien"}
+              ? "Your property, our care."
+              : "Ihre Immobilie, unsere Verantwortung."}
           </h1>
 
           <p className="mt-6 text-xl md:text-xl text-white/90">
             {isHR
-              ? "Povjerenje, kvaliteta i strukturiran pristup."
+              ? "Diskretna i pouzdana podrška tijekom cijele godine.."
               : isEN
-              ? "Trust, quality and a structured approach."
-              : "Vertrauen, Qualität und ein strukturierter Ansatz."}
+              ? "Reliable and discreet support throughout the year."
+              : "Diskrete Betreuung und zuverlässige Organisation das ganze Jahr über."}
           </p>
         </div>
       </div>
