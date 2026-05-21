@@ -938,7 +938,7 @@ export default function App() {
   React.useEffect(() => {
     window.scrollTo({
       top: 0,
-      behavior: "smooth",
+      behavior: "instant",
     });
   }, [page]);
 
