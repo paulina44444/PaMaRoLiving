@@ -437,7 +437,7 @@ function Services({ setPage, lang }) {
 
     <button
       onClick={() => setPage("service2")}
-      className="bg-[#f7f2ed] rounded-3xl p-10 shadow-sm hover:shadow-md transition text-center border border-[#efe7df]"
+      className="bg-white rounded-3xl p-10 shadow-sm hover:shadow-md transition text-center border border-[#efe7df]"
     >
       <div className="w-20 h-20 mx-auto mb-8 rounded-full bg-[#f3ebe3] flex items-center justify-center">
         <Home size={34} className="text-[#c6a27b]" />
@@ -464,7 +464,7 @@ function Services({ setPage, lang }) {
 
     <button
       onClick={() => setPage("service3")}
-      className="bg-[#f7f2ed] rounded-3xl p-10 shadow-sm hover:shadow-md transition text-center border border-[#efe7df]"
+className="bg-white rounded-3xl p-10 shadow-sm hover:shadow-md transition text-center border border-[#efe7df]"
     >
       <div className="w-20 h-20 mx-auto mb-8 rounded-full bg-[#f3ebe3] flex items-center justify-center">
         <Bell size={34} className="text-[#c6a27b]" />
@@ -491,7 +491,7 @@ function Services({ setPage, lang }) {
 
     <button
       onClick={() => setPage("service4")}
-      className="bg-[#f7f2ed] rounded-3xl p-10 shadow-sm hover:shadow-md transition text-center border border-[#efe7df]"
+className="bg-white rounded-3xl p-10 shadow-sm hover:shadow-md transition text-center border border-[#efe7df]"
     >
       <div className="w-20 h-20 mx-auto mb-8 rounded-full bg-[#f3ebe3] flex items-center justify-center">
         <Palette size={34} className="text-[#c6a27b]" />
@@ -716,7 +716,9 @@ return (
 
     <div className="bg-[#f7f2ed] w-full md:w-[235px] rounded-3xl p-6 min-h-[240px] shadow-sm text-center">
 <div className="mb-5 flex items-center justify-center">
+  <div className="mb-5 flex items-center justify-center">
   <FileText size={34} className="text-[#c6a27b]" />
+</div>
 </div>
       <h3 className="font-serif text-lg mb-4">
         {isHR ? "Kratko izvješće" : isEN ? "Short Reports" : "Kurzes Reporting"}
