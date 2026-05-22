@@ -1352,39 +1352,180 @@ function About({ lang }) {
 }
 
 /* ================= CONTACT ================= */
-function Contact({ lang }) {
+const ContactPage = ({ lang }) => {
   const isHR = lang === "hr";
   const isEN = lang === "en";
 
   return (
-    <section className="py-24 px-6 max-w-xl mx-auto">
-      <h1 className="text-3xl font-serif mb-10 text-center">
-        {isHR ? "Kontakt" : isEN ? "Contact" : "Kontakt"}
-      </h1>
+    <div className="bg-[#f7f2ed] min-h-screen">
 
-      <form className="space-y-4">
-        <input
-          className="w-full border p-4 rounded-xl"
-          placeholder={isHR ? "Ime" : isEN ? "Name" : "Name"}
-        />
+      {/* HERO */}
+      <section className="relative overflow-hidden">
 
-        <input
-          className="w-full border p-4 rounded-xl"
-          placeholder={isHR ? "E-mail" : isEN ? "E-mail" : "E-Mail"}
-        />
+        <div className="grid grid-cols-1 lg:grid-cols-2 min-h-[520px]">
 
-        <textarea
-          className="w-full border p-4 rounded-xl h-32"
-          placeholder={isHR ? "Poruka" : isEN ? "Message" : "Nachricht"}
-        />
+          {/* LEFT */}
+          <div className="flex items-center px-8 md:px-16 py-20">
 
-        <button className="bg-[#c6a27b] text-white px-6 py-3 rounded-xl w-full">
-          {isHR ? "Pošalji poruku" : isEN ? "Send message" : "Nachricht senden"}
-        </button>
-      </form>
-    </section>
+            <div className="max-w-xl">
+
+              <h1 className="font-serif text-5xl md:text-7xl text-[#2f3a40] leading-tight mb-8">
+                {isHR ? "Kontakt" : isEN ? "Contact" : "Kontakt"}
+              </h1>
+
+              <div className="w-20 h-[2px] bg-[#c6a27b] mb-8"></div>
+
+              <p className="text-[#4d5960] text-lg leading-relaxed">
+                {isHR
+                  ? "Bilo da vam je potrebna briga o nekretnini, bezbrižan boravak ili preuređenje – veselimo se vašem upitu i rado ćemo vas osobno savjetovati."
+                  : isEN
+                  ? "Whether you need property care, a worry-free stay or a redesign – we look forward to your inquiry and are happy to advise you personally."
+                  : "Ob Immobilienbetreuung, sorgenfreier Aufenthalt oder Neugestaltung – wir freuen uns auf Ihre Anfrage und beraten Sie gerne persönlich."}
+              </p>
+
+            </div>
+
+          </div>
+
+          {/* RIGHT IMAGE */}
+          <div className="relative h-[320px] lg:h-auto">
+
+            <img
+              src="/contact-image.jpg"
+              alt="Mediterranean terrace"
+              className="absolute inset-0 w-full h-full object-cover"
+            />
+
+          </div>
+
+        </div>
+
+      </section>
+
+      {/* FORM SECTION */}
+      <section className="max-w-7xl mx-auto px-8 md:px-16 py-24">
+
+        <div className="grid grid-cols-1 lg:grid-cols-[340px_1fr] gap-20 items-start">
+
+          {/* LEFT TEXT */}
+          <div>
+
+            <h2 className="font-serif text-4xl text-[#2f3a40] mb-6">
+              {isHR
+                ? "Pošaljite nam poruku"
+                : isEN
+                ? "Send us a message"
+                : "Schreiben Sie uns"}
+            </h2>
+
+            <div className="w-16 h-[2px] bg-[#c6a27b] mb-8"></div>
+
+            <p className="text-[#4d5960] leading-relaxed text-lg mb-14">
+              {isHR
+                ? "Pošaljite nam vaš upit – javit ćemo vam se u najkraćem mogućem roku."
+                : isEN
+                ? "Send us your inquiry – we will get back to you as soon as possible."
+                : "Teilen Sie uns Ihr Anliegen mit – wir melden uns so schnell wie möglich bei Ihnen."}
+            </p>
+
+            {/* DECORATION */}
+            <div className="opacity-70">
+              <svg
+                width="140"
+                height="140"
+                viewBox="0 0 140 140"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M20 120C40 80 60 60 100 40"
+                  stroke="#c6a27b"
+                  strokeWidth="1.2"
+                />
+                <path
+                  d="M35 95C45 85 55 80 70 78"
+                  stroke="#c6a27b"
+                  strokeWidth="1.2"
+                />
+                <path
+                  d="M50 70C55 55 65 45 82 35"
+                  stroke="#c6a27b"
+                  strokeWidth="1.2"
+                />
+                <path
+                  d="M40 105C52 96 58 90 62 78"
+                  stroke="#c6a27b"
+                  strokeWidth="1.2"
+                />
+                <path
+                  d="M63 78C75 75 85 70 95 58"
+                  stroke="#c6a27b"
+                  strokeWidth="1.2"
+                />
+              </svg>
+            </div>
+
+          </div>
+
+          {/* FORM */}
+          <div className="border-l border-[#e7ddd2] pl-0 lg:pl-12">
+
+            <form className="space-y-6">
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+                <input
+                  type="text"
+                  placeholder={isHR ? "Ime*" : isEN ? "Name*" : "Name*"}
+                  className="h-14 px-5 border border-[#e7ddd2] bg-transparent text-[#2f3a40] placeholder:text-[#9b9b9b] outline-none"
+                />
+
+                <input
+                  type="email"
+                  placeholder={isHR ? "E-mail*" : isEN ? "E-Mail*" : "E-Mail*"}
+                  className="h-14 px-5 border border-[#e7ddd2] bg-transparent text-[#2f3a40] placeholder:text-[#9b9b9b] outline-none"
+                />
+
+              </div>
+
+              <input
+                type="text"
+                placeholder={isHR ? "Telefon" : isEN ? "Phone" : "Telefon"}
+                className="w-full h-14 px-5 border border-[#e7ddd2] bg-transparent text-[#2f3a40] placeholder:text-[#9b9b9b] outline-none"
+              />
+
+              <textarea
+                rows="7"
+                placeholder={isHR ? "Poruka*" : isEN ? "Message*" : "Nachricht*"}
+                className="w-full px-5 py-4 border border-[#e7ddd2] bg-transparent text-[#2f3a40] placeholder:text-[#9b9b9b] outline-none resize-none"
+              ></textarea>
+
+              <div className="pt-2">
+
+                <button
+                  type="submit"
+                  className="bg-[#c6a27b] hover:bg-[#b8946d] transition-colors duration-300 text-white tracking-[0.15em] uppercase text-sm px-10 h-14"
+                >
+                  {isHR
+                    ? "Pošalji poruku"
+                    : isEN
+                    ? "Send Message"
+                    : "Nachricht senden"}
+                </button>
+
+              </div>
+
+            </form>
+
+          </div>
+
+        </div>
+
+      </section>
+
+    </div>
   );
-}
+};
 
 
 /* ================= LEGAL ================= */
