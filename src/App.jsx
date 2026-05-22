@@ -551,7 +551,7 @@ return (
 
           <div className="max-w-xl text-white">
 
-            <h1 className="font-serif text-5xl md:text-6xl leading-tight mb-8">
+<h1 className="font-serif text-4xl md:text-6xl leading-tight mb-8 text-center md:text-left">
               {isHR
                 ? "Briga o nekretnini"
                 : isEN
@@ -583,7 +583,7 @@ return (
 
   <div className="w-20 h-[1px] bg-[#c6a27b]"></div>
 
-  <h2 className="font-serif text-5xl text-[#2f3a40]">
+<h2 className="font-serif text-5xl text-[#2f3a40] text-center">
     {isHR ? "Naše usluge" : isEN ? "Our Services" : "Unsere Leistungen"}
   </h2>
 
