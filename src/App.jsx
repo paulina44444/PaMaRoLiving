@@ -23,6 +23,7 @@ Map,
 Package,
 Eye,
 Trees,
+Cloudrain,
 } from "lucide-react";
 
 import { FaInstagram, FaFacebookF } from "react-icons/fa";
