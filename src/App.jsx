@@ -214,8 +214,8 @@ function Home({ lang, setPage }) {
 const cards = isHR
   ? [
       [
-        "Cjelogodišnja briga o nekretnini",
-        "Redoviti nadzor, organizacija i prisutnost na licu mjesta.",
+        "Briga o nekretnini",
+        "Redoviti nadzor, organizacija i prisutnost tijekom cijele godine.",
           "service2"
       ],
 
@@ -234,8 +234,8 @@ const cards = isHR
   : isEN
   ? [
       [
-        "Year-Round Property Care",
-        "Regular inspections, coordination and personal local presence.",
+        "Property Care",
+        "Regular inspections, coordination and personal local presence throughout the year.",
                   "service2"
       ],
 
@@ -253,8 +253,8 @@ const cards = isHR
     ]
 : [
     [
-      "Ganzjährige Immobilienbetreuung",
-      "Regelmässige Kontrollen, Organisation und persönliche Präsenz vor Ort.",
+      "Immobilienbetreuung",
+      "Regelmässige Kontrollen, Organisation und persönliche Präsenz das ganze Jahr über.",
       "service2"
     ],
 
@@ -341,10 +341,10 @@ className="bg-white p-6 md:p-10 rounded-2xl shadow-sm hover:shadow-lg transition
 
       <p className="italic text-xl md:text-4xl font-serif text-[#2f3a40] leading-relaxed">
         {isHR
-          ? "„Mediteranski način života počinje osjećajem mira i lakoće."
-          : isEN
-          ? "“A Mediterranean lifestyle begins with calm and simplicity."
-          : "„Mediterranes Lebensgefühl beginnt mit Ruhe und Leichtigkeit."}
+    ? "„Mediteranski način života počinje osjećajem mira i lakoće.“"
+    : isEN
+    ? "“A Mediterranean lifestyle begins with calm and simplicity.”"
+    : "„Mediterranes Lebensgefühl beginnt mit Ruhe und Leichtigkeit.“"}
       </p>
 
 
