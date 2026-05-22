@@ -563,7 +563,7 @@ return (
 <p className="text-xl leading-relaxed text-white/90 max-w-lg">
             
               {isHR
-                ? "Nekretnina zahtijeva redovitu brigu i pažnju tijekom cijele godine. Brinemo se o kontrolama, organizaciji i očuvanju vaše nekretnine – diskretno, pouzdano i s osjećajem za detalje."
+                ? "Redovita prisutnost i pažnja važni su tijekom cijele godine. Brinemo se o kontrolama, organizaciji i očuvanju vašeg doma – diskretno, pouzdano i s osjećajem za detalje."
                 : isEN
                 ? "Your property deserves care and attention throughout the year. We take care of inspections, coordination and upkeep discreetly and reliably – with a personal approach and attention to detail."
                 : "Ihre Immobilie verdient auch ausserhalb der Saison Aufmerksamkeit und Pflege. Wir kümmern uns zuverlässig um Kontrollen, Organisation und den Werterhalt – diskret, persönlich und mit viel Liebe zum Detail."}
