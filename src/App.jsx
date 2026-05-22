@@ -16,6 +16,7 @@ FileText,
 House,
 Sun,
 Palette,
+Shoppingbag,
 } from "lucide-react";
 
 import { FaInstagram, FaFacebookF } from "react-icons/fa";
