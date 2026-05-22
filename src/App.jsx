@@ -1407,7 +1407,7 @@ const Contact = ({ lang }) => {
       </section>
 
       {/* FORM SECTION */}
-      <section className="max-w-7xl mx-auto px-8 md:px-16 py-24">
+<section className="max-w-7xl mx-auto px-8 md:px-16 py-12 lg:py-24">
 
 <div className="grid grid-cols-1 lg:grid-cols-[340px_1fr] gap-8 lg:gap-20 items-start">
 
