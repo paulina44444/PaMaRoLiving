@@ -16,7 +16,7 @@ FileText,
 House,
 Sun,
 Palette,
-Basket,
+ClipboardList,
 Sparkles,
 } from "lucide-react";
 
@@ -893,7 +893,7 @@ const Service3 = ({ lang }) => {
           {/* 3 */}
           <div className="bg-[#f7f2ed] rounded-3xl p-5 min-h-[210px] shadow-sm text-center">
             <div className="mb-5 flex items-center justify-center">
-              <Basket size={34} className="text-[#c6a27b]" />
+              <ClipboardList size={34} className="text-[#c6a27b]" />
             </div>
 
             <h3 className="font-serif text-lg mb-1 min-h-[48px] flex items-start justify-center">
