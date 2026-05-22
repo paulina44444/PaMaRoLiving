@@ -582,7 +582,7 @@ const Service2 = ({ lang }) => {
 
           <div className="max-w-6xl mx-auto px-6 w-full">
 
-            <div className="max-w-xl text-white">
+   <div className="max-w-xl text-white text-left">
 
               <h1 className="font-serif text-4xl md:text-6xl leading-tight mb-8 text-left">
                 {isHR
@@ -864,7 +864,7 @@ const Service3 = ({ lang }) => {
 
           <div className="max-w-6xl mx-auto px-6 w-full">
 
-            <div className="max-w-xl text-white">
+<div className="max-w-xl text-white text-left">
 
               <h1 className="font-serif text-4xl md:text-6xl leading-tight mb-8 text-left">
                 {isHR
@@ -1054,7 +1054,7 @@ const Service4 = ({ lang }) => {
 
           <div className="max-w-6xl mx-auto px-6 w-full">
 
-            <div className="max-w-xl text-white">
+<div className="max-w-xl text-white text-left">
 
               <h1 className="font-serif text-4xl md:text-6xl leading-tight mb-8 text-left">
                 {isHR
