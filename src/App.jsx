@@ -226,8 +226,8 @@ const cards = isHR
       ],
 
       [
-        "Stilsko uređenje",
-        "Skladni interijeri s pažljivo biranim detaljima i osjećajem za prostor.",
+        "Uređenje interijera",
+        "Skladni interijeri sa stilom, osjećajem za prostor i atmosferu.",
           "service4"
       ],
     ]
@@ -265,8 +265,8 @@ const cards = isHR
     ],
 
     [
-      "Stilvolle Neugestaltung",
-      "Individuelle Raumgestaltung mit Sinn für Harmonie und Atmosphäre.",
+      "Inneneinrichtung",
+      "Individuelle Raumgestaltung mit Sinn für Stil, Harmonie und Atmosphäre.",
       "service4"
     ],
   ];
@@ -441,20 +441,20 @@ function Services({ setPage, lang }) {
 
       <h3 className="font-serif text-3xl text-[#2f3a40] mb-5">
         {isHR
-          ? "Cjelogodišnja briga o nekretnini"
+          ? "Briga o nekretnini"
           : isEN
-          ? "Year-round Property Care"
-          : "Ganzjährige Betreuung"}
+          ? "Property Care"
+          : "Immobilienbetreuung"}
       </h3>
 
       <div className="w-10 h-[1px] bg-[#c6a27b] mx-auto mb-5"></div>
 
       <p className="text-[#6b7478] leading-relaxed">
         {isHR
-          ? "Kompletna briga o vašoj nekretnini tijekom cijele godine."
-          : isEN
-          ? "Personal property care with attention to detail – throughout every season."
-          : "Persönliche Betreuung Ihrer Immobilie – das ganze Jahr."}
+    ? "Redoviti nadzor, organizacija i prisutnost tijekom cijele godine."
+    : isEN
+    ? "Regular inspections, coordination and personal local presence throughout the year."
+    : "Regelmässige Kontrollen, Organisation und persönliche Präsenz das ganze Jahr über."}
       </p>
     </button>
 
@@ -478,10 +478,10 @@ className="bg-white rounded-3xl p-10 shadow-sm hover:shadow-md transition text-c
 
       <p className="text-[#6b7478] leading-relaxed">
         {isHR
-          ? "Uživajte u boravku bez briga – mi se brinemo za detalje."
-          : isEN
-          ? "Enjoy your stay while we take care of every detail."
-          : "Geniessen Sie Ihren Aufenthalt – wir kümmern uns um die Details."}
+    ? "Priprema doma i organizacija prije i nakon vašeg boravka."
+    : isEN
+    ? "Preparation and organisation before and after your stay."
+    : "Vorbereitung und Organisation vor und nach Ihres Aufenthalts."}
       </p>
     </button>
 
@@ -495,7 +495,7 @@ className="bg-white rounded-3xl p-10 shadow-sm hover:shadow-md transition text-c
 
       <h3 className="font-serif text-3xl text-[#2f3a40] mb-5">
         {isHR
-          ? "Stilsko uređenje"
+          ? "Uređenje interijera"
           : isEN
           ? "Interior Styling"
           : "Stilvolle Einrichtung"}
@@ -505,10 +505,10 @@ className="bg-white rounded-3xl p-10 shadow-sm hover:shadow-md transition text-c
 
       <p className="text-[#6b7478] leading-relaxed">
         {isHR
-          ? "Stvaramo prostore koji odišu stilom i mediteranskom elegancijom."
-          : isEN
-          ? "We create spaces with style and Mediterranean elegance."
-          : "Wir schaffen Räume mit Stil und mediterraner Eleganz."}
+    ? "Skladni interijeri sa stilom, osjećajem za prostor i atmosferu."
+    : isEN
+    ? "Thoughtful interior concepts with harmony and atmosphere."
+    : "Individuelle Raumgestaltung mit Stil, Harmonie und Atmosphäre."}
       </p>
     </button>
 
