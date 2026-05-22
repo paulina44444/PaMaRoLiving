@@ -439,12 +439,12 @@ function Services({ setPage, lang }) {
         <House size={34} className="text-[#c6a27b]" />
       </div>
 
-      <h3 className="font-serif text-3xl text-[#2f3a40] mb-5">
+<h3 className="font-serif text-3xl text-[#2f3a40] mb-5 whitespace-pre-line">
         {isHR
           ? "Briga o nekretnini"
           : isEN
-          ? "Property Care"
-          : "Immobilienbetreuung"}
+? "Property Care "
+          : "Immobilien\nbetreuung"}
       </h3>
 
       <div className="w-10 h-[1px] bg-[#c6a27b] mx-auto mb-5"></div>
