@@ -599,7 +599,7 @@ return (
   <ShieldCheck size={34} className="text-[#c6a27b]" />
 </div>
 <h3 className="font-serif text-lg mb-4 min-h-[72px] flex items-start justify-center">
-        {isHR ? "Redoviti obilasci" : isEN ? "Regular Inspections" : "Regelmässige Rundgänge"}
+        {isHR ? "Redoviti obilasci" : isEN ? "Regular Inspections" : "Kontrollgänge"}
       </h3>
       <p>
         {isHR
@@ -631,11 +631,11 @@ return (
   <Leaf size={34} className="text-[#c6a27b]" />
 </div>
 <h3 className="font-serif text-lg mb-4 min-h-[72px] flex items-start justify-center">
-        {isHR ? "Kontrola vanjskih prostora" : isEN ? "Outdoor area" : "Aussenbereich"}
+        {isHR ? "Vanjski prostori" : isEN ? "Outdoor area" : "Aussenbereich"}
       </h3>
       <p>
         {isHR
-          ? "Uz jednostavne radove održavanja vrta."
+          ? "Kontrola i jednostavno održavanje vrta i okućnice."
           : isEN
           ? "simple maintenance and supervision of outdoor spaces."
           : "Kontrolle und einfache Pflege der Aussenflächen."}
@@ -691,7 +691,7 @@ return (
           ? "Sigurno čuvanje i dostupnost ključeva."
           : isEN
           ? "safe storage and availability of your keys."
-          : "Sichere Aufbewahrung und Verfügbarkeit Ihrer Schlüssel."}
+          : "Sichere Aufbewahrung und Zugriff auf Ihre Schlüssel."}
       </p>
     </div>
 
