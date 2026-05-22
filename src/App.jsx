@@ -1323,7 +1323,7 @@ function About({ lang }) {
     </p>
 
     <p>
-      Danas PaMaRo Living prati vlasnike u brizi o njihovim nekretninama, osigurava bezbrižan boravak na licu mjesta te pomaže pri stilskim preuređenjima i konceptima uređenja interijera. U središtu svakog projekta uvijek su pouzdanost, transparentnost i osjećaj za detalje.
+      Danas PaMaRo Living predstavlja osoban, diskretan i kvalitetan pristup nekretninama i stanovanju u Dalmaciji. U središtu svakog projekta uvijek su povjerenje, pouzdanost te osjećaj za kvalitetu, estetiku i detalje.
     </p>
 
     <p>
@@ -1353,7 +1353,7 @@ function About({ lang }) {
     </p>
 
     <p>
-      Today, PaMaRo Living supports property owners with the care of their homes, ensures a worry-free stay on site and assists with tasteful redesigns and interior concepts. Reliability, transparency and a strong attention to detail are always at the heart of every project.
+      Today, PaMaRo Living stands for personal, discreet and high-quality support surrounding properties and living in Dalmatia. Trust, reliability and a refined sense for quality, aesthetics and detail are always at the heart of every project.
     </p>
 
     <p>
@@ -1383,7 +1383,7 @@ function About({ lang }) {
     </p>
 
     <p>
-      Heute begleitet PaMaRo Living Eigentümer bei der Betreuung ihrer Immobilien, sorgt für einen entspannten Aufenthalt vor Ort und unterstützt bei stilvollen Neugestaltungen und Einrichtungskonzepten. Dabei stehen Zuverlässigkeit, Transparenz und ein feines Gespür für Details stets im Mittelpunkt.
+      Heute steht PaMaRo Living für eine persönliche, diskrete und hochwertige Begleitung rund um Immobilien und Wohnen in Dalmatien. Im Mittelpunkt stehen Vertrauen, Verlässlichkeit und ein feines Gespür für Qualität, Ästhetik und Details.
     </p>
 
     <p>
