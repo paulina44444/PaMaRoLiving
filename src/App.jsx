@@ -439,7 +439,7 @@ function Services({ setPage, lang }) {
         <House size={34} className="text-[#c6a27b]" />
       </div>
 
-<h3 className="font-serif text-3xl text-[#2f3a40] mb-5 whitespace-pre-line pt-[6px]">
+<h3 className="font-serif text-3xl text-[#2f3a40] mb-5 whitespace-pre-line">
         {isHR
           ? "Briga o nekretnini"
           : isEN
@@ -453,8 +453,8 @@ function Services({ setPage, lang }) {
         {isHR
     ? "Redoviti nadzor, organizacija i prisutnost tijekom cijele godine."
     : isEN
-    ? "Regular inspections, coordination and personal local presence throughout the year."
-    : "Regelmässige Kontrollen, Organisation und persönliche Präsenz das ganze Jahr über."}
+    ? "Regular inspections and reliable local coordination throughout the year."
+    : "Regelmässige Kontrollen und zuverlässige Organisation das ganze Jahr über."}
       </p>
     </button>
 
