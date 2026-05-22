@@ -599,7 +599,7 @@ return (
   <ShieldCheck size={34} className="text-[#c6a27b]" />
 </div>
 <h3 className="font-serif text-lg mb-4 min-h-[72px] flex items-start justify-center">
-        {isHR ? "Redoviti obilasci nekretnine" : isEN ? "Regular Inspections" : "Regelmässige Rundgänge"}
+        {isHR ? "Redoviti obilasci" : isEN ? "Regular Inspections" : "Regelmässige Rundgänge"}
       </h3>
       <p>
         {isHR
@@ -631,11 +631,11 @@ return (
   <Leaf size={34} className="text-[#c6a27b]" />
 </div>
 <h3 className="font-serif text-lg mb-4 min-h-[72px] flex items-start justify-center">
-        {isHR ? "Kontrola vrta i vanjskih prostora" : isEN ? "Garden & outdoor area" : "Garten & Aussenbereich"}
+        {isHR ? "Kontrola vanjskih prostora" : isEN ? "Outdoor area" : "Aussenbereich"}
       </h3>
       <p>
         {isHR
-          ? "Uz jednostavne radove održavanja."
+          ? "Uz jednostavne radove održavanja vrta."
           : isEN
           ? "simple maintenance and supervision of outdoor spaces."
           : "Kontrolle und einfache Pflege der Aussenflächen."}
@@ -647,11 +647,11 @@ return (
   <Wrench size={34} className="text-[#c6a27b]" />
 </div>
 <h3 className="font-serif text-lg mb-4 min-h-[72px] flex items-start justify-center">
-        {isHR ? "Organizacija manjih popravaka" : isEN ? "Small repairs" : "Organisation kleinerer Reparaturen"}
+        {isHR ? "Manji popravci" : isEN ? "Small repairs" : "Kleinere Reparaturen"}
       </h3>
       <p>
         {isHR
-          ? "Prema potrebi."
+          ? "Koordinacija majstora prema potrebi."
           : isEN
           ? "coordination of craftsmen when needed."
           : "Koordination Handwerker bei Bedarf."}
@@ -663,7 +663,7 @@ return (
   <CloudLightning size={34} className="text-[#c6a27b]" />
 </div> 
 <h3 className="font-serif text-lg mb-4 min-h-[72px] flex items-start justify-center">
-        {isHR ? "Izvanredne intervencije" : isEN ? "Emergency Interventions" : "Notfall-Einsätze"}
+        {isHR ? "Hitne intervencije" : isEN ? "Emergency Support" : "Notfall-Einsätze"}
       </h3>
       <p>
         {isHR
