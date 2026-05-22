@@ -563,10 +563,10 @@ return (
 <p className="text-xl leading-relaxed text-white/90 max-w-lg">
             
               {isHR
-                ? "Nekretnina zahtijeva redovitu brigu i izvan sezone. Vremenski utjecaji, osobito zimi, mogu uzrokovati oštećenja – bilo zbog vlage, hladnoće ili tehničkih kvarova. Mi smo na licu mjesta i brinemo se o svemu kako biste svoju nekretninu u svakom trenutku znali u sigurnim rukama."
+                ? "Nekretnina zahtijeva redovitu brigu i pažnju tijekom cijele godine. Brinemo se o kontrolama, organizaciji i očuvanju vaše nekretnine – diskretno, pouzdano i s osjećajem za detalje."
                 : isEN
-                ? "Your property deserves care and attention even outside the season. We look after inspections, coordination and upkeep discreetly and reliably – with a personal approach and an eye for detail."
-                : "Ihre Immobilie verdient auch ausserhalb der Saison Aufmerksamkeit und Pflege. Wir kümmern uns zuverlässig um Kontrollen, Organisation und den Werterhalt – diskret, persönlich und mit einem wachsamen Blick fürs Detail."}
+                ? "Your property deserves care and attention throughout the year. We take care of inspections, coordination and upkeep discreetly and reliably – with a personal approach and attention to detail."
+                : "Ihre Immobilie verdient auch ausserhalb der Saison Aufmerksamkeit und Pflege. Wir kümmern uns zuverlässig um Kontrollen, Organisation und den Werterhalt – diskret, persönlich und mit viel Liebe zum Detail."}
             </p>
 
           </div>
