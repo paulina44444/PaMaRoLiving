@@ -614,7 +614,7 @@ return (
 <div className="mb-5 flex items-center justify-center">
   <Search size={34} className="text-[#c6a27b]" />
 </div>
-<h3 className="font-serif text-lg mb-1 min-h-[72px] flex items-start justify-center">
+<h3 className="font-serif text-lg mb-1 min-h-[44px] flex items-start justify-center">
         {isHR ? "Vizualna kontrola" : isEN ? "Visual checks" : "Sichtkontrolle"}
       </h3>
       <p>
