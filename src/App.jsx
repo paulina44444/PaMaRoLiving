@@ -90,11 +90,34 @@ className="md:hidden"
       </button>
     ))}
 
-    <div className="flex gap-4 pt-2">
-      <button onClick={() => setLang("hr")}>HR</button>
-      <button onClick={() => setLang("de")}>DE</button>
-      <button onClick={() => setLang("en")}>EN</button>
-    </div>
+<div className="flex gap-4 pt-2">
+  <button
+    onClick={() => {
+      setLang("hr");
+      setMenuOpen(false);
+    }}
+  >
+    HR
+  </button>
+
+  <button
+    onClick={() => {
+      setLang("de");
+      setMenuOpen(false);
+    }}
+  >
+    DE
+  </button>
+
+  <button
+    onClick={() => {
+      setLang("en");
+      setMenuOpen(false);
+    }}
+  >
+    EN
+  </button>
+</div>
   </div>
 )}
 </header>
