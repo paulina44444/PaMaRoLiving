@@ -215,7 +215,7 @@ const cards = isHR
   ? [
       [
         "Cjelogodišnja briga o nekretnini",
-        "Redoviti nadzor, organizacija i prisutnost tijekom cijele godine.",
+        "Redoviti nadzor, organizacija i prisutnost na licu mjesta.",
           "service2"
       ],
 
@@ -235,38 +235,38 @@ const cards = isHR
   ? [
       [
         "Year-Round Property Care",
-        "Regular inspections, reliable local coordination and personal oversight – ensuring your property is always in safe hands.",
+        "Regular inspections, coordination and personal local presence.",
                   "service2"
       ],
 
       [
         "Carefree Stay",
-        "So you can enjoy your time in Dalmatia relaxed and carefree from the first to the last minute.",
+        "Preparation and organisation before and after your stay.",
                 "service3"
       ],
 
       [
-        "Stylish Redesign",
-        "With a strong sense for space, materials and atmosphere, we create harmonious and inviting living concepts with distinctive character.",
+        "Interior Styling",
+        "Thoughtful interior concepts with a sense for harmony and atmosphere.",
                   "service4"
       ],
     ]
 : [
     [
       "Ganzjährige Immobilienbetreuung",
-      "Regelmässige Kontrollen, persönliche Betreuung vor Ort und zuverlässige Organisation.",
+      "Regelmässige Kontrollen, Organisation und persönliche Präsenz vor Ort.",
       "service2"
     ],
 
     [
       "Sorgenfreier Aufenthalt",
-      "Damit Sie Ihre Zeit in Dalmatien entspannt geniessen können.",
+      "Vorbereitung und Organisation vor und während Ihres Aufenthalts.",
       "service3"
     ],
 
     [
       "Stilvolle Neugestaltung",
-      "Wir schaffen Räume mit Stil und mediterraner Eleganz.",
+      "Individuelle Raumgestaltung mit Sinn für Harmonie und Atmosphäre.",
       "service4"
     ],
   ];
@@ -298,9 +298,9 @@ return (
 
           <p className="mt-6 text-xl md:text-xl text-white/90">
             {isHR
-              ? "Za miran osjećaj, čak i kada niste ovdje."
+              ? "Za dobar osjećaj, čak i kada niste ovdje."
               : isEN
-              ? "For peace of mind, even when you are away."
+              ? "So you can always feel at ease, even when you are away."
               : "Für ein gutes Gefühl – auch wenn Sie nicht vor Ort sind."}
           </p>
         </div>
@@ -343,8 +343,8 @@ className="bg-white p-6 md:p-10 rounded-2xl shadow-sm hover:shadow-lg transition
         {isHR
           ? "„Mediteranski način života počinje osjećajem mira i lakoće."
           : isEN
-          ? "“We take care of the details – so you can truly relax.”"
-          : "„Wir kümmern uns um die Details – damit Sie sich entspannt zurücklehnen können.“"}
+          ? "“A Mediterranean lifestyle begins with calm and simplicity."
+          : "„Mediterranes Lebensgefühl beginnt mit Ruhe und Leichtigkeit."}
       </p>
 
 
