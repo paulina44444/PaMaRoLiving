@@ -1352,7 +1352,7 @@ function About({ lang }) {
 }
 
 /* ================= CONTACT ================= */
-const ContactPage = ({ lang }) => {
+const Contact = ({ lang }) => {
   const isHR = lang === "hr";
   const isEN = lang === "en";
 
