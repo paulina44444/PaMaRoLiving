@@ -311,13 +311,28 @@ return (
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 place-items-center">
 {cards.map(([title, text, page]) => (
   <button
-    key={title}
-    onClick={() => setPage(page)}
-className="bg-white p-6 md:p-10 rounded-2xl shadow-sm hover:shadow-lg transition duration-300 w-full max-w-md text-center min-h-[260px] flex flex-col justify-center"
-            >
-              <h3 className="font-serif text-xl mb-4">{title}</h3>
-              <p className="text-sm text-[#6b7478] leading-relaxed">{text}</p>
-        </button>
+  key={title}
+  onClick={() => setPage(page)}
+  className="bg-white p-6 md:p-10 rounded-2xl shadow-sm hover:shadow-lg transition duration-300 w-full max-w-md text-center min-h-[260px] flex flex-col justify-center"
+>
+
+  <div className="flex justify-center mb-5">
+    {page === "service2" ? (
+      <House size={20} className="text-[#c6a27b]" />
+    ) : page === "service3" ? (
+      <Sun size={20} className="text-[#c6a27b]" />
+    ) : (
+      <Palette size={20} className="text-[#c6a27b]" />
+    )}
+  </div>
+
+  <h3 className="font-serif text-xl mb-4">{title}</h3>
+
+  <p className="text-sm text-[#6b7478] leading-relaxed">
+    {text}
+  </p>
+
+</button>
           ))}
 
             </div>
@@ -353,7 +368,7 @@ className="bg-white p-6 md:p-10 rounded-2xl shadow-sm hover:shadow-lg transition
   </div>
 </section>
 
-      <section className="py-10 px-6 max-w-3xl mx-auto text-center">
+<section className="pt-10 pb-0 px-6 max-w-3xl mx-auto text-center">
         <h3 className="font-serif italic text-2xl mb-6">
           {isHR ? "Za koga smo tu" : isEN ? "Who We Are Here For" : "Für wen wir da sind"}
         </h3>
