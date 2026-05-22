@@ -1340,125 +1340,108 @@ function About({ lang }) {
   {/* TEXT */}
   <div className="max-w-7xl mx-auto px-8 md:px-16 py-24">
 
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 text-[17px] leading-[2.05] text-[#2f3a40]">
+  
+<div className="max-w-[900px] mx-auto text-[17px] leading-[2.15] text-[#2f3a40]">
 
-      {isHR ? (
-        <>
-          <div className="space-y-10">
+  {isHR ? (
+    <div className="space-y-10">
 
-            <p>
-              PaMaRo Living predstavlja osobnu brigu, povjerenje i odgovoran odnos prema nekretninama. U središtu nisu samo objekti, već prije svega ljudi koji stoje iza njih.
-            </p>
+      <p>
+        PaMaRo Living predstavlja osobnu brigu, povjerenje i odgovoran odnos prema nekretninama. U središtu nisu samo objekti, već prije svega ljudi koji stoje iza njih.
+      </p>
 
-            <p>
-              Iza PaMaRo Living stoji Paula Raimondo. Rođena u Splitu, s obiteljskim korijenima u Pisku i više od trideset godina života u Švicarskoj, spaja mediteranski način života sa švicarskom strukturom, pouzdanošću i visokim standardom kvalitete.
-            </p>
+      <p>
+        Iza PaMaRo Living stoji Paula Raimondo. Rođena u Splitu, s obiteljskim korijenima u Pisku i više od trideset godina života u Švicarskoj, spaja mediteranski način života sa švicarskom strukturom, pouzdanošću i visokim standardom kvalitete.
+      </p>
 
-            <p>
-              Već je rano otkrila svoju strast prema nekretninama te je u Švicarskoj završila temeljito komercijalno obrazovanje i dodatno stručno usavršavanje za upravljanje nekretninama. Tijekom dugogodišnjeg rada u renomiranim tvrtkama za nekretnine pratila je privatne i institucionalne klijente, koordinirala projekte gradnje, renovacija i sanacija te upravljala nekretninama s velikom pažnjom i odgovornošću.
-            </p>
+      <p>
+        Već je rano otkrila svoju strast prema nekretninama te je u Švicarskoj završila temeljito komercijalno obrazovanje i dodatno stručno usavršavanje za upravljanje nekretninama. Tijekom dugogodišnjeg rada u renomiranim tvrtkama za nekretnine pratila je privatne i institucionalne klijente, koordinirala projekte gradnje, renovacija i sanacija te upravljala nekretninama s velikom pažnjom i odgovornošću.
+      </p>
 
-          </div>
+      <p>
+        Povratkom u Hrvatsku nastala je želja da upravo to iskustvo prenese u Dalmaciju — osobno, diskretno i s visokim standardom kvalitete, povjerenja i estetike.
+      </p>
 
-          <div className="space-y-10">
+      <p>
+        Danas PaMaRo Living predstavlja osoban, diskretan i kvalitetan pristup nekretninama i stanovanju u Dalmaciji. U središtu svakog projekta uvijek su povjerenje, pouzdanost te osjećaj za kvalitetu, estetiku i detalje.
+      </p>
 
-            <p>
-              Povratkom u Hrvatsku nastala je želja da upravo to iskustvo prenese u Dalmaciju — osobno, diskretno i s visokim standardom kvalitete, povjerenja i estetike.
-            </p>
+      <p>
+        Paula Raimondo govori njemački, hrvatski, engleski i talijanski jezik te predstavlja strukturiran, srdačan i osoban način rada.
+      </p>
 
-            <p>
-              Danas PaMaRo Living predstavlja osoban, diskretan i kvalitetan pristup nekretninama i stanovanju u Dalmaciji. U središtu svakog projekta uvijek su povjerenje, pouzdanost te osjećaj za kvalitetu, estetiku i detalje.
-            </p>
-
-            <p>
-              Paula Raimondo govori njemački, hrvatski, engleski i talijanski jezik te predstavlja strukturiran, srdačan i osoban način rada.
-            </p>
-
-            <p>
-              Savjetodavnu podršku pruža joj suprug Marco Raimondo, koji raspolaže dugogodišnjim iskustvom u području nekretnina te izraženim jezičnim i stručnim kompetencijama.
-            </p>
-
-          </div>
-        </>
-      ) : isEN ? (
-        <>
-          <div className="space-y-10">
-
-            <p>
-              PaMaRo Living stands for personal care, trust and a responsible approach to property management. The focus is not only on properties themselves, but above all on the people behind them.
-            </p>
-
-            <p>
-              Behind PaMaRo Living is Paula Raimondo. Born in Split, with family roots in Pisak and more than thirty years of life experience in Switzerland, she combines the Mediterranean way of living with Swiss structure, reliability and a strong sense of quality.
-            </p>
-
-            <p>
-              From an early stage, she discovered her passion for real estate and completed a solid commercial education in Switzerland, followed by further professional training as a certified real estate manager. During her many years working for renowned real estate companies, she supported private and institutional clients, coordinated construction, renovation and refurbishment projects and managed properties with great care and responsibility.
-            </p>
-
-          </div>
-
-          <div className="space-y-10">
-
-            <p>
-              Returning to Croatia inspired the desire to bring this experience to Dalmatia — in a personal, discreet and quality-oriented way.
-            </p>
-
-            <p>
-              Today, PaMaRo Living stands for personal, discreet and high-quality support surrounding properties and living in Dalmatia. Trust, reliability and a refined sense for quality, aesthetics and detail are always at the heart of every project.
-            </p>
-
-            <p>
-              Paula Raimondo speaks German, Croatian, English and Italian and stands for a structured, warm and personal way of working.
-            </p>
-
-            <p>
-              She is supported in an advisory capacity by her husband Marco Raimondo, who brings many years of experience in the real estate sector as well as extensive linguistic and professional expertise.
-            </p>
-
-          </div>
-        </>
-      ) : (
-        <>
-          <div className="space-y-10">
-
-            <p>
-              PaMaRo Living steht für persönliche Betreuung, Vertrauen und einen verantwortungsvollen Umgang mit Immobilien. Im Mittelpunkt stehen nicht nur Objekte, sondern vor allem die Menschen dahinter.
-            </p>
-
-            <p>
-              Hinter PaMaRo Living steht Paula Raimondo. Geboren in Split, mit familiären Wurzeln in Pisak und über dreissig Jahren Lebenserfahrung in der Schweiz, verbindet sie mediterrane Lebensart mit Schweizer Struktur, Verlässlichkeit und Qualitätsbewusstsein.
-            </p>
-
-            <p>
-              Bereits früh entdeckte sie ihre Leidenschaft für Immobilien und absolvierte in der Schweiz eine fundierte kaufmännische Ausbildung sowie die Weiterbildung zur eidg. Immobilienbewirtschafterin. Während ihrer langjährigen Tätigkeit bei renommierten Immobilienunternehmen betreute sie private und institutionelle Kunden, koordinierte Bau-, Renovations- und Sanierungsprojekte und begleitete Immobilien mit grosser Sorgfalt und Verantwortung.
-            </p>
-
-          </div>
-
-          <div className="space-y-10">
-
-            <p>
-              Mit der Rückkehr nach Kroatien entstand der Wunsch, genau diese Erfahrung in Dalmatien einzubringen – persönlich, diskret und mit einem hohen Anspruch an Qualität, Vertrauen und Ästhetik.
-            </p>
-
-            <p>
-              Heute steht PaMaRo Living für eine persönliche, diskrete und hochwertige Begleitung rund um Immobilien und Wohnen in Dalmatien. Im Mittelpunkt stehen Vertrauen, Verlässlichkeit und ein feines Gespür für Qualität, Ästhetik und Details.
-            </p>
-
-            <p>
-              Paula Raimondo spricht Deutsch, Kroatisch, Englisch und Italienisch und steht für eine strukturierte, herzliche und persönliche Arbeitsweise.
-            </p>
-
-            <p>
-              Beratend unterstützt wird sie von ihrem Mann Marco Raimondo, der über langjährige Erfahrung im Immobilienbereich sowie über ausgeprägte sprachliche und fachliche Kompetenzen verfügt.
-            </p>
-
-          </div>
-        </>
-      )}
+      <p>
+        Savjetodavnu podršku pruža joj suprug Marco Raimondo, koji raspolaže dugogodišnjim iskustvom u području nekretnina te izraženim jezičnim i stručnim kompetencijama.
+      </p>
 
     </div>
+  ) : isEN ? (
+    <div className="space-y-10">
+
+      <p>
+        PaMaRo Living stands for personal care, trust and a responsible approach to property management. The focus is not only on properties themselves, but above all on the people behind them.
+      </p>
+
+      <p>
+        Behind PaMaRo Living is Paula Raimondo. Born in Split, with family roots in Pisak and more than thirty years of life experience in Switzerland, she combines the Mediterranean way of living with Swiss structure, reliability and a strong sense of quality.
+      </p>
+
+      <p>
+        From an early stage, she discovered her passion for real estate and completed a solid commercial education in Switzerland, followed by further professional training as a certified real estate manager. During her many years working for renowned real estate companies, she supported private and institutional clients, coordinated construction, renovation and refurbishment projects and managed properties with great care and responsibility.
+      </p>
+
+      <p>
+        Returning to Croatia inspired the desire to bring this experience to Dalmatia — in a personal, discreet and quality-oriented way.
+      </p>
+
+      <p>
+        Today, PaMaRo Living stands for personal, discreet and high-quality support surrounding properties and living in Dalmatia. Trust, reliability and a refined sense for quality, aesthetics and detail are always at the heart of every project.
+      </p>
+
+      <p>
+        Paula Raimondo speaks German, Croatian, English and Italian and stands for a structured, warm and personal way of working.
+      </p>
+
+      <p>
+        She is supported in an advisory capacity by her husband Marco Raimondo, who brings many years of experience in the real estate sector as well as extensive linguistic and professional expertise.
+      </p>
+
+    </div>
+  ) : (
+    <div className="space-y-10">
+
+      <p>
+        PaMaRo Living steht für persönliche Betreuung, Vertrauen und einen verantwortungsvollen Umgang mit Immobilien. Im Mittelpunkt stehen nicht nur Objekte, sondern vor allem die Menschen dahinter.
+      </p>
+
+      <p>
+        Hinter PaMaRo Living steht Paula Raimondo. Geboren in Split, mit familiären Wurzeln in Pisak und über dreissig Jahren Lebenserfahrung in der Schweiz, verbindet sie mediterrane Lebensart mit Schweizer Struktur, Verlässlichkeit und Qualitätsbewusstsein.
+      </p>
+
+      <p>
+        Bereits früh entdeckte sie ihre Leidenschaft für Immobilien und absolvierte in der Schweiz eine fundierte kaufmännische Ausbildung sowie die Weiterbildung zur eidg. Immobilienbewirtschafterin. Während ihrer langjährigen Tätigkeit bei renommierten Immobilienunternehmen betreute sie private und institutionelle Kunden, koordinierte Bau-, Renovations- und Sanierungsprojekte und begleitete Immobilien mit grosser Sorgfalt und Verantwortung.
+      </p>
+
+      <p>
+        Mit der Rückkehr nach Kroatien entstand der Wunsch, genau diese Erfahrung in Dalmatien einzubringen – persönlich, diskret und mit einem hohen Anspruch an Qualität, Vertrauen und Ästhetik.
+      </p>
+
+      <p>
+        Heute steht PaMaRo Living für eine persönliche, diskrete und hochwertige Begleitung rund um Immobilien und Wohnen in Dalmatien. Im Mittelpunkt stehen Vertrauen, Verlässlichkeit und ein feines Gespür für Qualität, Ästhetik und Details.
+      </p>
+
+      <p>
+        Paula Raimondo spricht Deutsch, Kroatisch, Englisch und Italienisch und steht für eine strukturierte, herzliche und persönliche Arbeitsweise.
+      </p>
+
+      <p>
+        Beratend unterstützt wird sie von ihrem Mann Marco Raimondo, der über langjährige Erfahrung im Immobilienbereich sowie über ausgeprägte sprachliche und fachliche Kompetenzen verfügt.
+      </p>
+
+    </div>
+  )}
+
+</div>
 
   </div>
 
