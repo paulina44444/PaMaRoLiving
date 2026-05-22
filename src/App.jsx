@@ -215,19 +215,19 @@ const cards = isHR
   ? [
       [
         "Cjelogodišnja briga o nekretnini",
-        "Redovite kontrole, pouzdana organizacija i osobna briga – kako bi vaša nekretnina uvijek bila u sigurnim rukama.",
+        "Redoviti nadzor, organizacija i prisutnost tijekom cijele godine.",
           "service2"
       ],
 
       [
         "Bezbrižan boravak",
-        "Kako biste svoje vrijeme u Dalmaciji mogli opušteno uživati od prve do posljednje minute.",
+        "Kako bi vas pri dolasku sve čekalo spremno i bez komplikacija.",
         "service3"
       ],
 
       [
         "Stilsko uređenje",
-        "S osjećajem za prostor, materijale i atmosferu stvaramo skladne i ugodne prostore s posebnim karakterom.",
+        "Skladni interijeri s pažljivo biranim detaljima i osjećajem za prostor.",
           "service4"
       ],
     ]
@@ -341,7 +341,7 @@ className="bg-white p-6 md:p-10 rounded-2xl shadow-sm hover:shadow-lg transition
 
       <p className="italic text-xl md:text-4xl font-serif text-[#2f3a40] leading-relaxed">
         {isHR
-          ? "„Brinemo o detaljima – kako biste se vi mogli opustiti.“"
+          ? "„Mediteranski način života počinje osjećajem mira i lakoće."
           : isEN
           ? "“We take care of the details – so you can truly relax.”"
           : "„Wir kümmern uns um die Details – damit Sie sich entspannt zurücklehnen können.“"}
