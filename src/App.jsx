@@ -23,7 +23,7 @@ Map,
 Package,
 Eye,
 Trees,
-Cloudrain,
+CloudRain,
 Calendar,
 } from "lucide-react";
 
