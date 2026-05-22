@@ -25,6 +25,8 @@ Eye,
 Trees,
 CloudRain,
 Calendar,
+User,
+Heart,
 } from "lucide-react";
 
 import { FaInstagram, FaFacebookF } from "react-icons/fa";
@@ -1299,103 +1301,237 @@ function About({ lang }) {
   const isEN = lang === "en";
 
   return (
-    <section className="py-24 px-6 max-w-3xl mx-auto space-y-6 text-sm leading-relaxed">
-      <h1 className="text-3xl font-serif text-center mb-10">
-        {isHR ? "O PaMaRo Living" : isEN ? "About PaMaRo Living" : "Über PaMaRo Living"}
-      </h1>
+<section className="max-w-7xl mx-auto px-8 md:px-16 py-24">
 
-{isHR ? (
-  <>
-    <p>
-      PaMaRo Living predstavlja osobnu brigu, povjerenje i odgovoran odnos prema nekretninama. U središtu nisu samo objekti, već prije svega ljudi koji stoje iza njih.
-    </p>
+  <div className="grid grid-cols-1 lg:grid-cols-[1.2fr_0.8fr] gap-16 items-start">
 
-    <p>
-      Iza PaMaRo Living stoji Paula Raimondo. Rođena u Splitu, s obiteljskim korijenima u Pisku i više od trideset godina života u Švicarskoj, spaja mediteranski način života sa švicarskom strukturom, pouzdanošću i visokim standardom kvalitete.
-    </p>
+    {/* TEXT */}
+    <div>
 
-    <p>
-      Već je rano otkrila svoju strast prema nekretninama te je u Švicarskoj završila temeljito komercijalno obrazovanje i dodatno stručno usavršavanje za upravljanje nekretninama. Tijekom dugogodišnjeg rada u renomiranim tvrtkama za nekretnine pratila je privatne i institucionalne klijente, koordinirala projekte gradnje, renovacija i sanacija te upravljala nekretninama s velikom pažnjom i odgovornošću.
-    </p>
+      <h2 className="font-serif text-5xl md:text-6xl text-[#1f2d35] mb-12">
+        {isHR ? "O nama" : isEN ? "About us" : "Über uns"}
+      </h2>
 
-    <p>
-      Povratkom u Hrvatsku nastala je želja da upravo to iskustvo prenese u Dalmaciju — osobno, diskretno i s visokim standardom kvalitete, povjerenja i estetike.
-    </p>
+      <div className="grid md:grid-cols-2 gap-10 text-[17px] leading-[2] text-[#2f3a40]">
 
-    <p>
-      Danas PaMaRo Living predstavlja osoban, diskretan i kvalitetan pristup nekretninama i stanovanju u Dalmaciji. U središtu svakog projekta uvijek su povjerenje, pouzdanost te osjećaj za kvalitetu, estetiku i detalje.
-    </p>
+        {isHR ? (
+          <>
+            <div className="space-y-8">
 
-    <p>
-      Paula Raimondo govori njemački, hrvatski, engleski i talijanski jezik te predstavlja strukturiran, srdačan i osoban način rada.
-    </p>
+              <p>
+                PaMaRo Living predstavlja osobnu brigu, povjerenje i odgovoran odnos prema nekretninama. U središtu nisu samo objekti, već prije svega ljudi koji stoje iza njih.
+              </p>
 
-    <p>
-      Savjetodavnu podršku pruža joj suprug Marco Raimondo, koji raspolaže dugogodišnjim iskustvom u području nekretnina te izraženim jezičnim i stručnim kompetencijama.
-    </p>
-  </>
-) : isEN ? (
-  <>
-    <p>
-      PaMaRo Living stands for personal care, trust and a responsible approach to property management. The focus is not only on properties themselves, but above all on the people behind them.
-    </p>
+              <p>
+                Iza PaMaRo Living stoji Paula Raimondo. Rođena u Splitu, s obiteljskim korijenima u Pisku i više od trideset godina života u Švicarskoj, spaja mediteranski način života sa švicarskom strukturom, pouzdanošću i visokim standardom kvalitete.
+              </p>
 
-    <p>
-      Behind PaMaRo Living is Paula Raimondo. Born in Split, with family roots in Pisak and more than thirty years of life experience in Switzerland, she combines the Mediterranean way of living with Swiss structure, reliability and a strong sense of quality.
-    </p>
+              <p>
+                Već je rano otkrila svoju strast prema nekretninama te je u Švicarskoj završila temeljito komercijalno obrazovanje i dodatno stručno usavršavanje za upravljanje nekretninama. Tijekom dugogodišnjeg rada u renomiranim tvrtkama za nekretnine pratila je privatne i institucionalne klijente, koordinirala projekte gradnje, renovacija i sanacija te upravljala nekretninama s velikom pažnjom i odgovornošću.
+              </p>
 
-    <p>
-      From an early stage, she discovered her passion for real estate and completed a solid commercial education in Switzerland, followed by further professional training as a certified real estate manager. During her many years working for renowned real estate companies, she supported private and institutional clients, coordinated construction, renovation and refurbishment projects and managed properties with great care and responsibility.
-    </p>
+            </div>
 
-    <p>
-      Returning to Croatia inspired the desire to bring this experience to Dalmatia — in a personal, discreet and quality-oriented way.
-    </p>
+            <div className="space-y-8">
 
-    <p>
-      Today, PaMaRo Living stands for personal, discreet and high-quality support surrounding properties and living in Dalmatia. Trust, reliability and a refined sense for quality, aesthetics and detail are always at the heart of every project.
-    </p>
+              <p>
+                Povratkom u Hrvatsku nastala je želja da upravo to iskustvo prenese u Dalmaciju — osobno, diskretno i s visokim standardom kvalitete, povjerenja i estetike.
+              </p>
 
-    <p>
-      Paula Raimondo speaks German, Croatian, English and Italian and stands for a structured, warm and personal way of working.
-    </p>
+              <p>
+                Danas PaMaRo Living predstavlja osoban, diskretan i kvalitetan pristup nekretninama i stanovanju u Dalmaciji. U središtu svakog projekta uvijek su povjerenje, pouzdanost te osjećaj za kvalitetu, estetiku i detalje.
+              </p>
 
-    <p>
-      She is supported in an advisory capacity by her husband Marco Raimondo, who brings many years of experience in the real estate sector as well as extensive linguistic and professional expertise.
-    </p>
-  </>
-) : (
-  <>
-    <p>
-      PaMaRo Living steht für persönliche Betreuung, Vertrauen und einen verantwortungsvollen Umgang mit Immobilien. Im Mittelpunkt stehen nicht nur Objekte, sondern vor allem die Menschen dahinter.
-    </p>
+              <p>
+                Paula Raimondo govori njemački, hrvatski, engleski i talijanski jezik te predstavlja strukturiran, srdačan i osoban način rada.
+              </p>
 
-    <p>
-      Hinter PaMaRo Living steht Paula Raimondo. Geboren in Split, mit familiären Wurzeln in Pisak und über dreissig Jahren Lebenserfahrung in der Schweiz, verbindet sie mediterrane Lebensart mit Schweizer Struktur, Verlässlichkeit und Qualitätsbewusstsein.
-    </p>
+              <p>
+                Savjetodavnu podršku pruža joj suprug Marco Raimondo, koji raspolaže dugogodišnjim iskustvom u području nekretnina te izraženim jezičnim i stručnim kompetencijama.
+              </p>
 
-    <p>
-      Bereits früh entdeckte sie ihre Leidenschaft für Immobilien und absolvierte in der Schweiz eine fundierte kaufmännische Ausbildung sowie die Weiterbildung zur eidg. Immobilienbewirtschafterin. Während ihrer langjährigen Tätigkeit bei renommierten Immobilienunternehmen betreute sie private und institutionelle Kunden, koordinierte Bau-, Renovations- und Sanierungsprojekte und begleitete Immobilien mit grosser Sorgfalt und Verantwortung.
-    </p>
+            </div>
+          </>
+        ) : isEN ? (
+          <>
+            <div className="space-y-8">
 
-    <p>
-      Mit der Rückkehr nach Kroatien entstand der Wunsch, genau diese Erfahrung in Dalmatien einzubringen – persönlich, diskret und mit einem hohen Anspruch an Qualität, Vertrauen und Ästhetik.
-    </p>
+              <p>
+                PaMaRo Living stands for personal care, trust and a responsible approach to property management. The focus is not only on properties themselves, but above all on the people behind them.
+              </p>
 
-    <p>
-      Heute steht PaMaRo Living für eine persönliche, diskrete und hochwertige Begleitung rund um Immobilien und Wohnen in Dalmatien. Im Mittelpunkt stehen Vertrauen, Verlässlichkeit und ein feines Gespür für Qualität, Ästhetik und Details.
-    </p>
+              <p>
+                Behind PaMaRo Living is Paula Raimondo. Born in Split, with family roots in Pisak and more than thirty years of life experience in Switzerland, she combines the Mediterranean way of living with Swiss structure, reliability and a strong sense of quality.
+              </p>
 
-    <p>
-      Paula Raimondo spricht Deutsch, Kroatisch, Englisch und Italienisch und steht für eine strukturierte, herzliche und persönliche Arbeitsweise.
-    </p>
+              <p>
+                From an early stage, she discovered her passion for real estate and completed a solid commercial education in Switzerland, followed by further professional training as a certified real estate manager. During her many years working for renowned real estate companies, she supported private and institutional clients, coordinated construction, renovation and refurbishment projects and managed properties with great care and responsibility.
+              </p>
 
-    <p>
-      Beratend unterstützt wird sie von ihrem Mann Marco Raimondo, der über langjährige Erfahrung im Immobilienbereich sowie über ausgeprägte sprachliche und fachliche Kompetenzen verfügt.
-    </p>
-  </>
-)}
-    </section>
+            </div>
+
+            <div className="space-y-8">
+
+              <p>
+                Returning to Croatia inspired the desire to bring this experience to Dalmatia — in a personal, discreet and quality-oriented way.
+              </p>
+
+              <p>
+                Today, PaMaRo Living stands for personal, discreet and high-quality support surrounding properties and living in Dalmatia. Trust, reliability and a refined sense for quality, aesthetics and detail are always at the heart of every project.
+              </p>
+
+              <p>
+                Paula Raimondo speaks German, Croatian, English and Italian and stands for a structured, warm and personal way of working.
+              </p>
+
+              <p>
+                She is supported in an advisory capacity by her husband Marco Raimondo, who brings many years of experience in the real estate sector as well as extensive linguistic and professional expertise.
+              </p>
+
+            </div>
+          </>
+        ) : (
+          <>
+            <div className="space-y-8">
+
+              <p>
+                PaMaRo Living steht für persönliche Betreuung, Vertrauen und einen verantwortungsvollen Umgang mit Immobilien. Im Mittelpunkt stehen nicht nur Objekte, sondern vor allem die Menschen dahinter.
+              </p>
+
+              <p>
+                Hinter PaMaRo Living steht Paula Raimondo. Geboren in Split, mit familiären Wurzeln in Pisak und über dreissig Jahren Lebenserfahrung in der Schweiz, verbindet sie mediterrane Lebensart mit Schweizer Struktur, Verlässlichkeit und Qualitätsbewusstsein.
+              </p>
+
+              <p>
+                Bereits früh entdeckte sie ihre Leidenschaft für Immobilien und absolvierte in der Schweiz eine fundierte kaufmännische Ausbildung sowie die Weiterbildung zur eidg. Immobilienbewirtschafterin. Während ihrer langjährigen Tätigkeit bei renommierten Immobilienunternehmen betreute sie private und institutionelle Kunden, koordinierte Bau-, Renovations- und Sanierungsprojekte und begleitete Immobilien mit grosser Sorgfalt und Verantwortung.
+              </p>
+
+            </div>
+
+            <div className="space-y-8">
+
+              <p>
+                Mit der Rückkehr nach Kroatien entstand der Wunsch, genau diese Erfahrung in Dalmatien einzubringen – persönlich, diskret und mit einem hohen Anspruch an Qualität, Vertrauen und Ästhetik.
+              </p>
+
+              <p>
+                Heute steht PaMaRo Living für eine persönliche, diskrete und hochwertige Begleitung rund um Immobilien und Wohnen in Dalmatien. Im Mittelpunkt stehen Vertrauen, Verlässlichkeit und ein feines Gespür für Qualität, Ästhetik und Details.
+              </p>
+
+              <p>
+                Paula Raimondo spricht Deutsch, Kroatisch, Englisch und Italienisch und steht für eine strukturierte, herzliche und persönliche Arbeitsweise.
+              </p>
+
+              <p>
+                Beratend unterstützt wird sie von ihrem Mann Marco Raimondo, der über langjährige Erfahrung im Immobilienbereich sowie über ausgeprägte sprachliche und fachliche Kompetenzen verfügt.
+              </p>
+
+            </div>
+          </>
+        )}
+
+      </div>
+
+    </div>
+
+    {/* IMAGES */}
+    <div className="space-y-6">
+
+      <img
+        src="/about-paula.jpg"
+        alt="Paula Raimondo"
+        className="w-full h-[430px] object-cover rounded-[2px]"
+      />
+
+      <img
+        src="/about-marco.jpg"
+        alt="Marco Raimondo"
+        className="w-full h-[270px] object-cover rounded-[2px]"
+      />
+
+    </div>
+
+  </div>
+
+  {/* VALUES */}
+  <div className="border-t border-[#ddd2c6] mt-24 pt-14">
+
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
+
+      {/* VALUE 1 */}
+      <div className="flex flex-col items-center">
+
+        <User
+          size={42}
+          strokeWidth={1.5}
+          className="text-[#c6a27b] mb-5"
+        />
+
+        <h3 className="uppercase tracking-[0.12em] text-[26px] text-[#b88d63] mb-5">
+          {isHR ? "Osobno" : isEN ? "Personal" : "Persönlich"}
+        </h3>
+
+        <p className="text-[17px] leading-[1.9] text-[#2f3a40] max-w-[220px]">
+          {isHR
+            ? "Posvećujemo vrijeme vašim željama i potrebama."
+            : isEN
+            ? "We take time for your wishes and requests."
+            : "Wir nehmen uns Zeit für Ihre Anliegen."}
+        </p>
+
+      </div>
+
+      {/* VALUE 2 */}
+      <div className="flex flex-col items-center md:border-x border-[#ddd2c6]">
+
+        <ShieldCheck
+          size={42}
+          strokeWidth={1.5}
+          className="text-[#c6a27b] mb-5"
+        />
+
+        <h3 className="uppercase tracking-[0.12em] text-[26px] text-[#b88d63] mb-5">
+          {isHR ? "Pouzdano" : isEN ? "Reliable" : "Verlässlich"}
+        </h3>
+
+        <p className="text-[17px] leading-[1.9] text-[#2f3a40] max-w-[220px]">
+          {isHR
+            ? "Diskretno, organizirano i pouzdano."
+            : isEN
+            ? "Discreet, structured and reliable."
+            : "Diskret, strukturiert und zuverlässig."}
+        </p>
+
+      </div>
+
+      {/* VALUE 3 */}
+      <div className="flex flex-col items-center">
+
+        <Heart
+          size={42}
+          strokeWidth={1.5}
+          className="text-[#c6a27b] mb-5"
+        />
+
+        <h3 className="uppercase tracking-[0.12em] text-[26px] text-[#b88d63] mb-5">
+          {isHR ? "Sa srcem" : isEN ? "With Heart" : "Mit Herz"}
+        </h3>
+
+        <p className="text-[17px] leading-[1.9] text-[#2f3a40] max-w-[220px]">
+          {isHR
+            ? "S pažnjom i osjećajem za detalje."
+            : isEN
+            ? "With care and attention to detail."
+            : "Mit Sorgfalt und einem Blick fürs Detail."}
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
   );
 }
 
