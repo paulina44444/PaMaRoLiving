@@ -553,10 +553,10 @@ return (
 
             <h1 className="font-serif text-5xl md:text-6xl leading-tight mb-8">
               {isHR
-                ? "Cjelogodišnja briga o nekretnini"
+                ? "Briga o nekretnini"
                 : isEN
-                ? "Year-Round Property Care"
-                : "Ganzjährige Betreuung"}
+                ? "Property Care"
+                : "Immobilienbetreuung"}
             </h1>
 
             <div className="w-20 h-[2px] bg-[#c6a27b] mb-8"></div>
