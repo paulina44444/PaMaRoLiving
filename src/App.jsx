@@ -1215,7 +1215,7 @@ default: content = <Home lang={lang} setPage={setPage} />;
   return (
 <div className="flex flex-col bg-[#f7f2ed]">
       <Navigation setPage={setPage} lang={lang} setLang={setLang} />
-      <main className="flex-grow pt-20">{content}</main>
+<main className="pt-20">{content}</main>
       <FooterBar />
     </div>
   );
