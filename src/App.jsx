@@ -21,6 +21,7 @@ Sparkles,
 Star,
 Map,
 Package,
+Eye,
 } from "lucide-react";
 
 import { FaInstagram, FaFacebookF } from "react-icons/fa";
