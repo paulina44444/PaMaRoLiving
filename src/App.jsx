@@ -16,7 +16,8 @@ FileText,
 House,
 Sun,
 Palette,
-Package,
+Basket,
+Sparkles,
 } from "lucide-react";
 
 import { FaInstagram, FaFacebookF } from "react-icons/fa";
@@ -620,7 +621,7 @@ return (
 
     <div className="bg-[#f7f2ed] rounded-3xl p-6 min-h-[240px] shadow-[0_4px_20px_rgba(0,0,0,0.04)] text-center">
 <div className="mb-5 flex items-center justify-center">
-  <ShieldCheck size={34} className="text-[#c6a27b]" />
+  <Sparkles size={34} className="text-[#c6a27b]" />
 </div>
 <h3 className="font-serif text-lg mb-1 min-h-[44px] flex items-start justify-center">
         {isHR ? "Redoviti obilasci" : isEN ? "Regular Inspections" : "Kontrollgänge"}
@@ -892,7 +893,7 @@ const Service3 = ({ lang }) => {
           {/* 3 */}
           <div className="bg-[#f7f2ed] rounded-3xl p-5 min-h-[210px] shadow-sm text-center">
             <div className="mb-5 flex items-center justify-center">
-              <Package size={34} className="text-[#c6a27b]" />
+              <Basket size={34} className="text-[#c6a27b]" />
             </div>
 
             <h3 className="font-serif text-lg mb-1 min-h-[48px] flex items-start justify-center">
