@@ -1412,7 +1412,7 @@ const Contact = ({ lang }) => {
         <div className="grid grid-cols-1 lg:grid-cols-[340px_1fr] gap-20 items-start">
 
           {/* LEFT TEXT */}
-          <div>
+<div className="hidden lg:block">
 
             <h2 className="font-serif text-4xl text-[#2f3a40] mb-6">
               {isHR
