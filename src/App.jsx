@@ -1439,52 +1439,81 @@ const Contact = ({ lang }) => {
           {/* FORM */}
           <div className="border-l border-[#e7ddd2] pl-0 lg:pl-12">
 
-            <form className="space-y-6">
+<form
+  action="https://api.web3forms.com/submit"
+  method="POST"
+  className="space-y-6"
+>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+  <input
+    type="hidden"
+    name="access_key"
+    value="611d2eb2-e323-4564-9367-f75b1e6f3b5c"
+  />
 
-                <input
-                  type="text"
-                  placeholder={isHR ? "Ime*" : isEN ? "Name*" : "Name*"}
-                  className="h-14 px-5 border border-[#e7ddd2] bg-transparent text-[#2f3a40] placeholder:text-[#9b9b9b] outline-none"
-                />
+  <input
+    type="hidden"
+    name="subject"
+    value="Neue Kontaktanfrage – PaMaRo Living"
+  />
 
-                <input
-                  type="email"
-                  placeholder={isHR ? "E-mail*" : isEN ? "E-Mail*" : "E-Mail*"}
-                  className="h-14 px-5 border border-[#e7ddd2] bg-transparent text-[#2f3a40] placeholder:text-[#9b9b9b] outline-none"
-                />
+  <input
+    type="hidden"
+    name="from_name"
+    value="PaMaRo Living Website"
+  />
 
-              </div>
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 
-              <input
-                type="text"
-                placeholder={isHR ? "Telefon" : isEN ? "Phone" : "Telefon"}
-                className="w-full h-14 px-5 border border-[#e7ddd2] bg-transparent text-[#2f3a40] placeholder:text-[#9b9b9b] outline-none"
-              />
+    <input
+      type="text"
+      name="name"
+      required
+      placeholder={isHR ? "Ime*" : isEN ? "Name*" : "Name*"}
+      className="h-14 px-5 border border-[#e7ddd2] bg-transparent text-[#2f3a40] placeholder:text-[#9b9b9b] outline-none"
+    />
 
-              <textarea
-                rows="7"
-                placeholder={isHR ? "Poruka*" : isEN ? "Message*" : "Nachricht*"}
-                className="w-full px-5 py-4 border border-[#e7ddd2] bg-transparent text-[#2f3a40] placeholder:text-[#9b9b9b] outline-none resize-none"
-              ></textarea>
+    <input
+      type="email"
+      name="email"
+      required
+      placeholder={isHR ? "E-mail*" : isEN ? "E-Mail*" : "E-Mail*"}
+      className="h-14 px-5 border border-[#e7ddd2] bg-transparent text-[#2f3a40] placeholder:text-[#9b9b9b] outline-none"
+    />
 
-              <div className="pt-2">
+  </div>
 
-                <button
-                  type="submit"
-                  className="bg-[#c6a27b] hover:bg-[#b8946d] transition-colors duration-300 text-white tracking-[0.15em] uppercase text-sm px-10 h-14"
-                >
-                  {isHR
-                    ? "Pošalji poruku"
-                    : isEN
-                    ? "Send Message"
-                    : "Nachricht senden"}
-                </button>
+  <input
+    type="text"
+    name="phone"
+    placeholder={isHR ? "Telefon" : isEN ? "Phone" : "Telefon"}
+    className="w-full h-14 px-5 border border-[#e7ddd2] bg-transparent text-[#2f3a40] placeholder:text-[#9b9b9b] outline-none"
+  />
 
-              </div>
+  <textarea
+    rows="7"
+    name="message"
+    required
+    placeholder={isHR ? "Poruka*" : isEN ? "Message*" : "Nachricht*"}
+    className="w-full px-5 py-4 border border-[#e7ddd2] bg-transparent text-[#2f3a40] placeholder:text-[#9b9b9b] outline-none resize-none"
+  ></textarea>
 
-            </form>
+  <div className="pt-2">
+
+    <button
+      type="submit"
+      className="bg-[#c6a27b] hover:bg-[#b8946d] transition-colors duration-300 text-white tracking-[0.15em] uppercase text-sm px-10 h-14"
+    >
+      {isHR
+        ? "Pošalji poruku"
+        : isEN
+        ? "Send Message"
+        : "Nachricht senden"}
+    </button>
+
+  </div>
+
+</form>
 
           </div>
 
