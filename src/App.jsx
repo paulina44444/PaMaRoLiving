@@ -235,7 +235,7 @@ const cards = isHR
   ? [
       [
         "Property Care",
-        "Regular inspections, coordination and personal local presence throughout the year.",
+        "Regular inspections and reliable local coordination throughout the year.",
                   "service2"
       ],
 
@@ -254,7 +254,7 @@ const cards = isHR
 : [
     [
       "Immobilienbetreuung",
-      "Regelmässige Kontrollen, Organisation und persönliche Präsenz das ganze Jahr über.",
+      "Regelmässige Kontrollen und Betreuung vor Ort.",
       "service2"
     ],
 
@@ -454,7 +454,7 @@ function Services({ setPage, lang }) {
     ? "Redoviti nadzor, organizacija i prisutnost tijekom cijele godine."
     : isEN
     ? "Regular inspections and reliable local coordination throughout the year."
-    : "Regelmässige Kontrollen und zuverlässige Organisation das ganze Jahr über."}
+    : "Regelmässige Kontrollen und Betreuung vor Ort."}
       </p>
     </button>
 
