@@ -584,7 +584,7 @@ const Service2 = ({ lang }) => {
 
             <div className="max-w-xl text-white">
 
-              <h1 className="font-serif text-4xl md:text-6xl leading-tight mb-8 text-center md:text-left">
+              <h1 className="font-serif text-4xl md:text-6xl leading-tight mb-8 text-left">
                 {isHR
                   ? "Briga o nekretnini"
                   : isEN
@@ -866,7 +866,7 @@ const Service3 = ({ lang }) => {
 
             <div className="max-w-xl text-white">
 
-              <h1 className="font-serif text-4xl md:text-6xl leading-tight mb-8 text-center md:text-left">
+              <h1 className="font-serif text-4xl md:text-6xl leading-tight mb-8 text-left">
                 {isHR
                   ? "Bezbrižan boravak"
                   : isEN
@@ -1056,7 +1056,7 @@ const Service4 = ({ lang }) => {
 
             <div className="max-w-xl text-white">
 
-              <h1 className="font-serif text-4xl md:text-6xl leading-tight mb-8 text-center md:text-left">
+              <h1 className="font-serif text-4xl md:text-6xl leading-tight mb-8 text-left">
                 {isHR
                   ? "Uređenje interijera & preuređenje"
                   : isEN
