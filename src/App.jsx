@@ -569,7 +569,7 @@ return (
         className="absolute inset-0 w-full h-full object-cover"
       />
 
-<div className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/45 to-transparent" />
+<div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/55 to-transparent" />
 
       <div className="relative z-10 h-full flex items-center">
 
