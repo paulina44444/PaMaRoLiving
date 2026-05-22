@@ -1437,7 +1437,7 @@ const Contact = ({ lang }) => {
           </div>
 
           {/* FORM */}
-          <div className="border-l border-[#e7ddd2] pl-0 lg:pl-12">
+<div className="lg:border-l border-[#e7ddd2] pl-0 lg:pl-12">
 
 <form
   action="https://api.web3forms.com/submit"
