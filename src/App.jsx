@@ -874,7 +874,7 @@ const Service3 = ({ lang }) => {
               <Star size={34} className="text-[#c6a27b]" />
             </div>
 
-            <h3 className="font-serif text-lg mb-1 min-h-[48px] flex items-start justify-center">
+            <h3 className="font-serif text-lg mb-1 min-h-[56px] flex items-start justify-center">
               {isHR
                 ? "Čišćenje i rublje"
                 : isEN
@@ -897,7 +897,7 @@ const Service3 = ({ lang }) => {
               <ClipboardList size={34} className="text-[#c6a27b]" />
             </div>
 
-            <h3 className="font-serif text-lg mb-1 min-h-[48px] flex items-start justify-center">
+            <h3 className="font-serif text-lg mb-1 min-h-[56px] flex items-start justify-center">
               {isHR
                 ? "Kupovina prije dolaska"
                 : isEN
@@ -920,7 +920,7 @@ const Service3 = ({ lang }) => {
               <Key size={34} className="text-[#c6a27b]" />
             </div>
 
-            <h3 className="font-serif text-lg mb-1 min-h-[48px] flex items-start justify-center">
+            <h3 className="font-serif text-lg mb-1 min-h-[56px] flex items-start justify-center">
               {isHR
                 ? "Usluga ključeva"
                 : isEN
@@ -943,7 +943,7 @@ const Service3 = ({ lang }) => {
               <Sun size={34} className="text-[#c6a27b]" />
             </div>
 
-            <h3 className="font-serif text-lg mb-1 min-h-[48px] flex items-start justify-center">
+            <h3 className="font-serif text-lg mb-1 min-h-[56px] flex items-start justify-center">
               {isHR
                 ? "Tijekom vašeg boravka"
                 : isEN
