@@ -1389,7 +1389,7 @@ const Contact = ({ lang }) => {
 
           {/* RIGHT IMAGE */}
 {/* RIGHT IMAGE */}
-<div className="relative h-[320px] lg:h-auto overflow-hidden">
+<div className="hidden lg:block relative h-[320px] lg:h-auto overflow-hidden">
 
   <img
     src="/contact-image.jpg"
