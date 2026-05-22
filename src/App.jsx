@@ -19,6 +19,8 @@ Palette,
 ClipboardList,
 Sparkles,
 Star,
+Map,
+Package,
 } from "lucide-react";
 
 import { FaInstagram, FaFacebookF } from "react-icons/fa";
@@ -1061,7 +1063,7 @@ const Service4 = ({ lang }) => {
           {/* 2 */}
           <div className="bg-[#f7f2ed] rounded-3xl p-5 min-h-[220px] shadow-sm text-center">
             <div className="mb-5 flex items-center justify-center">
-              <FileText size={34} className="text-[#c6a27b]" />
+              <Map size={34} className="text-[#c6a27b]" />
             </div>
 
             <h3 className="font-serif text-lg mb-1 min-h-[56px] flex items-start justify-center">
@@ -1153,7 +1155,7 @@ const Service4 = ({ lang }) => {
           {/* 6 */}
           <div className="bg-[#f7f2ed] rounded-3xl p-5 min-h-[220px] shadow-sm text-center">
             <div className="mb-5 flex items-center justify-center">
-              <Search size={34} className="text-[#c6a27b]" />
+              <Package size={34} className="text-[#c6a27b]" />
             </div>
 
             <h3 className="font-serif text-lg mb-1 min-h-[56px] flex items-start justify-center">
