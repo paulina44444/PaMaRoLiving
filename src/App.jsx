@@ -1388,15 +1388,19 @@ const Contact = ({ lang }) => {
           </div>
 
           {/* RIGHT IMAGE */}
-          <div className="relative h-[320px] lg:h-auto">
+{/* RIGHT IMAGE */}
+<div className="relative h-[320px] lg:h-auto overflow-hidden">
 
-            <img
-              src="/contact-image.jpg"
-              alt="Mediterranean terrace"
-              className="absolute inset-0 w-full h-full object-cover"
-            />
+  <img
+    src="/contact-image.jpg"
+    alt="Mediterranean terrace"
+    className="absolute inset-0 w-full h-full object-cover"
+  />
 
-          </div>
+  {/* SOFT FADE LEFT */}
+  <div className="absolute inset-0 bg-gradient-to-r from-[#f7f2ed] via-[#f7f2ed]/30 to-transparent"></div>
+
+</div>
 
         </div>
 
@@ -1422,48 +1426,13 @@ const Contact = ({ lang }) => {
 
             <p className="text-[#4d5960] leading-relaxed text-lg mb-14">
               {isHR
-                ? "Pošaljite nam vaš upit – javit ćemo vam se u najkraćem mogućem roku."
+                ? "Tu smo za sva vaša pitanja i zahtjeve – odgovorit ćemo vam u najkraćem mogućem roku."
                 : isEN
                 ? "Send us your inquiry – we will get back to you as soon as possible."
                 : "Teilen Sie uns Ihr Anliegen mit – wir melden uns so schnell wie möglich bei Ihnen."}
             </p>
 
-            {/* DECORATION */}
-            <div className="opacity-70">
-              <svg
-                width="140"
-                height="140"
-                viewBox="0 0 140 140"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M20 120C40 80 60 60 100 40"
-                  stroke="#c6a27b"
-                  strokeWidth="1.2"
-                />
-                <path
-                  d="M35 95C45 85 55 80 70 78"
-                  stroke="#c6a27b"
-                  strokeWidth="1.2"
-                />
-                <path
-                  d="M50 70C55 55 65 45 82 35"
-                  stroke="#c6a27b"
-                  strokeWidth="1.2"
-                />
-                <path
-                  d="M40 105C52 96 58 90 62 78"
-                  stroke="#c6a27b"
-                  strokeWidth="1.2"
-                />
-                <path
-                  d="M63 78C75 75 85 70 95 58"
-                  stroke="#c6a27b"
-                  strokeWidth="1.2"
-                />
-              </svg>
-            </div>
+
 
           </div>
 
