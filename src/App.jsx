@@ -780,46 +780,187 @@ const Service3 = ({ lang }) => {
   const isEN = lang === "en";
 
   return (
-    <ServiceDetail title={isHR ? "Bezbrižan boravak" : isEN ? "Carefree Stay" : "Sorgenfreier Aufenthalt"}>
-      <p>
-        {isHR
-          ? "Kako biste svoj boravak mogli uživati od prve do posljednje minute – bez organizacijskog stresa."
-          : isEN
-          ? "So that you can enjoy your stay from the first to the last minute – without any organizational stress."
-          : "Damit Sie Ihren Aufenthalt von der ersten bis zur letzten Minute geniessen können – ohne organisatorischen Stress."}
-      </p>
+    <ServiceDetail>
 
-<p className="font-semibold text-[#2f3a40] pt-2">
-  {isHR ? "Naše usluge:" : isEN ? "Our services:" : "Unsere Leistungen:"}
-</p>
+      {/* HERO */}
+      <div className="relative w-full h-[520px] overflow-hidden">
 
-<ul className="list-disc pl-6 space-y-3 text-[#5f6a70]">
-  {isHR ? (
-    <>
-      <li>Organizacija čišćenja prije dolaska i nakon odlaska</li>
-      <li>Priprema nekretnine prije dolaska vlasnika ili gostiju</li>
-      <li>Osobna dobrodošlica i predaja ključeva</li>
-      <li>Preporuke i rezervacije restorana, izleta ili aktivnosti</li>
-      <li>Podrška tijekom boravka u slučaju pitanja ili problema</li>
-    </>
-  ) : isEN ? (
-    <>
-      <li>Organization of cleaning before arrival and after departure</li>
-      <li>Preparation of the property before owner or guest arrival</li>
-      <li>Personal welcome and key handover</li>
-      <li>Recommendations and reservations for restaurants, excursions or activities</li>
-      <li>Support during the stay in case of questions or issues</li>
-    </>
-  ) : (
-    <>
-      <li>Organisation der Reinigung vor Anreise und nach Abreise</li>
-      <li>Vorbereitung der Immobilie vor Ankunft der Eigentümer oder Gäste</li>
-      <li>Persönlicher Empfang und Schlüsselübergabe</li>
-      <li>Empfehlungen und Reservationen von Restaurants, Ausflügen oder Aktivitäten</li>
-      <li>Unterstützung während des Aufenthalts bei Fragen oder Problemen</li>
-    </>
-  )}
-</ul>
+        <img
+          src="/carefree-stay.jpg"
+          alt="Carefree Stay"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+
+        <div className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/45 to-transparent" />
+
+        <div className="relative z-10 h-full flex items-center">
+
+          <div className="max-w-6xl mx-auto px-6 w-full">
+
+            <div className="max-w-xl text-white">
+
+              <h1 className="font-serif text-4xl md:text-6xl leading-tight mb-8 text-center md:text-left">
+                {isHR
+                  ? "Bezbrižan boravak"
+                  : isEN
+                  ? "Carefree Stay"
+                  : "Sorgenfreier Aufenthalt"}
+              </h1>
+
+              <div className="w-20 h-[2px] bg-[#c6a27b] mb-8"></div>
+
+              <p className="text-xl leading-relaxed text-white/90 max-w-lg">
+                {isHR
+                  ? "Kako biste od prvog trenutka mogli opušteno uživati u svom boravku u Dalmaciji. Brinemo se o pripremi, organizaciji i svim detaljima vezanim uz vaš dolazak i odlazak."
+                  : isEN
+                  ? "So you can enjoy your time in Dalmatia from the very first moment. We take care of preparation, organisation and every detail surrounding your arrival and departure."
+                  : "Damit Sie Ihre Zeit in Dalmatien vom ersten Moment an entspannt geniessen können. Wir kümmern uns um Vorbereitung, Organisation und alle Details rund um Ihre Ankunft und Abreise."}
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      {/* SERVICES */}
+      <section className="max-w-7xl mx-auto px-6 pt-20 pb-0">
+
+        <div className="flex items-center justify-center gap-6 mb-16">
+
+          <div className="w-20 h-[1px] bg-[#c6a27b]"></div>
+
+          <h2 className="font-serif text-5xl text-[#2f3a40] text-center">
+            {isHR ? "Naše usluge" : isEN ? "Our Services" : "Unsere Leistungen"}
+          </h2>
+
+          <div className="w-20 h-[1px] bg-[#c6a27b]"></div>
+
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-5">
+
+          {/* 1 */}
+          <div className="bg-[#f7f2ed] rounded-3xl p-5 min-h-[210px] shadow-sm text-center">
+            <div className="mb-5 flex items-center justify-center">
+              <House size={34} className="text-[#c6a27b]" />
+            </div>
+
+            <h3 className="font-serif text-lg mb-1 min-h-[48px] flex items-start justify-center">
+              {isHR
+                ? "Priprema nekretnine"
+                : isEN
+                ? "Property Preparation"
+                : "Vorbereitung der Immobilie"}
+            </h3>
+
+            <p>
+              {isHR
+                ? "Kontrola i priprema vašeg doma prije dolaska."
+                : isEN
+                ? "Preparation and inspection of your home before arrival."
+                : "Kontrolle und Vorbereitung Ihres Zuhauses vor Ihrer Ankunft."}
+            </p>
+          </div>
+
+          {/* 2 */}
+          <div className="bg-[#f7f2ed] rounded-3xl p-5 min-h-[210px] shadow-sm text-center">
+            <div className="mb-5 flex items-center justify-center">
+              <ShieldCheck size={34} className="text-[#c6a27b]" />
+            </div>
+
+            <h3 className="font-serif text-lg mb-1 min-h-[48px] flex items-start justify-center">
+              {isHR
+                ? "Čišćenje i rublje"
+                : isEN
+                ? "Cleaning & Laundry"
+                : "Reinigung & Wäsche"}
+            </h3>
+
+            <p>
+              {isHR
+                ? "Organizacija čišćenja i tekstila."
+                : isEN
+                ? "Organisation of cleaning and textiles."
+                : "Organisation von Reinigung und Textilien."}
+            </p>
+          </div>
+
+          {/* 3 */}
+          <div className="bg-[#f7f2ed] rounded-3xl p-5 min-h-[210px] shadow-sm text-center">
+            <div className="mb-5 flex items-center justify-center">
+              <ShoppingBag size={34} className="text-[#c6a27b]" />
+            </div>
+
+            <h3 className="font-serif text-lg mb-1 min-h-[48px] flex items-start justify-center">
+              {isHR
+                ? "Kupovina prije dolaska"
+                : isEN
+                ? "Pre-Arrival Shopping"
+                : "Einkaufsservice"}
+            </h3>
+
+            <p>
+              {isHR
+                ? "Kupovina i osnovne namirnice prema vašim željama prije dolaska."
+                : isEN
+                ? "Groceries and essentials prepared according to your wishes before arrival."
+                : "Einkäufe und Grundausstattung vor Ihrer Ankunft nach Wunsch."}
+            </p>
+          </div>
+
+          {/* 4 */}
+          <div className="bg-[#f7f2ed] rounded-3xl p-5 min-h-[210px] shadow-sm text-center">
+            <div className="mb-5 flex items-center justify-center">
+              <Key size={34} className="text-[#c6a27b]" />
+            </div>
+
+            <h3 className="font-serif text-lg mb-1 min-h-[48px] flex items-start justify-center">
+              {isHR
+                ? "Usluga ključeva"
+                : isEN
+                ? "Key Service"
+                : "Schlüsselservice"}
+            </h3>
+
+            <p>
+              {isHR
+                ? "Organizacija i osobna predaja ključeva pri dolasku ili odlasku."
+                : isEN
+                ? "Organisation and personal handover upon arrival or departure."
+                : "Organisation und persönliche Übergabe bei An- oder Abreise."}
+            </p>
+          </div>
+
+          {/* 5 */}
+          <div className="bg-[#f7f2ed] rounded-3xl p-5 min-h-[210px] shadow-sm text-center">
+            <div className="mb-5 flex items-center justify-center">
+              <Sun size={34} className="text-[#c6a27b]" />
+            </div>
+
+            <h3 className="font-serif text-lg mb-1 min-h-[48px] flex items-start justify-center">
+              {isHR
+                ? "Tijekom vašeg boravka"
+                : isEN
+                ? "During Your Stay"
+                : "Während Ihres Aufenthalts"}
+            </h3>
+
+            <p>
+              {isHR
+                ? "Po potrebi brinemo se o organizaciji i dodatnim uslugama."
+                : isEN
+                ? "We assist with organisation and additional services whenever needed."
+                : "Bei Bedarf kümmern wir uns um Organisation und zusätzliche Anliegen."}
+            </p>
+          </div>
+
+        </div>
+
+      </section>
+
     </ServiceDetail>
   );
 };
