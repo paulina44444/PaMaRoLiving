@@ -560,42 +560,45 @@ const Service2 = ({ lang }) => {
   const isHR = lang === "hr";
   const isEN = lang === "en";
 
-return (
-  <ServiceDetail>
+  return (
+    <ServiceDetail>
 
-<div className="relative w-full h-[520px] overflow-hidden">
+      {/* HERO */}
+      <div className="relative w-full h-[520px] overflow-hidden">
 
-      <img
-        src="/property-care.jpg"
-        alt="Property Care"
-        className="absolute inset-0 w-full h-full object-cover"
-      />
+        <img
+          src="/property-care.jpg"
+          alt="Property Care"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
 
-<div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/55 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/55 to-transparent" />
 
-      <div className="relative z-10 h-full flex items-center">
+        <div className="relative z-10 h-full flex items-center">
 
-        <div className="max-w-6xl mx-auto px-6 w-full">
+          <div className="max-w-6xl mx-auto px-6 w-full">
 
-          <div className="max-w-xl text-white">
+            <div className="max-w-xl text-white">
 
-<h1 className="font-serif text-4xl md:text-6xl leading-tight mb-8 text-center md:text-left">
-              {isHR
-                ? "Briga o nekretnini"
-                : isEN
-                ? "Property Care"
-                : "Immobilienbetreuung"}
-            </h1>
+              <h1 className="font-serif text-4xl md:text-6xl leading-tight mb-8 text-center md:text-left">
+                {isHR
+                  ? "Briga o nekretnini"
+                  : isEN
+                  ? "Property Care"
+                  : "Immobilienbetreuung"}
+              </h1>
 
-            <div className="w-20 h-[2px] bg-[#c6a27b] mb-8"></div>
-<p className="text-xl leading-relaxed text-white/90 max-w-lg">
-            
-              {isHR
-                ? "Redovita prisutnost i pažnja važni su tijekom cijele godine. Brinemo se o kontrolama, organizaciji i očuvanju vašeg doma – diskretno, pouzdano i s osjećajem za detalje."
-                : isEN
-                ? "Your property deserves care and attention throughout the year. We take care of inspections, coordination and upkeep discreetly and reliably – with a personal approach and attention to detail."
-                : "Ihre Immobilie verdient auch ausserhalb der Saison Aufmerksamkeit und Pflege. Wir kümmern uns zuverlässig um Kontrollen, Organisation und den Werterhalt – diskret, persönlich und mit viel Liebe zum Detail."}
-            </p>
+              <div className="w-20 h-[2px] bg-[#c6a27b] mb-8"></div>
+
+              <p className="text-xl leading-relaxed text-white/90 max-w-lg">
+                {isHR
+                  ? "Vaša nekretnina zahtijeva redovitu brigu i izvan sezone. Mi smo na licu mjesta i brinemo se o svemu kako biste svoj dom u svakom trenutku znali u sigurnim rukama."
+                  : isEN
+                  ? "Your property deserves care and attention even outside the season. We look after inspections, coordination and upkeep discreetly and reliably."
+                  : "Ihre Immobilie verdient auch ausserhalb der Saison Aufmerksamkeit und Pflege. Wir kümmern uns zuverlässig um Kontrollen, Organisation und den Werterhalt – diskret, persönlich und mit einem wachsamen Blick fürs Detail."}
+              </p>
+
+            </div>
 
           </div>
 
@@ -603,180 +606,235 @@ return (
 
       </div>
 
-    </div>
+      {/* SERVICES */}
+      <section className="max-w-7xl mx-auto px-6 pt-20 pb-0">
 
-<section className="max-w-7xl mx-auto px-6 pt-20 pb-0">
+        <div className="flex items-center justify-center gap-6 mb-16">
 
-<div className="flex items-center justify-center gap-6 mb-16">
+          <div className="w-20 h-[1px] bg-[#c6a27b]"></div>
 
-  <div className="w-20 h-[1px] bg-[#c6a27b]"></div>
+          <h2 className="font-serif text-5xl text-[#2f3a40] text-center">
+            {isHR ? "Naše usluge" : isEN ? "Our Services" : "Unsere Leistungen"}
+          </h2>
 
-<h2 className="font-serif text-5xl text-[#2f3a40] text-center">
-    {isHR ? "Naše usluge" : isEN ? "Our Services" : "Unsere Leistungen"}
-  </h2>
+          <div className="w-20 h-[1px] bg-[#c6a27b]"></div>
 
-  <div className="w-20 h-[1px] bg-[#c6a27b]"></div>
+        </div>
 
-</div>
+        <div className="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-5 gap-5">
 
-  {/* obere Reihe */}
-<div className="grid grid-cols-1 md:grid-cols-5 gap-5">
+          {/* 1 */}
+          <div className="bg-[#f7f2ed] rounded-3xl p-5 min-h-[210px] shadow-sm text-center">
+            <div className="mb-5 flex items-center justify-center">
+              <House size={34} className="text-[#c6a27b]" />
+            </div>
 
-    <div className="bg-[#f7f2ed] rounded-3xl p-6 min-h-[240px] shadow-[0_4px_20px_rgba(0,0,0,0.04)] text-center">
-<div className="mb-5 flex items-center justify-center">
-  <Sparkles size={34} className="text-[#c6a27b]" />
-</div>
-<h3 className="font-serif text-lg mb-1 min-h-[44px] flex items-start justify-center">
-        {isHR ? "Redoviti obilasci" : isEN ? "Regular Inspections" : "Kontrollgänge"}
-      </h3>
-      <p>
-        {isHR
-          ? "Uključujući provjetravanje i puštanje vode."
-          : isEN
-          ? "Including ventilation and water checks."
-          : "Inklusive Lüften und Wasser laufen lassen."}
-      </p>
-    </div>
+            <h3 className="font-serif text-lg mb-1 min-h-[56px] flex items-start justify-center">
+              {isHR
+                ? "Redoviti obilasci"
+                : isEN
+                ? "Regular Visits"
+                : "Regelmässige Rundgänge"}
+            </h3>
 
-    <div className="bg-[#f7f2ed] rounded-3xl p-6 min-h-[240px] shadow-sm text-center">
-<div className="mb-5 flex items-center justify-center">
-  <Search size={34} className="text-[#c6a27b]" />
-</div>
-<h3 className="font-serif text-lg mb-1 min-h-[44px] flex items-start justify-center">
-        {isHR ? "Vizualna kontrola" : isEN ? "Visual checks" : "Sichtkontrolle"}
-      </h3>
-      <p>
-        {isHR
-          ? "Vlaga, oštećenja ili tehničke nepravilnosti."
-          : isEN
-          ? "Humidity, damage or technical irregularities."
-          : "Feuchtigkeit, Schäden oder technische Auffälligkeiten."}
-      </p>
-    </div>
+            <p>
+              {isHR
+                ? "Uključujući prozračivanje i puštanje vode."
+                : isEN
+                ? "Including airing out the property and running water systems."
+                : "Inklusive Lüften und Wasser laufen lassen."}
+            </p>
+          </div>
 
-    <div className="bg-[#f7f2ed] rounded-3xl p-6 min-h-[240px] shadow-sm text-center">
-      <div className="mb-5 flex items-center justify-center">
-  <Leaf size={34} className="text-[#c6a27b]" />
-</div>
-<h3 className="font-serif text-lg mb-1 min-h-[44px] flex items-start justify-center">
-        {isHR ? "Vanjski prostori" : isEN ? "Outdoor area" : "Aussenbereich"}
-      </h3>
-      <p>
-        {isHR
-          ? "Kontrola i jednostavno održavanje vrta i okućnice."
-          : isEN
-          ? "simple maintenance and supervision of outdoor spaces."
-          : "Kontrolle und einfache Pflege der Aussenflächen."}
-      </p>
-    </div>
+          {/* 2 */}
+          <div className="bg-[#f7f2ed] rounded-3xl p-5 min-h-[210px] shadow-sm text-center">
+            <div className="mb-5 flex items-center justify-center">
+              <Eye size={34} className="text-[#c6a27b]" />
+            </div>
 
-    <div className="bg-[#f7f2ed] rounded-3xl p-6 min-h-[240px] shadow-sm text-center">
-      <div className="mb-5 flex items-center justify-center">
-  <Wrench size={34} className="text-[#c6a27b]" />
-</div>
-<h3 className="font-serif text-lg mb-1 min-h-[44px] flex items-start justify-center">
-        {isHR ? "Manji popravci" : isEN ? "Small repairs" : "Kleinere Reparaturen"}
-      </h3>
-      <p>
-        {isHR
-          ? "Koordinacija majstora prema potrebi."
-          : isEN
-          ? "coordination of craftsmen when needed."
-          : "Koordination Handwerker bei Bedarf."}
-      </p>
-    </div>
+            <h3 className="font-serif text-lg mb-1 min-h-[56px] flex items-start justify-center">
+              {isHR
+                ? "Kontrola stanja"
+                : isEN
+                ? "Property Check"
+                : "Hauskontrolle"}
+            </h3>
 
-    <div className="bg-[#f7f2ed] rounded-3xl p-6 min-h-[240px] shadow-sm text-center">
-     <div className="mb-5 flex items-center justify-center">
-  <CloudLightning size={34} className="text-[#c6a27b]" />
-</div> 
-<h3 className="font-serif text-lg mb-1 min-h-[44px] flex items-start justify-center">
-        {isHR ? "Hitne intervencije" : isEN ? "Emergency Support" : "Notfall-Einsätze"}
-      </h3>
-      <p>
-        {isHR
-          ? "Nakon nevremena ili hitnih situacija."
-          : isEN
-          ? "After storms or urgent situations."
-          : "Nach Unwettern oder Notfällen."}
-      </p>
-    </div>
+            <p>
+              {isHR
+                ? "Rano prepoznavanje vlage, oštećenja ili tehničkih problema."
+                : isEN
+                ? "Early detection of humidity, damage or technical issues."
+                : "Früherkennung von Feuchtigkeit, Schäden oder technischen Auffälligkeiten."}
+            </p>
+          </div>
 
-  </div>
+          {/* 3 */}
+          <div className="bg-[#f7f2ed] rounded-3xl p-5 min-h-[210px] shadow-sm text-center">
+            <div className="mb-5 flex items-center justify-center">
+              <Trees size={34} className="text-[#c6a27b]" />
+            </div>
 
-  {/* untere Reihe */}
-<div className="flex flex-wrap justify-center gap-5 mt-5">
+            <h3 className="font-serif text-lg mb-1 min-h-[56px] flex items-start justify-center">
+              {isHR
+                ? "Vrt i okućnica"
+                : isEN
+                ? "Outdoor Areas"
+                : "Aussenanlagen"}
+            </h3>
 
-    <div className="bg-[#f7f2ed] w-full md:w-[235px] rounded-3xl p-6 min-h-[240px] shadow-sm text-center">
-      <div className="mb-5 flex items-center justify-center">
-  <Key size={34} className="text-[#c6a27b]" />
-</div>
-<h3 className="font-serif text-lg mb-1 min-h-[44px] flex items-start justify-center">
-        {isHR ? "Pohrana ključeva" : isEN ? "Key Holding" : "Schlüsselservice"}
-      </h3>
-      <p>
-        {isHR
-          ? "Sigurno čuvanje i dostupnost ključeva."
-          : isEN
-          ? "safe storage and availability of your keys."
-          : "Sichere Aufbewahrung und Zugriff auf Ihre Schlüssel."}
-      </p>
-    </div>
+            <p>
+              {isHR
+                ? "Kontrola i jednostavno održavanje vrta i vanjskih prostora."
+                : isEN
+                ? "Inspection and basic upkeep of gardens and outdoor areas."
+                : "Kontrolle und einfache Pflege von Garten und Aussenbereichen."}
+            </p>
+          </div>
 
-    <div className="bg-[#f7f2ed] w-full md:w-[235px] rounded-3xl p-6 min-h-[240px] shadow-sm text-center">
-   <div className="mb-5 flex items-center justify-center">
-  <Mail size={34} className="text-[#c6a27b]" />
-</div> 
-<h3 className="font-serif text-lg mb-1 min-h-[44px] flex items-start justify-center">
-        {isHR ? "Dostava pošte" : isEN ? "Mail Handling" : "Postservice"}
-      </h3>
-      <p>
-        {isHR
-          ? "Elektronička ili fizička dostava pošte."
-          : isEN
-          ? "Electronic or physical mail handling."
-          : "Elektronische oder physische Zustellung."}
-      </p>
-    </div>
+          {/* 4 */}
+          <div className="bg-[#f7f2ed] rounded-3xl p-5 min-h-[210px] shadow-sm text-center">
+            <div className="mb-5 flex items-center justify-center">
+              <Wrench size={34} className="text-[#c6a27b]" />
+            </div>
 
-    <div className="bg-[#f7f2ed] w-full md:w-[235px] rounded-3xl p-6 min-h-[240px] shadow-sm text-center">
-<div className="mb-5 flex items-center justify-center">
-  <FileText size={34} className="text-[#c6a27b]" />
-</div>
-<h3 className="font-serif text-lg mb-1 min-h-[44px] flex items-start justify-center">
-        {isHR ? "Kratko izvješće" : isEN ? "Visit reports" : "Kurzbericht"}
-      </h3>
-      <p>
-        {isHR
-          ? "Nakon svakog obilaska."
-          : isEN
-          ? "clear updates after each inspection."
-          : "Transparente Information nach jeder Kontrolle"}
-      </p>
-    </div>
+            <h3 className="font-serif text-lg mb-1 min-h-[56px] flex items-start justify-center">
+              {isHR
+                ? "Organizacija popravaka"
+                : isEN
+                ? "Repair Service"
+                : "Reparaturservice"}
+            </h3>
 
+            <p>
+              {isHR
+                ? "Organizacija odgovarajućih majstora prema potrebi."
+                : isEN
+                ? "Organisation of suitable craftsmen whenever needed."
+                : "Organisation passender Handwerker bei Bedarf."}
+            </p>
+          </div>
 
-<div className="bg-[#f7f2ed] w-full md:w-[235px] rounded-3xl p-6 pt-4 min-h-[240px] shadow-sm text-center">
-<div className="w-full flex justify-center mb-6">
-  <FileText size={34} className="text-[#c6a27b]" />
-</div>
-<h3 className="font-serif text-lg mb-1 min-h-[44px] flex items-start justify-center">
-        {isHR ? "Godišnje izvješće" : isEN ? "Annual Report" : "Jahresbericht"}
-      </h3>
-      <p>
-        {isHR
-          ? "Detaljno izvješće o stanju nekretnine."
-          : isEN
-          ? "Detailed annual property condition report."
-          : "Ausführlicher Zustandsbericht."}
-      </p>
-    </div>
+          {/* 5 */}
+          <div className="bg-[#f7f2ed] rounded-3xl p-5 min-h-[210px] shadow-sm text-center">
+            <div className="mb-5 flex items-center justify-center">
+              <CloudRain size={34} className="text-[#c6a27b]" />
+            </div>
 
-  </div>
+            <h3 className="font-serif text-lg mb-1 min-h-[56px] flex items-start justify-center">
+              {isHR
+                ? "Hitne intervencije"
+                : isEN
+                ? "Emergency Support"
+                : "Notfallservice"}
+            </h3>
 
-</section>
+            <p>
+              {isHR
+                ? "Brza reakcija i organizacija nakon nevremena ili štetnih događaja."
+                : isEN
+                ? "Quick response and organisation after storms or unexpected damage."
+                : "Schnelle Reaktion und Organisation nach Unwettern oder Schadenereignissen."}
+            </p>
+          </div>
 
-</ServiceDetail>
+          {/* 6 */}
+          <div className="bg-[#f7f2ed] rounded-3xl p-5 min-h-[210px] shadow-sm text-center">
+            <div className="mb-5 flex items-center justify-center">
+              <Key size={34} className="text-[#c6a27b]" />
+            </div>
+
+            <h3 className="font-serif text-lg mb-1 min-h-[56px] flex items-start justify-center">
+              {isHR
+                ? "Usluga ključeva"
+                : isEN
+                ? "Key Service"
+                : "Schlüsselservice"}
+            </h3>
+
+            <p>
+              {isHR
+                ? "Sigurna pohrana i pristup vašim ključevima prema potrebi."
+                : isEN
+                ? "Secure storage and access to your keys whenever needed."
+                : "Sichere Aufbewahrung und Zugriff auf Ihre Schlüssel bei Bedarf."}
+            </p>
+          </div>
+
+          {/* 7 */}
+          <div className="bg-[#f7f2ed] rounded-3xl p-5 min-h-[210px] shadow-sm text-center">
+            <div className="mb-5 flex items-center justify-center">
+              <Mail size={34} className="text-[#c6a27b]" />
+            </div>
+
+            <h3 className="font-serif text-lg mb-1 min-h-[56px] flex items-start justify-center">
+              {isHR
+                ? "Poštanska usluga"
+                : isEN
+                ? "Mail Service"
+                : "Postservice"}
+            </h3>
+
+            <p>
+              {isHR
+                ? "Prosljeđivanje i organizacija pošte prema želji."
+                : isEN
+                ? "Forwarding and organisation of your mail upon request."
+                : "Weiterleitung und Organisation Ihrer Post nach Wunsch."}
+            </p>
+          </div>
+
+          {/* 8 */}
+          <div className="bg-[#f7f2ed] rounded-3xl p-5 min-h-[210px] shadow-sm text-center">
+            <div className="mb-5 flex items-center justify-center">
+              <FileText size={34} className="text-[#c6a27b]" />
+            </div>
+
+            <h3 className="font-serif text-lg mb-1 min-h-[56px] flex items-start justify-center">
+              {isHR
+                ? "Status izvještaji"
+                : isEN
+                ? "Status Reports"
+                : "Statusberichte"}
+            </h3>
+
+            <p>
+              {isHR
+                ? "Redovite informacije o stanju vaše nekretnine."
+                : isEN
+                ? "Regular updates about the condition of your property."
+                : "Regelmässige Informationen zum Zustand Ihrer Immobilie."}
+            </p>
+          </div>
+
+          {/* 9 */}
+          <div className="bg-[#f7f2ed] rounded-3xl p-5 min-h-[210px] shadow-sm text-center">
+            <div className="mb-5 flex items-center justify-center">
+              <Calendar size={34} className="text-[#c6a27b]" />
+            </div>
+
+            <h3 className="font-serif text-lg mb-1 min-h-[56px] flex items-start justify-center">
+              {isHR
+                ? "Godišnji pregled"
+                : isEN
+                ? "Annual Overview"
+                : "Jahresübersicht"}
+            </h3>
+
+            <p>
+              {isHR
+                ? "Pregled stanja i razvoja vaše nekretnine tijekom godine."
+                : isEN
+                ? "Overview of your property's condition and developments throughout the year."
+                : "Übersicht zum Zustand und den Entwicklungen Ihrer Immobilie."}
+            </p>
+          </div>
+
+        </div>
+
+      </section>
+
+    </ServiceDetail>
   );
 };
 
