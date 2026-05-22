@@ -24,7 +24,7 @@ Package,
 Eye,
 Trees,
 Cloudrain,
-Calender,
+Calendar,
 } from "lucide-react";
 
 import { FaInstagram, FaFacebookF } from "react-icons/fa";
