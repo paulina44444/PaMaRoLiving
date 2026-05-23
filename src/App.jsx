@@ -1755,7 +1755,10 @@ return (
     </div>
 
     {/* CONTENT */}
-<div className="max-w-4xl mx-auto px-6 pt-16 pb-0 text-[#2f3a40]">
+<div
+  className="max-w-4xl mx-auto px-6 pt-16 pb-0 text-[#2f3a40]"
+  style={{ marginBottom: "-6rem" }}
+>
 
       {/* Impressum */}
 <div className="mb-16">
