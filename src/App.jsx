@@ -495,25 +495,6 @@ function Services({ setPage, lang }) {
   {/* CONTENT */}
   <div className="max-w-6xl mx-auto px-6 pt-20 pb-16">
 
-  <div className="text-center mb-14">
-    <div className="flex items-center justify-center gap-6 mb-4">
-      <div className="w-16 h-[1px] bg-[#c6a27b]"></div>
-
-      <h2 className="font-serif text-5xl text-[#2f3a40]">
-        {isHR ? "Naše usluge" : isEN ? "Our Services" : "Unsere Dienstleistungen"}
-      </h2>
-
-      <div className="w-16 h-[1px] bg-[#c6a27b]"></div>
-    </div>
-
-    <p className="text-[#6b7478] text-lg">
-      {isHR
-        ? "Sve što je vašoj nekretnini potrebno – pouzdano, diskretno i profesionalno."
-        : isEN
-        ? "Everything your property needs – reliable, discreet and professional."
-        : "Alles, was Ihre Immobilie braucht – zuverlässig, diskret und professionell."}
-    </p>
-  </div>
   <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
 
     <button
@@ -536,10 +517,10 @@ function Services({ setPage, lang }) {
 
       <p className="text-[#6b7478] leading-relaxed">
         {isHR
-    ? "Redoviti nadzor, organizacija i prisutnost tijekom cijele godine."
+    ? "Sve što je vašoj nekretnini potrebno – pouzdano, diskretno i profesionalno."
     : isEN
-    ? "Regular inspections and reliable local coordination throughout the year."
-    : "Regelmässige Kontrollen und Betreuung vor Ort."}
+    ? "Everything your property needs – reliable, discreet and professional."
+    : "Alles, was Ihre Immobilie braucht – zuverlässig, diskret und professionell."}
       </p>
     </button>
 
