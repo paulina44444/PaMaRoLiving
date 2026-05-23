@@ -495,7 +495,7 @@ function Services({ setPage, lang }) {
     </div>
 
     {/* RIGHT IMAGE */}
-    <div className="relative min-h-[260px] lg:min-h-full">
+<div className="relative min-h-[260px] lg:min-h-full overflow-hidden">
 
       <img
         src="/services.jpg"
@@ -1790,7 +1790,7 @@ return (
     </div>
 
     {/* RIGHT IMAGE */}
-    <div className="relative min-h-[240px] lg:min-h-full">
+<div className="relative min-h-[240px] lg:min-h-full overflow-hidden">
 
       <img
         src="/legal.jpg"
