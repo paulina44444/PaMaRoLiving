@@ -503,7 +503,7 @@ function Services({ setPage, lang }) {
 className="absolute inset-0 w-full h-full object-cover"
       />
 
-<div className="absolute inset-y-0 left-0 w-56 bg-gradient-to-r from-[#f7f2ed] to-transparent backdrop-blur-[2px]"></div>
+<div className="absolute inset-0 bg-gradient-to-r from-[#f7f2ed] via-[#f7f2ed]/40 to-transparent backdrop-blur-[1px]"></div>
 
     </div>
 
@@ -1798,7 +1798,7 @@ return (
 className="absolute inset-0 w-full h-full object-cover"
       />
 
-<div className="absolute inset-0 bg-gradient-to-r from-[#f8f5f1] via-[#f8f5f1]/40 to-transparent backdrop-blur-[1px]"></div>
+<div className="absolute inset-0 bg-gradient-to-r from-[#f7f2ed] via-[#f7f2ed]/40 to-transparent backdrop-blur-[1px]"></div>
 
     </div>
 
