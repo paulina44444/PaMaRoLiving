@@ -41,7 +41,7 @@ const navLabels = {
 function Navigation({ setPage, lang, setLang }) {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const link = "text-lg tracking-wide hover:text-[#c6a27b] transition";
+const link = "text-[15px] tracking-[0.08em] hover:text-[#c6a27b] transition";
 
   return (
     <header className="w-full bg-[#f7f2ed] border-b border-[#c6a27b] fixed top-0 left-0 z-50">
@@ -57,7 +57,7 @@ function Navigation({ setPage, lang, setLang }) {
   />
 </button>
 
-   <nav className="hidden md:flex gap-10 text-[#5f6a70] items-center">
+   <nav className="hidden md:flex gap-7 text-[#5f6a70] items-center">
           {navLabels[lang].map((label, i) => (
             <button
               key={i}
@@ -1123,7 +1123,7 @@ const Service3 = ({ lang }) => {
   );
 };
 
-const Service4 = ({ lang }) => {
+const Service4 = ({ lang, setPage }) => {
   const isHR = lang === "hr";
   const isEN = lang === "en";
 
@@ -2395,7 +2395,7 @@ switch (page) {
   case "services": content = <Services setPage={setPage} lang={lang} />; break;
   case "service2": content = <Service2 lang={lang}/>; break;
   case "service3": content = <Service3 lang={lang}/>; break;
-  case "service4": content = <Service4 lang={lang}/>; break;
+case "service4": content = <Service4 lang={lang} setPage={setPage}/>; break;
   case "references": content = <References lang={lang} setPage={setPage} />; break;
   case "contact": content = <Contact lang={lang} />; break;
   case "legal": content = <Legal lang={lang} />; break;
