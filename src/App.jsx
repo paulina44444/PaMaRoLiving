@@ -461,36 +461,46 @@ function Services({ setPage, lang }) {
   return (
 <section className="bg-[#f7f2ed]">
 
-  {/* HERO */}
-  <div className="bg-[#f3ede7] py-20">
+{/* HERO */}
+<section className="relative overflow-hidden">
 
-    <div className="max-w-6xl mx-auto px-6">
+  <div className="grid grid-cols-1 lg:grid-cols-2 min-h-[380px]">
 
-      <div className="max-w-[620px]">
+    {/* LEFT */}
+    <div className="flex items-center px-8 md:px-16 py-14 bg-[#f3ede7]">
 
-        <h1 className="font-serif text-[56px] leading-[1.05] text-[#2f3a40]">
+      <div className="max-w-xl">
+
+        <h1 className="font-serif text-5xl md:text-6xl text-[#2f3a40] leading-tight mb-8">
           {isHR
-            ? "Naše usluge"
+            ? "Impressum i privatnost"
             : isEN
-            ? "Our Services"
-            : "Unsere Dienstleistungen"}
+            ? "Legal Notice & Privacy"
+            : "Impressum & Datenschutz"}
         </h1>
 
-        <div className="w-16 h-[1px] bg-[#c6a27b] mt-8 mb-8" />
-
-        <p className="text-[#5f6a70] text-lg leading-relaxed">
-          {isHR
-            ? "Osobna i pouzdana podrška za vašu nekretninu i život u Dalmaciji."
-            : isEN
-            ? "Personal and reliable support for your property and life in Dalmatia."
-            : "Persönliche und zuverlässige Unterstützung rund um Ihre Immobilie und das Wohnen in Dalmatien."}
-        </p>
+        <div className="w-20 h-[1px] bg-[#c6a27b]"></div>
 
       </div>
 
     </div>
 
+    {/* RIGHT IMAGE */}
+    <div className="relative min-h-[240px] lg:min-h-full">
+
+      <img
+        src="/legal.jpg"
+        alt="Legal"
+        className="absolute inset-0 w-full h-full object-cover"
+      />
+
+      <div className="absolute inset-0 bg-black/10"></div>
+
+    </div>
+
   </div>
+
+</section>
 
   {/* CONTENT */}
   <div className="max-w-6xl mx-auto px-6 pt-20 pb-16">
@@ -1746,28 +1756,46 @@ function Legal({ lang }) {
 return (
   <section className="bg-[#f8f5f1] min-h-screen">
 
-    {/* HERO */}
-    <div className="bg-[#f3ede7] py-20">
+{/* HERO */}
+<section className="relative overflow-hidden">
 
-      <div className="max-w-6xl mx-auto px-6">
+  <div className="grid grid-cols-1 lg:grid-cols-2 min-h-[380px]">
 
-        <div className="max-w-[520px]">
+    {/* LEFT */}
+    <div className="flex items-center px-8 md:px-16 py-14 bg-[#f3ede7]">
 
-          <h1 className="font-serif text-[56px] leading-[1.05] text-[#2f3a40]">
-            {isHR
-              ? "Impressum i privatnost"
-              : isEN
-              ? "Legal Notice & Privacy"
-              : "Impressum & Datenschutz"}
-          </h1>
+      <div className="max-w-xl">
 
-          <div className="w-16 h-[1px] bg-[#c6a27b] mt-8" />
+        <h1 className="font-serif text-5xl md:text-6xl text-[#2f3a40] leading-tight mb-8">
+          {isHR
+            ? "Impressum i privatnost"
+            : isEN
+            ? "Legal Notice & Privacy"
+            : "Impressum & Datenschutz"}
+        </h1>
 
-        </div>
+        <div className="w-20 h-[1px] bg-[#c6a27b]"></div>
 
       </div>
 
     </div>
+
+    {/* RIGHT IMAGE */}
+    <div className="relative min-h-[240px] lg:min-h-full">
+
+      <img
+        src="/legal.jpg"
+        alt="Legal"
+        className="absolute inset-0 w-full h-full object-cover"
+      />
+
+      <div className="absolute inset-0 bg-black/10"></div>
+
+    </div>
+
+  </div>
+
+</section>
 
     {/* CONTENT */}
 <div className="max-w-4xl mx-auto px-6 pt-16 pb-24 text-[#2f3a40]">
