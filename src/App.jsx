@@ -1728,86 +1728,173 @@ function Legal({ lang }) {
   const isHR = lang === "hr";
   const isEN = lang === "en";
 
-  return (
-    <section className="py-24 px-6 max-w-3xl mx-auto text-sm leading-relaxed space-y-4">
-      <h1 className="text-3xl font-serif mb-8 text-center">
-        {isHR
-          ? "Impressum i zaštita privatnosti"
-          : isEN
-          ? "Legal Notice & Privacy Policy"
-          : "Impressum & Datenschutz"}
-      </h1>
+return (
+  <section className="bg-[#f8f5f1] min-h-screen">
 
-      <p>
-        PaMaRo Living<br />
-        {isHR
-          ? "Vlasnica: Paula Raimondo"
-          : isEN
-          ? "Owner: Paula Raimondo"
-          : "Inhaberin: Paula Raimondo"}
-        <br />
-        Zapadna Ulica 36<br />
-        21318 Pisak<br />
-        Croatia
-      </p>
+    {/* HERO */}
+    <div className="bg-[#f3ede7] py-24">
 
-      <p>
-        Tel. +385 99 837 79 35<br />
-        E-Mail: pamaroliving@hotmail.com
-      </p>
+      <div className="max-w-6xl mx-auto px-6">
 
-      <h2 className="font-serif text-xl mt-10">
-        {isHR ? "Impressum" : isEN ? "Legal Notice" : "Impressum"}
-      </h2>
-      <p>
-        {isHR
-          ? "Za sadržaj ove web stranice, u skladu s važećim zakonskim propisima, odgovoran je PaMaRo Living, kojeg zastupa Paula Raimondo, na gore navedenoj adresi."
-          : isEN
-          ? "PaMaRo Living, represented by Paula Raimondo at the address stated above, is responsible for the content of this website in accordance with applicable legal regulations."
-          : "Verantwortlich für den Inhalt dieser Website gemäss den geltenden gesetzlichen Bestimmungen ist PaMaRo Living, vertreten durch Paula Raimondo, Anschrift wie oben angegeben."}
-      </p><p>
-  {isHR
-    ? "Svi sadržaji ove web stranice, posebno tekstovi, slike, logotipi i elementi dizajna, zaštićeni su autorskim pravima te se ne smiju koristiti, umnožavati niti prosljeđivati bez izričitog pisanog odobrenja."
-    : isEN
-    ? "All content on this website, especially texts, images, logos and design elements, is protected by copyright and may not be used, reproduced or distributed without explicit written permission."
-    : "Alle Inhalte dieser Website, insbesondere Texte, Bilder, Logos und Designbestandteile, unterliegen dem Urheberrecht und dürfen ohne ausdrückliche schriftliche Zustimmung nicht verwendet, vervielfältigt oder weitergegeben werden."}
-</p>
+        <div className="max-w-[520px]">
 
-      <h2 className="font-serif text-xl mt-10">
-        {isHR ? "Zaštita privatnosti" : isEN ? "Privacy Policy" : "Datenschutz"}
-      </h2>
-      <p>
-        {isHR
-          ? "Zaštita vaših osobnih podataka nam je iznimno važna. Osobni podaci prikupljaju se na ovoj web stranici samo u tehnički nužnom opsegu i neće se prosljeđivati trećim stranama bez vaše izričite suglasnosti."
-          : isEN
-          ? "The protection of your personal data is very important to us. Personal data is collected on this website only to the extent technically necessary and will not be passed on to third parties without your explicit consent."
-          : "Der Schutz Ihrer persönlichen Daten ist uns ein wichtiges Anliegen. Personenbezogene Daten werden auf dieser Website nur im technisch notwendigen Umfang erhoben und nicht ohne Ihre ausdrückliche Zustimmung an Dritte weitergegeben."}
-      </p>
+          <h1 className="font-serif text-[56px] leading-[1.05] text-[#2f3a40]">
+            {isHR
+              ? "Impressum i privatnost"
+              : isEN
+              ? "Legal Notice & Privacy"
+              : "Impressum & Datenschutz"}
+          </h1>
 
-      <p>
-        {isHR
-          ? "Ako nam pošaljete upit putem kontakt obrasca ili e-maila, vaši će se podaci, uključujući kontakt podatke koje ste naveli, pohraniti u svrhu obrade upita. Te podatke ne prosljeđujemo bez vaše privole."
-          : isEN
-          ? "If you send us inquiries via the contact form or by email, your details, including the contact information you provide, will be stored for the purpose of processing the request. This data will not be shared without your consent."
-          : "Wenn Sie uns per Kontaktformular oder E-Mail Anfragen zukommen lassen, werden Ihre Angaben inklusive der von Ihnen angegebenen Kontaktdaten zwecks Bearbeitung der Anfrage gespeichert. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter."}
-      </p>
-      <p>
-  {isHR
-    ? "Za slanje kontakt obrazaca koristimo vanjsku uslugu Web3Forms. Podaci uneseni u obrazac prenose se putem zaštićene veze i koriste isključivo za obradu vašeg upita."
-    : isEN
-    ? "For contact form submissions we use the external service Web3Forms. The data entered into the form is transmitted via a secure connection and used solely for processing your inquiry."
-    : "Für die Übermittlung von Kontaktformularen verwenden wir den externen Dienst Web3Forms. Die im Formular eingegebenen Daten werden über eine sichere Verbindung übertragen und ausschliesslich zur Bearbeitung Ihrer Anfrage verwendet."}
-</p>
+          <div className="w-16 h-[1px] bg-[#c6a27b] mt-8" />
 
-      <p>
-        {isHR
-          ? "U svakom trenutku imate pravo na informaciju o pohranjenim osobnim podacima, kao i pravo na ispravak ili brisanje u okviru zakonskih propisa."
-          : isEN
-          ? "You have the right at any time to obtain information about the personal data stored by us, as well as the right to correction or deletion within the framework of legal provisions."
-          : "Sie haben jederzeit das Recht auf Auskunft über die bei uns gespeicherten personenbezogenen Daten sowie ein Recht auf Berichtigung oder Löschung im Rahmen der gesetzlichen Vorschriften."}
-      </p>
-    </section>
-  );
+        </div>
+
+      </div>
+
+    </div>
+
+    {/* CONTENT */}
+    <div className="max-w-4xl mx-auto px-6 py-24 text-[#2f3a40]">
+
+      {/* Impressum */}
+      <div className="mb-24">
+
+        <h2 className="font-serif text-[44px] leading-none mb-6">
+          {isHR
+            ? "Impressum"
+            : isEN
+            ? "Legal Notice"
+            : "Impressum"}
+        </h2>
+
+        <div className="w-12 h-[1px] bg-[#c6a27b] mb-10" />
+
+        <div className="space-y-8 text-[17px] leading-[2]">
+
+          <div>
+            <strong>PaMaRo Living</strong><br />
+            Paula Raimondo<br />
+            Zapadna Ulica 36<br />
+            21318 Pisak<br />
+            Croatia
+          </div>
+
+          <div>
+            <strong>
+              {isHR
+                ? "Odgovorna osoba za sadržaj:"
+                : isEN
+                ? "Responsible for content:"
+                : "Verantwortlich für den Inhalt:"}
+            </strong><br />
+            Paula Raimondo
+          </div>
+
+          <p>
+            {isHR
+              ? "Europska komisija pruža platformu za online rješavanje sporova (OS): https://ec.europa.eu/consumers/odr/"
+              : isEN
+              ? "The European Commission provides a platform for online dispute resolution (ODR): https://ec.europa.eu/consumers/odr/"
+              : "Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: https://ec.europa.eu/consumers/odr/"}
+          </p>
+
+          <p>
+            {isHR
+              ? "Nismo spremni niti obvezni sudjelovati u postupku rješavanja sporova pred potrošačkom arbitražom."
+              : isEN
+              ? "We are neither willing nor obliged to participate in dispute resolution proceedings before a consumer arbitration board."
+              : "Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen."}
+          </p>
+
+        </div>
+
+      </div>
+
+      {/* Divider */}
+      <div className="border-t border-[#d9c9b7] mb-24" />
+
+      {/* Datenschutz */}
+      <div>
+
+        <h2 className="font-serif text-[44px] leading-none mb-6">
+          {isHR
+            ? "Pravila privatnosti"
+            : isEN
+            ? "Privacy Policy"
+            : "Datenschutzerklärung"}
+        </h2>
+
+        <div className="w-12 h-[1px] bg-[#c6a27b] mb-10" />
+
+        <div className="space-y-10 text-[17px] leading-[2]">
+
+          <p>
+            {isHR
+              ? "Zaštita vaših osobnih podataka važna nam je. Osobne podatke obrađujemo povjerljivo i u skladu sa zakonskim propisima o zaštiti podataka."
+              : isEN
+              ? "The protection of your personal data is important to us. Personal data is treated confidentially and in accordance with applicable data protection regulations."
+              : "Der Schutz Ihrer persönlichen Daten ist uns wichtig. Personenbezogene Daten behandeln wir vertraulich und entsprechend der gesetzlichen Datenschutzvorschriften."}
+          </p>
+
+          <div>
+            <h3 className="font-semibold mb-3">
+              {isHR
+                ? "Kontakt obrazac"
+                : isEN
+                ? "Contact form"
+                : "Kontaktformular"}
+            </h3>
+
+            <p>
+              {isHR
+                ? "Ako nam pošaljete upit putem kontakt obrasca, vaši podaci koriste se isključivo za obradu vašeg zahtjeva."
+                : isEN
+                ? "If you contact us via the contact form, your data will only be used to process your inquiry."
+                : "Wenn Sie uns per Kontaktformular Anfragen zukommen lassen, werden Ihre Angaben ausschliesslich zur Bearbeitung Ihrer Anfrage verwendet."}
+            </p>
+          </div>
+
+          <div>
+            <h3 className="font-semibold mb-3">
+              Web3Forms
+            </h3>
+
+            <p>
+              {isHR
+                ? "Za slanje kontakt obrazaca koristimo vanjsku uslugu Web3Forms. Podaci uneseni u obrazac prenose se putem zaštićene veze i koriste isključivo za obradu vašeg upita."
+                : isEN
+                ? "For contact form submissions we use the external service Web3Forms. Data is transmitted securely and used solely for processing your inquiry."
+                : "Für die Übermittlung von Kontaktformularen verwenden wir den externen Dienst Web3Forms. Die Daten werden verschlüsselt übertragen und ausschliesslich zur Bearbeitung Ihrer Anfrage verwendet."}
+            </p>
+          </div>
+
+          <div>
+            <h3 className="font-semibold mb-3">
+              {isHR
+                ? "Vaša prava"
+                : isEN
+                ? "Your rights"
+                : "Ihre Rechte"}
+            </h3>
+
+            <p>
+              {isHR
+                ? "Imate pravo na informacije, ispravak ili brisanje svojih osobnih podataka."
+                : isEN
+                ? "You have the right to information, correction or deletion of your personal data."
+                : "Sie haben das Recht auf Auskunft, Berichtigung oder Löschung Ihrer personenbezogenen Daten."}
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+);
 }
 
 
