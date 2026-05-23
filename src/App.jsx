@@ -460,7 +460,40 @@ function Services({ setPage, lang }) {
   const isEN = lang === "en";
   return (
 <section className="bg-[#f7f2ed]">
-<div className="max-w-6xl mx-auto px-6 pt-16 pb-16">
+
+  {/* HERO */}
+  <div className="bg-[#f3ede7] py-20">
+
+    <div className="max-w-6xl mx-auto px-6">
+
+      <div className="max-w-[620px]">
+
+        <h1 className="font-serif text-[56px] leading-[1.05] text-[#2f3a40]">
+          {isHR
+            ? "Naše usluge"
+            : isEN
+            ? "Our Services"
+            : "Unsere Dienstleistungen"}
+        </h1>
+
+        <div className="w-16 h-[1px] bg-[#c6a27b] mt-8 mb-8" />
+
+        <p className="text-[#5f6a70] text-lg leading-relaxed">
+          {isHR
+            ? "Osobna i pouzdana podrška za vašu nekretninu i život u Dalmaciji."
+            : isEN
+            ? "Personal and reliable support for your property and life in Dalmatia."
+            : "Persönliche und zuverlässige Unterstützung rund um Ihre Immobilie und das Wohnen in Dalmatien."}
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  {/* CONTENT */}
+  <div className="max-w-6xl mx-auto px-6 pt-20 pb-16">
 
   <div className="text-center mb-14">
     <div className="flex items-center justify-center gap-6 mb-4">
