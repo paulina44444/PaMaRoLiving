@@ -503,7 +503,7 @@ function Services({ setPage, lang }) {
         className="absolute inset-0 w-full h-full object-cover"
       />
 
-      <div className="absolute inset-0 bg-black/10"></div>
+<div className="absolute inset-0 bg-white/10 backdrop-blur-[1px]"></div>
 
     </div>
 
@@ -1604,7 +1604,7 @@ const Contact = ({ lang }) => {
                 {isHR ? "Kontakt" : isEN ? "Contact" : "Kontakt"}
               </h1>
 
-              <div className="w-20 h-[2px] bg-[#c6a27b] mb-8"></div>
+<div className="w-20 h-[1px] bg-[#c6a27b] mb-8"></div>
 
               <p className="text-[#4d5960] text-lg leading-relaxed">
                 {isHR
@@ -1629,7 +1629,7 @@ const Contact = ({ lang }) => {
   />
 
   {/* SOFT FADE LEFT */}
-  <div className="absolute inset-0 bg-gradient-to-r from-[#f7f2ed] via-[#f7f2ed]/30 to-transparent"></div>
+<div className="absolute inset-0 bg-gradient-to-r from-[#f7f2ed] via-[#f7f2ed]/40 to-transparent backdrop-blur-[1px]"></div>
 
 </div>
 
