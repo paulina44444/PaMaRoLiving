@@ -503,7 +503,7 @@ function Services({ setPage, lang }) {
 
 </div>
 
-  <div className="grid grid-cols-1 lg:grid-cols-2 min-h-[420px]">
+<div className="hidden lg:grid grid-cols-1 lg:grid-cols-2 min-h-[420px]">
 
     {/* LEFT */}
 <div className="flex items-center px-8 md:px-16 py-16">
@@ -1432,7 +1432,7 @@ function About({ lang }) {
 
 </div>
 
-  <div className="grid grid-cols-1 lg:grid-cols-2 min-h-[420px]">
+<div className="hidden lg:grid grid-cols-1 lg:grid-cols-2 min-h-[420px]">
 
     {/* LEFT */}
     <div className="flex items-center px-8 md:px-16 py-16">
@@ -1705,7 +1705,7 @@ const Contact = ({ lang }) => {
 
 </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 min-h-[420px]">
+<div className="hidden lg:grid grid-cols-1 lg:grid-cols-2 min-h-[420px]">
 
           {/* LEFT */}
           <div className="flex items-center px-8 md:px-16 py-16">
@@ -1750,6 +1750,18 @@ const Contact = ({ lang }) => {
       </section>
 
       {/* FORM SECTION */}
+      {/* MOBILE INTRO */}
+<div className="lg:hidden px-8 pt-10 pb-2">
+
+  <p className="text-[#4d5960] leading-relaxed text-lg">
+    {isHR
+      ? "Veselimo se vašem upitu i rado ćemo vas osobno savjetovati."
+      : isEN
+      ? "We look forward to your inquiry and are happy to advise you personally."
+      : "Wir freuen uns auf Ihre Anfrage und beraten Sie gerne persönlich."}
+  </p>
+
+</div>
 <section className="max-w-7xl mx-auto px-8 md:px-16 py-12 lg:py-24">
 
 <div className="grid grid-cols-1 lg:grid-cols-[340px_1fr] gap-8 lg:gap-20 items-start">
@@ -1918,7 +1930,7 @@ return (
 
 </div>
 
-  <div className="grid grid-cols-1 lg:grid-cols-2 min-h-[420px]">
+<div className="hidden lg:grid grid-cols-1 lg:grid-cols-2 min-h-[420px]">
 
     {/* LEFT */}
 <div className="flex items-center px-8 md:px-16 py-16">
