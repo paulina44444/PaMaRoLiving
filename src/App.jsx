@@ -135,7 +135,7 @@ className="md:hidden"
   );
 }
 
-function FooterBar() {
+function FooterBar({ setPage }) {
   return (
     <footer className="bg-[#2f3a40] text-white mt-24">
       <div className="max-w-6xl mx-auto px-6 py-10 md:py-12">
@@ -234,6 +234,15 @@ function FooterBar() {
         <div className="border-t border-[#c6a27b]/40 mt-6 pt-4 text-center text-xs text-gray-300">
           © {new Date().getFullYear()} PaMaRo Living. All rights reserved.
         </div>
+        <button
+  onClick={() => {
+    setPage("legal");
+    window.scrollTo(0, 0);
+  }}
+  className="hover:text-[#c6a27b] transition"
+>
+  Impressum & Datenschutz
+</button>
 
       </div>
     </footer>
@@ -1774,6 +1783,13 @@ function Legal({ lang }) {
           ? "If you send us inquiries via the contact form or by email, your details, including the contact information you provide, will be stored for the purpose of processing the request. This data will not be shared without your consent."
           : "Wenn Sie uns per Kontaktformular oder E-Mail Anfragen zukommen lassen, werden Ihre Angaben inklusive der von Ihnen angegebenen Kontaktdaten zwecks Bearbeitung der Anfrage gespeichert. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter."}
       </p>
+      <p>
+  {isHR
+    ? "Za slanje kontakt obrazaca koristimo vanjsku uslugu Web3Forms. Podaci uneseni u obrazac prenose se putem zaštićene veze i koriste isključivo za obradu vašeg upita."
+    : isEN
+    ? "For contact form submissions we use the external service Web3Forms. The data entered into the form is transmitted via a secure connection and used solely for processing your inquiry."
+    : "Für die Übermittlung von Kontaktformularen verwenden wir den externen Dienst Web3Forms. Die im Formular eingegebenen Daten werden über eine sichere Verbindung übertragen und ausschliesslich zur Bearbeitung Ihrer Anfrage verwendet."}
+</p>
 
       <p>
         {isHR
@@ -1812,7 +1828,7 @@ default: content = <Home lang={lang} setPage={setPage} />;
 <div className="flex flex-col bg-[#f7f2ed]">
       <Navigation setPage={setPage} lang={lang} setLang={setLang} />
 <main className="pt-20">{content}</main>
-      <FooterBar />
+<FooterBar setPage={setPage} />
     </div>
   );
 }
