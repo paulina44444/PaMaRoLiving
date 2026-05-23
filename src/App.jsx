@@ -1357,36 +1357,42 @@ function About({ lang }) {
   className="bg-[#f7f2ed]"
 >
 
-  {/* HERO */}
-<div className="relative h-[45vh] overflow-hidden">
+{/* HERO */}
+<section className="relative overflow-hidden">
 
-    <img
-      src="/about-hero.jpg"
-      alt="PaMaRo Living"
-      className="absolute inset-0 w-full h-full object-cover"
-    />
+  <div className="grid grid-cols-1 lg:grid-cols-2 min-h-[420px]">
 
-    <div className="absolute inset-0 bg-black/10" />
+    {/* LEFT */}
+    <div className="flex items-center px-8 md:px-16 py-16">
 
-    <div className="relative z-10 h-full flex items-center">
+      <div className="max-w-xl">
 
-      <div className="max-w-7xl mx-auto px-8 md:px-16 w-full">
+        <h1 className="font-serif text-5xl md:text-6xl text-[#2f3a40] leading-tight mb-8">
+          {isHR ? "O nama" : isEN ? "About us" : "Über uns"}
+        </h1>
 
-        <div className="max-w-[520px]">
-
-          <h1 className="font-serif text-white text-5xl md:text-6xl leading-none">
-            {isHR ? "O nama" : isEN ? "About us" : "Über uns"}
-          </h1>
-
-          <div className="w-20 h-[1px] bg-[#c6a27b] mt-8" />
-
-        </div>
+        <div className="w-20 h-[1px] bg-[#c6a27b]"></div>
 
       </div>
 
     </div>
 
+    {/* RIGHT IMAGE */}
+    <div className="hidden lg:block relative h-[320px] lg:h-auto overflow-hidden">
+
+      <img
+        src="/about-hero.jpg"
+        alt="PaMaRo Living"
+        className="absolute inset-0 w-full h-full object-cover"
+      />
+
+      <div className="absolute inset-0 bg-gradient-to-r from-[#f7f2ed] via-[#f7f2ed]/70 to-transparent"></div>
+
+    </div>
+
   </div>
+
+</section>
 
   {/* TEXT */}
   <div className="max-w-7xl mx-auto px-8 md:px-16 py-24">
