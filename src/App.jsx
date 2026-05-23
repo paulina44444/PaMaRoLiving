@@ -1574,14 +1574,14 @@ const Contact = ({ lang }) => {
       {/* HERO */}
       <section className="relative overflow-hidden">
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 min-h-[520px]">
+        <div className="grid grid-cols-1 lg:grid-cols-2 min-h-[420px]">
 
           {/* LEFT */}
-          <div className="flex items-center px-8 md:px-16 py-20">
+          <div className="flex items-center px-8 md:px-16 py-14">
 
             <div className="max-w-xl">
 
-              <h1 className="font-serif text-5xl md:text-7xl text-[#2f3a40] leading-tight mb-8">
+              <h1 className="font-serif text-5xl md:text-6xl text-[#2f3a40] leading-tight mb-8">
                 {isHR ? "Kontakt" : isEN ? "Contact" : "Kontakt"}
               </h1>
 
