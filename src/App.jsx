@@ -460,7 +460,7 @@ function Services({ setPage, lang }) {
   const isEN = lang === "en";
   return (
 <section className="bg-[#f7f2ed]">
-  <div className="max-w-6xl mx-auto px-6 pt-16 pb-8">
+<div className="max-w-6xl mx-auto px-6 pt-16 pb-16">
 
   <div className="text-center mb-14">
     <div className="flex items-center justify-center gap-6 mb-4">
