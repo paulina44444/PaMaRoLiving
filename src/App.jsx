@@ -1339,7 +1339,7 @@ function About({ lang }) {
 >
 
   {/* HERO */}
-  <div className="relative h-[60vh] overflow-hidden">
+<div className="relative h-[45vh] overflow-hidden">
 
     <img
       src="/about-hero.jpg"
@@ -1355,7 +1355,7 @@ function About({ lang }) {
 
         <div className="max-w-[520px]">
 
-          <h1 className="font-serif text-white text-6xl md:text-7xl leading-none">
+          <h1 className="font-serif text-white text-5xl md:text-6xl leading-none">
             {isHR ? "O nama" : isEN ? "About us" : "Über uns"}
           </h1>
 
