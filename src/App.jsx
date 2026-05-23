@@ -481,13 +481,6 @@ function Services({ setPage, lang }) {
         </h1>
 
         <div className="w-20 h-[1px] bg-[#c6a27b] mb-8"></div>
-        <p className="text-[#5f6a70] text-lg leading-relaxed max-w-md">
-  {isHR
-    ? "Transparentnost i pažljivo postupanje s vašim podacima su nam važni."
-    : isEN
-    ? "Transparency and the careful handling of your data are important to us."
-    : "Transparenz und der sorgfältige Umgang mit Ihren Daten sind uns wichtig."}
-</p>
 
         <p className="text-[#4d5960] text-lg leading-relaxed">
           {isHR
@@ -1791,6 +1784,15 @@ return (
         </h1>
 
         <div className="w-20 h-[1px] bg-[#c6a27b]"></div>
+        <div className="w-20 h-[1px] bg-[#c6a27b] mb-8"></div>
+
+<p className="text-[#5f6a70] text-lg leading-relaxed max-w-md">
+  {isHR
+    ? "Transparentnost i pažljivo postupanje s vašim podacima su nam važni."
+    : isEN
+    ? "Transparency and the careful handling of your data are important to us."
+    : "Transparenz und der sorgfältige Umgang mit Ihren Daten sind uns wichtig."}
+</p>
 
       </div>
 
