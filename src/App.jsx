@@ -503,7 +503,7 @@ function Services({ setPage, lang }) {
 className="absolute inset-0 w-full h-full object-cover"
       />
 
-<div className="absolute inset-0 bg-gradient-to-r from-[#f7f2ed] via-[#f7f2ed]/40 to-transparent backdrop-blur-[1px]"></div>
+<div className="absolute inset-0 bg-gradient-to-r from-[#f7f2ed] via-[#f7f2ed]/70 to-transparent"></div>
 
     </div>
 
@@ -1629,7 +1629,7 @@ const Contact = ({ lang }) => {
   />
 
   {/* SOFT FADE LEFT */}
-<div className="absolute inset-0 bg-gradient-to-r from-[#f7f2ed] via-[#f7f2ed]/40 to-transparent backdrop-blur-[1px]"></div>
+<div className="absolute inset-0 bg-gradient-to-r from-[#f7f2ed] via-[#f7f2ed]/70 to-transparent"></div>
 
 </div>
 
@@ -1798,7 +1798,7 @@ return (
 className="absolute inset-0 w-full h-full object-cover"
       />
 
-<div className="absolute inset-0 bg-gradient-to-r from-[#f7f2ed] via-[#f7f2ed]/40 to-transparent backdrop-blur-[1px]"></div>
+<div className="absolute inset-0 bg-gradient-to-r from-[#f7f2ed] via-[#f7f2ed]/70 to-transparent"></div>
 
     </div>
 
