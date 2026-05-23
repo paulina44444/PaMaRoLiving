@@ -1775,7 +1775,7 @@ function References({ lang, setPage }) {
 
             <div className="max-w-xl">
 
-              <h1 className="font-serif text-5xl md:text-6xl text-[#2f3a40] leading-tight mb-8">
+              <h1>className="font-serif text-5xl md:text-6xl text-[#2f3a40] leading-tight whitespace-pre-line mb-8"
                 {isHR
                   ? "Projekti &\ninspiracija"
                   : isEN
