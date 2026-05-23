@@ -1755,7 +1755,7 @@ return (
     </div>
 
     {/* CONTENT */}
-    <div className="max-w-4xl mx-auto px-6 py-24 text-[#2f3a40]">
+<div className="max-w-4xl mx-auto px-6 pt-16 pb-0 text-[#2f3a40]">
 
       {/* Impressum */}
 <div className="mb-16">
@@ -1770,7 +1770,7 @@ return (
 
         <div className="w-12 h-[1px] bg-[#c6a27b] mb-10" />
 
-        <div className="space-y-8 text-[17px] leading-[2]">
+        <div className="space-y-5 text-[17px] leading-[2]">
 
           <div>
             <strong>PaMaRo Living</strong><br />
