@@ -1763,7 +1763,7 @@ function Legal({ lang }) {
   const isEN = lang === "en";
 
 return (
-  <section className="bg-[#f8f5f1] min-h-screen">
+<section className="bg-[#f7f2ed] min-h-screen">
 
 {/* HERO */}
 <section className="relative overflow-hidden">
