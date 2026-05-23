@@ -1838,7 +1838,7 @@ return (
           </p>
 
           <div>
-            <h3 className="font-semibold mb-3">
+            <h3 className="font-semibold mb-0">
               {isHR
                 ? "Kontakt obrazac"
                 : isEN
@@ -1856,7 +1856,7 @@ return (
           </div>
 
           <div>
-            <h3 className="font-semibold mb-3">
+            <h3 className="font-semibold mb-0">
               Web3Forms
             </h3>
 
@@ -1870,7 +1870,7 @@ return (
           </div>
 
           <div>
-            <h3 className="font-semibold mb-3">
+            <h3 className="font-semibold mb-0">
               {isHR
                 ? "Vaša prava"
                 : isEN
