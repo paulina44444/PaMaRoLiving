@@ -500,7 +500,7 @@ function Services({ setPage, lang }) {
       <img
         src="/services.jpg"
         alt="Services"
-        className="absolute inset-0 w-full h-full object-cover"
+className="absolute inset-0 w-full h-full object-cover blur-[1px] scale-105"
       />
 
 <div className="absolute inset-0 bg-white/10 backdrop-blur-[1px]"></div>
@@ -1795,7 +1795,7 @@ return (
       <img
         src="/legal.jpg"
         alt="Legal"
-        className="absolute inset-0 w-full h-full object-cover"
+className="absolute inset-0 w-full h-full object-cover blur-[1px] scale-105"
       />
 
       <div className="absolute inset-0 bg-black/10"></div>
