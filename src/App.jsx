@@ -231,15 +231,15 @@ function FooterBar({ setPage }) {
         </div>
 
         {/* Copyright */}
-        <div className="border-t border-[#c6a27b]/40 mt-6 pt-4 text-center text-xs text-gray-300">
-          © {new Date().getFullYear()} PaMaRo Living. All rights reserved.
+<div className="border-t border-[#c6a27b]/40 mt-8 pt-5 flex flex-col md:flex-row items-center justify-center gap-6 text-xs text-gray-300">
+© {new Date().getFullYear()} PaMaRo Living
         </div>
         <button
   onClick={() => {
     setPage("legal");
     window.scrollTo(0, 0);
   }}
-  className="hover:text-[#c6a27b] transition"
+className="hover:text-[#c6a27b] transition tracking-[0.08em] uppercase text-[11px]"
 >
   Impressum & Datenschutz
 </button>
