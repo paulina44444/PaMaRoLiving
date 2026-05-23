@@ -464,6 +464,44 @@ function Services({ setPage, lang }) {
 
 {/* HERO */}
 <section className="relative overflow-hidden">
+{/* MOBILE HERO */}
+<div className="lg:hidden relative h-[320px] overflow-hidden">
+
+  <img
+    src="/services.jpg"
+    alt="Services"
+    className="absolute inset-0 w-full h-full object-cover"
+  />
+
+  <div className="absolute inset-0 bg-black/35"></div>
+
+  <div className="relative z-10 h-full flex items-center px-8 pt-16">
+
+    <div>
+
+      <h1 className="font-serif text-5xl text-white leading-tight mb-6">
+        {isHR
+          ? "Naše usluge"
+          : isEN
+          ? "Our Services"
+          : "Unsere Dienstleistungen"}
+      </h1>
+
+      <div className="w-16 h-[1px] bg-white/70 mb-6"></div>
+
+      <p className="text-white/90 leading-relaxed max-w-sm">
+        {isHR
+          ? "Sve što je vašoj nekretnini potrebno – pouzdano, diskretno i profesionalno."
+          : isEN
+          ? "Everything your property needs – reliable, discreet and professional."
+          : "Alles, was Ihre Immobilie braucht – zuverlässig, diskret und professionell."}
+      </p>
+
+    </div>
+
+  </div>
+
+</div>
 
   <div className="grid grid-cols-1 lg:grid-cols-2 min-h-[420px]">
 
@@ -1359,6 +1397,40 @@ function About({ lang }) {
 
 {/* HERO */}
 <section className="relative overflow-hidden">
+{/* MOBILE HERO */}
+<div className="lg:hidden relative h-[320px] overflow-hidden">
+
+  <img
+    src="/about-hero.jpg"
+    alt="About"
+    className="absolute inset-0 w-full h-full object-cover"
+  />
+
+  <div className="absolute inset-0 bg-black/35"></div>
+
+  <div className="relative z-10 h-full flex items-center px-8 pt-16">
+
+    <div>
+
+      <h1 className="font-serif text-5xl text-white leading-tight mb-6">
+        {isHR ? "O nama" : isEN ? "About us" : "Über uns"}
+      </h1>
+
+      <div className="w-16 h-[1px] bg-white/70 mb-6"></div>
+
+      <p className="text-white/90 leading-relaxed max-w-sm">
+        {isHR
+          ? "Osobna briga, povjerenje i dugogodišnje iskustvo u području nekretnina."
+          : isEN
+          ? "Personal care, trust and many years of experience in real estate."
+          : "Persönliche Betreuung, Vertrauen und langjährige Erfahrung im Immobilienbereich."}
+      </p>
+
+    </div>
+
+  </div>
+
+</div>
 
   <div className="grid grid-cols-1 lg:grid-cols-2 min-h-[420px]">
 
@@ -1598,6 +1670,40 @@ const Contact = ({ lang }) => {
 
       {/* HERO */}
       <section className="relative overflow-hidden">
+{/* MOBILE HERO */}
+<div className="lg:hidden relative h-[320px] overflow-hidden">
+
+  <img
+    src="/contact-image.jpg"
+    alt="Kontakt"
+    className="absolute inset-0 w-full h-full object-cover"
+  />
+
+  <div className="absolute inset-0 bg-black/35"></div>
+
+  <div className="relative z-10 h-full flex items-center px-8 pt-16">
+
+    <div>
+
+      <h1 className="font-serif text-5xl text-white leading-tight mb-6">
+        {isHR ? "Kontakt" : isEN ? "Contact" : "Kontakt"}
+      </h1>
+
+      <div className="w-16 h-[1px] bg-white/70 mb-6"></div>
+
+      <p className="text-white/90 leading-relaxed max-w-sm">
+        {isHR
+          ? "Bilo da vam je potrebna briga o nekretnini, bezbrižan boravak ili preuređenje."
+          : isEN
+          ? "Whether you need property care, a carefree stay or redesign."
+          : "Ob Immobilienbetreuung, sorgenfreier Aufenthalt oder Neugestaltung."}
+      </p>
+
+    </div>
+
+  </div>
+
+</div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 min-h-[420px]">
 
@@ -1773,6 +1879,44 @@ return (
 
 {/* HERO */}
 <section className="relative overflow-hidden">
+{/* MOBILE HERO */}
+<div className="lg:hidden relative h-[320px] overflow-hidden">
+
+  <img
+    src="/legal.jpg"
+    alt="Legal"
+    className="absolute inset-0 w-full h-full object-cover"
+  />
+
+  <div className="absolute inset-0 bg-black/35"></div>
+
+  <div className="relative z-10 h-full flex items-center px-8 pt-16">
+
+    <div>
+
+      <h1 className="font-serif text-5xl text-white leading-tight mb-6">
+        {isHR
+          ? "Impressum i privatnost"
+          : isEN
+          ? "Legal Notice & Privacy"
+          : "Impressum & Datenschutz"}
+      </h1>
+
+      <div className="w-16 h-[1px] bg-white/70 mb-6"></div>
+
+      <p className="text-white/90 leading-relaxed max-w-sm">
+        {isHR
+          ? "Transparentnost i pažljivo postupanje s vašim podacima su nam važni."
+          : isEN
+          ? "Transparency and the careful handling of your data are important to us."
+          : "Transparenz und der sorgfältige Umgang mit Ihren Daten sind uns wichtig."}
+      </p>
+
+    </div>
+
+  </div>
+
+</div>
 
   <div className="grid grid-cols-1 lg:grid-cols-2 min-h-[420px]">
 
