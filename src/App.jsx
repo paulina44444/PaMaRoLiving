@@ -137,7 +137,7 @@ className="md:hidden"
 
 function FooterBar({ setPage }) {
   return (
-    <footer className="bg-[#2f3a40] text-white mt-24">
+<footer className="bg-[#2f3a40] text-white">
       <div className="max-w-6xl mx-auto px-6 py-10 md:py-12">
 
         {/* obere 3 Spalten */}
