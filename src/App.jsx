@@ -468,7 +468,7 @@ function Services({ setPage, lang }) {
   <div className="grid grid-cols-1 lg:grid-cols-2 min-h-[420px]">
 
     {/* LEFT */}
-    <div className="flex items-center px-8 md:px-16 py-14 bg-[#f3ede7]">
+    <div className="flex items-center px-8 md:px-16 py-16 bg-[#f3ede7]">
 
       <div className="max-w-xl">
 
@@ -1596,7 +1596,7 @@ const Contact = ({ lang }) => {
         <div className="grid grid-cols-1 lg:grid-cols-2 min-h-[420px]">
 
           {/* LEFT */}
-          <div className="flex items-center px-8 md:px-16 py-14">
+          <div className="flex items-center px-8 md:px-16 py-16">
 
             <div className="max-w-xl">
 
@@ -1768,10 +1768,10 @@ return (
 {/* HERO */}
 <section className="relative overflow-hidden">
 
-  <div className="grid grid-cols-1 lg:grid-cols-2 min-h-[380px]">
+  <div className="grid grid-cols-1 lg:grid-cols-2 min-h-[420px]">
 
     {/* LEFT */}
-    <div className="flex items-center px-8 md:px-16 py-14 bg-[#f3ede7]">
+    <div className="flex items-center px-8 md:px-16 py-16 bg-[#f3ede7]">
 
       <div className="max-w-xl">
 
