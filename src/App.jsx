@@ -1716,10 +1716,10 @@ function References({ lang, setPage }) {
     },
     {
       title: isHR
-        ? "Mediteranska spavaća soba"
+        ? "Elegantna spavaća soba"
         : isEN
-        ? "Mediterranean Bedroom"
-        : "Mediterranes Schlafzimmer",
+        ? "Elegant Bedroom"
+        : "Elegantes Schlafzimmer",
       location: "Omiš, Croatia",
       image: "/ref2.jpg",
     },
@@ -1734,10 +1734,10 @@ function References({ lang, setPage }) {
     },
     {
       title: isHR
-        ? "Kuhinja & uživanje"
+        ? "Kuhinja & dnevni boravak"
         : isEN
         ? "Kitchen & Living"
-        : "Küche & Genuss",
+        : "Küche & Wohnen",
       location: "Makarska, Croatia",
       image: "/ref4.jpg",
     },
@@ -1777,20 +1777,20 @@ function References({ lang, setPage }) {
 
               <h1 className="font-serif text-5xl md:text-6xl text-[#2f3a40] leading-tight mb-8">
                 {isHR
-                  ? "Reference & inspiracija"
+                  ? "Projekti & inspiracija"
                   : isEN
-                  ? "References & Inspiration"
-                  : "Referenzen & Wohninspirationen"}
+                  ? "Projects & Inspiration"
+                  : "Referenzen & Inspirationen"}
               </h1>
 
               <div className="w-20 h-[1px] bg-[#c6a27b] mb-8"></div>
 
               <p className="text-[#5f6a70] text-lg leading-relaxed max-w-md">
                 {isHR
-                  ? "Uvid u odabrane projekte, detalje i mediteransku atmosferu stanovanja."
+                  ? "Odabrani projekti, skladni interijeri i prostori uređeni s osjećajem za stil i atmosferu."
                   : isEN
-                  ? "Insights into selected projects, details and Mediterranean living atmosphere."
-                  : "Einblicke in ausgewählte Projekte, Details und mediterrane Wohnatmosphäre."}
+                  ? "Selected projects, thoughtful interiors and spaces designed with atmosphere and character."
+                  : "Einblicke in ausgewählte Projekte, stilvolle Raumgestaltung und individuelle Wohnkonzepte."}
               </p>
 
             </div>
@@ -1829,9 +1829,9 @@ function References({ lang, setPage }) {
 
               <h1 className="font-serif text-5xl text-white leading-tight mb-6">
                 {isHR
-                  ? "Reference"
+                  ? "Projekti"
                   : isEN
-                  ? "References"
+                  ? "Projects"
                   : "Referenzen"}
               </h1>
 
@@ -1839,10 +1839,10 @@ function References({ lang, setPage }) {
 
               <p className="text-white/90 leading-relaxed max-w-sm">
                 {isHR
-                  ? "Inspiracija za mediteranski stil života i uređenje prostora."
+                  ? "Odabrani projekti i inspiracija za stilsku i individualnu prostoriju."
                   : isEN
-                  ? "Inspiration for Mediterranean living and interior styling."
-                  : "Inspirationen für mediterranes Wohnen und stilvolle Raumgestaltung."}
+                  ? "Selected projects and inspiration for stylish and individual living spaces."
+                  : "Ausgewählte Projekte und Inspirationen für stilvolle Wohnkonzepte."}
               </p>
 
             </div>
