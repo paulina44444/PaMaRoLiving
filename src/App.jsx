@@ -449,6 +449,7 @@ return (
     : "Kontaktieren Sie uns. Wir beraten Sie unverbindlich auf Deutsch, Kroatisch, Englisch, Italienisch, Spanisch oder Französisch und finden gemeinsam die passende Lösung für Ihre Immobilie."}
 </p>
       </section>
+      <div className="pb-24" />
     </div>
   );
 }
@@ -1755,7 +1756,7 @@ return (
     </div>
 
     {/* CONTENT */}
-<div className="max-w-4xl mx-auto px-6 pt-16 pb-0 text-[#2f3a40]">
+<div className="max-w-4xl mx-auto px-6 pt-16 pb-24 text-[#2f3a40]">
 
       {/* Impressum */}
 <div className="mb-16">
