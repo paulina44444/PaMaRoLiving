@@ -1777,7 +1777,7 @@ function References({ lang, setPage }) {
 
               <h1 className="font-serif text-5xl md:text-6xl text-[#2f3a40] leading-tight mb-8">
                 {isHR
-                  ? "Projekti & inspiracija"
+                  ? "Projekti &\ninspiracija"
                   : isEN
                   ? "Projects & Inspiration"
                   : "Referenzen & Inspirationen"}
