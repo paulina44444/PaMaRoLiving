@@ -33,9 +33,9 @@ import { FaInstagram, FaFacebookF } from "react-icons/fa";
 
 /* ================= SIMPLE LANGUAGE STATE ================= */
 const navLabels = {
-  hr: ["Početna", "O nama", "Usluge", "Kontakt", "Impressum i privatnost"],
-  de: ["Startseite", "Über uns", "Dienstleistungen", "Kontakt", "Impressum & Datenschutz"],
-  en: ["Home", "About", "Services", "Contact", "Legal & Privacy"],
+  hr: ["Početna", "O nama", "Usluge", "Projekti", "Kontakt", "Impressum i privatnost"],
+  de: ["Startseite", "Über uns", "Dienstleistungen", "Referenzen", "Kontakt", "Impressum & Datenschutz"],
+  en: ["Home", "About", "Services",  "References", "Contact", "Legal & Privacy"],
 };
 
 function Navigation({ setPage, lang, setLang }) {
@@ -62,7 +62,7 @@ function Navigation({ setPage, lang, setLang }) {
             <button
               key={i}
               className={link}
-              onClick={() => setPage(["home", "about", "services", "contact", "legal"][i])}
+              onClick={() => setPage(["home", "about", "services", "references", "contact", "legal"][i])}
             >
               {label}
             </button>
@@ -93,7 +93,7 @@ className="md:hidden"
         key={i}
         className="text-left py-3 text-xl border-b border-[#f1ebe6]"
         onClick={() => {
-          setPage(["home", "about", "services", "contact", "legal"][i]);
+          setPage(["home", "about", "services", "references", "contact", "legal"][i]);
           setMenuOpen(false);
         }}
       >
@@ -1377,7 +1377,47 @@ const Service4 = ({ lang }) => {
         </div>
 
       </section>
+{/* REFERENCES */}
+<section className="max-w-5xl mx-auto px-6 pt-20 text-center">
 
+  <div className="w-20 h-[1px] bg-[#c6a27b] mx-auto mb-8"></div>
+
+  <h3 className="font-serif text-3xl text-[#2f3a40] mb-6">
+    {isHR
+      ? "Reference & inspiracija"
+      : isEN
+      ? "References & Inspiration"
+      : "Referenzen & Wohninspirationen"}
+  </h3>
+
+  <p className="text-[#5f6a70] leading-relaxed max-w-2xl mx-auto mb-6">
+    {isHR
+      ? "Uvid u odabrane koncepte prostora, detalje i mediteransku atmosferu stanovanja."
+      : isEN
+      ? "Insights into selected interior concepts, details and Mediterranean living atmosphere."
+      : "Einblicke in ausgewählte Raumkonzepte, Details und mediterrane Wohnatmosphäre."}
+  </p>
+
+  <p className="text-[#5f6a70] leading-relaxed max-w-2xl mx-auto mb-10">
+    {isHR
+      ? "Za odabrane projekte po želji izrađujemo i atmosferične fotografije za prezentaciju vaše nekretnine."
+      : isEN
+      ? "For selected projects, we also create atmospheric photography for the presentation of your property upon request."
+      : "Für ausgewählte Projekte erstellen wir auf Wunsch auch atmosphärische Aufnahmen zur Präsentation Ihrer Immobilie."}
+  </p>
+
+<button
+  onClick={() => setPage("references")}
+  className="border border-[#c6a27b] text-[#2f3a40] px-8 py-4 tracking-[0.12em] uppercase text-sm hover:bg-[#c6a27b] hover:text-white transition"
+>
+    {isHR
+      ? "Pogledajte reference"
+      : isEN
+      ? "View References"
+      : "Referenzen ansehen"}
+  </button>
+
+</section>
     </ServiceDetail>
   );
 };
@@ -1657,6 +1697,225 @@ function About({ lang }) {
   </div>
 
 </section>
+  );
+}
+
+function References({ lang, setPage }) {
+  const isHR = lang === "hr";
+  const isEN = lang === "en";
+
+  const projects = [
+    {
+      title: isHR
+        ? "Apartman uz more"
+        : isEN
+        ? "Seaside Apartment"
+        : "Ferienwohnung am Meer",
+      location: "Pisak, Croatia",
+      image: "/ref1.jpg",
+    },
+    {
+      title: isHR
+        ? "Mediteranska spavaća soba"
+        : isEN
+        ? "Mediterranean Bedroom"
+        : "Mediterranes Schlafzimmer",
+      location: "Omiš, Croatia",
+      image: "/ref2.jpg",
+    },
+    {
+      title: isHR
+        ? "Terasa s pogledom"
+        : isEN
+        ? "Terrace with View"
+        : "Terrasse mit Aussicht",
+      location: "Brela, Croatia",
+      image: "/ref3.jpg",
+    },
+    {
+      title: isHR
+        ? "Kuhinja & uživanje"
+        : isEN
+        ? "Kitchen & Living"
+        : "Küche & Genuss",
+      location: "Makarska, Croatia",
+      image: "/ref4.jpg",
+    },
+    {
+      title: isHR
+        ? "Svijetli dnevni boravak"
+        : isEN
+        ? "Bright Living Room"
+        : "Helles Wohnzimmer",
+      location: "Omiš, Croatia",
+      image: "/ref5.jpg",
+    },
+    {
+      title: isHR
+        ? "Outdoor Lounge"
+        : isEN
+        ? "Outdoor Lounge"
+        : "Outdoor Lounge",
+      location: "Brela, Croatia",
+      image: "/ref6.jpg",
+    },
+  ];
+
+  return (
+    <section className="bg-[#f7f2ed] min-h-screen">
+
+      {/* HERO */}
+      <section className="relative overflow-hidden">
+
+        {/* DESKTOP */}
+        <div className="hidden lg:grid grid-cols-1 lg:grid-cols-2 min-h-[420px]">
+
+          {/* LEFT */}
+          <div className="flex items-center px-8 md:px-16 py-16">
+
+            <div className="max-w-xl">
+
+              <h1 className="font-serif text-5xl md:text-6xl text-[#2f3a40] leading-tight mb-8">
+                {isHR
+                  ? "Reference & inspiracija"
+                  : isEN
+                  ? "References & Inspiration"
+                  : "Referenzen & Wohninspirationen"}
+              </h1>
+
+              <div className="w-20 h-[1px] bg-[#c6a27b] mb-8"></div>
+
+              <p className="text-[#5f6a70] text-lg leading-relaxed max-w-md">
+                {isHR
+                  ? "Uvid u odabrane projekte, detalje i mediteransku atmosferu stanovanja."
+                  : isEN
+                  ? "Insights into selected projects, details and Mediterranean living atmosphere."
+                  : "Einblicke in ausgewählte Projekte, Details und mediterrane Wohnatmosphäre."}
+              </p>
+
+            </div>
+
+          </div>
+
+          {/* RIGHT */}
+          <div className="relative overflow-hidden">
+
+            <img
+              src="/references-hero.jpg"
+              alt="References"
+              className="absolute inset-0 w-full h-full object-cover"
+            />
+
+            <div className="absolute inset-y-0 left-0 w-[45%] bg-gradient-to-r from-[#f7f2ed] via-[#f7f2ed]/92 to-transparent"></div>
+
+          </div>
+
+        </div>
+
+        {/* MOBILE */}
+        <div className="lg:hidden relative h-[320px] overflow-hidden">
+
+          <img
+            src="/references-hero.jpg"
+            alt="References"
+            className="absolute inset-0 w-full h-full object-cover"
+          />
+
+          <div className="absolute inset-0 bg-black/35"></div>
+
+          <div className="relative z-10 h-full flex items-center px-8 pt-16">
+
+            <div>
+
+              <h1 className="font-serif text-5xl text-white leading-tight mb-6">
+                {isHR
+                  ? "Reference"
+                  : isEN
+                  ? "References"
+                  : "Referenzen"}
+              </h1>
+
+              <div className="w-16 h-[1px] bg-white/70 mb-6"></div>
+
+              <p className="text-white/90 leading-relaxed max-w-sm">
+                {isHR
+                  ? "Inspiracija za mediteranski stil života i uređenje prostora."
+                  : isEN
+                  ? "Inspiration for Mediterranean living and interior styling."
+                  : "Inspirationen für mediterranes Wohnen und stilvolle Raumgestaltung."}
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      {/* PROJECTS */}
+      <section className="max-w-7xl mx-auto px-6 py-20">
+
+        <div className="text-center mb-14">
+
+          <h2 className="font-serif text-4xl text-[#2f3a40] mb-6">
+            {isHR
+              ? "Odabrani projekti"
+              : isEN
+              ? "Selected Projects"
+              : "Ausgewählte Projekte"}
+          </h2>
+
+          <div className="w-16 h-[1px] bg-[#c6a27b] mx-auto"></div>
+
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+          {projects.map((project, index) => (
+            <button
+              key={index}
+              className="bg-white text-left rounded-[28px] overflow-hidden border border-[#eee5dc] hover:shadow-md transition"
+            >
+
+              <div className="aspect-[4/3] overflow-hidden">
+
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="w-full h-full object-cover hover:scale-105 transition duration-500"
+                />
+
+              </div>
+
+              <div className="p-7">
+
+                <h3 className="font-serif text-2xl text-[#2f3a40] mb-3">
+                  {project.title}
+                </h3>
+
+                <p className="text-sm tracking-[0.18em] uppercase text-[#8a8f93] mb-6">
+                  {project.location}
+                </p>
+
+                <span className="text-[#b68c63] tracking-[0.08em] text-sm uppercase">
+                  {isHR
+                    ? "Više detalja"
+                    : isEN
+                    ? "View Project"
+                    : "Mehr entdecken"}
+                </span>
+
+              </div>
+
+            </button>
+          ))}
+
+        </div>
+
+      </section>
+
+    </section>
   );
 }
 
@@ -2137,6 +2396,7 @@ switch (page) {
   case "service2": content = <Service2 lang={lang}/>; break;
   case "service3": content = <Service3 lang={lang}/>; break;
   case "service4": content = <Service4 lang={lang}/>; break;
+  case "references": content = <References lang={lang} setPage={setPage} />; break;
   case "contact": content = <Contact lang={lang} />; break;
   case "legal": content = <Legal lang={lang} />; break;
 default: content = <Home lang={lang} setPage={setPage} />;
