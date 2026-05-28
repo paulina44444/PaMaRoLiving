@@ -1779,7 +1779,7 @@ function References({ lang, setPage }) {
                 {isHR
                   ? "Projekti &\ninspiracija"
                   : isEN
-                  ? "Projects & Inspiration"
+                  ? "Projects & Inspirations"
                   : "Referenzen & Inspirationen"}
               </h1>
 
@@ -1831,7 +1831,7 @@ function References({ lang, setPage }) {
                 {isHR
                   ? "Projekti & inspiracija"
                   : isEN
-                  ? "Projects & Inspiration"
+                  ? "Projects & Inspirations"
                   : "Referenzen & Inspirationen"}
               </h1>
 
