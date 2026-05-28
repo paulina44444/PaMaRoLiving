@@ -1762,7 +1762,7 @@ function References({ lang, setPage }) {
   ];
 
   return (
-    <section className="bg-[#f7f2ed] min-h-screen">
+<section className="bg-[#f7f2ed] min-h-screen pt-20">
 
       {/* HERO */}
       <section className="relative overflow-hidden">
