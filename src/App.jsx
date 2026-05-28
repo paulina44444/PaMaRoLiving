@@ -1829,10 +1829,10 @@ function References({ lang, setPage }) {
 
               <h1 className="font-serif text-5xl text-white leading-tight mb-6">
                 {isHR
-                  ? "Projekti"
+                  ? "Projekti & inspiracija"
                   : isEN
-                  ? "Projects"
-                  : "Referenzen"}
+                  ? "Projects & Inspiration"
+                  : "Referenzen & Inspirationen"}
               </h1>
 
               <div className="w-16 h-[1px] bg-white/70 mb-6"></div>
