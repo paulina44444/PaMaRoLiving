@@ -1149,10 +1149,10 @@ const Service4 = ({ lang, setPage }) => {
 
               <h1 className="font-serif text-4xl md:text-6xl leading-tight mb-8 text-left">
                 {isHR
-                  ? "Uređenje interijera & preuređenje"
+                  ? "Uređenje interijera"
                   : isEN
-                  ? "Interior Design & Redesign"
-                  : "Inneneinrichtung & Neugestaltung"}
+                  ? "Interior Design"
+                  : "Stilvolle Einrichtung"}
               </h1>
 
               <div className="w-20 h-[2px] bg-[#c6a27b] mb-8"></div>
@@ -1223,16 +1223,16 @@ const Service4 = ({ lang, setPage }) => {
               {isHR
                 ? "Koncept prostora"
                 : isEN
-                ? "Space Concept"
-                : "Raumkonzept"}
+                ? "Space Concepts"
+                : "Raumkonzepte"}
             </h3>
 
             <p>
-              {isHR
-                ? "Tlocrtno planiranje te individualni prijedlozi uređenja i namještaja."
-                : isEN
-                ? "Floor plan concepts and individual furnishing proposals."
-                : "Grundrissplanung sowie individuelle Einrichtungs- und Möblierungsvorschläge."}
+{isHR
+  ? "Promišljeni prijedlozi rasporeda i uređenja prostora za skladan i ugodan dom, uključujući renovacije i preuređenja."
+  : isEN
+  ? "Thoughtful space planning and furnishing ideas for harmonious and inviting living environments, including renovations and redesigns."
+  : "Durchdachte Raumaufteilungen und Einrichtungsvorschläge für ein harmonisches Wohngefühl – auch bei Renovationen und Umgestaltungen."}
             </p>
           </div>
 
@@ -1258,7 +1258,27 @@ const Service4 = ({ lang, setPage }) => {
                 : "Ausarbeitung verschiedener Stilrichtungen, Farben und Materialien."}
             </p>
           </div>
+<div className="bg-[#f7f2ed] rounded-3xl p-5 min-h-[220px] shadow-sm text-center">
+  <div className="mb-5 flex items-center justify-center">
+    <Palette size={34} className="text-[#c6a27b]" />
+  </div>
 
+  <h3 className="font-serif text-lg mb-1 min-h-[56px] flex items-start justify-center">
+    {isHR
+      ? "Koncept boja"
+      : isEN
+      ? "Colour Concepts"
+      : "Farbkonzepte"}
+  </h3>
+
+  <p>
+    {isHR
+      ? "Harmonične kombinacije boja prilagođene prostoru, svjetlu i okruženju."
+      : isEN
+      ? "Harmonious colour schemes tailored to the space, natural light and surrounding environment."
+      : "Harmonische Farbwelten abgestimmt auf Architektur, Lichtverhältnisse und Umgebung."}
+  </p>
+</div>
           {/* 4 */}
           <div className="bg-[#f7f2ed] rounded-3xl p-5 min-h-[220px] shadow-sm text-center">
             <div className="mb-5 flex items-center justify-center">
@@ -1289,19 +1309,19 @@ const Service4 = ({ lang, setPage }) => {
             </div>
 
             <h3 className="font-serif text-lg mb-1 min-h-[56px] flex items-start justify-center">
-              {isHR
-                ? "Budžet & troškovi"
-                : isEN
-                ? "Budget & Costs"
-                : "Budget & Kosten"}
+{isHR
+  ? "Budžet & procjena troškova"
+  : isEN
+  ? "Budget & Cost Estimation"
+  : "Budget & Kostenschätzung"}
             </h3>
 
             <p>
-              {isHR
-                ? "Transparentan pregled troškova usklađen s vašim željama i budžetom."
-                : isEN
-                ? "Transparent cost overview tailored to your wishes and budget."
-                : "Transparente Kostenzusammenstellung passend zu Ihren Vorstellungen."}
+{isHR
+  ? "Realna procjena troškova kao orijentacija za planiranje i kasniju realizaciju projekta."
+  : isEN
+  ? "Realistic cost estimates to support planning and provide guidance for the implementation phase."
+  : "Realistische Kostenschätzung als Orientierung für die spätere Umsetzung Ihres Projekts."}
             </p>
           </div>
 
@@ -1328,28 +1348,6 @@ const Service4 = ({ lang, setPage }) => {
             </p>
           </div>
 
-          {/* 7 */}
-          <div className="bg-[#f7f2ed] rounded-3xl p-5 min-h-[220px] shadow-sm text-center">
-            <div className="mb-5 flex items-center justify-center">
-              <Wrench size={34} className="text-[#c6a27b]" />
-            </div>
-
-            <h3 className="font-serif text-lg mb-1 min-h-[56px] flex items-start justify-center">
-              {isHR
-                ? "Savjeti za renovaciju"
-                : isEN
-                ? "Renovation Consulting"
-                : "Renovationsberatung"}
-            </h3>
-
-            <p>
-              {isHR
-                ? "Podrška pri odabiru materijala, boja i koncepta uređenja za kuhinje, kupaonice i stambene prostore."
-                : isEN
-                ? "Support with material, colour and interior concepts for kitchens, bathrooms and living spaces."
-                : "Unterstützung bei Material-, Farb- und Einrichtungskonzepten für Küchen, Bäder und Wohnräume."}
-            </p>
-          </div>
 
           {/* 8 */}
           <div className="bg-[#f7f2ed] rounded-3xl p-5 min-h-[220px] shadow-sm text-center">
