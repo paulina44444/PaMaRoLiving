@@ -252,9 +252,14 @@ function FooterBar({ setPage, lang }) {
 
   <span className="opacity-40">|</span>
 
-  <div>
-    © {new Date().getFullYear()} PaMaRo Living. All rights reserved.
-  </div>
+<div>
+  © {new Date().getFullYear()} PaMaRo Living.
+  {isHR
+    ? " Sva prava pridržana."
+    : isEN
+    ? " All rights reserved."
+    : " Alle Rechte vorbehalten."}
+</div>
 
 </div>
 
@@ -2410,7 +2415,10 @@ default: content = <Home lang={lang} setPage={setPage} />;
 <div className="flex flex-col bg-[#f7f2ed]">
       <Navigation setPage={setPage} lang={lang} setLang={setLang} />
 <main className="pt-20">{content}</main>
-<FooterBar setPage={setPage} />
+<FooterBar
+  setPage={setPage}
+  lang={lang}
+/>
     </div>
   );
 }
