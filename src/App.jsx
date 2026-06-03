@@ -585,10 +585,10 @@ className="absolute inset-0 w-full h-full object-cover"
 
       <p className="text-[#6b7478] leading-relaxed">
         {isHR
-    ? "Osobna briga o nekretnini, redovite kontrole i pouzdana organizacija na licu mjesta."
+    ? "Osobna briga o nekretnini, redovite kontrole i organizacija na licu mjesta."
     : isEN
-    ? "Personal property care, regular inspections and reliable on-site coordination."
-    : "Persönliche Betreuung, regelmässige Kontrollen und zuverlässige Organisation vor Ort."}
+    ? "Personal property care, regular inspections and on-site coordination."
+    : "Persönliche Betreuung, regelmässige Kontrollen und Organisation vor Ort."}
       </p>
     </button>
 
