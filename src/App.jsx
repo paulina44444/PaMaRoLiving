@@ -234,15 +234,19 @@ function FooterBar({ setPage }) {
 {/* Copyright */}
 <div className="border-t border-[#c6a27b]/40 mt-8 pt-5 flex items-center justify-center gap-4 text-xs text-gray-300">
 
-  <button
-    onClick={() => {
-      setPage("legal");
-      window.scrollTo(0, 0);
-    }}
-    className="hover:text-[#c6a27b] transition"
-  >
-    Impressum & Datenschutz
-  </button>
+<button
+  onClick={() => {
+    setPage("legal");
+    window.scrollTo(0, 0);
+  }}
+  className="hover:text-[#c6a27b] transition"
+>
+  {isHR
+    ? "Impresum i privatnost"
+    : isEN
+    ? "Legal Notice & Privacy Policy"
+    : "Impressum & Datenschutz"}
+</button>
 
   <span className="opacity-40">|</span>
 
