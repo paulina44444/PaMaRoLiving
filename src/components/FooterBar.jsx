@@ -1,7 +1,9 @@
 import React from "react";
 import { Phone, Mail, MapPin } from "lucide-react";
 import { FaInstagram, FaFacebookF } from "react-icons/fa";
-function FooterBar({ setPage, lang }) {
+import { Link } from "react-router-dom";
+
+function FooterBar({ lang }) {
   const isHR = lang === "hr";
   const isEN = lang === "en";
   return (
@@ -102,11 +104,8 @@ function FooterBar({ setPage, lang }) {
 {/* Copyright */}
 <div className="border-t border-[#c6a27b]/40 mt-8 pt-5 flex items-center justify-center gap-4 text-xs text-gray-300">
 
-<button
-  onClick={() => {
-    setPage("legal");
-    window.scrollTo(0, 0);
-  }}
+<Link
+  to="/legal"
   className="hover:text-[#c6a27b] transition"
 >
   {isHR
@@ -114,7 +113,7 @@ function FooterBar({ setPage, lang }) {
     : isEN
     ? "Legal Notice & Privacy Policy"
     : "Impressum & Datenschutz"}
-</button>
+</Link>
 
   <span className="opacity-40">|</span>
 

@@ -1,7 +1,8 @@
 import React from "react";
 import { House, Sun, Palette } from "lucide-react";
+import { Link } from "react-router-dom";
 /* ================= HOME ================= */
-function Home({ lang, setPage }) {
+function Home({ lang }) {
   const isHR = lang === "hr";
   const isEN = lang === "en";
 
@@ -104,11 +105,17 @@ return (
       <section className="py-8 md:py-16 px-6">
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 place-items-center">
 {cards.map(([title, text, page]) => (
-  <button
-  key={title}
-  onClick={() => setPage(page)}
-  className="bg-white p-6 md:p-10 rounded-2xl shadow-sm hover:shadow-lg transition duration-300 w-full max-w-md text-center min-h-[260px] flex flex-col justify-center"
->
+  <Link
+    key={title}
+    to={
+      page === "service2"
+        ? "/services/property-care"
+        : page === "service3"
+        ? "/services/carefree-stay"
+        : "/services/interior-design"
+    }
+    className="bg-white p-6 md:p-10 rounded-2xl shadow-sm hover:shadow-lg transition duration-300 w-full max-w-md text-center min-h-[260px] flex flex-col justify-center"
+  >
 
   <div className="flex justify-center mb-5">
     {page === "service2" ? (
@@ -126,7 +133,7 @@ return (
     {text}
   </p>
 
-</button>
+</Link>
           ))}
 
             </div>
