@@ -352,7 +352,7 @@ return (
         <div className="max-w-3xl text-white">
 <h1 className="text-3xl md:text-5xl font-serif leading-tight">
             {isHR
-              ? "Vaša nekretnina, naša briga."
+    ? <>Vaša nekretnina,<br className="md:hidden" /> naša briga.</>
               : isEN
               ? "Your property, our care."
               : "Ihre Immobilie, unsere Verantwortung."}
