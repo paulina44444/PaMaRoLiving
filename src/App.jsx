@@ -1452,7 +1452,7 @@ function About({ lang }) {
   <img
     src="/about-hero.jpg"
     alt="About"
-    className="absolute inset-0 w-full h-full object-cover"
+  className="absolute inset-0 w-full h-full object-cover object-[center_20%]"
   />
 
   <div className="absolute inset-0 bg-black/35"></div>
