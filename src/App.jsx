@@ -1504,7 +1504,7 @@ className="absolute right-0 top-0 w-[85%] h-full object-contain object-right"
       <img
         src="/about-hero.jpg"
         alt="PaMaRo Living"
-        className="absolute inset-0 w-full h-full object-cover"
+ className="absolute inset-0 w-full h-full object-contain object-right"
       />
 
       <div className="absolute inset-0 bg-gradient-to-r from-[#f7f2ed] via-[#f7f2ed]/70 to-transparent"></div>
