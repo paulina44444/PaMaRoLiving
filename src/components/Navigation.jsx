@@ -3,9 +3,9 @@ import { Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const navLabels = {
-  hr: ["Početna", "O nama", "Usluge", "Projekti", "Kontakt", "Impressum i privatnost"],
-  de: ["Startseite", "Über uns", "Dienstleistungen", "Referenzen", "Kontakt", "Impressum & Datenschutz"],
-  en: ["Home", "About", "Services", "References", "Contact", "Legal & Privacy"],
+  hr: ["Početna", "O nama", "Usluge", "Kontakt", "Impressum i privatnost"],
+  de: ["Startseite", "Über uns", "Dienstleistungen", "Kontakt", "Impressum & Datenschutz"],
+  en: ["Home", "About", "Services", "Contact", "Legal & Privacy"],
 };
 const navPaths = [
   "/",

@@ -297,6 +297,7 @@ const Service4 = ({ lang }) => {
 
       </section>
 {/* REFERENCES */}
+{/*
 <section className="max-w-5xl mx-auto px-6 pt-20 text-center">
 
   <div className="w-20 h-[1px] bg-[#c6a27b] mx-auto mb-8"></div>
@@ -337,6 +338,7 @@ const Service4 = ({ lang }) => {
 </Link>
 
 </section>
+*/}
 </ServiceDetail>
 </>
 );
