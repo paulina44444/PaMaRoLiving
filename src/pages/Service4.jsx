@@ -1,5 +1,7 @@
 import React from "react";
 import ServiceDetail from "../components/ServiceDetail";
+import { Helmet } from "react-helmet-async";
+import { Link } from "react-router-dom";
 
 import {
   House,
@@ -10,11 +12,43 @@ import {
   Package,
   Sun,
 } from "lucide-react";
-const Service4 = ({ lang, setPage }) => {
+const Service4 = ({ lang }) => {
   const isHR = lang === "hr";
   const isEN = lang === "en";
 
   return (
+    <>
+  <Helmet>
+    <title>
+      {isHR
+        ? "PaMaRo Living | Uređenje interijera"
+        : isEN
+        ? "PaMaRo Living | Interior Design"
+        : "PaMaRo Living | Inneneinrichtung in Dalmatien"}
+    </title>
+
+    <meta
+      name="description"
+      content={
+        isHR
+          ? "Uređenje interijera, koncepti prostora, odabir namještaja, boja i materijala za nekretnine u Dalmaciji."
+          : isEN
+          ? "Interior design, space concepts, furniture selection and styling for properties in Dalmatia."
+          : "Inneneinrichtung, Raumkonzepte, Farbgestaltung und Möblierung für Ferienimmobilien und Wohnräume in Dalmatien."
+      }
+    />
+
+    <meta
+      name="keywords"
+      content={
+        isHR
+          ? "uređenje interijera, dizajn interijera, Dalmacija, nekretnina"
+          : isEN
+          ? "interior design, interior styling, Dalmatia, Croatia"
+          : "Inneneinrichtung Dalmatien, Interior Design Kroatien, Ferienhaus Einrichtung, Raumgestaltung Dalmatien"
+      }
+    />
+  </Helmet>
     <ServiceDetail>
 
       {/* HERO */}
@@ -291,20 +325,21 @@ const Service4 = ({ lang, setPage }) => {
       : "Für ausgewählte Projekte erstellen wir auf Wunsch auch atmosphärische Aufnahmen zur Präsentation Ihrer Immobilie."}
   </p>
 
-<button
-  onClick={() => setPage("references")}
-  className="border border-[#c6a27b] text-[#2f3a40] px-8 py-4 tracking-[0.12em] uppercase text-sm hover:bg-[#c6a27b] hover:text-white transition"
+<Link
+  to="/references"
+  className="inline-block border border-[#c6a27b] text-[#2f3a40] px-8 py-4 tracking-[0.12em] uppercase text-sm hover:bg-[#c6a27b] hover:text-white transition"
 >
-    {isHR
-      ? "Pogledajte reference"
-      : isEN
-      ? "View References"
-      : "Referenzen ansehen"}
-  </button>
+  {isHR
+    ? "Pogledajte reference"
+    : isEN
+    ? "View References"
+    : "Referenzen ansehen"}
+</Link>
 
 </section>
-    </ServiceDetail>
-  );
+</ServiceDetail>
+</>
+);
 };
 
 export default Service4;

@@ -1,6 +1,7 @@
 import React from "react";
 import { House, Sun, Palette } from "lucide-react";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 /* ================= HOME ================= */
 function Home({ lang }) {
   const isHR = lang === "hr";
@@ -67,7 +68,29 @@ const cards = isHR
   ];
 
 return (
-  <div className="bg-[#f7f2ed] text-[#2f3a40]">
+  <>
+<Helmet>
+  <title>
+    {isHR
+      ? "PaMaRo Living | Briga o nekretnini i kućni servis u Dalmaciji"
+      : isEN
+      ? "PaMaRo Living | Property Care & Home Services in Dalmatia"
+      : "PaMaRo Living | Immobilienbetreuung & Hausservice in Dalmatien"}
+  </title>
+
+  <meta
+    name="description"
+    content={
+      isHR
+        ? "Briga o nekretnini, priprema doma, nadzor i uređenje interijera u Dalmaciji. Pouzdana i osobna usluga za vlasnike nekretnina."
+        : isEN
+        ? "Property care, home preparation, inspections and interior styling in Dalmatia. Reliable and personal service for property owners."
+        : "Immobilienbetreuung, Hausservice, Kontrollen und Inneneinrichtung in Dalmatien. Persönliche und zuverlässige Betreuung für Eigentümer."
+    }
+  />
+</Helmet>
+
+    <div className="bg-[#f7f2ed] text-[#2f3a40]">
   
     {/* HERO IMAGE */}
 <section className="relative h-[68vh] w-full overflow-hidden">
@@ -201,6 +224,7 @@ return (
       </section>
       <div className="pb-24" />
     </div>
+  </>
   );
 }
 

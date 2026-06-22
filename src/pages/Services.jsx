@@ -1,12 +1,35 @@
 import React from "react";
 import { House, Sun, Palette } from "lucide-react";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
 function Services({ lang }) {
   const isHR = lang === "hr";
   const isEN = lang === "en";
 
-  return (
+return (
+  <>
+    <Helmet>
+      <title>
+        {isHR
+          ? "PaMaRo Living | Naše usluge"
+          : isEN
+          ? "PaMaRo Living | Our Services"
+          : "PaMaRo Living | Unsere Dienstleistungen"}
+      </title>
+
+      <meta
+        name="description"
+        content={
+          isHR
+            ? "Briga o nekretnini, bezbrižan boravak i uređenje interijera u Dalmaciji."
+            : isEN
+            ? "Property care, carefree stay and interior styling services in Dalmatia."
+            : "Immobilienbetreuung, sorgenfreier Aufenthalt und stilvolle Einrichtung in Dalmatien."
+        }
+      />
+    </Helmet>
+
     <section className="bg-[#f7f2ed]">
 
       {/* HERO */}
@@ -180,6 +203,7 @@ function Services({ lang }) {
       </div>
 
     </section>
+  </>
   );
 }
 

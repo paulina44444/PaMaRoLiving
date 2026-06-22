@@ -1,5 +1,6 @@
 import React from "react";
 import ServiceDetail from "../components/ServiceDetail";
+import { Helmet } from "react-helmet-async";
 
 import {
   House,
@@ -13,6 +14,38 @@ const Service3 = ({ lang }) => {
   const isEN = lang === "en";
 
   return (
+    <>
+  <Helmet>
+    <title>
+      {isHR
+        ? "PaMaRo Living | Bezbrižan boravak"
+        : isEN
+        ? "PaMaRo Living | Carefree Stay"
+        : "PaMaRo Living | Sorgenfreier Aufenthalt in Dalmatien"}
+    </title>
+
+    <meta
+      name="description"
+      content={
+        isHR
+          ? "Priprema nekretnine, organizacija čišćenja, usluga ključeva i podrška tijekom vašeg boravka u Dalmaciji."
+          : isEN
+          ? "Property preparation, key holding, cleaning coordination and personal support during your stay in Dalmatia."
+          : "Vorbereitung Ihrer Immobilie, Schlüsselservice, Organisation von Reinigung und persönliche Betreuung während Ihres Aufenthalts in Dalmatien."
+      }
+    />
+
+    <meta
+      name="keywords"
+      content={
+        isHR
+          ? "priprema nekretnine, usluga ključeva, Dalmacija, kuća za odmor"
+          : isEN
+          ? "property preparation, key service, holiday home, Dalmatia, Croatia"
+          : "Schlüsselservice Dalmatien, Ferienhaus Service Kroatien, Hausservice Dalmatien, Betreuung Ferienimmobilie"
+      }
+    />
+  </Helmet>
     <ServiceDetail>
 
       {/* HERO */}
@@ -194,8 +227,9 @@ const Service3 = ({ lang }) => {
 
       </section>
 
-    </ServiceDetail>
-  );
+</ServiceDetail>
+</>
+);
 };
 
 export default Service3;

@@ -1,15 +1,38 @@
 import React from "react";
 import { User, ShieldCheck, Heart } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 /* ================= ABOUT ================= */
 function About({ lang }) {
   const isHR = lang === "hr";
   const isEN = lang === "en";
 
-  return (
-<section
-  id="about"
-  className="bg-[#f7f2ed]"
->
+return (
+  <>
+    <Helmet>
+      <title>
+        {isHR
+          ? "PaMaRo Living | O nama"
+          : isEN
+          ? "PaMaRo Living | About Us"
+          : "PaMaRo Living | Über uns"}
+      </title>
+
+      <meta
+        name="description"
+        content={
+          isHR
+            ? "Upoznajte PaMaRo Living, naše iskustvo u nekretninama, vrijednosti i osobni pristup vlasnicima nekretnina u Dalmaciji."
+            : isEN
+            ? "Learn more about PaMaRo Living, our real estate experience, values and personal approach to property owners in Dalmatia."
+            : "Erfahren Sie mehr über PaMaRo Living, unsere Immobilienerfahrung, Werte und persönliche Betreuung von Eigentümern in Dalmatien."
+        }
+      />
+    </Helmet>
+
+    <section
+      id="about"
+      className="bg-[#f7f2ed]"
+    >
 
 {/* HERO */}
 <section className="relative overflow-hidden">
@@ -274,6 +297,7 @@ className="absolute inset-0 w-full h-full object-cover object-center"
   </div>
 
 </section>
+  </>
   );
 }
 
