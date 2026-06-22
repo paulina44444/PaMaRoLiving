@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://pamaro-living.vercel.app/sitemap.xml

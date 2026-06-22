@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://pamaro-living.vercel.app/</loc>
+  </url>
+
+  <url>
+    <loc>https://pamaro-living.vercel.app/about</loc>
+  </url>
+
+  <url>
+    <loc>https://pamaro-living.vercel.app/services</loc>
+  </url>
+
+  <url>
+    <loc>https://pamaro-living.vercel.app/services/property-care</loc>
+  </url>
+
+  <url>
+    <loc>https://pamaro-living.vercel.app/services/carefree-stay</loc>
+  </url>
+
+  <url>
+    <loc>https://pamaro-living.vercel.app/services/interior-design</loc>
+  </url>
+
+  <url>
+    <loc>https://pamaro-living.vercel.app/references</loc>
+  </url>
+
+  <url>
+    <loc>https://pamaro-living.vercel.app/contact</loc>
+  </url>
+
+  <url>
+    <loc>https://pamaro-living.vercel.app/legal</loc>
+  </url>
+
+</urlset>
