@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://pamaro-living.vercel.app/sitemap.xml
+Sitemap: https://pa-ma-ro-living.vercel.app/sitemap.xml
