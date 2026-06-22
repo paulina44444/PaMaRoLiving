@@ -19,7 +19,7 @@ function About({ lang }) {
   <img
     src="/about-hero.jpg"
     alt="About"
-className="absolute right-0 top-0 w-[85%] h-full object-contain object-right"
+className="absolute inset-0 w-full h-full object-cover object-center"
   />
 
   <div className="absolute inset-0 bg-black/35"></div>
