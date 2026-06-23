@@ -25,9 +25,12 @@
     <loc>https://www.pamaroliving.com/services/interior-design</loc>
   </url>
 
-  <url>
-    <loc>https://www.pamaroliving.com/references</loc>
-  </url>
+<!-- Referenzen vorübergehend ausgeblendet -->
+<!--
+<url>
+  <loc>https://www.pamaroliving.com/references</loc>
+</url>
+-->
 
   <url>
     <loc>https://www.pamaroliving.com/contact</loc>
