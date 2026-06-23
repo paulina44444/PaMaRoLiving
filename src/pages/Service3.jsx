@@ -90,7 +90,38 @@ const Service3 = ({ lang }) => {
         </div>
 
       </div>
+{/* SEO INTRO */}
+<section className="max-w-4xl mx-auto px-6 pt-16 pb-8 text-center">
 
+  <h2 className="font-serif text-3xl text-[#2f3a40] mb-8">
+    {isHR
+      ? "Bezbrižan boravak na Makarskoj i Omiškoj rivijeri"
+      : isEN
+      ? "Carefree Stay on the Makarska and Omiš Riviera"
+      : "Sorgenfreier Aufenthalt an der Makarska- und Omiš-Riviera"}
+  </h2>
+
+  <div className="space-y-6 text-[#5f6a70] leading-relaxed">
+
+    <p>
+      {isHR
+        ? "Dolazak u vlastitu nekretninu trebao bi biti jednostavan i opušten. Priprema doma prije dolaska, organizacija čišćenja i briga o svim detaljima omogućuju vam da od prvog trenutka uživate u svom boravku."
+        : isEN
+        ? "Arriving at your own property should be simple and stress-free. Preparing your home before arrival, organising cleaning services and taking care of every detail allows you to enjoy your stay from the very first moment."
+        : "Die Ankunft in der eigenen Immobilie sollte unkompliziert und entspannt sein. Die Vorbereitung Ihres Zuhauses, die Organisation von Reinigungsarbeiten und die Betreuung aller Details ermöglichen Ihnen einen sorgenfreien Aufenthalt ab dem ersten Moment."}
+    </p>
+
+    <p>
+      {isHR
+        ? "PaMaRo Living podržava vlasnike nekretnina na području Makarske i Omiške rivijere pri dolasku, boravku i odlasku. Od pripreme nekretnine i usluge ključeva do organizacije dodatnih usluga – brinemo se da vaš dom bude spreman kada vam je potreban."
+        : isEN
+        ? "PaMaRo Living supports property owners along the Makarska and Omiš Riviera before arrival, during their stay and upon departure. From property preparation and key services to arranging additional assistance, we ensure your home is ready whenever you need it."
+        : "PaMaRo Living unterstützt Eigentümer an der Makarska- und Omiš-Riviera vor der Anreise, während des Aufenthalts und bei der Abreise. Von der Vorbereitung der Immobilie über den Schlüsselservice bis zur Organisation zusätzlicher Dienstleistungen sorgen wir dafür, dass Ihr Zuhause jederzeit bereit ist."}
+    </p>
+
+  </div>
+
+</section>
       {/* SERVICES */}
       <section className="max-w-7xl mx-auto px-6 pt-20 pb-0">
 
