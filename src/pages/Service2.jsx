@@ -320,7 +320,38 @@ const Service2 = ({ lang }) => {
           </div>
 
         </div>
+{/* SEO TEXT */}
+<div className="max-w-4xl mx-auto pt-20 text-center">
 
+  <h2 className="font-serif text-3xl text-[#2f3a40] mb-8">
+    {isHR
+      ? "Pouzdana briga o nekretninama u Dalmaciji"
+      : isEN
+      ? "Reliable Property Care in Dalmatia"
+      : "Zuverlässige Immobilienbetreuung in Dalmatien"}
+  </h2>
+
+  <div className="space-y-6 text-[#5f6a70] leading-relaxed">
+
+    <p>
+      {isHR
+        ? "Vlasnici nekretnina često nisu prisutni tijekom cijele godine. Redovita briga o nekretnini, kontrole objekta i organizacija potrebnih radova pomažu očuvati vrijednost doma i izbjeći neugodna iznenađenja."
+        : isEN
+        ? "Property owners are often away from their homes for extended periods. Regular property care, inspections and maintenance coordination help preserve the value of a property and prevent unexpected issues."
+        : "Viele Eigentümer sind nicht das ganze Jahr vor Ort. Regelmässige Immobilienbetreuung, Objektkontrollen und die Organisation notwendiger Arbeiten helfen dabei, den Wert einer Immobilie zu erhalten und unangenehme Überraschungen zu vermeiden."}
+    </p>
+
+    <p>
+      {isHR
+        ? "PaMaRo Living pruža osobnu i diskretnu podršku vlasnicima nekretnina na području Makarske rivijere i Omiške rivijere. Od redovitih obilazaka i nadzora objekta do organizacije majstora i hitnih intervencija – brinemo se da vaša nekretnina bude sigurna i dobro održavana tijekom cijele godine."
+        : isEN
+        ? "PaMaRo Living provides personal and discreet support for property owners along the Makarska Riviera and Omiš Riviera. From regular inspections and property checks to maintenance coordination and emergency support, we help ensure your property remains safe and well maintained throughout the year."
+        : "PaMaRo Living bietet Eigentümern an der Makarska Riviera und der Omiš Riviera eine persönliche und diskrete Unterstützung. Von regelmässigen Objektkontrollen über die Koordination von Handwerkern bis hin zur Organisation von Notfallmassnahmen sorgen wir dafür, dass Ihre Immobilie das ganze Jahr über sicher und gepflegt bleibt."}
+    </p>
+
+  </div>
+
+</div>
       </section>
 
     </ServiceDetail>
