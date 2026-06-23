@@ -100,7 +100,6 @@ const Service3 = ({ lang }) => {
     ? "Your Home Ready for Arrival"
     : "Ihr Zuhause bereit für die Ankunft"}
 </h2>
-  </h2>
 
   <div className="space-y-6 text-[#5f6a70] leading-relaxed">
 
