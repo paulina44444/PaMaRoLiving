@@ -93,7 +93,38 @@ const Service4 = ({ lang }) => {
         </div>
 
       </div>
+{/* SEO INTRO */}
+<section className="max-w-4xl mx-auto px-6 pt-16 pb-8 text-center">
 
+  <h2 className="font-serif text-3xl text-[#2f3a40] mb-8">
+    {isHR
+      ? "Individualni koncepti uređenja za nekretnine uz more"
+      : isEN
+      ? "Individual Interior Concepts for Coastal Properties"
+      : "Individuelle Einrichtungskonzepte für Immobilien am Meer"}
+  </h2>
+
+  <div className="space-y-6 text-[#5f6a70] leading-relaxed">
+
+    <p>
+      {isHR
+        ? "Dobro osmišljen interijer spaja funkcionalnost, estetiku i ugodnu atmosferu. Od odabira boja i materijala do rasporeda prostora i namještaja, svaki detalj doprinosi dojmu doma u kojem se osjećate ugodno."
+        : isEN
+        ? "A well-designed interior combines functionality, aesthetics and atmosphere. From colours and materials to furniture selection and space planning, every detail contributes to a welcoming living environment."
+        : "Ein gelungenes Interior Design verbindet Funktionalität, Ästhetik und Wohngefühl. Von Farben und Materialien bis hin zur Möblierung und Raumaufteilung trägt jedes Detail zu einer harmonischen Atmosphäre bei."}
+    </p>
+
+    <p>
+      {isHR
+        ? "PaMaRo Living razvija individualne koncepte uređenja za vlasnike nekretnina na području Makarske i Omiške rivijere. Bilo da uređujete novi apartman, kuću za odmor ili želite osvježiti postojeći prostor, pratimo vas od prve ideje do konačnog uređenja."
+        : isEN
+        ? "PaMaRo Living creates individual interior concepts for property owners along the Makarska and Omiš Riviera. Whether furnishing a new apartment, a holiday home or refreshing an existing property, we support you from the initial idea to the final setup."
+        : "PaMaRo Living entwickelt individuelle Einrichtungskonzepte für Eigentümer an der Makarska- und Omiš-Riviera. Ob neue Ferienwohnung, Ferienhaus oder die Neugestaltung bestehender Räume – wir begleiten Sie von der ersten Idee bis zur fertigen Einrichtung."}
+    </p>
+
+  </div>
+
+</section>
       {/* SERVICES */}
       <section className="max-w-7xl mx-auto px-6 pt-20 pb-0">
 
