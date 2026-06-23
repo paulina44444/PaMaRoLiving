@@ -161,6 +161,40 @@ return (
 
             </div>
       </section>
+```jsx
+{/* SEO INTRO */}
+<section className="max-w-4xl mx-auto px-6 pt-8 pb-16 text-center">
+
+  <h2 className="font-serif text-3xl text-[#2f3a40] mb-8">
+    {isHR
+      ? "Pouzdana briga o nekretninama na Makarskoj i Omiškoj rivijeri"
+      : isEN
+      ? "Reliable Property Care on the Makarska and Omiš Riviera"
+      : "Zuverlässige Immobilienbetreuung an der Makarska- und Omiš-Riviera"}
+  </h2>
+
+  <div className="space-y-6 text-[#5f6a70] leading-relaxed">
+
+    <p>
+      {isHR
+        ? "PaMaRo Living pruža osobnu podršku vlasnicima nekretnina na području Makarske i Omiške rivijere. Redoviti obilasci, nadzor objekta, organizacija održavanja i koordinacija lokalnih usluga pomažu očuvati vrijednost vaše nekretnine tijekom cijele godine."
+        : isEN
+        ? "PaMaRo Living provides personal support for property owners along the Makarska and Omiš Riviera. Regular inspections, property supervision, maintenance coordination and local support services help preserve the value of your property throughout the year."
+        : "PaMaRo Living bietet Eigentümern an der Makarska- und Omiš-Riviera persönliche Unterstützung. Regelmässige Kontrollen, Immobilienbetreuung, die Organisation von Unterhaltsarbeiten und die Koordination lokaler Dienstleistungen helfen dabei, den Wert Ihrer Immobilie langfristig zu erhalten."}
+    </p>
+
+    <p>
+      {isHR
+        ? "Uz brigu o nekretnini nudimo i podršku pri dolasku i boravku te individualne koncepte uređenja interijera. Sve usluge prilagođene su vlasnicima koji traže pouzdanu, diskretnu i osobnu podršku za svoj dom u Dalmaciji."
+        : isEN
+        ? "In addition to property care, we offer arrival support, key services and individual interior design concepts. Our services are tailored to owners seeking reliable, discreet and personal assistance for their home in Dalmatia."
+        : "Ergänzend zur Immobilienbetreuung bieten wir Unterstützung rund um Anreise und Aufenthalt sowie individuelle Einrichtungskonzepte. Unsere Leistungen richten sich an Eigentümer, die für ihr Zuhause in Dalmatien eine zuverlässige, diskrete und persönliche Betreuung suchen."}
+    </p>
+
+  </div>
+
+</section>
+```
 
       <section className="relative w-full h-[320px] md:h-[460px] overflow-hidden">
 
