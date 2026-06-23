@@ -88,6 +88,12 @@ const Service2 = ({ lang }) => {
               </p>
 
             </div>
+
+          </div>
+
+        </div>
+
+      </div>
 {/* SEO INTRO */}
 <section className="max-w-4xl mx-auto px-6 pt-16 pb-4 text-center">
 
@@ -120,12 +126,6 @@ const Service2 = ({ lang }) => {
   </div>
 
 </section>
-          </div>
-
-        </div>
-
-      </div>
-
       {/* SERVICES */}
       <section className="max-w-7xl mx-auto px-6 pt-20 pb-0">
 
