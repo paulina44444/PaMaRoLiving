@@ -93,12 +93,13 @@ const Service3 = ({ lang }) => {
 {/* SEO INTRO */}
 <section className="max-w-4xl mx-auto px-6 pt-16 pb-8 text-center">
 
-  <h2 className="font-serif text-3xl text-[#2f3a40] mb-8">
-    {isHR
-      ? "Bezbrižan boravak na Makarskoj i Omiškoj rivijeri"
-      : isEN
-      ? "Carefree Stay on the Makarska and Omiš Riviera"
-      : "Sorgenfreier Aufenthalt an der Makarska- und Omiš-Riviera"}
+<h2 className="font-serif text-3xl text-[#2f3a40] mb-8">
+  {isHR
+    ? "Vaš dom spreman za dolazak"
+    : isEN
+    ? "Your Home Ready for Arrival"
+    : "Ihr Zuhause bereit für die Ankunft"}
+</h2>
   </h2>
 
   <div className="space-y-6 text-[#5f6a70] leading-relaxed">
