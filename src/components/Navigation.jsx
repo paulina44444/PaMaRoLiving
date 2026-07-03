@@ -11,7 +11,6 @@ const navPaths = [
   "/",
   "/about",
   "/services",
-  "/references",
   "/contact",
   "/legal",
 ];
