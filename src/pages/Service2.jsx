@@ -95,7 +95,10 @@ const Service2 = ({ lang }) => {
 
       </div>
 {/* SEO INTRO */}
-<div className="space-y-6 text-[#5f6a70] leading-relaxed">
+{/* SEO INTRO */}
+<section className="max-w-4xl mx-auto px-6 pt-16 pb-8 text-center">
+
+  <div className="space-y-6 text-[#5f6a70] leading-relaxed">
 
   <p>
     {isHR
