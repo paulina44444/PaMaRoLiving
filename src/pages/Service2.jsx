@@ -95,35 +95,25 @@ const Service2 = ({ lang }) => {
 
       </div>
 {/* SEO INTRO */}
-<section className="max-w-4xl mx-auto px-6 pt-16 pb-4 text-center">
+<div className="space-y-6 text-[#5f6a70] leading-relaxed">
 
-  <h2 className="font-serif text-3xl text-[#2f3a40] mb-8">
+  <p>
     {isHR
-      ? "Pouzdana briga o nekretninama na Makarskoj i Omiškoj rivijeri"
+      ? "Vlasnici nekretnina koji ne borave tijekom cijele godine u Dalmaciji često trebaju pouzdanu osobu koja će redovito nadzirati njihov dom. PaMaRo Living pruža osobnu brigu o nekretninama, organizaciju održavanja te podršku prije dolaska, tijekom boravka i nakon odlaska."
       : isEN
-      ? "Reliable Property Care on the Makarska and Omiš Riviera"
-      : "Zuverlässige Immobilienbetreuung an der Makarska- und Omiš-Riviera"}
-  </h2>
+      ? "Property owners who are not in Dalmatia all year round often need someone they can rely on. PaMaRo Living provides personal property care, maintenance coordination and support before arrival, during your stay and after departure."
+      : "Wer seine Immobilie in Dalmatien nicht das ganze Jahr selbst nutzen kann, benötigt eine vertrauenswürdige Betreuung vor Ort. PaMaRo Living übernimmt die persönliche Immobilienbetreuung, organisiert notwendige Arbeiten und unterstützt Sie vor der Anreise, während Ihres Aufenthalts und nach Ihrer Abreise."}
+  </p>
 
-  <div className="space-y-6 text-[#5f6a70] leading-relaxed">
+  <p>
+    {isHR
+      ? "Naše usluge obuhvaćaju redovite kontrole objekta, koordinaciju lokalnih majstora, pripremu nekretnine prije dolaska, organizaciju čišćenja te individualne koncepte uređenja interijera. Sve usluge prilagođene su vlasnicima nekretnina na području Makarske rivijere i Omiške rivijere koji traže diskretnu, pouzdanu i osobnu podršku."
+      : isEN
+      ? "Our services include regular property inspections, coordination of local craftsmen, home preparation before arrival, cleaning arrangements and individual interior design concepts. Every service is tailored to property owners along the Makarska and Omiš Riviera who value reliability, discretion and personal support."
+      : "Unsere Leistungen umfassen regelmässige Objektkontrollen, die Koordination lokaler Handwerker, die Vorbereitung Ihrer Immobilie vor der Anreise, die Organisation von Reinigungsarbeiten sowie individuelle Konzepte für die Inneneinrichtung. Alle Dienstleistungen richten sich an Eigentümer an der Makarska- und Omiš-Riviera, die Wert auf Zuverlässigkeit, Diskretion und persönliche Betreuung legen."}
+  </p>
 
-    <p>
-      {isHR
-        ? "Vlasnici nekretnina nisu uvijek prisutni tijekom cijele godine. Redoviti obilasci, nadzor objekta i organizacija potrebnih radova pomažu očuvati vrijednost nekretnine i spriječiti neugodna iznenađenja."
-        : isEN
-        ? "Property owners are not always present throughout the year. Regular inspections, property checks and maintenance coordination help preserve the value of a property and prevent unpleasant surprises."
-        : "Viele Eigentümer sind nicht das ganze Jahr vor Ort. Regelmässige Objektkontrollen, Hausbetreuung und die Organisation notwendiger Arbeiten helfen dabei, den Wert einer Immobilie zu erhalten und unangenehme Überraschungen zu vermeiden."}
-    </p>
-
-    <p>
-      {isHR
-        ? "PaMaRo Living pruža osobnu podršku vlasnicima nekretnina na području Makarske i Omiške rivijere te brine da njihov dom bude siguran, uredan i spreman za korištenje u svakom trenutku."
-        : isEN
-        ? "PaMaRo Living provides personal support for property owners along the Makarska and Omiš Riviera and ensures that their homes remain secure, well maintained and ready for use at any time."
-        : "PaMaRo Living unterstützt Eigentümer an der Makarska- und Omiš-Riviera persönlich und zuverlässig und sorgt dafür, dass ihre Immobilie jederzeit sicher, gepflegt und einsatzbereit bleibt."}
-    </p>
-
-  </div>
+</div>
 
 </section>
       {/* SERVICES */}
