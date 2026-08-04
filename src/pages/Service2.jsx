@@ -39,16 +39,6 @@ const Service2 = ({ lang }) => {
       }
     />
 
-    <meta
-      name="keywords"
-      content={
-        isHR
-          ? "briga o nekretnini, nadzor kuće, Dalmacija, kuća za odmor"
-          : isEN
-          ? "property care, property management, home watch, Dalmatia, Croatia"
-          : "Immobilienbetreuung Dalmatien, Hausservice Kroatien, Ferienhaus Betreuung, Property Management Kroatien"
-      }
-    />
   </Helmet>
     <ServiceDetail>
 

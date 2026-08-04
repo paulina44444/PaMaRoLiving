@@ -37,16 +37,6 @@ const Service4 = ({ lang }) => {
       }
     />
 
-    <meta
-      name="keywords"
-      content={
-        isHR
-          ? "uređenje interijera, dizajn interijera, Dalmacija, nekretnina"
-          : isEN
-          ? "interior design, interior styling, Dalmatia, Croatia"
-          : "Inneneinrichtung Dalmatien, Interior Design Kroatien, Ferienhaus Einrichtung, Raumgestaltung Dalmatien"
-      }
-    />
   </Helmet>
     <ServiceDetail>
 

@@ -35,16 +35,6 @@ const Service3 = ({ lang }) => {
       }
     />
 
-    <meta
-      name="keywords"
-      content={
-        isHR
-          ? "priprema nekretnine, usluga ključeva, Dalmacija, kuća za odmor"
-          : isEN
-          ? "property preparation, key service, holiday home, Dalmatia, Croatia"
-          : "Schlüsselservice Dalmatien, Ferienhaus Service Kroatien, Hausservice Dalmatien, Betreuung Ferienimmobilie"
-      }
-    />
   </Helmet>
     <ServiceDetail>
 
