@@ -151,7 +151,7 @@ return (
 
 </section>
 
-      <section className="py-8 md:py-16 px-6">
+      <section className="pt-0 pb-8 md:pt-8 md:pb-16 px-6">
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 items-stretch justify-items-center">
 {cards.map(([title, text, page]) => (
   <Link

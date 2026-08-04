@@ -43,7 +43,7 @@ return (
     className="absolute inset-0 w-full h-full object-cover object-[90%_20%]"
   />
 
-  <div className="absolute inset-0 bg-black/25" />
+  <div className="absolute inset-0 bg-black/15" />
 
   <div className="relative z-10 h-full flex items-end md:items-center justify-center pb-16 md:pb-0">
 

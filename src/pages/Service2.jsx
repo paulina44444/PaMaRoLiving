@@ -51,7 +51,7 @@ const Service2 = ({ lang }) => {
           className="absolute inset-0 w-full h-full object-cover"
         />
 
-        <div className="absolute inset-0 bg-black/25" />
+        <div className="absolute inset-0 bg-black/15" />
 
         <div className="relative z-10 h-full flex items-center justify-center">
 
