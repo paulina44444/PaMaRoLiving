@@ -1,9 +1,12 @@
 import React from "react";
 import { Phone, Mail, MapPin } from "lucide-react";
-import { FaInstagram, FaFacebookF } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { FaInstagram } from "react-icons/fa";
+import { Link, useLocation } from "react-router-dom";
+import { currentLang, withLang } from "../lib/i18n";
 
-function FooterBar({ lang }) {
+function FooterBar() {
+  const location = useLocation();
+  const lang = currentLang(location.pathname);
   const isHR = lang === "hr";
   const isEN = lang === "en";
   return (
@@ -87,16 +90,6 @@ function FooterBar({ lang }) {
     <span className="text-white">Instagram</span>
   </a>
 
-  <a
-    href="https://facebook.com/DEINNAME"
-    target="_blank"
-    rel="noreferrer"
-    className="flex items-center gap-3 text-[#c6a27b] hover:text-white transition duration-300"
-  >
-    <FaFacebookF size={15} />
-    <span className="text-white">Facebook</span>
-  </a>
-
 </div>
         </div>
 
@@ -105,7 +98,7 @@ function FooterBar({ lang }) {
 <div className="border-t border-[#c6a27b]/40 mt-8 pt-5 flex items-center justify-center gap-4 text-xs text-gray-300">
 
 <Link
-  to="/legal"
+  to={withLang(lang, "/legal")}
   className="hover:text-[#c6a27b] transition"
 >
   {isHR

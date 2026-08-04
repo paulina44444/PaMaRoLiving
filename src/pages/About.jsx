@@ -35,35 +35,29 @@ return (
     >
 
 {/* HERO */}
-<section className="relative overflow-hidden">
-{/* MOBILE HERO */}
-<div className="lg:hidden relative h-[320px] overflow-hidden">
+<div className="relative w-full h-[400px] overflow-hidden">
 
   <img
     src="/about-hero.jpg"
     alt="About"
-className="absolute inset-0 w-full h-full object-cover object-center"
+    className="absolute inset-0 w-full h-full object-cover object-[center_20%]"
   />
 
-  <div className="absolute inset-0 bg-black/35"></div>
+  <div className="absolute inset-0 bg-black/25" />
 
-  <div className="relative z-10 h-full flex items-center px-8 pt-16">
+  <div className="relative z-10 h-full flex items-center justify-center">
 
-    <div>
+    <div className="max-w-6xl mx-auto px-6 w-full">
 
-      <h1 className="font-serif text-5xl text-white leading-tight mb-6">
-        {isHR ? "O nama" : isEN ? "About us" : "Über uns"}
-      </h1>
+      <div className="max-w-xl mx-auto text-white text-center">
 
-      <div className="w-16 h-[1px] bg-white/70 mb-6"></div>
+        <h1 className="font-serif text-4xl md:text-6xl leading-tight mb-8 text-center">
+          {isHR ? "O nama" : isEN ? "About us" : "Über uns"}
+        </h1>
 
-      <p className="text-white/90 leading-relaxed max-w-sm">
-        {isHR
-          ? "Osobna briga, povjerenje i dugogodišnje iskustvo u području nekretnina."
-          : isEN
-          ? "Personal care, trust and many years of experience in real estate."
-          : "Persönliche Betreuung, Vertrauen und langjährige Erfahrung im Immobilienbereich."}
-      </p>
+        <div className="w-20 h-[2px] bg-[#c6a27b] mx-auto"></div>
+
+      </div>
 
     </div>
 
@@ -71,46 +65,10 @@ className="absolute inset-0 w-full h-full object-cover object-center"
 
 </div>
 
-<div className="hidden lg:grid grid-cols-1 lg:grid-cols-2 min-h-[420px]">
-
-    {/* LEFT */}
-    <div className="flex items-center px-8 md:px-16 py-16">
-
-      <div className="max-w-xl">
-
-        <h1 className="font-serif text-5xl md:text-6xl text-[#2f3a40] leading-tight mb-8">
-          {isHR ? "O nama" : isEN ? "About us" : "Über uns"}
-        </h1>
-
-        <div className="w-20 h-[1px] bg-[#c6a27b]"></div>
-
-      </div>
-
-    </div>
-
-    {/* RIGHT IMAGE */}
-    <div className="hidden lg:block relative h-[320px] lg:h-auto overflow-hidden">
-
-      <img
-        src="/about-hero.jpg"
-        alt="PaMaRo Living"
-  className="absolute inset-0 w-full h-full object-cover"
-  style={{ objectPosition: "center top" }}
-      />
-
-      <div className="absolute inset-0 bg-gradient-to-r from-[#f7f2ed] via-[#f7f2ed]/70 to-transparent"></div>
-
-    </div>
-
-  </div>
-
-</section>
-
   {/* TEXT */}
   <div className="max-w-7xl mx-auto px-8 md:px-16 py-24">
 
-  
-<div className="max-w-[900px] mx-auto text-[17px] leading-[2.15] text-[#2f3a40]">
+<div className="max-w-[900px] mx-auto text-[17px] leading-[2.15] text-[#2f3a40] text-center">
 
   {isHR ? (
     <div className="space-y-10">

@@ -8,130 +8,51 @@ const Contact = ({ lang }) => {
     <div className="bg-[#f7f2ed] min-h-screen">
 
       {/* HERO */}
-      <section className="relative overflow-hidden">
-{/* MOBILE HERO */}
-<div className="lg:hidden relative h-[320px] overflow-hidden">
+      <div className="relative w-full h-[400px] overflow-hidden">
 
-  <img
-    src="/contact-image.jpg"
-    alt="Kontakt"
-    className="absolute inset-0 w-full h-full object-cover"
-  />
+        <img
+          src="/contact-image.jpg"
+          alt="Contact"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
 
-  <div className="absolute inset-0 bg-black/35"></div>
+        <div className="absolute inset-0 bg-black/25" />
 
-  <div className="relative z-10 h-full flex items-center px-8 pt-16">
+        <div className="relative z-10 h-full flex items-center justify-center">
 
-    <div>
+          <div className="max-w-6xl mx-auto px-6 w-full">
 
-      <h1 className="font-serif text-5xl text-white leading-tight mb-6">
-        {isHR ? "Kontakt" : isEN ? "Contact" : "Kontakt"}
-      </h1>
+            <div className="max-w-xl mx-auto text-white text-center">
 
-      <div className="w-16 h-[1px] bg-white/70 mb-6"></div>
-
-      <p className="text-white/90 leading-relaxed max-w-sm">
-        {isHR
-          ? "Bilo da vam je potrebna briga o nekretnini, bezbrižan boravak ili preuređenje."
-          : isEN
-          ? "Whether you need property care, a carefree stay or redesign."
-          : "Ob Immobilienbetreuung, sorgenfreier Aufenthalt oder Neugestaltung."}
-      </p>
-
-    </div>
-
-  </div>
-
-</div>
-
-<div className="hidden lg:grid grid-cols-1 lg:grid-cols-2 min-h-[420px]">
-
-          {/* LEFT */}
-          <div className="flex items-center px-8 md:px-16 py-16">
-
-            <div className="max-w-xl">
-
-              <h1 className="font-serif text-5xl md:text-6xl text-[#2f3a40] leading-tight mb-8">
+              <h1 className="font-serif text-4xl md:text-6xl leading-tight mb-8 text-center">
                 {isHR ? "Kontakt" : isEN ? "Contact" : "Kontakt"}
               </h1>
 
-<div className="w-20 h-[1px] bg-[#c6a27b] mb-8"></div>
-
-              <p className="text-[#4d5960] text-lg leading-relaxed">
-                {isHR
-                  ? "Bilo da vam je potrebna briga o nekretnini, bezbrižan boravak ili preuređenje – veselimo se vašem upitu i rado ćemo vas osobno savjetovati."
-                  : isEN
-                  ? "Whether you need property care, a worry-free stay or a redesign – we look forward to your inquiry and are happy to advise you personally."
-                  : "Ob Immobilienbetreuung, sorgenfreier Aufenthalt oder Neugestaltung – wir freuen uns auf Ihre Anfrage und beraten Sie gerne persönlich."}
-              </p>
+              <div className="w-20 h-[2px] bg-[#c6a27b] mx-auto"></div>
 
             </div>
 
           </div>
 
-          {/* RIGHT IMAGE */}
-{/* RIGHT IMAGE */}
-<div className="hidden lg:block relative h-[320px] lg:h-auto overflow-hidden">
-
-  <img
-    src="/contact-image.jpg"
-    alt="Mediterranean terrace"
-    className="absolute inset-0 w-full h-full object-cover"
-  />
-
-  {/* SOFT FADE LEFT */}
-<div className="absolute inset-0 bg-gradient-to-r from-[#f7f2ed] via-[#f7f2ed]/70 to-transparent"></div>
-
-</div>
-
         </div>
 
-      </section>
+      </div>
 
       {/* FORM SECTION */}
-      {/* MOBILE INTRO */}
-<div className="lg:hidden px-8 pt-10 pb-2">
-
-  <p className="text-[#4d5960] leading-relaxed text-lg">
-    {isHR
-      ? "Veselimo se vašem upitu i rado ćemo vas osobno savjetovati."
-      : isEN
-      ? "We look forward to your inquiry and are happy to advise you personally."
-      : "Wir freuen uns auf Ihre Anfrage und beraten Sie gerne persönlich."}
-  </p>
-
-</div>
 <section className="max-w-7xl mx-auto px-8 md:px-16 py-12 lg:py-24">
 
-<div className="grid grid-cols-1 lg:grid-cols-[340px_1fr] gap-8 lg:gap-20 items-start">
+<p className="font-serif italic text-xl md:text-2xl text-[#2f3a40] text-center mb-12 max-w-xl mx-auto">
+  {isHR
+    ? "Bilo da vam je potrebna briga o nekretnini, bezbrižan boravak ili preuređenje – veselimo se vašem upitu i rado ćemo vas osobno savjetovati"
+    : isEN
+    ? "Whether you need property care, a worry-free stay or a redesign – we look forward to your inquiry and are happy to advise you personally"
+    : "Ob Immobilienbetreuung, sorgenfreier Aufenthalt oder Neugestaltung – wir freuen uns auf Ihre Anfrage und beraten Sie gerne persönlich"}
+</p>
 
-          {/* LEFT TEXT */}
-<div className="hidden lg:block">
-
-            <h2 className="font-serif text-4xl text-[#2f3a40] mb-6">
-              {isHR
-                ? "Pošaljite nam poruku"
-                : isEN
-                ? "Send us a message"
-                : "Schreiben Sie uns"}
-            </h2>
-
-            <div className="w-16 h-[2px] bg-[#c6a27b] mb-8"></div>
-
-            <p className="text-[#4d5960] leading-relaxed text-lg mb-14">
-              {isHR
-                ? "Tu smo za sva vaša pitanja i zahtjeve – odgovorit ćemo vam u najkraćem mogućem roku."
-                : isEN
-                ? "Send us your inquiry – we will get back to you as soon as possible."
-                : "Teilen Sie uns Ihr Anliegen mit – wir melden uns so schnell wie möglich bei Ihnen."}
-            </p>
-
-
-
-          </div>
+<div className="grid grid-cols-1">
 
           {/* FORM */}
-<div className="lg:border-l border-[#e7ddd2] pl-0 lg:pl-12">
+<div className="max-w-2xl mx-auto w-full">
 
 <form
   action="https://api.web3forms.com/submit"

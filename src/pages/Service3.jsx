@@ -49,7 +49,7 @@ const Service3 = ({ lang }) => {
     <ServiceDetail>
 
       {/* HERO */}
-      <div className="relative w-full h-[520px] overflow-hidden">
+      <div className="relative w-full h-[400px] overflow-hidden">
 
         <img
           src="/carefree-stay.jpg"
@@ -57,15 +57,15 @@ const Service3 = ({ lang }) => {
           className="absolute inset-0 w-full h-full object-cover"
         />
 
-        <div className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/45 to-transparent" />
+        <div className="absolute inset-0 bg-black/25" />
 
-        <div className="relative z-10 h-full flex items-center">
+        <div className="relative z-10 h-full flex items-center justify-center">
 
           <div className="max-w-6xl mx-auto px-6 w-full">
 
-<div className="max-w-xl text-white text-left">
+<div className="max-w-xl mx-auto text-white text-center">
 
-              <h1 className="font-serif text-4xl md:text-6xl leading-tight mb-8 text-left">
+              <h1 className="font-serif text-4xl md:text-6xl leading-tight mb-8 text-center">
                 {isHR
                   ? "Bezbrižan boravak"
                   : isEN
@@ -73,15 +73,7 @@ const Service3 = ({ lang }) => {
                   : "Sorgenfreier Aufenthalt"}
               </h1>
 
-              <div className="w-20 h-[2px] bg-[#c6a27b] mb-8"></div>
-
-              <p className="text-xl leading-relaxed text-white/90 max-w-lg">
-                {isHR
-                  ? "Kako biste od prvog trenutka mogli opušteno uživati u svom boravku u Dalmaciji. Brinemo se o pripremi, organizaciji i svim detaljima vezanim uz vaš dolazak i odlazak."
-                  : isEN
-                  ? "So you can enjoy your time in Dalmatia from the very first moment. We take care of preparation, organisation and every detail surrounding your arrival and departure."
-                  : "Damit Sie Ihre Zeit in Dalmatien vom ersten Moment an entspannt geniessen können. Wir kümmern uns um Vorbereitung, Organisation und alle Details rund um Ihre Ankunft und Abreise."}
-              </p>
+              <div className="w-20 h-[2px] bg-[#c6a27b] mx-auto"></div>
 
             </div>
 
@@ -91,32 +83,24 @@ const Service3 = ({ lang }) => {
 
       </div>
 {/* SEO INTRO */}
-<section className="max-w-4xl mx-auto px-6 pt-16 pb-8 text-center">
+<section className="max-w-3xl mx-auto px-6 pt-16 pb-8 text-center">
 
-<h2 className="font-serif text-3xl text-[#2f3a40] mb-8">
-  {isHR
-    ? "Vaš dom spreman za dolazak"
-    : isEN
-    ? "Your Home Ready for Arrival"
-    : "Ihr Zuhause bereit für die Ankunft"}
-</h2>
+  <p className="font-serif italic text-xl md:text-2xl text-[#2f3a40] mb-8">
+    {isHR
+      ? "Vaš dom spreman za dolazak, bez brige o detaljima"
+      : isEN
+      ? "Your home ready on arrival, without the hassle"
+      : "Ihr Zuhause bereit bei der Ankunft – ganz ohne Aufwand für Sie"}
+  </p>
 
   <div className="space-y-6 text-[#5f6a70] leading-relaxed">
 
     <p>
       {isHR
-        ? "Dolazak u vlastitu nekretninu trebao bi biti jednostavan i opušten. Priprema doma prije dolaska, organizacija čišćenja i briga o svim detaljima omogućuju vam da od prvog trenutka uživate u svom boravku."
+        ? "PaMaRo Living priprema vašu nekretninu na području Makarske i Omiške rivijere prije vašeg dolaska – uključujući čišćenje, kupovinu prema želji i osobnu predaju ključeva. Tu smo i tijekom vašeg boravka po potrebi, kako biste se mogli opušteno prepustiti odmoru od prvog do zadnjeg dana."
         : isEN
-        ? "Arriving at your own property should be simple and stress-free. Preparing your home before arrival, organising cleaning services and taking care of every detail allows you to enjoy your stay from the very first moment."
-        : "Die Ankunft in der eigenen Immobilie sollte unkompliziert und entspannt sein. Die Vorbereitung Ihres Zuhauses, die Organisation von Reinigungsarbeiten und die Betreuung aller Details ermöglichen Ihnen einen sorgenfreien Aufenthalt ab dem ersten Moment."}
-    </p>
-
-    <p>
-      {isHR
-        ? "PaMaRo Living podržava vlasnike nekretnina na području Makarske i Omiške rivijere pri dolasku, boravku i odlasku. Od pripreme nekretnine i usluge ključeva do organizacije dodatnih usluga – brinemo se da vaš dom bude spreman kada vam je potreban."
-        : isEN
-        ? "PaMaRo Living supports property owners along the Makarska and Omiš Riviera before arrival, during their stay and upon departure. From property preparation and key services to arranging additional assistance, we ensure your home is ready whenever you need it."
-        : "PaMaRo Living unterstützt Eigentümer an der Makarska- und Omiš-Riviera vor der Anreise, während des Aufenthalts und bei der Abreise. Von der Vorbereitung der Immobilie über den Schlüsselservice bis zur Organisation zusätzlicher Dienstleistungen sorgen wir dafür, dass Ihr Zuhause jederzeit bereit ist."}
+        ? "PaMaRo Living prepares your property along the Makarska and Omiš Riviera before you arrive – including cleaning, groceries on request and a personal key handover. We're also on hand during your stay whenever needed, so you can relax from the first day to the last."
+        : "PaMaRo Living bereitet Ihre Immobilie an der Makarska- und Omiš-Riviera vor Ihrer Ankunft vor – inklusive Reinigung, Einkauf nach Wunsch und persönlicher Schlüsselübergabe. Auch während Ihres Aufenthalts sind wir bei Bedarf für Sie da, damit Sie sich vom ersten bis zum letzten Tag entspannt zurücklehnen können."}
     </p>
 
   </div>

@@ -1,43 +1,169 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
     <loc>https://www.pamaroliving.com/</loc>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://www.pamaroliving.com/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.pamaroliving.com/de" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pamaroliving.com/en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pamaroliving.com/" />
+  </url>
+  <url>
+    <loc>https://www.pamaroliving.com/de</loc>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://www.pamaroliving.com/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.pamaroliving.com/de" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pamaroliving.com/en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pamaroliving.com/" />
+  </url>
+  <url>
+    <loc>https://www.pamaroliving.com/en</loc>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://www.pamaroliving.com/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.pamaroliving.com/de" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pamaroliving.com/en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pamaroliving.com/" />
   </url>
 
   <url>
     <loc>https://www.pamaroliving.com/about</loc>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://www.pamaroliving.com/about" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.pamaroliving.com/de/about" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pamaroliving.com/en/about" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pamaroliving.com/about" />
+  </url>
+  <url>
+    <loc>https://www.pamaroliving.com/de/about</loc>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://www.pamaroliving.com/about" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.pamaroliving.com/de/about" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pamaroliving.com/en/about" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pamaroliving.com/about" />
+  </url>
+  <url>
+    <loc>https://www.pamaroliving.com/en/about</loc>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://www.pamaroliving.com/about" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.pamaroliving.com/de/about" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pamaroliving.com/en/about" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pamaroliving.com/about" />
   </url>
 
   <url>
     <loc>https://www.pamaroliving.com/services</loc>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://www.pamaroliving.com/services" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.pamaroliving.com/de/services" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pamaroliving.com/en/services" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pamaroliving.com/services" />
+  </url>
+  <url>
+    <loc>https://www.pamaroliving.com/de/services</loc>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://www.pamaroliving.com/services" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.pamaroliving.com/de/services" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pamaroliving.com/en/services" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pamaroliving.com/services" />
+  </url>
+  <url>
+    <loc>https://www.pamaroliving.com/en/services</loc>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://www.pamaroliving.com/services" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.pamaroliving.com/de/services" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pamaroliving.com/en/services" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pamaroliving.com/services" />
   </url>
 
   <url>
     <loc>https://www.pamaroliving.com/services/property-care</loc>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://www.pamaroliving.com/services/property-care" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.pamaroliving.com/de/services/property-care" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pamaroliving.com/en/services/property-care" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pamaroliving.com/services/property-care" />
+  </url>
+  <url>
+    <loc>https://www.pamaroliving.com/de/services/property-care</loc>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://www.pamaroliving.com/services/property-care" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.pamaroliving.com/de/services/property-care" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pamaroliving.com/en/services/property-care" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pamaroliving.com/services/property-care" />
+  </url>
+  <url>
+    <loc>https://www.pamaroliving.com/en/services/property-care</loc>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://www.pamaroliving.com/services/property-care" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.pamaroliving.com/de/services/property-care" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pamaroliving.com/en/services/property-care" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pamaroliving.com/services/property-care" />
   </url>
 
   <url>
     <loc>https://www.pamaroliving.com/services/carefree-stay</loc>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://www.pamaroliving.com/services/carefree-stay" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.pamaroliving.com/de/services/carefree-stay" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pamaroliving.com/en/services/carefree-stay" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pamaroliving.com/services/carefree-stay" />
+  </url>
+  <url>
+    <loc>https://www.pamaroliving.com/de/services/carefree-stay</loc>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://www.pamaroliving.com/services/carefree-stay" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.pamaroliving.com/de/services/carefree-stay" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pamaroliving.com/en/services/carefree-stay" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pamaroliving.com/services/carefree-stay" />
+  </url>
+  <url>
+    <loc>https://www.pamaroliving.com/en/services/carefree-stay</loc>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://www.pamaroliving.com/services/carefree-stay" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.pamaroliving.com/de/services/carefree-stay" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pamaroliving.com/en/services/carefree-stay" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pamaroliving.com/services/carefree-stay" />
   </url>
 
   <url>
     <loc>https://www.pamaroliving.com/services/interior-design</loc>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://www.pamaroliving.com/services/interior-design" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.pamaroliving.com/de/services/interior-design" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pamaroliving.com/en/services/interior-design" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pamaroliving.com/services/interior-design" />
   </url>
-
-<!-- Referenzen vorübergehend ausgeblendet -->
-<!--
-<url>
-  <loc>https://www.pamaroliving.com/references</loc>
-</url>
--->
+  <url>
+    <loc>https://www.pamaroliving.com/de/services/interior-design</loc>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://www.pamaroliving.com/services/interior-design" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.pamaroliving.com/de/services/interior-design" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pamaroliving.com/en/services/interior-design" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pamaroliving.com/services/interior-design" />
+  </url>
+  <url>
+    <loc>https://www.pamaroliving.com/en/services/interior-design</loc>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://www.pamaroliving.com/services/interior-design" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.pamaroliving.com/de/services/interior-design" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pamaroliving.com/en/services/interior-design" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pamaroliving.com/services/interior-design" />
+  </url>
 
   <url>
     <loc>https://www.pamaroliving.com/contact</loc>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://www.pamaroliving.com/contact" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.pamaroliving.com/de/contact" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pamaroliving.com/en/contact" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pamaroliving.com/contact" />
+  </url>
+  <url>
+    <loc>https://www.pamaroliving.com/de/contact</loc>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://www.pamaroliving.com/contact" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.pamaroliving.com/de/contact" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pamaroliving.com/en/contact" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pamaroliving.com/contact" />
+  </url>
+  <url>
+    <loc>https://www.pamaroliving.com/en/contact</loc>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://www.pamaroliving.com/contact" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.pamaroliving.com/de/contact" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.pamaroliving.com/en/contact" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.pamaroliving.com/contact" />
   </url>
 
   <url>
     <loc>https://www.pamaroliving.com/legal</loc>
+  </url>
+  <url>
+    <loc>https://www.pamaroliving.com/de/legal</loc>
+  </url>
+  <url>
+    <loc>https://www.pamaroliving.com/en/legal</loc>
   </url>
 
 </urlset>

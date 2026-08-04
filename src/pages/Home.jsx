@@ -2,6 +2,7 @@ import React from "react";
 import { House, Sun, Palette } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
+import { withLang } from "../lib/i18n";
 /* ================= HOME ================= */
 function Home({ lang }) {
   const isHR = lang === "hr";
@@ -49,7 +50,7 @@ const cards = isHR
     ]
 : [
     [
-      "Immobilienbetreuung",
+      "Immobilien-\nbetreuung",
       "Regelmässige Kontrollen und Betreuung vor Ort.",
       "service2"
     ],
@@ -61,7 +62,7 @@ const cards = isHR
     ],
 
     [
-      "Inneneinrichtung",
+      "Stilvolle Einrichtung",
       "Individuelle Raumgestaltung mit Sinn für Stil, Harmonie und Atmosphäre.",
       "service4"
     ],
@@ -101,7 +102,7 @@ return (
       />
 
       {/* Dark overlay */}
-      <div className="absolute inset-0 bg-black/45" />
+      <div className="absolute inset-0 bg-black/15" />
 
       {/* Text */}
       <div className="relative z-10 flex items-center justify-center h-full px-6 text-center pt-12">
@@ -113,64 +114,19 @@ return (
               ? "Your property, our care."
               : "Ihre Immobilie, unsere Verantwortung."}
           </h1>
-
-          <p className="mt-6 text-xl md:text-xl text-white/90">
-            {isHR
-              ? "Za dobar osjećaj, čak i kada niste ovdje."
-              : isEN
-              ? "So you can always feel at ease, even when you are away."
-              : "Für ein gutes Gefühl – auch wenn Sie nicht vor Ort sind."}
-          </p>
         </div>
       </div>
     </section>
 
-      <section className="py-8 md:py-16 px-6">
-        <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 place-items-center">
-{cards.map(([title, text, page]) => (
-  <Link
-    key={title}
-    to={
-      page === "service2"
-        ? "/services/property-care"
-        : page === "service3"
-        ? "/services/carefree-stay"
-        : "/services/interior-design"
-    }
-    className="bg-white p-6 md:p-10 rounded-2xl shadow-sm hover:shadow-lg transition duration-300 w-full max-w-md text-center min-h-[260px] flex flex-col justify-center"
-  >
-
-  <div className="flex justify-center mb-5">
-    {page === "service2" ? (
-      <House size={20} className="text-[#c6a27b]" />
-    ) : page === "service3" ? (
-      <Sun size={20} className="text-[#c6a27b]" />
-    ) : (
-      <Palette size={20} className="text-[#c6a27b]" />
-    )}
-  </div>
-
-  <h3 className="font-serif text-xl mb-4">{title}</h3>
-
-  <p className="text-sm text-[#6b7478] leading-relaxed">
-    {text}
-  </p>
-
-</Link>
-          ))}
-
-            </div>
-      </section>
-
 {/* SEO INTRO */}
-<section className="max-w-4xl mx-auto px-6 pt-8 pb-16 text-center">
+<section className="max-w-4xl mx-auto px-6 pt-16 md:pt-24 pb-8 text-center">
 
-  <h2 className="font-serif text-3xl text-[#2f3a40] mb-8">
+  <h2 className="font-serif italic text-3xl text-[#2f3a40] mb-8">
     {isHR
-      ? "Osobna podrška za vlasnike nekretnina"
+      ? "Za dobar osjećaj, čak i kada niste ovdje"
       : isEN
-      ? "Personal Support for Property Owners"
-      : "Persönliche Unterstützung für Immobilieneigentümer"}
+      ? "So you can always feel at ease, even when you are away"
+      : "Für ein gutes Gefühl – auch wenn Sie nicht vor Ort sind"}
   </h2>
 
   <div className="space-y-6 text-[#5f6a70] leading-relaxed">
@@ -195,6 +151,47 @@ return (
 
 </section>
 
+      <section className="py-8 md:py-16 px-6">
+        <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 items-stretch justify-items-center">
+{cards.map(([title, text, page]) => (
+  <Link
+    key={title}
+    to={withLang(
+      lang,
+      page === "service2"
+        ? "/services/property-care"
+        : page === "service3"
+        ? "/services/carefree-stay"
+        : "/services/interior-design"
+    )}
+    className="bg-white p-8 md:p-10 rounded-2xl shadow-sm hover:shadow-lg transition duration-300 w-full max-w-md text-center flex flex-col"
+  >
+
+  <div className="w-20 h-20 mx-auto mb-5 rounded-full bg-[#f3ebe3] flex items-center justify-center shrink-0">
+    {page === "service2" ? (
+      <House size={34} className="text-[#c6a27b]" />
+    ) : page === "service3" ? (
+      <Sun size={34} className="text-[#c6a27b]" />
+    ) : (
+      <Palette size={34} className="text-[#c6a27b]" />
+    )}
+  </div>
+
+  <div className="min-h-[84px] md:min-h-[96px] flex items-center justify-center mb-4 shrink-0">
+    <h3 className="font-serif text-2xl md:text-3xl whitespace-pre-line break-words">{title}</h3>
+  </div>
+
+  <div className="w-10 h-[1px] bg-[#c6a27b] mx-auto mb-5 shrink-0"></div>
+
+  <p className="text-base text-[#6b7478] leading-relaxed">
+    {text}
+  </p>
+
+</Link>
+          ))}
+
+            </div>
+      </section>
 
 
 
@@ -207,14 +204,14 @@ return (
     className="absolute inset-0 w-full h-full object-cover object-[center_65%]"
   />
 
-  {/* Heller Overlay */}
-  <div className="absolute inset-0 bg-[#efe7df]/65" />
+  {/* Heller Overlay, konzentriert hinter dem Text – Ränder bleiben scharf */}
+  <div className="absolute inset-0 bg-[radial-gradient(ellipse_70%_90%_at_50%_50%,rgba(239,231,223,0.78)_0%,rgba(239,231,223,0.35)_55%,rgba(239,231,223,0)_78%)]" />
 
   {/* Text */}
   <div className="relative z-10 flex items-center justify-center h-full px-6 py-12 text-center">
     <div className="max-w-3xl">
 
-      <p className="italic text-xl md:text-4xl font-serif text-[#2f3a40] leading-relaxed">
+      <p className="italic text-xl md:text-4xl font-serif text-[#2f3a40] leading-relaxed [text-shadow:0_1px_18px_rgba(255,255,255,0.7)]">
         {isHR
     ? "„Mediteranski način života počinje osjećajem mira i lakoće.“"
     : isEN
@@ -229,7 +226,7 @@ return (
 </section>
 
 <section className="pt-10 pb-0 px-6 max-w-3xl mx-auto text-center">
-        <h3 className="font-serif italic text-2xl mb-6">
+        <h3 className="font-serif italic text-3xl mb-6">
           {isHR ? "Za koga smo tu" : isEN ? "Who We Are Here For" : "Für wen wir da sind"}
         </h3>
         <div className="w-24 h-[1px] bg-[#c6a27b] mx-auto mb-10"></div>

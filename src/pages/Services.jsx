@@ -2,6 +2,7 @@ import React from "react";
 import { House, Sun, Palette } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
+import { withLang } from "../lib/i18n";
 
 function Services({ lang }) {
   const isHR = lang === "hr";
@@ -33,21 +34,23 @@ return (
     <section className="bg-[#f7f2ed]">
 
       {/* HERO */}
-      <section className="relative overflow-hidden">
+      <div className="relative w-full h-[400px] overflow-hidden">
 
-        {/* MOBILE HERO */}
-        <div className="lg:hidden relative h-[320px] overflow-hidden">
-          <img
-            src="/services.jpg"
-            alt="Services"
-            className="absolute inset-0 w-full h-full object-cover"
-          />
+        <img
+          src="/services.jpg"
+          alt="Services"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
 
-          <div className="absolute inset-0 bg-black/35"></div>
+        <div className="absolute inset-0 bg-black/25" />
 
-          <div className="relative z-10 h-full flex items-center px-8 pt-16">
-            <div>
-              <h1 className="font-serif text-5xl text-white leading-tight mb-6">
+        <div className="relative z-10 h-full flex items-center justify-center">
+
+          <div className="max-w-6xl mx-auto px-6 w-full">
+
+            <div className="max-w-xl mx-auto text-white text-center">
+
+              <h1 className="font-serif text-4xl md:text-6xl leading-tight mb-8 text-center">
                 {isHR
                   ? "Naše usluge"
                   : isEN
@@ -55,68 +58,32 @@ return (
                   : "Unsere Dienstleistungen"}
               </h1>
 
-              <div className="w-16 h-[1px] bg-white/70 mb-6"></div>
-
-              <p className="text-white/90 leading-relaxed max-w-sm">
-                {isHR
-                  ? "Sve što je vašoj nekretnini potrebno – pouzdano, diskretno i profesionalno."
-                  : isEN
-                  ? "Everything your property needs – reliable, discreet and professional."
-                  : "Alles, was Ihre Immobilie braucht – zuverlässig, diskret und professionell."}
-              </p>
-            </div>
-          </div>
-        </div>
-
-        {/* DESKTOP HERO */}
-        <div className="hidden lg:grid grid-cols-1 lg:grid-cols-2 min-h-[420px]">
-
-          <div className="flex items-center px-8 md:px-16 py-16">
-            <div className="max-w-xl">
-
-              <h1 className="font-serif text-5xl md:text-6xl text-[#2f3a40] leading-tight mb-8">
-                {isHR
-                  ? "Naše usluge"
-                  : isEN
-                  ? "Our Services"
-                  : "Unsere Dienstleistungen"}
-              </h1>
-
-              <div className="w-20 h-[1px] bg-[#c6a27b] mb-8"></div>
-
-              <p className="text-[#4d5960] text-lg leading-relaxed">
-                {isHR
-                  ? "Sve što je vašoj nekretnini potrebno – pouzdano, diskretno i profesionalno."
-                  : isEN
-                  ? "Everything your property needs – reliable, discreet and professional."
-                  : "Alles, was Ihre Immobilie braucht – zuverlässig, diskret und professionell."}
-              </p>
+              <div className="w-20 h-[2px] bg-[#c6a27b] mx-auto"></div>
 
             </div>
-          </div>
 
-          <div className="hidden lg:block relative h-[320px] lg:h-auto overflow-hidden">
-            <img
-              src="/services.jpg"
-              alt="Services"
-              className="absolute inset-0 w-full h-full object-cover"
-            />
-
-            <div className="absolute inset-0 bg-gradient-to-r from-[#f7f2ed] via-[#f7f2ed]/70 to-transparent"></div>
           </div>
 
         </div>
 
-      </section>
+      </div>
 
       {/* CONTENT */}
       <div className="max-w-6xl mx-auto px-6 pt-20 pb-16">
+
+        <p className="font-serif italic text-xl md:text-2xl text-[#2f3a40] text-center mb-12">
+          {isHR
+            ? "Sve što je vašoj nekretnini potrebno – pouzdano, diskretno i profesionalno"
+            : isEN
+            ? "Everything your property needs – reliable, discreet and professional"
+            : "Alles, was Ihre Immobilie braucht – zuverlässig, diskret und professionell"}
+        </p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
 
           {/* Property Care */}
           <Link
-            to="/services/property-care"
+            to={withLang(lang, "/services/property-care")}
             className="bg-white rounded-3xl p-10 shadow-sm hover:shadow-md transition text-center border border-[#efe7df] block"
           >
             <div className="w-20 h-20 mx-auto mb-8 rounded-full bg-[#f3ebe3] flex items-center justify-center">
@@ -144,7 +111,7 @@ return (
 
           {/* Carefree Stay */}
           <Link
-            to="/services/carefree-stay"
+            to={withLang(lang, "/services/carefree-stay")}
             className="bg-white rounded-3xl p-10 shadow-sm hover:shadow-md transition text-center border border-[#efe7df] block"
           >
             <div className="w-20 h-20 mx-auto mb-8 rounded-full bg-[#f3ebe3] flex items-center justify-center">
@@ -172,7 +139,7 @@ return (
 
           {/* Interior Styling */}
           <Link
-            to="/services/interior-design"
+            to={withLang(lang, "/services/interior-design")}
             className="bg-white rounded-3xl p-10 shadow-sm hover:shadow-md transition text-center border border-[#efe7df] block"
           >
             <div className="w-20 h-20 mx-auto mb-8 rounded-full bg-[#f3ebe3] flex items-center justify-center">

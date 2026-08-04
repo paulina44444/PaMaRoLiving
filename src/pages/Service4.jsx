@@ -1,7 +1,6 @@
 import React from "react";
 import ServiceDetail from "../components/ServiceDetail";
 import { Helmet } from "react-helmet-async";
-import { Link } from "react-router-dom";
 
 import {
   House,
@@ -52,7 +51,7 @@ const Service4 = ({ lang }) => {
     <ServiceDetail>
 
       {/* HERO */}
-      <div className="relative w-full h-[520px] overflow-hidden">
+      <div className="relative w-full h-[400px] overflow-hidden">
 
         <img
           src="/interior-design.jpg"
@@ -60,15 +59,15 @@ const Service4 = ({ lang }) => {
           className="absolute inset-0 w-full h-full object-cover"
         />
 
-        <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/55 to-transparent" />
+        <div className="absolute inset-0 bg-black/25" />
 
-        <div className="relative z-10 h-full flex items-center">
+        <div className="relative z-10 h-full flex items-center justify-center">
 
           <div className="max-w-6xl mx-auto px-6 w-full">
 
-<div className="max-w-xl text-white text-left">
+<div className="max-w-xl mx-auto text-white text-center">
 
-              <h1 className="font-serif text-4xl md:text-6xl leading-tight mb-8 text-left">
+              <h1 className="font-serif text-4xl md:text-6xl leading-tight mb-8 text-center">
                 {isHR
                   ? "Uređenje interijera"
                   : isEN
@@ -76,15 +75,7 @@ const Service4 = ({ lang }) => {
                   : "Stilvolle Einrichtung"}
               </h1>
 
-              <div className="w-20 h-[2px] bg-[#c6a27b] mb-8"></div>
-
-              <p className="text-xl leading-relaxed text-white/90 max-w-lg">
-                {isHR
-                  ? "Promišljeni koncepti prostora s osjećajem za stil, funkcionalnost i atmosferu. Pratimo vaše preuređenje od prve ideje do završnog uređenja."
-                  : isEN
-                  ? "Thoughtful interior concepts with a sense for style, functionality and atmosphere. We accompany your redesign from the first idea to the final interior setup."
-                  : "Durchdachte Raumkonzepte mit Gespür für Stil, Funktionalität und Atmosphäre. Wir begleiten Ihre Neugestaltung von der ersten Idee bis zur fertigen Umsetzung."}
-              </p>
+              <div className="w-20 h-[2px] bg-[#c6a27b] mx-auto"></div>
 
             </div>
 
@@ -94,32 +85,24 @@ const Service4 = ({ lang }) => {
 
       </div>
 {/* SEO INTRO */}
-<section className="max-w-4xl mx-auto px-6 pt-16 pb-8 text-center">
+<section className="max-w-3xl mx-auto px-6 pt-16 pb-8 text-center">
 
-  <h2 className="font-serif text-3xl text-[#2f3a40] mb-8">
+  <p className="font-serif italic text-xl md:text-2xl text-[#2f3a40] mb-8">
     {isHR
-      ? "Individualni koncepti uređenja za nekretnine uz more"
+      ? "Vaš dom, nanovo osmišljen – sa stilom i strukturom"
       : isEN
-      ? "Individual Interior Concepts for Coastal Properties"
-      : "Individuelle Einrichtungskonzepte für Immobilien am Meer"}
-  </h2>
+      ? "Your home, reimagined – with style and structure"
+      : "Ihr Zuhause, neu gedacht – mit Stil und Struktur"}
+  </p>
 
   <div className="space-y-6 text-[#5f6a70] leading-relaxed">
 
     <p>
       {isHR
-        ? "Dobro osmišljen interijer spaja funkcionalnost, estetiku i ugodnu atmosferu. Od odabira boja i materijala do rasporeda prostora i namještaja, svaki detalj doprinosi dojmu doma u kojem se osjećate ugodno."
+        ? "Od odabira boja i materijala do rasporeda prostora i namještaja, svaki detalj doprinosi ugodnoj atmosferi doma. PaMaRo Living prati vlasnike nekretnina na području Makarske i Omiške rivijere od prve ideje do završnog uređenja – bilo da uređujete novi apartman, kuću za odmor ili želite osvježiti postojeći prostor."
         : isEN
-        ? "A well-designed interior combines functionality, aesthetics and atmosphere. From colours and materials to furniture selection and space planning, every detail contributes to a welcoming living environment."
-        : "Ein gelungenes Interior Design verbindet Funktionalität, Ästhetik und Wohngefühl. Von Farben und Materialien bis hin zur Möblierung und Raumaufteilung trägt jedes Detail zu einer harmonischen Atmosphäre bei."}
-    </p>
-
-    <p>
-      {isHR
-        ? "PaMaRo Living razvija individualne koncepte uređenja za vlasnike nekretnina na području Makarske i Omiške rivijere. Bilo da uređujete novi apartman, kuću za odmor ili želite osvježiti postojeći prostor, pratimo vas od prve ideje do konačnog uređenja."
-        : isEN
-        ? "PaMaRo Living creates individual interior concepts for property owners along the Makarska and Omiš Riviera. Whether furnishing a new apartment, a holiday home or refreshing an existing property, we support you from the initial idea to the final setup."
-        : "PaMaRo Living entwickelt individuelle Einrichtungskonzepte für Eigentümer an der Makarska- und Omiš-Riviera. Ob neue Ferienwohnung, Ferienhaus oder die Neugestaltung bestehender Räume – wir begleiten Sie von der ersten Idee bis zur fertigen Einrichtung."}
+        ? "From the choice of colours and materials to furniture and space planning, every detail contributes to a welcoming atmosphere. PaMaRo Living accompanies property owners along the Makarska and Omiš Riviera from the first idea to the final setup – whether furnishing a new apartment, a holiday home or refreshing an existing property."
+        : "Von der Auswahl der Farben und Materialien bis zur Möblierung und Raumaufteilung trägt jedes Detail zu einer harmonischen Atmosphäre bei. PaMaRo Living begleitet Eigentümer an der Makarska- und Omiš-Riviera von der ersten Idee bis zur fertigen Einrichtung – ob neue Ferienwohnung, Ferienhaus oder die Neugestaltung bestehender Räume."}
     </p>
 
   </div>
@@ -327,49 +310,6 @@ const Service4 = ({ lang }) => {
         </div>
 
       </section>
-{/* REFERENCES */}
-{/*
-<section className="max-w-5xl mx-auto px-6 pt-20 text-center">
-
-  <div className="w-20 h-[1px] bg-[#c6a27b] mx-auto mb-8"></div>
-
-  <h3 className="font-serif text-3xl text-[#2f3a40] mb-6">
-    {isHR
-      ? "Reference & inspiracija"
-      : isEN
-      ? "References & Inspiration"
-      : "Referenzen & Wohninspirationen"}
-  </h3>
-
-  <p className="text-[#5f6a70] leading-relaxed max-w-2xl mx-auto mb-6">
-    {isHR
-      ? "Uvid u odabrane koncepte prostora, detalje i mediteransku atmosferu stanovanja."
-      : isEN
-      ? "Insights into selected interior concepts, details and Mediterranean living atmosphere."
-      : "Einblicke in ausgewählte Raumkonzepte, Details und mediterrane Wohnatmosphäre."}
-  </p>
-
-  <p className="text-[#5f6a70] leading-relaxed max-w-2xl mx-auto mb-10">
-    {isHR
-      ? "Za odabrane projekte po želji izrađujemo i atmosferične fotografije za prezentaciju vaše nekretnine."
-      : isEN
-      ? "For selected projects, we also create atmospheric photography for the presentation of your property upon request."
-      : "Für ausgewählte Projekte erstellen wir auf Wunsch auch atmosphärische Aufnahmen zur Präsentation Ihrer Immobilie."}
-  </p>
-
-<Link
-  to="/references"
-  className="inline-block border border-[#c6a27b] text-[#2f3a40] px-8 py-4 tracking-[0.12em] uppercase text-sm hover:bg-[#c6a27b] hover:text-white transition"
->
-  {isHR
-    ? "Pogledajte reference"
-    : isEN
-    ? "View References"
-    : "Referenzen ansehen"}
-</Link>
-
-</section>
-*/}
 </ServiceDetail>
 </>
 );

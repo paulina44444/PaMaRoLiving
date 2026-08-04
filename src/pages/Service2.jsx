@@ -53,7 +53,7 @@ const Service2 = ({ lang }) => {
     <ServiceDetail>
 
       {/* HERO */}
-      <div className="relative w-full h-[520px] overflow-hidden">
+      <div className="relative w-full h-[400px] overflow-hidden">
 
         <img
           src="/property-care.jpg"
@@ -61,15 +61,15 @@ const Service2 = ({ lang }) => {
           className="absolute inset-0 w-full h-full object-cover"
         />
 
-        <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/55 to-transparent" />
+        <div className="absolute inset-0 bg-black/25" />
 
-        <div className="relative z-10 h-full flex items-center">
+        <div className="relative z-10 h-full flex items-center justify-center">
 
           <div className="max-w-6xl mx-auto px-6 w-full">
 
-   <div className="max-w-xl text-white text-left">
+   <div className="max-w-xl mx-auto text-white text-center">
 
-              <h1 className="font-serif text-4xl md:text-6xl leading-tight mb-8 text-left">
+              <h1 className="font-serif text-4xl md:text-6xl leading-tight mb-8 text-center">
                 {isHR
                   ? "Briga o nekretnini"
                   : isEN
@@ -77,15 +77,7 @@ const Service2 = ({ lang }) => {
                   : "Immobilienbetreuung"}
               </h1>
 
-              <div className="w-20 h-[2px] bg-[#c6a27b] mb-8"></div>
-
-              <p className="text-xl leading-relaxed text-white/90 max-w-lg">
-                {isHR
-                  ? "Vaša nekretnina zahtijeva redovitu brigu i izvan sezone. Mi smo na licu mjesta i brinemo se o svemu kako biste svoj dom u svakom trenutku znali u sigurnim rukama."
-                  : isEN
-                  ? "Your property deserves care and attention even outside the season. We look after inspections, coordination and upkeep discreetly and reliably."
-                  : "Ihre Immobilie verdient auch ausserhalb der Saison Aufmerksamkeit und Pflege. Wir kümmern uns zuverlässig um Kontrollen, Organisation und den Werterhalt – diskret, persönlich und mit einem wachsamen Blick fürs Detail."}
-              </p>
+              <div className="w-20 h-[2px] bg-[#c6a27b] mx-auto"></div>
 
             </div>
 
@@ -96,24 +88,24 @@ const Service2 = ({ lang }) => {
       </div>
 {/* SEO INTRO */}
 {/* SEO INTRO */}
-<section className="max-w-4xl mx-auto px-6 pt-16 pb-8 text-center">
+<section className="max-w-3xl mx-auto px-6 pt-16 pb-8 text-center">
+
+  <p className="font-serif italic text-xl md:text-2xl text-[#2f3a40] mb-8">
+    {isHR
+      ? "Vaša nekretnina u sigurnim je rukama – i izvan sezone"
+      : isEN
+      ? "Your property, cared for even outside the season"
+      : "Ihre Immobilie in guten Händen – auch ausserhalb der Saison"}
+  </p>
 
   <div className="space-y-6 text-[#5f6a70] leading-relaxed">
 
   <p>
     {isHR
-      ? "Vlasnici nekretnina koji ne borave tijekom cijele godine u Dalmaciji često trebaju pouzdanu osobu koja će redovito nadzirati njihov dom. PaMaRo Living pruža osobnu brigu o nekretninama, organizaciju održavanja te podršku prije dolaska, tijekom boravka i nakon odlaska."
+      ? "PaMaRo Living brine se o vašoj nekretnini tijekom cijele godine na području Makarske i Omiške rivijere – redoviti obilasci i kontrola stanja, održavanje vrta i okućnice, koordinacija majstora za popravke te brza pomoć u hitnim slučajevima. Uz uslugu ključeva, poštansku uslugu i redovite status izvještaje uvijek ste informirani o stanju svoje nekretnine."
       : isEN
-      ? "Property owners who are not in Dalmatia all year round often need someone they can rely on. PaMaRo Living provides personal property care, maintenance coordination and support before arrival, during your stay and after departure."
-      : "Wer seine Immobilie in Dalmatien nicht das ganze Jahr selbst nutzen kann, benötigt eine vertrauenswürdige Betreuung vor Ort. PaMaRo Living übernimmt die persönliche Immobilienbetreuung, organisiert notwendige Arbeiten und unterstützt Sie vor der Anreise, während Ihres Aufenthalts und nach Ihrer Abreise."}
-  </p>
-
-  <p>
-    {isHR
-      ? "Naše usluge obuhvaćaju redovite kontrole objekta, koordinaciju lokalnih majstora, pripremu nekretnine prije dolaska, organizaciju čišćenja te individualne koncepte uređenja interijera. Sve usluge prilagođene su vlasnicima nekretnina na području Makarske rivijere i Omiške rivijere koji traže diskretnu, pouzdanu i osobnu podršku."
-      : isEN
-      ? "Our services include regular property inspections, coordination of local craftsmen, home preparation before arrival, cleaning arrangements and individual interior design concepts. Every service is tailored to property owners along the Makarska and Omiš Riviera who value reliability, discretion and personal support."
-      : "Unsere Leistungen umfassen regelmässige Objektkontrollen, die Koordination lokaler Handwerker, die Vorbereitung Ihrer Immobilie vor der Anreise, die Organisation von Reinigungsarbeiten sowie individuelle Konzepte für die Inneneinrichtung. Alle Dienstleistungen richten sich an Eigentümer an der Makarska- und Omiš-Riviera, die Wert auf Zuverlässigkeit, Diskretion und persönliche Betreuung legen."}
+      ? "PaMaRo Living takes care of your property year-round along the Makarska and Omiš Riviera – regular visits and property checks, upkeep of gardens and outdoor areas, coordination of craftsmen for repairs, and quick support in emergencies. Key holding, mail handling and regular status reports keep you informed about your property at all times."
+      : "PaMaRo Living übernimmt die laufende Betreuung Ihrer Immobilie an der Makarska- und Omiš-Riviera – regelmässige Rundgänge und Hauskontrollen, die Pflege von Garten und Aussenanlagen, die Koordination von Handwerkern bei Reparaturen sowie schnelle Hilfe im Notfall. Ergänzt durch Schlüssel- und Postservice sowie regelmässige Statusberichte sind Sie jederzeit über den Zustand Ihrer Immobilie informiert."}
   </p>
 
 </div>
@@ -134,7 +126,7 @@ const Service2 = ({ lang }) => {
 
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-5 gap-5">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
 
           {/* 1 */}
           <div className="bg-[#f7f2ed] rounded-3xl p-5 min-h-[210px] shadow-sm text-center">
