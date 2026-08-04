@@ -40,7 +40,7 @@ return (
   <img
     src="/about-hero.jpg"
     alt="About"
-    className="absolute inset-0 w-full h-full object-cover object-[center_20%]"
+    className="absolute inset-0 w-full h-full object-cover object-[90%_20%]"
   />
 
   <div className="absolute inset-0 bg-black/25" />

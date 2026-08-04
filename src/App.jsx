@@ -4,6 +4,7 @@ import { Routes, Route } from "react-router-dom";
 import Navigation from "./components/Navigation";
 import FooterBar from "./components/FooterBar";
 import SeoLinks from "./components/SeoLinks";
+import ScrollToTop from "./components/ScrollToTop";
 
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -33,6 +34,7 @@ const langs = ["hr", "de", "en"];
 export default function App() {
   return (
     <div className="flex flex-col bg-[#f7f2ed]">
+      <ScrollToTop />
       <Navigation />
       <SeoLinks />
 
