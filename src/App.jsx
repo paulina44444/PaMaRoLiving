@@ -5,6 +5,7 @@ import Navigation from "./components/Navigation";
 import FooterBar from "./components/FooterBar";
 import SeoLinks from "./components/SeoLinks";
 import ScrollToTop from "./components/ScrollToTop";
+import { BASE_ROUTES, LANGS } from "./lib/i18n";
 
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -15,21 +16,27 @@ import Service4 from "./pages/Service4";
 import Contact from "./pages/Contact";
 import Legal from "./pages/Legal";
 
-// Basis-Routen (ohne Sprach-Präfix). Kroatisch läuft an der Wurzel,
-// Deutsch/Englisch werden weiter unten automatisch mit /de und /en
-// gespiegelt (siehe src/lib/i18n.js).
-const pageRoutes = [
-  { path: "/", Component: Home },
-  { path: "/about", Component: About },
-  { path: "/services", Component: Services },
-  { path: "/services/property-care", Component: Service2 },
-  { path: "/services/carefree-stay", Component: Service3 },
-  { path: "/services/interior-design", Component: Service4 },
-  { path: "/contact", Component: Contact },
-  { path: "/legal", Component: Legal },
-];
+// Basis-Routen (ohne Sprach-Präfix) kommen zentral aus src/lib/i18n.js,
+// damit Router und Prerender-Script (scripts/prerender.mjs) immer
+// dieselben Seiten kennen. Kroatisch läuft an der Wurzel, Deutsch/
+// Englisch werden weiter unten automatisch mit /de und /en gespiegelt.
+const componentsByPath = {
+  "/": Home,
+  "/about": About,
+  "/services": Services,
+  "/services/property-care": Service2,
+  "/services/carefree-stay": Service3,
+  "/services/interior-design": Service4,
+  "/contact": Contact,
+  "/legal": Legal,
+};
 
-const langs = ["hr", "de", "en"];
+const pageRoutes = BASE_ROUTES.map((path) => ({
+  path,
+  Component: componentsByPath[path],
+}));
+
+const langs = LANGS;
 
 export default function App() {
   return (

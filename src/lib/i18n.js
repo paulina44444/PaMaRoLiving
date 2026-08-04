@@ -6,6 +6,20 @@
 export const BASE_URL = "https://www.pamaroliving.com";
 export const LANGS = ["hr", "de", "en"];
 
+// Zentrale Liste aller Basis-Routen (ohne Sprach-Präfix). Wird sowohl vom
+// Router (App.jsx) als auch vom Prerender-Script (scripts/prerender.mjs)
+// verwendet, damit beide immer dieselben Seiten kennen.
+export const BASE_ROUTES = [
+  "/",
+  "/about",
+  "/services",
+  "/services/property-care",
+  "/services/carefree-stay",
+  "/services/interior-design",
+  "/contact",
+  "/legal",
+];
+
 /** Ermittelt die aktuelle Sprache aus dem URL-Pfad. */
 export function currentLang(pathname) {
   if (pathname === "/de" || pathname.startsWith("/de/")) return "de";

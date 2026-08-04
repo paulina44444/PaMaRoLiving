@@ -12,12 +12,19 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <!--
+    Fallback-Title/-Description (nur sichtbar, falls JavaScript nicht
+    läuft und das Prerendering aus irgendeinem Grund nicht greift).
+    Normalerweise ersetzt scripts/prerender.mjs diesen Block pro Seite
+    durch den von react-helmet-async gesetzten, seitenspezifischen
+    Title/Description/Canonical/hreflang/JSON-LD (siehe SeoLinks.jsx).
+  -->
   <title>PaMaRo Living | Property Care & Interior Design in Dalmatia</title>
-
   <meta
     name="description"
     content="Property care, interior design and personalised support for holiday homes and properties in Dalmatia, Croatia. Reliable, discreet and locally based."
   />
+  <!--app-head-->
 
   <meta name="author" content="PaMaRo Living" />
 
@@ -75,7 +82,7 @@
 </head>
 
 <body>
-  <div id="root"></div>
+  <div id="root"><!--app-html--></div>
   <script type="module" src="/src/main.jsx"></script>
 </body>
 </html>
