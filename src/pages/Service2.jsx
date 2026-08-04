@@ -67,7 +67,7 @@ const Service2 = ({ lang }) => {
 
           <div className="max-w-6xl mx-auto px-6 w-full">
 
-   <div className="max-w-xl mx-auto text-white text-center">
+   <div className="max-w-xl md:max-w-2xl mx-auto text-white text-center">
 
               <h1 className="font-serif text-4xl md:text-6xl leading-tight mb-8 text-center break-words">
                 {isHR
