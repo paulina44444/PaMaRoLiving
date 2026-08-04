@@ -23,7 +23,7 @@ return (
 
       <div className="max-w-xl mx-auto text-white text-center">
 
-        <h1 className="font-serif text-4xl md:text-6xl leading-tight mb-8 text-center">
+        <h1 className="font-serif text-4xl md:text-6xl leading-tight mb-8 text-center break-words">
           {isHR
             ? "Impressum i privatnost"
             : isEN
@@ -47,7 +47,7 @@ return (
       {/* Impressum */}
 <div className="mb-16">
 
-        <h2 className="font-serif text-[44px] leading-none mb-6">
+        <h2 className="font-serif text-[44px] leading-none mb-6 break-words">
           {isHR
             ? "Impressum"
             : isEN
@@ -104,7 +104,7 @@ return (
       {/* Datenschutz */}
       <div>
 
-        <h2 className="font-serif text-[44px] leading-none mb-6">
+        <h2 className="font-serif text-[44px] leading-none mb-6 break-words">
           {isHR
             ? "Pravila privatnosti"
             : isEN

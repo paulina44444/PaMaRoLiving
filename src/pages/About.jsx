@@ -51,7 +51,7 @@ return (
 
       <div className="max-w-xl mx-auto text-white text-center">
 
-        <h1 className="font-serif text-4xl md:text-6xl leading-tight mb-8 text-center">
+        <h1 className="font-serif text-4xl md:text-6xl leading-tight mb-8 text-center break-words">
           {isHR ? "O nama" : isEN ? "About us" : "Über uns"}
         </h1>
 

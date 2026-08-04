@@ -69,7 +69,7 @@ const Service2 = ({ lang }) => {
 
    <div className="max-w-xl mx-auto text-white text-center">
 
-              <h1 className="font-serif text-4xl md:text-6xl leading-tight mb-8 text-center">
+              <h1 className="font-serif text-4xl md:text-6xl leading-tight mb-8 text-center break-words">
                 {isHR
                   ? "Briga o nekretnini"
                   : isEN
@@ -126,10 +126,10 @@ const Service2 = ({ lang }) => {
 
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+        <div className="flex flex-wrap justify-center gap-5 max-w-4xl mx-auto">
 
           {/* 1 */}
-          <div className="bg-[#f7f2ed] rounded-3xl p-5 min-h-[210px] shadow-sm text-center">
+          <div className="w-full sm:w-64 bg-[#f7f2ed] rounded-3xl p-5 min-h-[220px] shadow-sm text-center">
             <div className="mb-5 flex items-center justify-center">
               <House size={34} className="text-[#c6a27b]" />
             </div>
@@ -152,7 +152,7 @@ const Service2 = ({ lang }) => {
           </div>
 
           {/* 2 */}
-          <div className="bg-[#f7f2ed] rounded-3xl p-5 min-h-[210px] shadow-sm text-center">
+          <div className="w-full sm:w-64 bg-[#f7f2ed] rounded-3xl p-5 min-h-[220px] shadow-sm text-center">
             <div className="mb-5 flex items-center justify-center">
               <Eye size={34} className="text-[#c6a27b]" />
             </div>
@@ -175,7 +175,7 @@ const Service2 = ({ lang }) => {
           </div>
 
           {/* 3 */}
-          <div className="bg-[#f7f2ed] rounded-3xl p-5 min-h-[210px] shadow-sm text-center">
+          <div className="w-full sm:w-64 bg-[#f7f2ed] rounded-3xl p-5 min-h-[220px] shadow-sm text-center">
             <div className="mb-5 flex items-center justify-center">
               <Trees size={34} className="text-[#c6a27b]" />
             </div>
@@ -198,7 +198,7 @@ const Service2 = ({ lang }) => {
           </div>
 
           {/* 4 */}
-          <div className="bg-[#f7f2ed] rounded-3xl p-5 min-h-[210px] shadow-sm text-center">
+          <div className="w-full sm:w-64 bg-[#f7f2ed] rounded-3xl p-5 min-h-[220px] shadow-sm text-center">
             <div className="mb-5 flex items-center justify-center">
               <Wrench size={34} className="text-[#c6a27b]" />
             </div>
@@ -221,7 +221,7 @@ const Service2 = ({ lang }) => {
           </div>
 
           {/* 5 */}
-          <div className="bg-[#f7f2ed] rounded-3xl p-5 min-h-[210px] shadow-sm text-center">
+          <div className="w-full sm:w-64 bg-[#f7f2ed] rounded-3xl p-5 min-h-[220px] shadow-sm text-center">
             <div className="mb-5 flex items-center justify-center">
               <CloudRain size={34} className="text-[#c6a27b]" />
             </div>
@@ -244,7 +244,7 @@ const Service2 = ({ lang }) => {
           </div>
 
           {/* 6 */}
-          <div className="bg-[#f7f2ed] rounded-3xl p-5 min-h-[210px] shadow-sm text-center">
+          <div className="w-full sm:w-64 bg-[#f7f2ed] rounded-3xl p-5 min-h-[220px] shadow-sm text-center">
             <div className="mb-5 flex items-center justify-center">
               <Key size={34} className="text-[#c6a27b]" />
             </div>
@@ -267,7 +267,7 @@ const Service2 = ({ lang }) => {
           </div>
 
           {/* 7 */}
-          <div className="bg-[#f7f2ed] rounded-3xl p-5 min-h-[210px] shadow-sm text-center">
+          <div className="w-full sm:w-64 bg-[#f7f2ed] rounded-3xl p-5 min-h-[220px] shadow-sm text-center">
             <div className="mb-5 flex items-center justify-center">
               <Mail size={34} className="text-[#c6a27b]" />
             </div>
@@ -290,7 +290,7 @@ const Service2 = ({ lang }) => {
           </div>
 
           {/* 8 */}
-          <div className="bg-[#f7f2ed] rounded-3xl p-5 min-h-[210px] shadow-sm text-center">
+          <div className="w-full sm:w-64 bg-[#f7f2ed] rounded-3xl p-5 min-h-[220px] shadow-sm text-center">
             <div className="mb-5 flex items-center justify-center">
               <FileText size={34} className="text-[#c6a27b]" />
             </div>
@@ -313,7 +313,7 @@ const Service2 = ({ lang }) => {
           </div>
 
           {/* 9 */}
-          <div className="bg-[#f7f2ed] rounded-3xl p-5 min-h-[210px] shadow-sm text-center">
+          <div className="w-full sm:w-64 bg-[#f7f2ed] rounded-3xl p-5 min-h-[220px] shadow-sm text-center">
             <div className="mb-5 flex items-center justify-center">
               <Calendar size={34} className="text-[#c6a27b]" />
             </div>

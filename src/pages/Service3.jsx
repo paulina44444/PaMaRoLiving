@@ -65,7 +65,7 @@ const Service3 = ({ lang }) => {
 
 <div className="max-w-xl mx-auto text-white text-center">
 
-              <h1 className="font-serif text-4xl md:text-6xl leading-tight mb-8 text-center">
+              <h1 className="font-serif text-4xl md:text-6xl leading-tight mb-8 text-center break-words">
                 {isHR
                   ? "Bezbrižan boravak"
                   : isEN
@@ -121,10 +121,10 @@ const Service3 = ({ lang }) => {
 
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-5">
+        <div className="flex flex-wrap justify-center gap-5 max-w-4xl mx-auto">
 
           {/* 1 */}
-          <div className="bg-[#f7f2ed] rounded-3xl p-5 min-h-[210px] shadow-sm text-center">
+          <div className="w-full sm:w-64 bg-[#f7f2ed] rounded-3xl p-5 min-h-[220px] shadow-sm text-center">
             <div className="mb-5 flex items-center justify-center">
               <House size={34} className="text-[#c6a27b]" />
             </div>
@@ -147,7 +147,7 @@ const Service3 = ({ lang }) => {
           </div>
 
           {/* 2 */}
-          <div className="bg-[#f7f2ed] rounded-3xl p-5 min-h-[210px] shadow-sm text-center">
+          <div className="w-full sm:w-64 bg-[#f7f2ed] rounded-3xl p-5 min-h-[220px] shadow-sm text-center">
             <div className="mb-5 flex items-center justify-center">
               <Star size={34} className="text-[#c6a27b]" />
             </div>
@@ -170,7 +170,7 @@ const Service3 = ({ lang }) => {
           </div>
 
           {/* 3 */}
-          <div className="bg-[#f7f2ed] rounded-3xl p-5 min-h-[210px] shadow-sm text-center">
+          <div className="w-full sm:w-64 bg-[#f7f2ed] rounded-3xl p-5 min-h-[220px] shadow-sm text-center">
             <div className="mb-5 flex items-center justify-center">
               <ClipboardList size={34} className="text-[#c6a27b]" />
             </div>
@@ -193,7 +193,7 @@ const Service3 = ({ lang }) => {
           </div>
 
           {/* 4 */}
-          <div className="bg-[#f7f2ed] rounded-3xl p-5 min-h-[210px] shadow-sm text-center">
+          <div className="w-full sm:w-64 bg-[#f7f2ed] rounded-3xl p-5 min-h-[220px] shadow-sm text-center">
             <div className="mb-5 flex items-center justify-center">
               <Key size={34} className="text-[#c6a27b]" />
             </div>
@@ -216,7 +216,7 @@ const Service3 = ({ lang }) => {
           </div>
 
           {/* 5 */}
-          <div className="bg-[#f7f2ed] rounded-3xl p-5 min-h-[210px] shadow-sm text-center">
+          <div className="w-full sm:w-64 bg-[#f7f2ed] rounded-3xl p-5 min-h-[220px] shadow-sm text-center">
             <div className="mb-5 flex items-center justify-center">
               <Sun size={34} className="text-[#c6a27b]" />
             </div>

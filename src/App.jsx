@@ -36,7 +36,7 @@ export default function App() {
       <Navigation />
       <SeoLinks />
 
-      <main className="pt-20">
+      <main className="pt-28 md:pt-36">
         <Routes>
           {langs.flatMap((lang) =>
             pageRoutes.map(({ path, Component }) => {
