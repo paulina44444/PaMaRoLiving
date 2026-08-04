@@ -74,7 +74,7 @@ const Service2 = ({ lang }) => {
                   ? "Briga o nekretnini"
                   : isEN
                   ? "Property Care"
-                  : "Immobilienbetreuung"}
+                  : "Immobilien­betreuung"}
               </h1>
 
               <div className="w-20 h-[2px] bg-[#c6a27b] mx-auto"></div>

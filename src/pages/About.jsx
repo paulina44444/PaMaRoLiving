@@ -45,7 +45,7 @@ return (
 
   <div className="absolute inset-0 bg-black/25" />
 
-  <div className="relative z-10 h-full flex items-center justify-center">
+  <div className="relative z-10 h-full flex items-end md:items-center justify-center pb-16 md:pb-0">
 
     <div className="max-w-6xl mx-auto px-6 w-full">
 
