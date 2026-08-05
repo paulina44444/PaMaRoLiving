@@ -1,1 +1,9 @@
 @import "tailwindcss";
+
+/* Verhindert, dass der Browser die Scroll-Position bei Layout-Änderungen
+   (z.B. Mobilmenü öffnet/schliesst, Bilder laden nach) selbstständig
+   "korrigiert" - das kann sonst dem manuellen Scroll-nach-oben beim
+   Seitenwechsel (siehe ScrollToTop.jsx) in die Quere kommen. */
+html {
+  overflow-anchor: none;
+}
